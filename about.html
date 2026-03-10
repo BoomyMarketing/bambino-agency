@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Bambino | Manchester Digital Marketing Agency</title>
+  <meta name="description" content="Meet the Bambino team — Manchester-based digital marketing specialists helping UK businesses grow faster with SEO, paid ads, web design and AI-driven strategies." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://bambino.agency/about.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="About Bambino | Manchester Digital Marketing Agency" />
+  <meta property="og:description" content="Meet the Bambino team — Manchester-based digital marketing specialists helping UK businesses grow faster." />
+  <meta property="og:url" content="https://bambino.agency/about.html" />
+  <meta property="og:site_name" content="Bambino" />
+  <meta property="og:locale" content="en_GB" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Bambino | Manchester Digital Marketing Agency" />
+  <meta name="twitter:description" content="Meet the Manchester team behind 400+ UK client success stories." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MarketingAgency",
+        "name": "Bambino",
+        "url": "https://bambino.agency",
+        "description": "Manchester-based digital marketing agency helping UK businesses grow faster with SEO, paid ads, web design and AI-driven strategies.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Manchester",
+          "addressRegion": "Greater Manchester",
+          "addressCountry": "GB"
+        },
+        "areaServed": "GB",
+        "foundingDate": "2019",
+        "numberOfEmployees": "25",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "400"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://bambino.agency/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About",
+            "item": "https://bambino.agency/about.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #F9F9F5;
+      --orange: #FF4D00;
+      --orange-light: #FF6B2B;
+      --orange-glow: rgba(255, 77, 0, 0.25);
+      --green: #034C3C;
+      --green-light: #056650;
+      --text: #1A1A1A;
+      --muted: #666660;
+      --card: #FFFFFF;
+      --soft: #F2F2EC;
+      --border: #E8E8E0;
+      --font-heading: 'Berkshire Swash', serif;
+      --font-body: 'Inter', sans-serif;
+      --radius: 16px;
+      --radius-sm: 8px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.07);
+      --shadow-lg: 0 12px 48px rgba(0,0,0,0.12);
+      --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--font-body); background: var(--bg); color: var(--text); overflow-x: hidden; line-height: 1.6; }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    .container { width: min(1200px, 100% - 3rem); margin-inline: auto; }
+
+    .section-label {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--orange);
+      background: rgba(255, 77, 0, 0.08);
+      padding: 0.35rem 0.9rem;
+      border-radius: 100px;
+      margin-bottom: 1.2rem;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--text);
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+
+    .section-sub {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 52ch;
+      line-height: 1.7;
+    }
+
+    .btn-orange {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--orange);
+      color: #fff;
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 0.85rem 2rem;
+      border-radius: 100px;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      letter-spacing: 0.02em;
+    }
+
+    .btn-orange:hover { background: var(--orange-light); transform: translateY(-2px) scale(1.03); }
+
+    /* NAVBAR */
+    #navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      background: var(--bg);
+      padding: 1.1rem 0;
+      transition: border-bottom 0.3s ease, box-shadow 0.3s ease;
+    }
+    #navbar.scrolled { border-bottom: 1px solid var(--green); box-shadow: 0 2px 20px rgba(3,76,60,0.08); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { font-family: var(--font-heading); font-size: 1.8rem; color: var(--green); letter-spacing: -0.01em; }
+    .nav-links { display: flex; align-items: center; gap: 2.2rem; }
+    .nav-links a { font-size: 0.9rem; font-weight: 500; color: var(--text); transition: color var(--transition); position: relative; }
+    .nav-links a::after { content: ''; position: absolute; bottom: -3px; left: 0; width: 0; height: 2px; background: var(--orange); transition: width var(--transition); }
+    .nav-links a:hover { color: var(--orange); }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-cta { background: var(--orange); color: #fff !important; font-weight: 700 !important; font-size: 0.88rem !important; padding: 0.6rem 1.4rem; border-radius: 100px; transition: var(--transition) !important; }
+    .nav-cta:hover { background: var(--orange-light); transform: scale(1.04); }
+    .nav-cta::after { display: none !important; }
+    .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+    .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--text); border-radius: 2px; transition: var(--transition); }
+
+    /* MOBILE MENU */
+    .mobile-menu { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--bg); z-index: 999; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { font-family: var(--font-heading); font-size: 2rem; color: var(--text); transition: color var(--transition); }
+    .mobile-menu a:hover { color: var(--orange); }
+    .mobile-close { position: absolute; top: 1.5rem; right: 1.5rem; font-size: 1.8rem; color: var(--text); cursor: pointer; background: none; border: none; line-height: 1; }
+
+    /* HERO */
+    #hero {
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      padding-top: 5rem;
+      background: var(--soft);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-blob { position: absolute; bottom: -10%; right: -8%; width: 500px; height: 500px; background: var(--orange); opacity: 0.06; border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%; pointer-events: none; }
+    .hero-content { padding: 4rem 0; position: relative; z-index: 2; }
+    .hero-agency-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--orange); display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1.5rem; }
+    .hero-agency-label::before { content: ''; display: block; width: 28px; height: 2px; background: var(--orange); border-radius: 2px; }
+    .hero-h1 { font-family: var(--font-heading); font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.1; color: var(--text); margin-bottom: 1.5rem; max-width: 18ch; }
+    .hero-sub { font-size: 1.15rem; color: var(--muted); max-width: 52ch; line-height: 1.7; margin-bottom: 2.2rem; }
+    .hero-stats { display: flex; gap: 3rem; flex-wrap: wrap; }
+    .hero-stat-num { font-family: var(--font-heading); font-size: 2.5rem; color: var(--orange); display: block; }
+    .hero-stat-label { font-size: 0.85rem; color: var(--muted); }
+
+    /* STORY */
+    #story { padding: 7rem 0; background: var(--bg); }
+    .story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+    .story-visual { position: relative; }
+    .story-card { background: var(--card); border-radius: var(--radius); padding: 2.5rem; box-shadow: var(--shadow-lg); }
+    .story-card-highlight { background: var(--orange); color: #fff; border-radius: var(--radius); padding: 1.5rem 2rem; margin-bottom: 1.5rem; }
+    .story-card-highlight .num { font-family: var(--font-heading); font-size: 3rem; display: block; }
+    .story-card-highlight .label { font-size: 0.85rem; opacity: 0.85; }
+    .story-mini-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .story-mini-stat { background: var(--soft); border-radius: var(--radius-sm); padding: 1.2rem; text-align: center; }
+    .story-mini-stat .num { font-family: var(--font-heading); font-size: 1.8rem; color: var(--green); display: block; }
+    .story-mini-stat .label { font-size: 0.78rem; color: var(--muted); }
+    .story-body p { font-size: 1rem; color: var(--muted); line-height: 1.8; margin-bottom: 1.2rem; }
+
+    /* VALUES */
+    #values { padding: 7rem 0; background: var(--soft); }
+    .values-header { text-align: center; margin-bottom: 3.5rem; }
+    .values-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+    .value-card { background: var(--card); border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow); transition: transform var(--transition), box-shadow var(--transition); border-top: 3px solid var(--orange); }
+    .value-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+    .value-icon { width: 52px; height: 52px; background: rgba(255,77,0,0.08); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.2rem; }
+    .value-title { font-family: var(--font-heading); font-size: 1.2rem; color: var(--text); margin-bottom: 0.5rem; }
+    .value-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.65; }
+
+    /* TEAM */
+    #team { padding: 7rem 0; background: var(--bg); }
+    .team-header { text-align: center; margin-bottom: 3.5rem; }
+    .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+    .team-card { background: var(--card); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); transition: transform var(--transition), box-shadow var(--transition); }
+    .team-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+    .team-avatar { height: 200px; display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-size: 3.5rem; color: #fff; }
+    .team-info { padding: 1.5rem; }
+    .team-name { font-family: var(--font-heading); font-size: 1.2rem; color: var(--text); margin-bottom: 0.25rem; }
+    .team-role { font-size: 0.82rem; font-weight: 600; color: var(--orange); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.75rem; }
+    .team-bio { font-size: 0.85rem; color: var(--muted); line-height: 1.65; }
+
+    /* CTA */
+    #cta-section { background: var(--green); padding: 6rem 0; position: relative; overflow: hidden; }
+    #cta-section::before { content: ''; position: absolute; top: -100px; right: -100px; width: 400px; height: 400px; background: rgba(255,255,255,0.03); border-radius: 50%; }
+    .cta-inner { text-align: center; position: relative; z-index: 1; }
+    .cta-inner .section-label { background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.85); }
+    .cta-title { font-family: var(--font-heading); font-size: clamp(2.2rem, 4vw, 3.5rem); color: #fff; line-height: 1.15; margin-bottom: 1rem; }
+    .cta-sub { font-size: 1.05rem; color: rgba(255,255,255,0.7); max-width: 50ch; margin: 0 auto 2.5rem; line-height: 1.7; }
+    .cta-actions { display: flex; justify-content: center; gap: 1.2rem; flex-wrap: wrap; }
+    .btn-white { display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: rgba(255,255,255,0.85); border: 2px solid rgba(255,255,255,0.3); font-weight: 600; font-size: 0.95rem; padding: 0.85rem 2rem; border-radius: 100px; cursor: pointer; transition: var(--transition); font-family: var(--font-body); }
+    .btn-white:hover { border-color: rgba(255,255,255,0.8); color: #fff; background: rgba(255,255,255,0.05); }
+
+    /* FOOTER */
+    #footer { background: var(--green); border-top: 1px solid rgba(255,255,255,0.07); padding: 4rem 0 2rem; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+    .footer-brand-logo { font-family: var(--font-heading); font-size: 2rem; color: #fff; margin-bottom: 0.8rem; }
+    .footer-brand-desc { font-size: 0.88rem; color: rgba(255,255,255,0.55); line-height: 1.7; margin-bottom: 1.5rem; max-width: 36ch; }
+    .footer-socials { display: flex; gap: 0.8rem; }
+    .footer-social-link { width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.7); font-size: 0.9rem; transition: var(--transition); border: 1px solid rgba(255,255,255,0.1); }
+    .footer-social-link:hover { background: var(--orange); color: #fff; border-color: var(--orange); transform: translateY(-2px); }
+    .footer-col-title { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 1.3rem; }
+    .footer-links { display: flex; flex-direction: column; gap: 0.65rem; }
+    .footer-links a { font-size: 0.88rem; color: rgba(255,255,255,0.65); transition: color var(--transition); }
+    .footer-links a:hover { color: var(--orange); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.07); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .footer-bottom p { font-size: 0.82rem; color: rgba(255,255,255,0.35); }
+    .footer-bottom-links { display: flex; gap: 1.5rem; }
+    .footer-bottom-links a { font-size: 0.82rem; color: rgba(255,255,255,0.35); transition: color var(--transition); }
+    .footer-bottom-links a:hover { color: var(--orange); }
+
+    /* REVEAL */
+    .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.from-left { transform: translateX(-50px); }
+    .reveal.from-right { transform: translateX(50px); }
+    .reveal.visible { opacity: 1; transform: translate(0, 0); }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .values-grid { grid-template-columns: repeat(2, 1fr); }
+      .team-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+      .story-grid { grid-template-columns: 1fr; }
+      .values-grid { grid-template-columns: 1fr 1fr; }
+      .team-grid { grid-template-columns: 1fr 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+      .hero-stats { gap: 2rem; }
+    }
+    @media (max-width: 480px) {
+      .values-grid { grid-template-columns: 1fr; }
+      .team-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="/bambino/index.html" class="nav-logo" aria-label="Bambino — Home">Bambino</a>
+        <ul class="nav-links" role="list">
+          <li><a href="/bambino/services.html">Services</a></li>
+          <li><a href="/bambino/about.html">About</a></li>
+          <li><a href="/bambino/pricing.html">Pricing</a></li>
+          <li><a href="/bambino/contact.html" class="nav-cta">Get a Free Audit →</a></li>
+        </ul>
+        <button class="nav-hamburger" aria-label="Open menu" id="hamburgerBtn">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+    <a href="/bambino/services.html" onclick="closeMobileMenu()">Services</a>
+    <a href="/bambino/about.html" onclick="closeMobileMenu()">About</a>
+    <a href="/bambino/pricing.html" onclick="closeMobileMenu()">Pricing</a>
+    <a href="/bambino/contact.html" onclick="closeMobileMenu()" style="color: var(--orange);">Get a Free Audit →</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero" aria-label="About Bambino">
+    <div class="hero-blob" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-agency-label">Manchester Digital Agency</p>
+        <h1 class="hero-h1">Helping UK Businesses Reach New Heights</h1>
+        <p class="hero-sub">We're a team of passionate digital marketing specialists based in Manchester, dedicated to helping British businesses grow smarter, faster, and more profitably through data-driven strategies.</p>
+        <div class="hero-stats">
+          <div>
+            <span class="hero-stat-num">400+</span>
+            <span class="hero-stat-label">UK Clients Served</span>
+          </div>
+          <div>
+            <span class="hero-stat-num">97%</span>
+            <span class="hero-stat-label">Client Retention Rate</span>
+          </div>
+          <div>
+            <span class="hero-stat-num">£25M+</span>
+            <span class="hero-stat-label">Revenue Generated for Clients</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section id="story" aria-labelledby="story-heading">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-visual reveal from-left">
+          <div class="story-card">
+            <div class="story-card-highlight">
+              <span class="num">£25M+</span>
+              <span class="label">Revenue generated for UK clients</span>
+            </div>
+            <div class="story-mini-stats">
+              <div class="story-mini-stat">
+                <span class="num">400+</span>
+                <span class="label">UK Clients</span>
+              </div>
+              <div class="story-mini-stat">
+                <span class="num">97%</span>
+                <span class="label">Retention Rate</span>
+              </div>
+              <div class="story-mini-stat">
+                <span class="num">6+</span>
+                <span class="label">Years Experience</span>
+              </div>
+              <div class="story-mini-stat">
+                <span class="num">4.9★</span>
+                <span class="label">Average Rating</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="story-body reveal from-right">
+          <span class="section-label">Our Story</span>
+          <h2 id="story-heading" class="section-title">Born in Manchester, Built for British Business</h2>
+          <p>Bambino was founded in 2019 by a small team of digital marketers who were frustrated by agencies that over-promised and under-delivered. We believed British businesses deserved better — transparent strategies, honest reporting, and real, measurable results.</p>
+          <p>Starting with just five local Manchester clients, we grew rapidly by doing one thing exceptionally well: delivering results that speak for themselves. Today, we support more than 400 businesses across the UK, from independent traders in the North West to scale-ups in London and beyond.</p>
+          <p>Our approach is rooted in data, guided by creativity, and powered by the latest innovations in SEO, paid media, AI automation, and web development. Every strategy we build is tailored to the specific goals, budget, and audience of each client — because no two businesses are alike.</p>
+          <a href="/bambino/contact.html" class="btn-orange" style="margin-top: 1.5rem;">Work With Us →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section id="values" aria-labelledby="values-heading">
+    <div class="container">
+      <div class="values-header reveal">
+        <span class="section-label">What We Stand For</span>
+        <h2 id="values-heading" class="section-title">Our Core Values</h2>
+        <p class="section-sub" style="margin: 0 auto;">These four principles guide every decision we make and every campaign we run.</p>
+      </div>
+      <div class="values-grid">
+        <div class="value-card reveal">
+          <div class="value-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF4D00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+          </div>
+          <h3 class="value-title">Results-Driven</h3>
+          <p class="value-desc">We measure success by your business growth, not vanity metrics. Every campaign we run is optimised to deliver a tangible return on your investment.</p>
+        </div>
+        <div class="value-card reveal" style="transition-delay: 0.1s;">
+          <div class="value-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF4D00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h3 class="value-title">Transparent</h3>
+          <p class="value-desc">No hidden fees, no confusing jargon, no smoke and mirrors. You'll always know exactly what we're doing, why we're doing it, and what results it's producing.</p>
+        </div>
+        <div class="value-card reveal" style="transition-delay: 0.2s;">
+          <div class="value-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF4D00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+          </div>
+          <h3 class="value-title">Client-First</h3>
+          <p class="value-desc">Your goals are our goals. We act as a genuine extension of your team, aligning our strategies with your business objectives and keeping you informed at every step.</p>
+        </div>
+        <div class="value-card reveal" style="transition-delay: 0.3s;">
+          <div class="value-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF4D00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3 class="value-title">Data-Led</h3>
+          <p class="value-desc">Every decision we make is backed by real data. We analyse performance continuously, adapt our approach based on evidence, and never guess when we can measure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team" aria-labelledby="team-heading">
+    <div class="container">
+      <div class="team-header reveal">
+        <span class="section-label">The Team</span>
+        <h2 id="team-heading" class="section-title">Meet the People Behind Bambino</h2>
+        <p class="section-sub" style="margin: 0 auto;">A passionate group of specialists united by a shared mission: helping UK businesses grow faster.</p>
+      </div>
+      <div class="team-grid">
+        <article class="team-card reveal" aria-label="Sophie H. — CEO">
+          <div class="team-avatar" style="background: linear-gradient(135deg, #FF4D00, #FF6B2B);">SH</div>
+          <div class="team-info">
+            <h3 class="team-name">Sophie H.</h3>
+            <p class="team-role">Chief Executive Officer</p>
+            <p class="team-bio">Sophie founded Bambino with a simple belief: UK businesses deserve marketing that actually works. With over 12 years in digital strategy, she leads our team and sets the vision for every client engagement.</p>
+          </div>
+        </article>
+        <article class="team-card reveal" style="transition-delay: 0.1s;" aria-label="James M. — Head of SEO">
+          <div class="team-avatar" style="background: linear-gradient(135deg, #034C3C, #056650);">JM</div>
+          <div class="team-info">
+            <h3 class="team-name">James M.</h3>
+            <p class="team-role">Head of SEO</p>
+            <p class="team-bio">James has been doing SEO since before Google Panda. He leads our organic search team, specialising in technical SEO, link acquisition, and content strategy for competitive UK markets.</p>
+          </div>
+        </article>
+        <article class="team-card reveal" style="transition-delay: 0.2s;" aria-label="Aisha K. — Ads Director">
+          <div class="team-avatar" style="background: linear-gradient(135deg, #8B5CF6, #7C3AED);">AK</div>
+          <div class="team-info">
+            <h3 class="team-name">Aisha K.</h3>
+            <p class="team-role">Ads Director</p>
+            <p class="team-bio">Aisha oversees all paid media — from Google Ads to Meta and beyond. She's managed over £10M in ad spend across UK campaigns and has a reputation for squeezing every penny of value from client budgets.</p>
+          </div>
+        </article>
+        <article class="team-card reveal" style="transition-delay: 0.3s;" aria-label="Tom B. — Web Lead">
+          <div class="team-avatar" style="background: linear-gradient(135deg, #F59E0B, #D97706);">TB</div>
+          <div class="team-info">
+            <h3 class="team-name">Tom B.</h3>
+            <p class="team-role">Web Lead</p>
+            <p class="team-bio">Tom heads up our web design and development practice, building conversion-focused websites that look brilliant and perform even better. He's the reason our clients' sites consistently outperform industry benchmarks.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta-section" aria-labelledby="cta-heading">
+    <div class="cta-inner container">
+      <span class="section-label">Ready to Grow?</span>
+      <h2 id="cta-heading" class="cta-title">Let's Build Something Great Together</h2>
+      <p class="cta-sub">Book a free 30-minute strategy call with our team. We'll review your current marketing, identify your biggest growth opportunities, and give you a clear action plan — at no cost.</p>
+      <div class="cta-actions">
+        <a href="/bambino/contact.html" class="btn-orange" style="font-size: 1rem; padding: 1rem 2.4rem;">Get My Free Audit →</a>
+        <a href="/bambino/services.html" class="btn-white">Explore Our Services</a>
+      </div>
+      <p style="margin-top: 1.8rem; font-size: 0.82rem; color: rgba(255,255,255,0.4);">No contracts. No setup fees. 100% results-focused.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-logo">Bambino</div>
+          <p class="footer-brand-desc">Manchester's leading digital marketing agency, helping UK businesses grow faster with data-driven strategies that deliver real, measurable ROI.</p>
+          <div class="footer-socials" aria-label="Social media links">
+            <a href="#" class="footer-social-link" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Twitter / X">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Services</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="/bambino/services/seo.html">SEO</a></li>
+            <li><a href="/bambino/services/google-ads.html">Google Ads</a></li>
+            <li><a href="/bambino/services/web-design.html">Web Design</a></li>
+            <li><a href="/bambino/services/content-marketing.html">Content Marketing</a></li>
+            <li><a href="/bambino/services/meta-ads.html">Meta Ads</a></li>
+            <li><a href="/bambino/services/ai-automations.html">AI Automations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Company</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="/bambino/about.html">About Us</a></li>
+            <li><a href="/bambino/services.html">All Services</a></li>
+            <li><a href="/bambino/pricing.html">Pricing</a></li>
+            <li><a href="/bambino/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Contact</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="/bambino/contact.html">Send Us a Message</a></li>
+            <li><a href="#">Manchester, UK</a></li>
+            <li style="margin-top: 0.8rem;">
+              <a href="/bambino/contact.html" class="btn-orange" style="font-size: 0.82rem; padding: 0.65rem 1.4rem; display: inline-flex;">Free Audit →</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bambino. All rights reserved. Manchester, United Kingdom.</p>
+        <nav class="footer-bottom-links" aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Mobile menu
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileClose = document.getElementById('mobileClose');
+    hamburgerBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
+    mobileClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    function closeMobileMenu() { mobileMenu.classList.remove('open'); }
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Bambino | Manchester Digital Marketing Agency</title>
+  <meta name="description" content="Get in touch with Bambino — Manchester's digital marketing specialists. Fill in our contact form to book a free audit and discover how we can help your UK business grow." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://bambino.agency/contact.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact Bambino | Manchester Digital Marketing Agency" />
+  <meta property="og:description" content="Book a free audit with Bambino's digital marketing specialists. Based in Manchester, serving businesses across the UK." />
+  <meta property="og:url" content="https://bambino.agency/contact.html" />
+  <meta property="og:site_name" content="Bambino" />
+  <meta property="og:locale" content="en_GB" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact Bambino | UK Digital Marketing Agency" />
+  <meta name="twitter:description" content="Get a free digital marketing audit from our Manchester team. Serving UK businesses nationwide." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "name": "Bambino",
+        "url": "https://bambino.agency",
+        "description": "Manchester-based digital marketing agency helping UK businesses grow faster.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Manchester",
+          "addressRegion": "Greater Manchester",
+          "addressCountry": "GB"
+        },
+        "areaServed": "GB"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bambino.agency/" },
+          { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://bambino.agency/contact.html" }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #F9F9F5; --orange: #FF4D00; --orange-light: #FF6B2B; --orange-glow: rgba(255,77,0,0.25);
+      --green: #034C3C; --green-light: #056650; --text: #1A1A1A; --muted: #666660;
+      --card: #FFFFFF; --soft: #F2F2EC; --border: #E8E8E0;
+      --font-heading: 'Berkshire Swash', serif; --font-body: 'Inter', sans-serif;
+      --radius: 16px; --shadow: 0 4px 24px rgba(0,0,0,0.07); --shadow-lg: 0 12px 48px rgba(0,0,0,0.12);
+      --transition: 0.25s cubic-bezier(0.4,0,0.2,1);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); background: var(--bg); color: var(--text); overflow-x: hidden; line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    .container { width: min(1200px, 100% - 3rem); margin-inline: auto; }
+    .section-label { display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--orange); background: rgba(255,77,0,0.08); padding: 0.35rem 0.9rem; border-radius: 100px; margin-bottom: 1.2rem; }
+    .section-title { font-family: var(--font-heading); font-size: clamp(2rem,4vw,3rem); color: var(--text); line-height: 1.15; margin-bottom: 1rem; }
+
+    /* NAVBAR */
+    #navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: var(--bg); padding: 1.1rem 0; transition: border-bottom 0.3s ease, box-shadow 0.3s ease; }
+    #navbar.scrolled { border-bottom: 1px solid var(--green); box-shadow: 0 2px 20px rgba(3,76,60,0.08); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { font-family: var(--font-heading); font-size: 1.8rem; color: var(--green); }
+    .nav-links { display: flex; align-items: center; gap: 2.2rem; }
+    .nav-links a { font-size: 0.9rem; font-weight: 500; color: var(--text); transition: color var(--transition); position: relative; }
+    .nav-links a::after { content: ''; position: absolute; bottom: -3px; left: 0; width: 0; height: 2px; background: var(--orange); transition: width var(--transition); }
+    .nav-links a:hover { color: var(--orange); }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-cta { background: var(--orange); color: #fff !important; font-weight: 700 !important; font-size: 0.88rem !important; padding: 0.6rem 1.4rem; border-radius: 100px; }
+    .nav-cta:hover { background: var(--orange-light); }
+    .nav-cta::after { display: none !important; }
+    .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+    .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--text); border-radius: 2px; }
+    .mobile-menu { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--bg); z-index: 999; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { font-family: var(--font-heading); font-size: 2rem; color: var(--text); transition: color var(--transition); }
+    .mobile-menu a:hover { color: var(--orange); }
+    .mobile-close { position: absolute; top: 1.5rem; right: 1.5rem; font-size: 1.8rem; color: var(--text); cursor: pointer; background: none; border: none; }
+
+    /* HERO */
+    #hero { min-height: 45vh; display: flex; align-items: center; padding-top: 5rem; background: var(--soft); position: relative; overflow: hidden; }
+    .hero-blob { position: absolute; bottom: -10%; right: -8%; width: 400px; height: 400px; background: var(--orange); opacity: 0.06; border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%; pointer-events: none; }
+    .hero-content { padding: 4rem 0; position: relative; z-index: 2; }
+    .hero-agency-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--orange); display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1.5rem; }
+    .hero-agency-label::before { content: ''; display: block; width: 28px; height: 2px; background: var(--orange); border-radius: 2px; }
+    .hero-h1 { font-family: var(--font-heading); font-size: clamp(2.5rem,5vw,4rem); line-height: 1.1; color: var(--text); margin-bottom: 1.5rem; max-width: 20ch; }
+    .hero-sub { font-size: 1.1rem; color: var(--muted); max-width: 52ch; line-height: 1.7; }
+
+    /* CONTACT SECTION */
+    #contact { padding: 7rem 0; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 5rem; align-items: start; }
+
+    /* Sidebar info */
+    .contact-info { }
+    .contact-info-title { font-family: var(--font-heading); font-size: 1.8rem; color: var(--text); margin-bottom: 1rem; }
+    .contact-info-desc { font-size: 0.95rem; color: var(--muted); line-height: 1.75; margin-bottom: 2rem; }
+    .contact-detail { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem; }
+    .contact-detail-icon { width: 44px; height: 44px; background: rgba(255,77,0,0.08); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .contact-detail-body strong { display: block; font-size: 0.88rem; font-weight: 700; color: var(--text); margin-bottom: 0.2rem; }
+    .contact-detail-body span { font-size: 0.88rem; color: var(--muted); }
+    .trust-badges { display: flex; flex-direction: column; gap: 0.75rem; margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+    .trust-badge { display: flex; align-items: center; gap: 0.75rem; font-size: 0.88rem; color: var(--text); }
+    .trust-badge svg { color: var(--orange); flex-shrink: 0; }
+
+    /* Form */
+    .contact-form-wrap { background: var(--card); border-radius: var(--radius); padding: 2.5rem; box-shadow: var(--shadow-lg); }
+    .form-title { font-family: var(--font-heading); font-size: 1.5rem; color: var(--text); margin-bottom: 0.5rem; }
+    .form-subtitle { font-size: 0.9rem; color: var(--muted); margin-bottom: 2rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-group { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.2rem; }
+    .form-group label { font-size: 0.85rem; font-weight: 600; color: var(--text); }
+    .form-group input, .form-group select, .form-group textarea {
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      padding: 0.8rem 1rem;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      background: var(--bg);
+      color: var(--text);
+      transition: border-color var(--transition), box-shadow var(--transition);
+      outline: none;
+      width: 100%;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: var(--orange);
+      box-shadow: 0 0 0 3px var(--orange-glow);
+    }
+    .form-group textarea { resize: vertical; min-height: 130px; }
+    .form-checkbox { display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1.5rem; }
+    .form-checkbox input[type="checkbox"] { width: 18px; height: 18px; accent-color: var(--orange); flex-shrink: 0; margin-top: 2px; cursor: pointer; }
+    .form-checkbox label { font-size: 0.83rem; color: var(--muted); line-height: 1.5; cursor: pointer; }
+    .btn-submit { width: 100%; display: flex; align-items: center; justify-content: center; gap: 0.5rem; background: var(--orange); color: #fff; font-family: var(--font-body); font-weight: 700; font-size: 1rem; padding: 1rem 2rem; border-radius: 100px; border: none; cursor: pointer; transition: var(--transition); }
+    .btn-submit:hover { background: var(--orange-light); transform: translateY(-2px); }
+    .form-success { display: none; background: #F0FFF8; border: 2px solid rgba(3,76,60,0.2); border-radius: var(--radius); padding: 2rem; text-align: center; }
+    .form-success h3 { font-family: var(--font-heading); font-size: 1.5rem; color: var(--green); margin-bottom: 0.5rem; }
+    .form-success p { font-size: 0.95rem; color: var(--muted); }
+
+    /* FOOTER */
+    #footer { background: var(--green); border-top: 1px solid rgba(255,255,255,0.07); padding: 4rem 0 2rem; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+    .footer-brand-logo { font-family: var(--font-heading); font-size: 2rem; color: #fff; margin-bottom: 0.8rem; }
+    .footer-brand-desc { font-size: 0.88rem; color: rgba(255,255,255,0.55); line-height: 1.7; margin-bottom: 1.5rem; max-width: 36ch; }
+    .footer-socials { display: flex; gap: 0.8rem; }
+    .footer-social-link { width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.7); transition: var(--transition); border: 1px solid rgba(255,255,255,0.1); }
+    .footer-social-link:hover { background: var(--orange); color: #fff; border-color: var(--orange); transform: translateY(-2px); }
+    .footer-col-title { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 1.3rem; }
+    .footer-links { display: flex; flex-direction: column; gap: 0.65rem; }
+    .footer-links a { font-size: 0.88rem; color: rgba(255,255,255,0.65); transition: color var(--transition); }
+    .footer-links a:hover { color: var(--orange); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.07); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .footer-bottom p { font-size: 0.82rem; color: rgba(255,255,255,0.35); }
+    .footer-bottom-links { display: flex; gap: 1.5rem; }
+    .footer-bottom-links a { font-size: 0.82rem; color: rgba(255,255,255,0.35); transition: color var(--transition); }
+    .footer-bottom-links a:hover { color: var(--orange); }
+
+    .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 1024px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="/bambino/index.html" class="nav-logo">Bambino</a>
+        <ul class="nav-links" role="list">
+          <li><a href="/bambino/services.html">Services</a></li>
+          <li><a href="/bambino/about.html">About</a></li>
+          <li><a href="/bambino/pricing.html">Pricing</a></li>
+          <li><a href="/bambino/contact.html" class="nav-cta">Get a Free Audit →</a></li>
+        </ul>
+        <button class="nav-hamburger" aria-label="Open menu" id="hamburgerBtn">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+    <a href="/bambino/services.html" onclick="closeMobileMenu()">Services</a>
+    <a href="/bambino/about.html" onclick="closeMobileMenu()">About</a>
+    <a href="/bambino/pricing.html" onclick="closeMobileMenu()">Pricing</a>
+    <a href="/bambino/contact.html" onclick="closeMobileMenu()" style="color: var(--orange);">Get a Free Audit →</a>
+  </div>
+
+  <section id="hero" aria-label="Contact Bambino">
+    <div class="hero-blob" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-agency-label">Get in Touch</p>
+        <h1 class="hero-h1">Let's Grow Your Business Together</h1>
+        <p class="hero-sub">Fill in the form and one of our specialists will be in touch within one business day. Your free audit is exactly that — completely free, no strings attached.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Info sidebar -->
+        <div class="reveal from-left">
+          <span class="section-label">Contact Us</span>
+          <h2 id="contact-heading" class="contact-info-title">We'd Love to Hear From You</h2>
+          <p class="contact-info-desc">Whether you're just starting to explore digital marketing or you're ready to scale your existing campaigns, we're here to help. Our team will review your enquiry and come back to you with tailored recommendations — free of charge.</p>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF4D00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-detail-body">
+              <strong>Location</strong>
+              <span>Manchester, Greater Manchester, UK</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF4D00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="contact-detail-body">
+              <strong>Response Time</strong>
+              <span>Within 1 business day</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF4D00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            </div>
+            <div class="contact-detail-body">
+              <strong>Area Served</strong>
+              <span>UK-wide — from Manchester to London and beyond</span>
+            </div>
+          </div>
+
+          <div class="trust-badges">
+            <div class="trust-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              400+ UK businesses served
+            </div>
+            <div class="trust-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              97% client retention rate
+            </div>
+            <div class="trust-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              No setup fees. No minimum contract.
+            </div>
+            <div class="trust-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              UK GDPR compliant
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap reveal from-right" id="formWrap">
+          <h3 class="form-title">Book Your Free Audit</h3>
+          <p class="form-subtitle">Tell us a bit about your business and goals. We'll come prepared with real insights, not a generic sales pitch.</p>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Sophie" required autocomplete="given-name" />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Harrison" required autocomplete="family-name" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="sophie@yourbusiness.co.uk" required autocomplete="email" />
+            </div>
+
+            <div class="form-group">
+              <label for="company">Company Name</label>
+              <input type="text" id="company" name="company" placeholder="Your Business Ltd" autocomplete="organization" />
+            </div>
+
+            <div class="form-group">
+              <label for="website">Website URL</label>
+              <input type="url" id="website" name="website" placeholder="https://www.yourbusiness.co.uk" />
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service You're Interested In</label>
+              <select id="service" name="service">
+                <option value="" disabled selected>Select a service…</option>
+                <option value="seo">Search Engine Optimisation (SEO)</option>
+                <option value="google-ads">Google Ads</option>
+                <option value="meta-ads">Meta Ads (Facebook &amp; Instagram)</option>
+                <option value="web-design">Web Design &amp; Development</option>
+                <option value="content-marketing">Content Marketing</option>
+                <option value="email-marketing">Email Marketing</option>
+                <option value="social-media">Social Media Management</option>
+                <option value="ai-automations">AI Automations</option>
+                <option value="ai-development">AI Development</option>
+                <option value="voice-ai">Voice AI</option>
+                <option value="ai-outbound">AI Outbound</option>
+                <option value="geo">GEO &amp; Local Search</option>
+                <option value="saas">SaaS Development</option>
+                <option value="ppc">PPC Management</option>
+                <option value="full-package">Full Digital Marketing Package</option>
+                <option value="unsure">Not Sure — Need Advice</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="budget">Monthly Budget (GBP)</label>
+              <select id="budget" name="budget">
+                <option value="" disabled selected>Select your budget range…</option>
+                <option value="under-800">Under £800/mo</option>
+                <option value="800-2000">£800 – £2,000/mo</option>
+                <option value="2000-4500">£2,000 – £4,500/mo</option>
+                <option value="4500-plus">£4,500+/mo</option>
+                <option value="unsure">Not sure yet</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Tell Us About Your Goals</label>
+              <textarea id="message" name="message" placeholder="What are you hoping to achieve? More website traffic, more leads, better conversion rates? The more detail you share, the more useful our audit will be…"></textarea>
+            </div>
+
+            <div class="form-checkbox">
+              <input type="checkbox" id="gdpr" name="gdpr" required />
+              <label for="gdpr">I consent to Bambino contacting me about my enquiry and storing my data in line with their <a href="#" style="color: var(--orange);">Privacy Policy</a>. I can withdraw consent at any time.</label>
+            </div>
+
+            <button type="submit" class="btn-submit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send My Enquiry →
+            </button>
+          </form>
+
+          <div class="form-success" id="formSuccess" role="alert">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#034C3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin: 0 auto 1rem;" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <h3>Thanks — We're On It!</h3>
+            <p>Your enquiry has been received. A member of our team will be in touch within one business day with your free audit findings.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-logo">Bambino</div>
+          <p class="footer-brand-desc">Manchester's leading digital marketing agency, helping UK businesses grow faster with data-driven strategies.</p>
+          <div class="footer-socials" aria-label="Social media links">
+            <a href="#" class="footer-social-link" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="#" class="footer-social-link" aria-label="Twitter / X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Services</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="/bambino/services/seo.html">SEO</a></li>
+            <li><a href="/bambino/services/google-ads.html">Google Ads</a></li>
+            <li><a href="/bambino/services/web-design.html">Web Design</a></li>
+            <li><a href="/bambino/services/meta-ads.html">Meta Ads</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Company</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="/bambino/about.html">About Us</a></li>
+            <li><a href="/bambino/services.html">All Services</a></li>
+            <li><a href="/bambino/pricing.html">Pricing</a></li>
+            <li><a href="/bambino/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Location</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="#">Manchester, UK</a></li>
+            <li><a href="#">Serving businesses nationwide</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bambino. All rights reserved. Manchester, United Kingdom.</p>
+        <nav class="footer-bottom-links" aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 20));
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileClose = document.getElementById('mobileClose');
+    hamburgerBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
+    mobileClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    function closeMobileMenu() { mobileMenu.classList.remove('open'); }
+
+    // Form submission
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const gdpr = document.getElementById('gdpr');
+      if (!gdpr.checked) { alert('Please confirm you consent to us contacting you.'); return; }
+      this.style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    });
+
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

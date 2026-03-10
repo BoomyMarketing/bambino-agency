@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bambino — Design System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* Brand */
+    --primary: #FF4D00;
+    --primary-dark: #FF6B2B;
+    --primary-glow: rgba(255,77,0,0.25);
+    --secondary: #034C3C;
+    --secondary-dark: #056650;
+    --accent: #034C3C;
+    /* Backgrounds */
+    --bg: #F9F9F5;
+    --bg-surface: #FFFFFF;
+    --bg-soft: #F2F2EC;
+    --dark: #034C3C;
+    --hero-bg: var(--dark);
+    /* Text */
+    --text-heading: #1A1A1A;
+    --text: #1A1A1A;
+    --text-muted: #666660;
+    --text-on-primary: #FFFFFF;
+    --logo-color: #034C3C;
+    /* Borders */
+    --border-color: #E8E8E0;
+    /* Gradients */
+    --gradient-primary: var(--primary);
+    /* Shape */
+    --radius: 16px;
+    --radius-sm: 8px;
+    --radius-lg: 24px;
+    --radius-btn: 100px;
+    /* Shadows */
+    --shadow: 0 4px 24px rgba(0,0,0,0.07);
+    --shadow-lg: 0 12px 48px rgba(0,0,0,0.12);
+    --shadow-primary: 0 8px 30px rgba(255,77,0,0.3);
+    /* Motion */
+    --transition: 0.25s cubic-bezier(0.4,0,0.2,1);
+    /* Fonts */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.65;
+    min-height: 100vh;
+  }
+
+  /* ── LAYOUT ── */
+  .ds-header {
+    background: var(--dark);
+    padding: 60px 40px 48px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .ds-header::before {
+    content: '';
+    position: absolute;
+    bottom: -40px; right: -40px;
+    width: 320px; height: 320px;
+    background: var(--primary-glow);
+    border-radius: 50%;
+    filter: blur(60px);
+    pointer-events: none;
+  }
+  .ds-header::after {
+    content: '';
+    position: absolute;
+    top: -40px; left: -40px;
+    width: 200px; height: 200px;
+    background: rgba(3,76,60,0.4);
+    border-radius: 50%;
+    filter: blur(50px);
+    pointer-events: none;
+  }
+  .ds-logo {
+    font-family: var(--font-heading);
+    font-size: 54px;
+    font-weight: 800;
+    color: #FFFFFF;
+    letter-spacing: -1px;
+    position: relative;
+    z-index: 1;
+  }
+  .ds-logo span { color: var(--primary); }
+  .ds-tagline { font-size: 16px; color: rgba(255,255,255,0.65); margin-top: 8px; position: relative; z-index: 1; font-style: italic; }
+  .ds-meta { margin-top: 20px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; position: relative; z-index: 1; }
+  .ds-meta-pill {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: var(--radius-btn);
+    padding: 5px 14px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.65);
+  }
+
+  .ds-nav {
+    background: var(--bg-surface);
+    border-bottom: 2px solid var(--border-color);
+    padding: 0 40px;
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+  }
+  .ds-nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 14px 16px;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    white-space: nowrap;
+    transition: var(--transition);
+  }
+  .ds-nav a:hover { color: var(--primary); border-bottom-color: var(--primary); }
+
+  .ds-main { max-width: 1100px; margin: 0 auto; padding: 48px 40px 80px; }
+
+  .ds-section { margin-bottom: 72px; }
+  .ds-section-title {
+    font-family: var(--font-heading);
+    font-size: 30px;
+    color: var(--text-heading);
+    margin-bottom: 8px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border-color);
+  }
+  .ds-section-desc { color: var(--text-muted); font-size: 14px; margin-bottom: 28px; }
+
+  /* ── COLORS ── */
+  .color-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 16px; }
+  .color-swatch {
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    background: var(--bg-surface);
+    box-shadow: var(--shadow);
+  }
+  .color-block { height: 110px; width: 100%; }
+  .color-info { padding: 10px 12px; }
+  .color-name { font-size: 11px; font-weight: 600; color: var(--text-heading); font-family: monospace; }
+  .color-hex { font-size: 11px; color: var(--text-muted); font-family: monospace; margin-top: 2px; }
+
+  /* ── TYPOGRAPHY ── */
+  .type-samples { display: flex; flex-direction: column; gap: 16px; }
+  .type-row {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 16px;
+    align-items: center;
+    box-shadow: var(--shadow);
+  }
+  .type-label { font-size: 11px; font-weight: 600; color: var(--text-muted); font-family: monospace; text-transform: uppercase; letter-spacing: 0.08em; }
+  .t-h1 { font-family: var(--font-heading); font-size: 50px; font-weight: 800; color: var(--text-heading); line-height: 1.1; }
+  .t-h2 { font-family: var(--font-heading); font-size: 36px; font-weight: 700; color: var(--text-heading); line-height: 1.2; }
+  .t-h3 { font-family: var(--font-heading); font-size: 26px; font-weight: 700; color: var(--text-heading); line-height: 1.3; }
+  .t-h4 { font-family: var(--font-body); font-size: 20px; font-weight: 700; color: var(--text-heading); }
+  .t-body { font-size: 16px; color: var(--text); }
+  .t-small { font-size: 14px; color: var(--text-muted); }
+  .t-quote { font-family: var(--font-heading); font-size: 18px; color: var(--secondary); font-style: italic; }
+
+  /* ── BUTTONS ── */
+  .btn-grid { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 14px 28px;
+    border-radius: var(--radius-btn);
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: var(--transition);
+    text-decoration: none;
+    letter-spacing: 0.01em;
+  }
+  .btn-primary {
+    background: var(--primary);
+    color: var(--text-on-primary);
+    box-shadow: var(--shadow-primary);
+  }
+  .btn-primary:hover { background: var(--primary-dark); transform: translateY(-1px); box-shadow: 0 12px 36px rgba(255,77,0,0.4); }
+  .btn-ghost {
+    background: transparent;
+    color: var(--text-heading);
+    border: 1.5px solid var(--border-color);
+  }
+  .btn-ghost:hover { border-color: var(--primary); color: var(--primary); }
+  .btn-secondary {
+    background: var(--secondary);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(3,76,60,0.25);
+  }
+  .btn-secondary:hover { background: var(--secondary-dark); transform: translateY(-1px); }
+  .btn-sm { padding: 9px 18px; font-size: 13px; }
+  .btn-label { font-size: 11px; color: var(--text-muted); font-family: monospace; white-space: nowrap; margin-top: 6px; text-align: center; }
+  .btn-item { display: flex; flex-direction: column; align-items: center; }
+
+  /* ── CARDS ── */
+  .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
+  .card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+  }
+  .card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: rgba(255,77,0,0.2); }
+  .card-icon {
+    width: 52px; height: 52px;
+    background: rgba(255,77,0,0.1);
+    border-radius: var(--radius);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; margin-bottom: 16px;
+  }
+  .card-title { font-family: var(--font-heading); font-size: 22px; color: var(--text-heading); margin-bottom: 10px; }
+  .card-text { font-size: 14px; color: var(--text); line-height: 1.6; }
+  .card-pricing { text-align: center; }
+  .card-pricing .price { font-family: var(--font-heading); font-size: 40px; color: var(--primary); }
+  .card-pricing .price-label { font-size: 13px; color: var(--text-muted); }
+  .card-pricing ul { list-style: none; margin: 16px 0; text-align: left; }
+  .card-pricing ul li { padding: 7px 0; font-size: 14px; color: var(--text); border-bottom: 1px solid var(--border-color); }
+  .card-pricing ul li::before { content: '✓  '; color: var(--secondary); font-weight: 700; }
+  .card-aside { background: var(--bg-soft); border-color: var(--border-color); }
+  .aside-heading { font-family: var(--font-body); font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--primary); font-weight: 700; margin-bottom: 12px; }
+
+  /* ── COMPONENTS ── */
+  .comp-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-start; margin-bottom: 28px; }
+
+  .badge {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 5px 12px;
+    border-radius: var(--radius-btn);
+    font-size: 12px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.06em;
+  }
+  .badge-primary { background: rgba(255,77,0,0.1); color: var(--primary); border: 1px solid rgba(255,77,0,0.2); }
+  .badge-secondary { background: rgba(3,76,60,0.1); color: var(--secondary); border: 1px solid rgba(3,76,60,0.2); }
+  .badge-accent { background: rgba(3,76,60,0.08); color: var(--secondary-dark); border: 1px solid rgba(3,76,60,0.15); }
+  .badge-muted { background: var(--bg-soft); color: var(--text-muted); border: 1px solid var(--border-color); }
+
+  .faq-item {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    margin-bottom: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  }
+  .faq-q {
+    padding: 16px 20px;
+    font-weight: 600;
+    font-family: var(--font-heading);
+    color: var(--text-heading);
+    display: flex; justify-content: space-between; align-items: center;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  .faq-q::after { content: '+'; color: var(--primary); font-size: 22px; font-weight: 300; font-family: var(--font-body); }
+  .faq-a { padding: 0 20px 16px; font-size: 14px; color: var(--text-muted); line-height: 1.65; }
+
+  .nearby-pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-btn);
+    padding: 7px 16px;
+    font-size: 13px;
+    color: var(--text);
+    text-decoration: none;
+    transition: var(--transition);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  }
+  .pill:hover { border-color: var(--primary); color: var(--primary); background: rgba(255,77,0,0.04); }
+
+  .breadcrumb { display: flex; gap: 6px; align-items: center; font-size: 13px; color: var(--text-muted); }
+  .breadcrumb a { color: var(--secondary); text-decoration: none; }
+  .breadcrumb a:hover { color: var(--primary); }
+  .breadcrumb span { color: var(--text-muted); }
+
+  .stats-bar {
+    background: var(--secondary);
+    border-radius: var(--radius);
+    padding: 28px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    text-align: center;
+  }
+  .stat-val { font-family: var(--font-heading); font-size: 30px; color: #FFFFFF; }
+  .stat-lbl { font-size: 12px; color: rgba(255,255,255,0.65); margin-top: 4px; }
+
+  /* ── GRADIENTS & SHADOWS ── */
+  .grad-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+  .grad-block {
+    border-radius: var(--radius);
+    height: 100px;
+    display: flex; align-items: flex-end;
+    padding: 12px;
+    font-size: 12px; font-weight: 600;
+    font-family: monospace;
+    position: relative;
+    overflow: hidden;
+  }
+  .shadow-demo {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 24px;
+    font-size: 13px;
+    color: var(--text-muted);
+    text-align: center;
+    font-family: monospace;
+  }
+
+  /* ── TOKENS TABLE ── */
+  .tokens-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-family: monospace;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .tokens-table th {
+    background: var(--bg-soft);
+    color: var(--text-muted);
+    text-align: left;
+    padding: 10px 14px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border-bottom: 1px solid var(--border-color);
+  }
+  .tokens-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text);
+    vertical-align: middle;
+    background: var(--bg-surface);
+  }
+  .tokens-table tr:hover td { background: var(--bg-soft); }
+  .token-name { color: var(--primary); }
+  .token-dot { width: 20px; height: 20px; border-radius: 4px; display: inline-block; vertical-align: middle; border: 1px solid var(--border-color); }
+  .token-section-row td { background: var(--bg-soft) !important; color: var(--text-muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; padding: 6px 14px; border-bottom: 1px solid var(--border-color); }
+
+  /* ── FOOTER ── */
+  .ds-footer {
+    background: var(--dark);
+    text-align: center;
+    padding: 28px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+  }
+  .ds-footer strong { color: rgba(255,255,255,0.8); }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="ds-header">
+  <div class="ds-logo">Bambi<span>no</span></div>
+  <p class="ds-tagline">Helping UK Businesses Grow Faster</p>
+  <div class="ds-meta">
+    <span class="ds-meta-pill">bambino.agency</span>
+    <span class="ds-meta-pill">Manchester, UK</span>
+    <span class="ds-meta-pill">Playfair Display + Inter</span>
+    <span class="ds-meta-pill">British English</span>
+    <span class="ds-meta-pill">Design System v1.0</span>
+  </div>
+</header>
+
+<!-- NAV -->
+<nav class="ds-nav">
+  <a href="#colors">Colours</a>
+  <a href="#typography">Typography</a>
+  <a href="#buttons">Buttons</a>
+  <a href="#cards">Cards</a>
+  <a href="#components">Components</a>
+  <a href="#gradients">Gradients &amp; Shadows</a>
+  <a href="#tokens">Design Tokens</a>
+</nav>
+
+<main class="ds-main">
+
+  <!-- COLORS -->
+  <section class="ds-section" id="colors">
+    <h2 class="ds-section-title">Colour Palette</h2>
+    <p class="ds-section-desc">All brand colours and their CSS custom property names. Warm neutrals meet vivid orange and deep forest green.</p>
+    <div class="color-grid">
+      <div class="color-swatch">
+        <div class="color-block" style="background:#FF4D00;"></div>
+        <div class="color-info"><div class="color-name">--primary</div><div class="color-hex">#FF4D00</div></div>
+      </div>
+      <div class="color-swatch">
+        <div class="color-block" style="background:#FF6B2B;"></div>
+        <div class="color-info"><div class="color-name">--primary-dark</div><div class="color-hex">#FF6B2B</div></div>
+      </div>
+      <div class="color-swatch">
+        <div class="color-block" style="background:#034C3C;"></div>
+        <div class="color-info"><div class="color-name">--secondary</div><div class="color-hex">#034C3C</div></div>
+      </div>
+      <div class="color-swatch">
+        <div class="color-block" style="background:#056650;"></div>
+        <div class="color-info"><div class="color-name">--secondary-dark</div><div class="color-hex">#056650</div></div>
+      </div>
+      <div class="color-swatch">
+        <div class="color-block" style="background:#F9F9F5;border:1px solid #E8E8E0;"></div>
+        <div class="color-info"><div class="color-name">--bg</div><div class="color-hex">#F9F9F5</div></div>
+      </div>
+      <div class="color-swatch">
+        <div class="color-block" style="background:#FFFFFF;border:1px solid #E8E8E0;"></div>
+        <div class="color-info"><div class="color-name">--bg-surface</div><div class="color-hex">#FFFFFF</div></div>
+      </div>
+      <div class="color-swatch">
+        <div class="color-block" style="background:#F2F2EC;border:1px solid #E8E8E0;"></div>
+        <div class="color-info"><div class="color-name">--bg-soft</div><div class="color-hex">#F2F2EC</div></div>
+      </div>
+      <div class="color-swatch">
+        <div class="color-block" style="background:#1A1A1A;"></div>
+        <div class="color-info"><div class="color-name">--text-heading</div><div class="color-hex">#1A1A1A</div></div>
+      </div>
+      <div class="color-swatch">
+        <div class="color-block" style="background:#666660;"></div>
+        <div class="color-info"><div class="color-name">--text-muted</div><div class="color-hex">#666660</div></div>
+      </div>
+      <div class="color-swatch">
+        <div class="color-block" style="background:#E8E8E0;"></div>
+        <div class="color-info"><div class="color-name">--border-color</div><div class="color-hex">#E8E8E0</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TYPOGRAPHY -->
+  <section class="ds-section" id="typography">
+    <h2 class="ds-section-title">Typography</h2>
+    <p class="ds-section-desc">Heading font: Playfair Display (editorial serif) — Body font: Inter. Warm, trustworthy, British.</p>
+    <div class="type-samples">
+      <div class="type-row">
+        <div class="type-label">H1 / 50px<br>Playfair 800</div>
+        <div class="t-h1">Grow Your Business</div>
+      </div>
+      <div class="type-row">
+        <div class="type-label">H2 / 36px<br>Playfair 700</div>
+        <div class="t-h2">Digital Marketing Manchester</div>
+      </div>
+      <div class="type-row">
+        <div class="type-label">H3 / 26px<br>Playfair 700</div>
+        <div class="t-h3">SEO Services for UK Businesses</div>
+      </div>
+      <div class="type-row">
+        <div class="type-label">H4 / 20px<br>Inter 700</div>
+        <div class="t-h4">Our Core Services</div>
+      </div>
+      <div class="type-row">
+        <div class="type-label">Body / 16px<br>Inter 400</div>
+        <div class="t-body">We help UK businesses grow faster through smart digital marketing, search engine optimisation, and paid advertising strategies tailored to the British market — from Manchester to London and everywhere in between.</div>
+      </div>
+      <div class="type-row">
+        <div class="type-label">Small / 14px<br>Inter muted</div>
+        <div class="t-small">Results based on average client data across 400+ UK campaigns. Past performance is no guarantee of future results. Terms and conditions apply.</div>
+      </div>
+      <div class="type-row">
+        <div class="type-label">Pull Quote<br>Playfair italic</div>
+        <div class="t-quote">"Bambino tripled our organic traffic within six months — brilliant team."</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUTTONS -->
+  <section class="ds-section" id="buttons">
+    <h2 class="ds-section-title">Buttons</h2>
+    <p class="ds-section-desc">Pill-shaped buttons (border-radius: 100px). Primary uses vivid orange; secondary uses forest green.</p>
+    <div class="btn-grid">
+      <div class="btn-item">
+        <button class="btn btn-primary">Get a Free Audit</button>
+        <div class="btn-label">.btn-primary</div>
+      </div>
+      <div class="btn-item">
+        <button class="btn btn-ghost">View Our Work</button>
+        <div class="btn-label">.btn-ghost</div>
+      </div>
+      <div class="btn-item">
+        <button class="btn btn-secondary">Book a Call</button>
+        <div class="btn-label">.btn-secondary (green)</div>
+      </div>
+      <div class="btn-item">
+        <button class="btn btn-primary btn-sm">Start Today</button>
+        <div class="btn-label">.btn-primary.btn-sm</div>
+      </div>
+      <div class="btn-item">
+        <button class="btn btn-ghost btn-sm">Our Pricing</button>
+        <div class="btn-label">.btn-ghost.btn-sm</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARDS -->
+  <section class="ds-section" id="cards">
+    <h2 class="ds-section-title">Cards</h2>
+    <p class="ds-section-desc">Service card, pricing card, and sidebar card. Light background, clean borders, subtle hover lift.</p>
+    <div class="cards-grid">
+      <!-- Service Card -->
+      <div class="card">
+        <div class="card-icon">🏆</div>
+        <div class="card-title">SEO Services</div>
+        <div class="card-text">Dominate Google rankings across the UK with our data-led SEO service. We fix technical issues, build quality backlinks, and create content that Google and your customers love.</div>
+        <div style="margin-top:18px;"><button class="btn btn-primary btn-sm">Learn More</button></div>
+      </div>
+      <!-- Pricing Card -->
+      <div class="card card-pricing">
+        <div style="margin-bottom:10px;"><span class="badge badge-secondary">Most Popular</span></div>
+        <div class="card-title">Growth Plan</div>
+        <div class="price">£2,000<span style="font-size:18px;color:var(--text-muted);">/mo</span></div>
+        <ul>
+          <li>Full SEO + Content Marketing</li>
+          <li>Monthly performance reports</li>
+          <li>Google &amp; Meta Ads management</li>
+          <li>Dedicated account manager</li>
+        </ul>
+        <button class="btn btn-primary" style="width:100%;">Get Started</button>
+      </div>
+      <!-- Aside Card -->
+      <div class="card card-aside">
+        <div class="aside-heading">Our Track Record</div>
+        <div class="stats-bar">
+          <div><div class="stat-val">400+</div><div class="stat-lbl">UK Clients</div></div>
+          <div><div class="stat-val">97%</div><div class="stat-lbl">Retention Rate</div></div>
+          <div><div class="stat-val">£25M+</div><div class="stat-lbl">Revenue Generated</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPONENTS -->
+  <section class="ds-section" id="components">
+    <h2 class="ds-section-title">Components</h2>
+    <p class="ds-section-desc">UI atoms and molecules used across all pages — all using brand design tokens.</p>
+
+    <h3 style="font-size:13px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:12px;">Badges / Labels</h3>
+    <div class="comp-row">
+      <span class="badge badge-primary">SEO</span>
+      <span class="badge badge-secondary">UK Specialist</span>
+      <span class="badge badge-accent">New Client Offer</span>
+      <span class="badge badge-muted">Manchester</span>
+      <span class="badge badge-primary">✓ Certified</span>
+    </div>
+
+    <h3 style="font-size:13px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:12px;">FAQ Item</h3>
+    <div class="faq-item">
+      <div class="faq-q">How long does SEO take to show results?</div>
+      <div class="faq-a">Most clients begin to see measurable improvements within 60–90 days. Significant traffic gains typically occur within four to six months, depending on the competitiveness of your industry and your current domain authority.</div>
+    </div>
+    <div class="faq-item" style="margin-bottom:24px;">
+      <div class="faq-q">Do you work with businesses outside Manchester?</div>
+      <div class="faq-a">Absolutely — while we're based in Manchester, we work with businesses across the whole of the UK, from London and Birmingham to Edinburgh and Cardiff.</div>
+    </div>
+
+    <h3 style="font-size:13px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:12px;">Nearby City Pills</h3>
+    <div class="comp-row">
+      <div class="nearby-pills">
+        <a href="#" class="pill">Salford</a>
+        <a href="#" class="pill">Leeds</a>
+        <a href="#" class="pill">Liverpool</a>
+        <a href="#" class="pill">Sheffield</a>
+        <a href="#" class="pill">Preston</a>
+      </div>
+    </div>
+
+    <h3 style="font-size:13px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:12px;">Breadcrumb</h3>
+    <div class="comp-row">
+      <nav class="breadcrumb">
+        <a href="#">Home</a>
+        <span>›</span>
+        <a href="#">Services</a>
+        <span>›</span>
+        <a href="#">Manchester</a>
+        <span>›</span>
+        <span style="color:var(--text);">SEO Agency Manchester</span>
+      </nav>
+    </div>
+
+    <h3 style="font-size:13px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:12px;">Stats Bar</h3>
+    <div class="stats-bar">
+      <div><div class="stat-val">400+</div><div class="stat-lbl">UK Clients Served</div></div>
+      <div><div class="stat-val">97%</div><div class="stat-lbl">Client Retention</div></div>
+      <div><div class="stat-val">£25M+</div><div class="stat-lbl">Revenue Generated</div></div>
+    </div>
+  </section>
+
+  <!-- GRADIENTS & SHADOWS -->
+  <section class="ds-section" id="gradients">
+    <h2 class="ds-section-title">Gradients &amp; Shadows</h2>
+    <p class="ds-section-desc">Visual display of gradient and shadow tokens. Bambino uses flat colour primaries with subtle shadow depth.</p>
+    <div class="grad-grid" style="margin-bottom:24px;">
+      <div class="grad-block" style="background:#FF4D00;color:#fff;">--primary / --gradient-primary</div>
+      <div class="grad-block" style="background:#034C3C;color:rgba(255,255,255,0.8);">--dark / --hero-bg</div>
+      <div class="grad-block" style="background:rgba(255,77,0,0.25);color:#FF4D00;">--primary-glow</div>
+      <div class="grad-block" style="background:linear-gradient(135deg,#034C3C,#FF4D00);color:#fff;">secondary → primary</div>
+    </div>
+    <div class="grad-grid">
+      <div class="shadow-demo" style="box-shadow:0 4px 24px rgba(0,0,0,0.07);">--shadow<br>0 4px 24px rgba(0,0,0,0.07)</div>
+      <div class="shadow-demo" style="box-shadow:0 12px 48px rgba(0,0,0,0.12);">--shadow-lg<br>0 12px 48px rgba(0,0,0,0.12)</div>
+      <div class="shadow-demo" style="box-shadow:0 8px 30px rgba(255,77,0,0.3);">--shadow-primary<br>0 8px 30px rgba(255,77,0,0.3)</div>
+    </div>
+  </section>
+
+  <!-- TOKENS TABLE -->
+  <section class="ds-section" id="tokens">
+    <h2 class="ds-section-title">Design Tokens</h2>
+    <p class="ds-section-desc">Complete reference of all CSS custom properties defined in :root for bambino.agency.</p>
+    <table class="tokens-table">
+      <thead>
+        <tr><th>Token</th><th>Value</th><th>Preview</th></tr>
+      </thead>
+      <tbody>
+        <tr class="token-section-row"><td colspan="3">Brand Colours</td></tr>
+        <tr><td class="token-name">--primary</td><td>#FF4D00</td><td><span class="token-dot" style="background:#FF4D00;"></span></td></tr>
+        <tr><td class="token-name">--primary-dark</td><td>#FF6B2B</td><td><span class="token-dot" style="background:#FF6B2B;"></span></td></tr>
+        <tr><td class="token-name">--primary-glow</td><td>rgba(255,77,0,0.25)</td><td><span class="token-dot" style="background:rgba(255,77,0,0.25);"></span></td></tr>
+        <tr><td class="token-name">--secondary</td><td>#034C3C</td><td><span class="token-dot" style="background:#034C3C;"></span></td></tr>
+        <tr><td class="token-name">--secondary-dark</td><td>#056650</td><td><span class="token-dot" style="background:#056650;"></span></td></tr>
+        <tr><td class="token-name">--accent</td><td>#034C3C</td><td><span class="token-dot" style="background:#034C3C;"></span></td></tr>
+        <tr class="token-section-row"><td colspan="3">Backgrounds</td></tr>
+        <tr><td class="token-name">--bg</td><td>#F9F9F5</td><td><span class="token-dot" style="background:#F9F9F5;border-color:#ccc;"></span></td></tr>
+        <tr><td class="token-name">--bg-surface</td><td>#FFFFFF</td><td><span class="token-dot" style="background:#FFFFFF;border-color:#ccc;"></span></td></tr>
+        <tr><td class="token-name">--bg-soft</td><td>#F2F2EC</td><td><span class="token-dot" style="background:#F2F2EC;border-color:#ccc;"></span></td></tr>
+        <tr><td class="token-name">--dark</td><td>#034C3C</td><td><span class="token-dot" style="background:#034C3C;"></span></td></tr>
+        <tr><td class="token-name">--hero-bg</td><td>var(--dark) → #034C3C</td><td><span class="token-dot" style="background:#034C3C;"></span></td></tr>
+        <tr class="token-section-row"><td colspan="3">Text</td></tr>
+        <tr><td class="token-name">--text-heading</td><td>#1A1A1A</td><td><span class="token-dot" style="background:#1A1A1A;"></span></td></tr>
+        <tr><td class="token-name">--text</td><td>#1A1A1A</td><td><span class="token-dot" style="background:#1A1A1A;"></span></td></tr>
+        <tr><td class="token-name">--text-muted</td><td>#666660</td><td><span class="token-dot" style="background:#666660;"></span></td></tr>
+        <tr><td class="token-name">--text-on-primary</td><td>#FFFFFF</td><td><span class="token-dot" style="background:#FFFFFF;border-color:#ccc;"></span></td></tr>
+        <tr><td class="token-name">--logo-color</td><td>#034C3C</td><td><span class="token-dot" style="background:#034C3C;"></span></td></tr>
+        <tr class="token-section-row"><td colspan="3">Borders &amp; Gradients</td></tr>
+        <tr><td class="token-name">--border-color</td><td>#E8E8E0</td><td><span class="token-dot" style="background:#E8E8E0;border-color:#ccc;"></span></td></tr>
+        <tr><td class="token-name">--gradient-primary</td><td>var(--primary) → #FF4D00</td><td><span class="token-dot" style="background:#FF4D00;"></span></td></tr>
+        <tr class="token-section-row"><td colspan="3">Shape</td></tr>
+        <tr><td class="token-name">--radius</td><td>16px</td><td>—</td></tr>
+        <tr><td class="token-name">--radius-sm</td><td>8px</td><td>—</td></tr>
+        <tr><td class="token-name">--radius-lg</td><td>24px</td><td>—</td></tr>
+        <tr><td class="token-name">--radius-btn</td><td>100px (pill)</td><td>—</td></tr>
+        <tr class="token-section-row"><td colspan="3">Shadows</td></tr>
+        <tr><td class="token-name">--shadow</td><td>0 4px 24px rgba(0,0,0,0.07)</td><td>—</td></tr>
+        <tr><td class="token-name">--shadow-lg</td><td>0 12px 48px rgba(0,0,0,0.12)</td><td>—</td></tr>
+        <tr><td class="token-name">--shadow-primary</td><td>0 8px 30px rgba(255,77,0,0.3)</td><td>—</td></tr>
+        <tr class="token-section-row"><td colspan="3">Motion</td></tr>
+        <tr><td class="token-name">--transition</td><td>0.25s cubic-bezier(0.4,0,0.2,1)</td><td>—</td></tr>
+        <tr class="token-section-row"><td colspan="3">Typography</td></tr>
+        <tr><td class="token-name">--font-heading</td><td>'Playfair Display', serif</td><td>—</td></tr>
+        <tr><td class="token-name">--font-body</td><td>'Inter', sans-serif</td><td>—</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+</main>
+
+<footer class="ds-footer">
+  <strong>Bambino</strong> — bambino.agency — Manchester, United Kingdom — Design System v1.0 — Generated 2026-03-09
+</footer>
+
+</body>
+</html>
