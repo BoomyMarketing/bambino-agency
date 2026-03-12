@@ -454,13 +454,37 @@
     function closeMobileMenu() { mobileMenu.classList.remove('open'); }
 
     // Form submission
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const gdpr = document.getElementById('gdpr');
-      if (!gdpr.checked) { alert('Please confirm you consent to us contacting you.'); return; }
-      this.style.display = 'none';
-      document.getElementById('formSuccess').style.display = 'block';
-    });
+    
+  document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    var btn = this.querySelector('button[type="submit"]');
+    var orig = btn.textContent;
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+
+    var data = {};
+    new FormData(this).forEach(function(v, k) { data[k] = v; });
+
+    try {
+      var res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      if (res.ok) {
+        this.style.display = 'none';
+        var s = document.getElementById('successMsg');
+        if (s) { s.style.display = 'block'; s.classList.add('visible'); }
+        else { this.insertAdjacentHTML('afterend', '<p style="color:#4caf50;font-size:1.1rem;padding:20px 0">Thank you! We will be in touch within 1 business day.</p>'); }
+      } else {
+        btn.textContent = 'Error — try again';
+        btn.disabled = false;
+      }
+    } catch(err) {
+      btn.textContent = 'Error — try again';
+      btn.disabled = false;
+    }
+  }.bind(document.getElementById('contactForm')));
 
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.1 });
