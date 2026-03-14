@@ -80,6 +80,11 @@ Allow: /local/bristol/seo-company/
 Allow: /local/bristol/social-media-agency/
 Allow: /local/bristol/web-design-company/
 Allow: /local/cambridge/ai-automation-agency/
+Allow: /local/cambridge/content-marketing-agency/
+Allow: /local/cambridge/digital-marketing-agency/
+Allow: /local/cambridge/email-marketing-agency/
+Allow: /local/cambridge/google-ads-agency/
+Allow: /local/cambridge/ppc-agency/
 
 # Block unpublished local pages
 Disallow: /local/
