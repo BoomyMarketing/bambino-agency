@@ -85,6 +85,11 @@ Allow: /local/cambridge/digital-marketing-agency/
 Allow: /local/cambridge/email-marketing-agency/
 Allow: /local/cambridge/google-ads-agency/
 Allow: /local/cambridge/ppc-agency/
+Allow: /local/cambridge/seo-agency/
+Allow: /local/cambridge/seo-company/
+Allow: /local/cambridge/social-media-agency/
+Allow: /local/cambridge/web-design-company/
+Allow: /local/cardiff/ai-automation-agency/
 
 # Block unpublished local pages
 Disallow: /local/
