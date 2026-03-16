@@ -90,6 +90,11 @@ Allow: /local/cambridge/seo-company/
 Allow: /local/cambridge/social-media-agency/
 Allow: /local/cambridge/web-design-company/
 Allow: /local/cardiff/ai-automation-agency/
+Allow: /local/cardiff/content-marketing-agency/
+Allow: /local/cardiff/digital-marketing-agency/
+Allow: /local/cardiff/email-marketing-agency/
+Allow: /local/cardiff/google-ads-agency/
+Allow: /local/cardiff/ppc-agency/
 
 # Block unpublished local pages
 Disallow: /local/
