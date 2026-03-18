@@ -100,6 +100,11 @@ Allow: /local/cardiff/seo-company/
 Allow: /local/cardiff/social-media-agency/
 Allow: /local/cardiff/web-design-company/
 Allow: /local/coventry/ai-automation-agency/
+Allow: /local/coventry/content-marketing-agency/
+Allow: /local/coventry/digital-marketing-agency/
+Allow: /local/coventry/email-marketing-agency/
+Allow: /local/coventry/google-ads-agency/
+Allow: /local/coventry/ppc-agency/
 
 # Block unpublished local pages
 Disallow: /local/
