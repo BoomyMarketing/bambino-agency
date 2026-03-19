@@ -105,6 +105,11 @@ Allow: /local/coventry/digital-marketing-agency/
 Allow: /local/coventry/email-marketing-agency/
 Allow: /local/coventry/google-ads-agency/
 Allow: /local/coventry/ppc-agency/
+Allow: /local/coventry/seo-agency/
+Allow: /local/coventry/seo-company/
+Allow: /local/coventry/social-media-agency/
+Allow: /local/coventry/web-design-company/
+Allow: /local/derby/ai-automation-agency/
 
 # Block unpublished local pages
 Disallow: /local/
