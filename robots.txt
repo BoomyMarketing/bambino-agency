@@ -115,6 +115,11 @@ Allow: /local/derby/digital-marketing-agency/
 Allow: /local/derby/email-marketing-agency/
 Allow: /local/derby/google-ads-agency/
 Allow: /local/derby/ppc-agency/
+Allow: /local/derby/seo-agency/
+Allow: /local/derby/seo-company/
+Allow: /local/derby/social-media-agency/
+Allow: /local/derby/web-design-company/
+Allow: /local/edinburgh/ai-automation-agency/
 
 # Block unpublished local pages
 Disallow: /local/
