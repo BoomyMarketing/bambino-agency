@@ -125,6 +125,11 @@ Allow: /local/edinburgh/digital-marketing-agency/
 Allow: /local/edinburgh/email-marketing-agency/
 Allow: /local/edinburgh/google-ads-agency/
 Allow: /local/edinburgh/ppc-agency/
+Allow: /local/edinburgh/seo-agency/
+Allow: /local/edinburgh/seo-company/
+Allow: /local/edinburgh/social-media-agency/
+Allow: /local/edinburgh/web-design-company/
+Allow: /local/exeter/ai-automation-agency/
 
 # Block unpublished local pages
 Disallow: /local/
