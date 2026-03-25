@@ -2,115 +2,115 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Core Pages -->
-  <url>
+<url>
     <loc>https://bambinoagency.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <lastmod>2026-03-25</lastmod>
   </url>
-  <url>
+<url>
     <loc>https://bambinoagency.com/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <lastmod>2026-03-25</lastmod>
   </url>
-  <url>
+<url>
     <loc>https://bambinoagency.com/services</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <lastmod>2026-03-25</lastmod>
   </url>
-  <url>
+<url>
     <loc>https://bambinoagency.com/pricing</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2026-03-25</lastmod>
   </url>
-  <url>
+<url>
     <loc>https://bambinoagency.com/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2026-03-25</lastmod>
   </url>
-  <url>
+<url>
     <loc>https://bambinoagency.com/services/seo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2026-03-25</lastmod>
   </url>
-  <url>
+<url>
     <loc>https://bambinoagency.com/services/geo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2026-03-25</lastmod>
   </url>
-  <url>
+<url>
     <loc>https://bambinoagency.com/services/google-ads</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2026-03-25</lastmod>
   </url>
-  <url>
+<url>
     <loc>https://bambinoagency.com/services/meta-ads</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2026-03-25</lastmod>
   </url>
-  <url>
+<url>
     <loc>https://bambinoagency.com/services/ai-automations</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2026-03-25</lastmod>
   </url>
-  <url>
+<url>
     <loc>https://bambinoagency.com/services/ai-development</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2026-03-25</lastmod>
   </url>
-  <url>
+<url>
     <loc>https://bambinoagency.com/services/web-design</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2026-03-25</lastmod>
   </url>
-  <url>
+<url>
     <loc>https://bambinoagency.com/services/saas-products</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2026-03-25</lastmod>
   </url>
-  <url>
+<url>
     <loc>https://bambinoagency.com/services/voice-ai</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2026-03-25</lastmod>
   </url>
-  <url>
+<url>
     <loc>https://bambinoagency.com/services/email-marketing</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2026-03-25</lastmod>
   </url>
-  <url>
+<url>
     <loc>https://bambinoagency.com/services/ai-outbound</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2026-03-25</lastmod>
   </url>
-  <url>
+<url>
     <loc>https://bambinoagency.com/services/social-media</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2026-03-25</lastmod>
   </url>
-  <url>
+<url>
     <loc>https://bambinoagency.com/services/content-marketing</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2026-03-25</lastmod>
   </url>
-  <url>
+<url>
     <loc>https://bambinoagency.com/services/ppc</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -122,750 +122,450 @@
     <loc>https://bambinoagency.com/local/aberdeen/ai-automation-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-14</lastmod>
+    <lastmod>2026-02-26</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/aberdeen/content-marketing-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-14</lastmod>
+    <lastmod>2026-02-26</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/aberdeen/digital-marketing-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-14</lastmod>
+    <lastmod>2026-02-26</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/aberdeen/email-marketing-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-14</lastmod>
+    <lastmod>2026-02-26</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/aberdeen/google-ads-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-14</lastmod>
+    <lastmod>2026-02-26</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/aberdeen/ppc-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-02-27</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/aberdeen/seo-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-02-27</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/aberdeen/seo-company</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-02-27</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/aberdeen/social-media-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-02-27</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/aberdeen/web-design-company</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-02-27</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/belfast/ai-automation-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-02-28</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/belfast/content-marketing-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-02-28</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/belfast/digital-marketing-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-02-28</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/belfast/email-marketing-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-02-28</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/belfast/google-ads-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-02-28</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/belfast/ppc-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-17</lastmod>
+    <lastmod>2026-03-01</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/belfast/seo-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-03-01</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/belfast/seo-company</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-02-17</lastmod>
+    <lastmod>2026-03-01</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/belfast/social-media-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-17</lastmod>
+    <lastmod>2026-03-01</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/belfast/web-design-company</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-17</lastmod>
+    <lastmod>2026-03-01</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/birmingham/ai-automation-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-17</lastmod>
+    <lastmod>2026-03-02</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/birmingham/content-marketing-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-17</lastmod>
+    <lastmod>2026-03-02</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/birmingham/digital-marketing-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-03-02</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/birmingham/email-marketing-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-03-02</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/birmingham/google-ads-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-01-04</lastmod>
+    <lastmod>2026-03-02</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/birmingham/ppc-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2025-12-26</lastmod>
+    <lastmod>2026-03-03</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/birmingham/seo-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2025-11-30</lastmod>
+    <lastmod>2026-03-03</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/birmingham/seo-company</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-01-09</lastmod>
+    <lastmod>2026-03-03</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/birmingham/social-media-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-01-10</lastmod>
+    <lastmod>2026-03-03</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/birmingham/web-design-company</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-03-03</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/birmingham/web-development-company</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2025-12-11</lastmod>
+    <lastmod>2026-03-04</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/blackpool/ai-automation-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-03-04</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/blackpool/content-marketing-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-03-04</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/blackpool/digital-marketing-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-19</lastmod>
+    <lastmod>2026-03-04</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/blackpool/email-marketing-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-19</lastmod>
+    <lastmod>2026-03-04</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/blackpool/google-ads-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-19</lastmod>
+    <lastmod>2026-03-05</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/blackpool/ppc-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-19</lastmod>
+    <lastmod>2026-03-05</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/blackpool/seo-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-19</lastmod>
+    <lastmod>2026-03-05</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/blackpool/social-media-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-20</lastmod>
+    <lastmod>2026-03-05</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/blackpool/web-design-company</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-20</lastmod>
+    <lastmod>2026-03-05</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/bournemouth/ai-automation-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-20</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/bournemouth/content-marketing-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-20</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/bournemouth/digital-marketing-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-20</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/bournemouth/email-marketing-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/bournemouth/google-ads-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/bournemouth/ppc-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-03-07</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/bournemouth/seo-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-02-02</lastmod>
+    <lastmod>2026-03-07</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/bournemouth/social-media-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-03-07</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/bournemouth/web-design-company</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-03-07</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/bradford/ai-automation-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-07</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/bradford/content-marketing-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-08</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/bradford/digital-marketing-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-08</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/bradford/email-marketing-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-08</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/bradford/google-ads-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-08</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/bradford/ppc-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-08</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/bradford/seo-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-09</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/bradford/seo-company</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-09</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/bradford/social-media-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-09</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/bradford/web-design-company</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-09</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/brighton/ai-automation-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-09</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/brighton/content-marketing-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-03-10</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/brighton/digital-marketing-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-03-10</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/brighton/email-marketing-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-03-10</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/brighton/google-ads-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-03-10</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/brighton/ppc-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-03-10</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/brighton/seo-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-01-05</lastmod>
+    <lastmod>2026-03-11</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/brighton/seo-company</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-02-18</lastmod>
+    <lastmod>2026-03-11</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/brighton/social-media-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-03-11</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/brighton/web-design-company</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-25</lastmod>
+    <lastmod>2026-03-11</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/bristol/ai-automation-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-25</lastmod>
+    <lastmod>2026-03-11</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/bristol/content-marketing-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-25</lastmod>
+    <lastmod>2026-03-12</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/bristol/digital-marketing-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2025-12-08</lastmod>
+    <lastmod>2026-03-12</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/bristol/email-marketing-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-25</lastmod>
+    <lastmod>2026-03-12</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/bristol/google-ads-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-25</lastmod>
+    <lastmod>2026-03-12</lastmod>
   </url>
   <url>
     <loc>https://bambinoagency.com/local/bristol/ppc-agency</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-01-14</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/cambridge/seo-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-15</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/cambridge/seo-company</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-15</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/cambridge/social-media-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-15</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/cambridge/web-design-company</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-15</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/cardiff/ai-automation-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-15</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/cardiff/content-marketing-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/cardiff/digital-marketing-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/cardiff/email-marketing-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/cardiff/google-ads-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/cardiff/ppc-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/cardiff/seo-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-17</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/cardiff/seo-company</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-17</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/cardiff/social-media-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-17</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/cardiff/web-design-company</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-17</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/coventry/ai-automation-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-17</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/coventry/content-marketing-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-18</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/coventry/digital-marketing-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-18</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/coventry/email-marketing-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-18</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/coventry/google-ads-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-18</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/coventry/ppc-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-18</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/coventry/seo-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-19</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/coventry/seo-company</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-19</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/coventry/social-media-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-19</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/coventry/web-design-company</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-19</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/derby/ai-automation-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-19</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/derby/content-marketing-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-20</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/derby/digital-marketing-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-20</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/derby/email-marketing-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-20</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/derby/google-ads-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-20</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/derby/ppc-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-20</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/derby/seo-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-21</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/derby/seo-company</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-21</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/derby/social-media-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-21</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/derby/web-design-company</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-21</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/edinburgh/ai-automation-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-21</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/edinburgh/content-marketing-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-22</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/edinburgh/digital-marketing-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-22</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/edinburgh/email-marketing-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-22</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/edinburgh/google-ads-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-22</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/edinburgh/ppc-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-22</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/edinburgh/seo-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-23</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/edinburgh/seo-company</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-23</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/edinburgh/social-media-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-23</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/edinburgh/web-design-company</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-23</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/exeter/ai-automation-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-23</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/exeter/content-marketing-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-24</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/exeter/digital-marketing-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-24</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/exeter/email-marketing-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-24</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/exeter/google-ads-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-24</lastmod>
-  </url>
-  <url>
-    <loc>https://bambinoagency.com/local/exeter/ppc-agency</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-03-12</lastmod>
   </url>
 </urlset>
