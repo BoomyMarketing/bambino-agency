@@ -145,6 +145,11 @@ Allow: /local/liverpool/content-marketing-agency/
 Allow: /local/liverpool/digital-marketing-agency/
 Allow: /local/liverpool/email-marketing-agency/
 Allow: /local/liverpool/google-ads-agency/
+Allow: /local/liverpool/ppc-agency/
+Allow: /local/liverpool/seo-agency/
+Allow: /local/liverpool/seo-company/
+Allow: /local/liverpool/social-media-agency/
+Allow: /local/liverpool/web-design-company/
 
 # Block unpublished local pages
 Disallow: /local/
