@@ -150,6 +150,11 @@ Allow: /local/liverpool/seo-agency/
 Allow: /local/liverpool/seo-company/
 Allow: /local/liverpool/social-media-agency/
 Allow: /local/liverpool/web-design-company/
+Allow: /local/london/ai-automation-agency/
+Allow: /local/london/content-marketing-agency/
+Allow: /local/london/digital-marketing-agency/
+Allow: /local/london/email-marketing-agency/
+Allow: /local/london/google-ads-agency/
 
 # Block unpublished local pages
 Disallow: /local/
