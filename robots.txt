@@ -155,6 +155,11 @@ Allow: /local/london/content-marketing-agency/
 Allow: /local/london/digital-marketing-agency/
 Allow: /local/london/email-marketing-agency/
 Allow: /local/london/google-ads-agency/
+Allow: /local/london/paid-search-agency/
+Allow: /local/london/ppc-agency/
+Allow: /local/london/seo-agency/
+Allow: /local/london/seo-company/
+Allow: /local/london/social-media-agency/
 
 # Block unpublished local pages
 Disallow: /local/
