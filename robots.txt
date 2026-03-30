@@ -160,6 +160,11 @@ Allow: /local/london/ppc-agency/
 Allow: /local/london/seo-agency/
 Allow: /local/london/seo-company/
 Allow: /local/london/social-media-agency/
+Allow: /local/london/web-design-company/
+Allow: /local/london/web-development-company/
+Allow: /local/manchester/ai-automation-agency/
+Allow: /local/manchester/content-marketing-agency/
+Allow: /local/manchester/digital-marketing-agency/
 
 # Block unpublished local pages
 Disallow: /local/
