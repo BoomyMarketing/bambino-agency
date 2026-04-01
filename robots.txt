@@ -170,6 +170,11 @@ Allow: /local/manchester/google-ads-agency/
 Allow: /local/manchester/paid-search-agency/
 Allow: /local/manchester/ppc-agency/
 Allow: /local/manchester/seo-agency/
+Allow: /local/manchester/seo-company/
+Allow: /local/manchester/social-media-agency/
+Allow: /local/manchester/web-design-company/
+Allow: /local/manchester/web-development-company/
+Allow: /local/newcastle/ai-automation-agency/
 
 # Block unpublished local pages
 Disallow: /local/
