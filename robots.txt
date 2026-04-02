@@ -175,6 +175,11 @@ Allow: /local/manchester/social-media-agency/
 Allow: /local/manchester/web-design-company/
 Allow: /local/manchester/web-development-company/
 Allow: /local/newcastle/ai-automation-agency/
+Allow: /local/newcastle/content-marketing-agency/
+Allow: /local/newcastle/digital-marketing-agency/
+Allow: /local/newcastle/email-marketing-agency/
+Allow: /local/newcastle/google-ads-agency/
+Allow: /local/newcastle/ppc-agency/
 
 # Block unpublished local pages
 Disallow: /local/
