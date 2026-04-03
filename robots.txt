@@ -180,6 +180,11 @@ Allow: /local/newcastle/digital-marketing-agency/
 Allow: /local/newcastle/email-marketing-agency/
 Allow: /local/newcastle/google-ads-agency/
 Allow: /local/newcastle/ppc-agency/
+Allow: /local/newcastle/seo-agency/
+Allow: /local/newcastle/seo-company/
+Allow: /local/newcastle/social-media-agency/
+Allow: /local/newcastle/web-design-company/
+Allow: /local/nottingham/ai-automation-agency/
 
 # Block unpublished local pages
 Disallow: /local/
