@@ -190,6 +190,11 @@ Allow: /local/nottingham/digital-marketing-agency/
 Allow: /local/nottingham/email-marketing-agency/
 Allow: /local/nottingham/google-ads-agency/
 Allow: /local/nottingham/online-marketing-agency/
+Allow: /local/nottingham/ppc-agency/
+Allow: /local/nottingham/seo-agency/
+Allow: /local/nottingham/seo-company/
+Allow: /local/nottingham/social-media-agency/
+Allow: /local/nottingham/web-design-company/
 
 # Block unpublished local pages
 Disallow: /local/
