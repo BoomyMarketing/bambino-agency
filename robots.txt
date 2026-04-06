@@ -195,6 +195,11 @@ Allow: /local/nottingham/seo-agency/
 Allow: /local/nottingham/seo-company/
 Allow: /local/nottingham/social-media-agency/
 Allow: /local/nottingham/web-design-company/
+Allow: /local/oxford/ai-automation-agency/
+Allow: /local/oxford/content-marketing-agency/
+Allow: /local/oxford/digital-marketing-agency/
+Allow: /local/oxford/email-marketing-agency/
+Allow: /local/oxford/google-ads-agency/
 
 # Block unpublished local pages
 Disallow: /local/
