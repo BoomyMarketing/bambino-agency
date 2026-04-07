@@ -200,6 +200,11 @@ Allow: /local/oxford/content-marketing-agency/
 Allow: /local/oxford/digital-marketing-agency/
 Allow: /local/oxford/email-marketing-agency/
 Allow: /local/oxford/google-ads-agency/
+Allow: /local/oxford/ppc-agency/
+Allow: /local/oxford/seo-agency/
+Allow: /local/oxford/seo-company/
+Allow: /local/oxford/social-media-agency/
+Allow: /local/oxford/web-design-company/
 
 # Block unpublished local pages
 Disallow: /local/
