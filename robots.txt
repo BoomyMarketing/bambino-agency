@@ -205,6 +205,11 @@ Allow: /local/oxford/seo-agency/
 Allow: /local/oxford/seo-company/
 Allow: /local/oxford/social-media-agency/
 Allow: /local/oxford/web-design-company/
+Allow: /local/sheffield/ai-automation-agency/
+Allow: /local/sheffield/content-marketing-agency/
+Allow: /local/sheffield/digital-marketing-agency/
+Allow: /local/sheffield/email-marketing-agency/
+Allow: /local/sheffield/google-ads-agency/
 
 # Block unpublished local pages
 Disallow: /local/
