@@ -210,6 +210,11 @@ Allow: /local/sheffield/content-marketing-agency/
 Allow: /local/sheffield/digital-marketing-agency/
 Allow: /local/sheffield/email-marketing-agency/
 Allow: /local/sheffield/google-ads-agency/
+Allow: /local/sheffield/ppc-agency/
+Allow: /local/sheffield/seo-agency/
+Allow: /local/sheffield/seo-company/
+Allow: /local/sheffield/social-media-agency/
+Allow: /local/sheffield/web-design-company/
 
 # Block unpublished local pages
 Disallow: /local/
