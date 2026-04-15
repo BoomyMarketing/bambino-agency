@@ -12,7 +12,8 @@
 **Дія:** Масова заміна у всіх 215+ local HTML файлах  
 **Команда:** `find . -name "*.html" -exec sed -i 's/(647) 370-1888/+44 ПРАВИЛЬНИЙ НОМЕР/g' {} +`  
 **Вплив:** Credibility, LocalBusiness schema валідність  
-**Складність:** Низька (batch find & replace)
+**Складність:** Низька (batch find & replace)  
+**⏳ BLOCKED:** Уточнити реальний UK номер у партнера перед виконанням
 
 ### C2. Створити og:image та logo
 **Проблема:** `/img/og-default.jpg` та `/logo.png` відсутні → 404  
