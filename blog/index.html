@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Marketing Blog UK — Guides &amp; Insights | Bambino</title>
+  <meta name="description" content="Expert UK digital marketing guides from Bambino's Manchester team. SEO, Google Ads, AI marketing, GEO and more — practical insights for UK businesses.">
+  <link rel="canonical" href="https://bambinoagency.com/blog">
+  <meta property="og:title" content="Digital Marketing Blog UK — Guides &amp; Insights | Bambino">
+  <meta property="og:description" content="Expert UK digital marketing guides from Bambino's Manchester team. SEO, Google Ads, AI marketing, GEO and more — practical insights for UK businesses.">
+  <meta property="og:url" content="https://bambinoagency.com/blog">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bambinoagency.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://bambinoagency.com/og-image.png">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg: #F9F9F5; --orange: #FF4D00; --orange-light: #FF6B2B; --green: #034C3C; --text: #1A1A1A; --muted: #666660; --card: #FFFFFF; --soft: #F2F2EC; --border: #E8E8E0; --font-heading: 'Berkshire Swash', serif; --font-body: 'Inter', sans-serif; --radius: 16px; --shadow: 0 4px 24px rgba(0,0,0,0.07); --transition: 0.25s cubic-bezier(0.4,0,0.2,1); }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-body); background: var(--bg); color: var(--text); line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    .container { width: min(1200px, 100% - 3rem); margin-inline: auto; }
+    .section-label { display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--orange); background: rgba(255,77,0,0.08); padding: 0.35rem 0.9rem; border-radius: 100px; margin-bottom: 1.2rem; }
+    .section-title { font-family: var(--font-heading); font-size: clamp(2rem,4vw,3rem); color: var(--text); line-height: 1.15; margin-bottom: 1rem; }
+    .btn-orange { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--orange); color: #fff; font-family: var(--font-body); font-weight: 700; font-size: 0.95rem; padding: 0.85rem 2rem; border-radius: 100px; transition: var(--transition); }
+    .btn-orange:hover { background: var(--orange-light); transform: translateY(-2px); }
+    #navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: var(--bg); padding: 1.1rem 0; border-bottom: 1px solid var(--border); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { font-family: var(--font-heading); font-size: 1.8rem; color: var(--green); }
+    .nav-links { display: flex; align-items: center; gap: 2.2rem; }
+    .nav-links a { font-size: 0.9rem; font-weight: 500; color: var(--text); }
+    .nav-links a:hover { color: var(--orange); }
+    .nav-cta { background: var(--orange); color: #fff !important; font-weight: 700 !important; padding: 0.6rem 1.4rem; border-radius: 100px; }
+    .nav-hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
+    .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--text); border-radius: 2px; transition: var(--transition); }
+    @media (max-width: 768px) {
+      .nav-links { display: none; position: fixed; top: 72px; left: 0; right: 0; background: var(--bg); flex-direction: column; gap: 0; border-bottom: 1px solid var(--border); padding: 1rem 0; }
+      .nav-links.open { display: flex; }
+      .nav-links a { padding: 0.75rem 1.5rem; width: 100%; }
+      .nav-hamburger { display: flex; }
+      .blog-grid { grid-template-columns: 1fr !important; }
+      .hero-section { padding: 6rem 0 3rem !important; }
+      .filter-pills { flex-wrap: wrap; }
+    }
+    .hero-section { padding: 8rem 0 4rem; text-align: center; }
+    .hero-section .section-title { font-size: clamp(2.5rem,5vw,3.8rem); max-width: 14ch; margin-inline: auto; }
+    .hero-section p { font-size: 1.1rem; color: var(--muted); max-width: 50ch; margin: 0.75rem auto 0; }
+    .filter-pills { display: flex; gap: 0.6rem; justify-content: center; margin: 2.5rem 0; flex-wrap: wrap; }
+    .filter-pill { font-size: 0.82rem; font-weight: 600; padding: 0.45rem 1.1rem; border-radius: 100px; border: 1.5px solid var(--border); background: var(--card); color: var(--muted); cursor: pointer; transition: var(--transition); }
+    .filter-pill:hover, .filter-pill.active { border-color: var(--orange); background: var(--orange); color: #fff; }
+    .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.8rem; margin-bottom: 4rem; }
+    .blog-card { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; transition: var(--transition); display: flex; flex-direction: column; }
+    .blog-card:hover { transform: translateY(-4px); box-shadow: 0 8px 40px rgba(0,0,0,0.12); }
+    .blog-card-body { padding: 1.6rem; display: flex; flex-direction: column; flex: 1; }
+    .blog-card-cat { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--orange); margin-bottom: 0.7rem; }
+    .blog-card-title { font-family: var(--font-heading); font-size: 1.2rem; color: var(--text); line-height: 1.25; margin-bottom: 0.75rem; }
+    .blog-card-meta { font-size: 0.8rem; color: var(--muted); margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; }
+    .blog-card-thumb { background: linear-gradient(135deg, var(--green) 0%, #056349 100%); height: 160px; display: flex; align-items: center; justify-content: center; }
+    .blog-card-thumb .thumb-icon { font-size: 2.5rem; opacity: 0.6; }
+    .cta-section { background: var(--green); border-radius: calc(var(--radius) * 1.5); padding: 4rem; text-align: center; margin-bottom: 5rem; }
+    .cta-section h2 { font-family: var(--font-heading); font-size: clamp(1.8rem,3vw,2.5rem); color: #fff; margin-bottom: 1rem; }
+    .cta-section p { color: rgba(255,255,255,0.75); font-size: 1rem; margin-bottom: 2rem; max-width: 50ch; margin-inline: auto; margin-bottom: 2rem; }
+    .btn-white { display: inline-flex; align-items: center; gap: 0.5rem; background: #fff; color: var(--green); font-weight: 700; font-size: 0.95rem; padding: 0.85rem 2rem; border-radius: 100px; transition: var(--transition); }
+    .btn-white:hover { background: var(--bg); transform: translateY(-2px); }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://bambinoagency.com/blog",
+        "url": "https://bambinoagency.com/blog",
+        "name": "Digital Marketing Blog UK — Guides & Insights | Bambino",
+        "description": "Expert UK digital marketing guides from Bambino's Manchester team. SEO, Google Ads, AI marketing, GEO and more.",
+        "isPartOf": { "@id": "https://bambinoagency.com" },
+        "breadcrumb": { "@id": "https://bambinoagency.com/blog#breadcrumb" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://bambinoagency.com/blog#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bambinoagency.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://bambinoagency.com/blog" }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "name": "Digital Marketing Blog Articles",
+        "url": "https://bambinoagency.com/blog",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "What Is GEO Optimisation? The UK Business Guide for 2026", "url": "https://bambinoagency.com/blog/what-is-geo-optimisation" },
+          { "@type": "ListItem", "position": 2, "name": "How Much Does SEO Cost in the UK? 2026 Pricing Guide", "url": "https://bambinoagency.com/blog/how-much-does-seo-cost-uk" },
+          { "@type": "ListItem", "position": 3, "name": "How Much Does Google Ads Cost in the UK?", "url": "https://bambinoagency.com/blog/google-ads-cost-uk" },
+          { "@type": "ListItem", "position": 4, "name": "What Is AI Outbound Sales? UK Guide", "url": "https://bambinoagency.com/blog/what-is-ai-outbound-sales" },
+          { "@type": "ListItem", "position": 5, "name": "Best SEO Agencies in the UK 2026: How to Choose", "url": "https://bambinoagency.com/blog/best-seo-agencies-uk" },
+          { "@type": "ListItem", "position": 6, "name": "SEO vs Google Ads: Which Is Right for UK Businesses?", "url": "https://bambinoagency.com/blog/seo-vs-google-ads" },
+          { "@type": "ListItem", "position": 7, "name": "What Is Digital Marketing? The Complete UK Guide", "url": "https://bambinoagency.com/blog/what-is-digital-marketing" },
+          { "@type": "ListItem", "position": 8, "name": "How to Get More Leads for Your UK Business", "url": "https://bambinoagency.com/blog/how-to-get-more-leads-uk" },
+          { "@type": "ListItem", "position": 9, "name": "AI Marketing Trends UK 2026: What's Actually Working", "url": "https://bambinoagency.com/blog/ai-marketing-trends-uk-2026" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+<nav id="navbar" aria-label="Main navigation">
+  <div class="nav-inner container">
+    <a href="https://bambinoagency.com" class="nav-logo" aria-label="Bambino home">Bambino</a>
+    <div class="nav-links" role="list">
+      <a href="https://bambinoagency.com/services" role="listitem">Services</a>
+      <a href="https://bambinoagency.com/industries" role="listitem">Industries</a>
+      <a href="https://bambinoagency.com/blog" role="listitem">Blog</a>
+      <a href="https://bambinoagency.com/pricing" role="listitem">Pricing</a>
+      <a href="https://bambinoagency.com/contact" class="nav-cta" role="listitem">Free Audit</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<main>
+  <section class="hero-section">
+    <div class="container">
+      <span class="section-label">Knowledge Hub</span>
+      <h1 class="section-title">Digital Marketing Knowledge Hub</h1>
+      <p>Practical guides for UK business owners and marketing managers. Written by Bambino&rsquo;s specialist team in Manchester.</p>
+    </div>
+  </section>
+
+  <section style="padding: 0 0 5rem;">
+    <div class="container">
+      <div class="filter-pills" role="group" aria-label="Filter articles by category">
+        <button class="filter-pill active" data-cat="all">All</button>
+        <button class="filter-pill" data-cat="AI & GEO">AI &amp; GEO</button>
+        <button class="filter-pill" data-cat="SEO">SEO</button>
+        <button class="filter-pill" data-cat="Paid Ads">Paid Ads</button>
+        <button class="filter-pill" data-cat="Strategy">Strategy</button>
+        <button class="filter-pill" data-cat="AI & Automation">AI &amp; Automation</button>
+      </div>
+
+      <div class="blog-grid" id="blogGrid">
+
+        <article class="blog-card" data-cat="AI & GEO">
+          <a href="https://bambinoagency.com/blog/what-is-geo-optimisation">
+            <div class="blog-card-thumb"><div class="thumb-icon">🤖</div></div>
+          </a>
+          <div class="blog-card-body">
+            <div class="blog-card-cat">AI &amp; GEO</div>
+            <h2 class="blog-card-title"><a href="https://bambinoagency.com/blog/what-is-geo-optimisation">What Is GEO Optimisation? The UK Business Guide for 2026</a></h2>
+            <div class="blog-card-meta">
+              <span>James M.</span>
+              <span>8 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-cat="SEO">
+          <a href="https://bambinoagency.com/blog/how-much-does-seo-cost-uk">
+            <div class="blog-card-thumb"><div class="thumb-icon">📈</div></div>
+          </a>
+          <div class="blog-card-body">
+            <div class="blog-card-cat">SEO</div>
+            <h2 class="blog-card-title"><a href="https://bambinoagency.com/blog/how-much-does-seo-cost-uk">How Much Does SEO Cost in the UK? 2026 Pricing Guide</a></h2>
+            <div class="blog-card-meta">
+              <span>Sarah K.</span>
+              <span>10 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-cat="Paid Ads">
+          <a href="https://bambinoagency.com/blog/google-ads-cost-uk">
+            <div class="blog-card-thumb"><div class="thumb-icon">💰</div></div>
+          </a>
+          <div class="blog-card-body">
+            <div class="blog-card-cat">Paid Ads</div>
+            <h2 class="blog-card-title"><a href="https://bambinoagency.com/blog/google-ads-cost-uk">How Much Does Google Ads Cost in the UK?</a></h2>
+            <div class="blog-card-meta">
+              <span>Tom R.</span>
+              <span>9 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-cat="AI & Automation">
+          <a href="https://bambinoagency.com/blog/what-is-ai-outbound-sales">
+            <div class="blog-card-thumb"><div class="thumb-icon">⚡</div></div>
+          </a>
+          <div class="blog-card-body">
+            <div class="blog-card-cat">AI &amp; Automation</div>
+            <h2 class="blog-card-title"><a href="https://bambinoagency.com/blog/what-is-ai-outbound-sales">What Is AI Outbound Sales? UK Guide</a></h2>
+            <div class="blog-card-meta">
+              <span>James M.</span>
+              <span>7 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-cat="SEO">
+          <a href="https://bambinoagency.com/blog/best-seo-agencies-uk">
+            <div class="blog-card-thumb"><div class="thumb-icon">🏆</div></div>
+          </a>
+          <div class="blog-card-body">
+            <div class="blog-card-cat">SEO</div>
+            <h2 class="blog-card-title"><a href="https://bambinoagency.com/blog/best-seo-agencies-uk">Best SEO Agencies in the UK 2026: How to Choose</a></h2>
+            <div class="blog-card-meta">
+              <span>Sarah K.</span>
+              <span>12 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-cat="Strategy">
+          <a href="https://bambinoagency.com/blog/seo-vs-google-ads">
+            <div class="blog-card-thumb"><div class="thumb-icon">⚖️</div></div>
+          </a>
+          <div class="blog-card-body">
+            <div class="blog-card-cat">Strategy</div>
+            <h2 class="blog-card-title"><a href="https://bambinoagency.com/blog/seo-vs-google-ads">SEO vs Google Ads: Which Is Right for UK Businesses?</a></h2>
+            <div class="blog-card-meta">
+              <span>Sarah K.</span>
+              <span>8 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-cat="Strategy">
+          <a href="https://bambinoagency.com/blog/what-is-digital-marketing">
+            <div class="blog-card-thumb"><div class="thumb-icon">🌐</div></div>
+          </a>
+          <div class="blog-card-body">
+            <div class="blog-card-cat">Strategy</div>
+            <h2 class="blog-card-title"><a href="https://bambinoagency.com/blog/what-is-digital-marketing">What Is Digital Marketing? The Complete UK Guide</a></h2>
+            <div class="blog-card-meta">
+              <span>Tom R.</span>
+              <span>10 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-cat="Strategy">
+          <a href="https://bambinoagency.com/blog/how-to-get-more-leads-uk">
+            <div class="blog-card-thumb"><div class="thumb-icon">🎯</div></div>
+          </a>
+          <div class="blog-card-body">
+            <div class="blog-card-cat">Strategy</div>
+            <h2 class="blog-card-title"><a href="https://bambinoagency.com/blog/how-to-get-more-leads-uk">How to Get More Leads for Your UK Business</a></h2>
+            <div class="blog-card-meta">
+              <span>Sarah K.</span>
+              <span>9 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-cat="AI & GEO">
+          <a href="https://bambinoagency.com/blog/ai-marketing-trends-uk-2026">
+            <div class="blog-card-thumb"><div class="thumb-icon">🚀</div></div>
+          </a>
+          <div class="blog-card-body">
+            <div class="blog-card-cat">AI &amp; GEO</div>
+            <h2 class="blog-card-title"><a href="https://bambinoagency.com/blog/ai-marketing-trends-uk-2026">AI Marketing Trends UK 2026: What&rsquo;s Actually Working</a></h2>
+            <div class="blog-card-meta">
+              <span>James M.</span>
+              <span>8 min read</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="cta-section">
+        <h2>Not Sure Where to Start?</h2>
+        <p>Get a free digital marketing audit from Bambino&rsquo;s Manchester team. We&rsquo;ll review your current performance and show you exactly where the biggest opportunities are.</p>
+        <a href="https://bambinoagency.com/contact" class="btn-white">Get Your Free Audit &rarr;</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer style="background: var(--green); color: rgba(255,255,255,0.7); padding: 4rem 0 2rem;">
+  <div class="container">
+    <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem;">
+      <div>
+        <div style="font-family: var(--font-heading); font-size: 1.8rem; color: #fff; margin-bottom: 1rem;">Bambino</div>
+        <p style="font-size: 0.88rem; line-height: 1.7; max-width: 28ch;">Manchester&rsquo;s AI-native digital marketing agency. SEO, paid ads, AI automations and GEO for UK businesses.</p>
+        <p style="font-size: 0.85rem; margin-top: 1rem;"><a href="tel:+441610000000" style="color: rgba(255,255,255,0.7);">+44 161 000 0000</a></p>
+        <p style="font-size: 0.85rem;"><a href="mailto:hello@bambinoagency.com" style="color: rgba(255,255,255,0.7);">hello@bambinoagency.com</a></p>
+      </div>
+      <div>
+        <h3 style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 1.2rem;">Services</h3>
+        <ul style="display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.88rem;">
+          <li><a href="https://bambinoagency.com/services/seo" style="color: rgba(255,255,255,0.7);">SEO</a></li>
+          <li><a href="https://bambinoagency.com/services/google-ads" style="color: rgba(255,255,255,0.7);">Google Ads</a></li>
+          <li><a href="https://bambinoagency.com/services/geo" style="color: rgba(255,255,255,0.7);">GEO</a></li>
+          <li><a href="https://bambinoagency.com/services/voice-ai" style="color: rgba(255,255,255,0.7);">Voice AI</a></li>
+          <li><a href="https://bambinoagency.com/services/ai-outbound" style="color: rgba(255,255,255,0.7);">AI Outbound</a></li>
+          <li><a href="https://bambinoagency.com/services/ai-automations" style="color: rgba(255,255,255,0.7);">AI Automations</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 1.2rem;">Company</h3>
+        <ul style="display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.88rem;">
+          <li><a href="https://bambinoagency.com/about" style="color: rgba(255,255,255,0.7);">About Us</a></li>
+          <li><a href="https://bambinoagency.com/blog" style="color: rgba(255,255,255,0.7);">Blog</a></li>
+          <li><a href="https://bambinoagency.com/industries" style="color: rgba(255,255,255,0.7);">Industries</a></li>
+          <li><a href="https://bambinoagency.com/pricing" style="color: rgba(255,255,255,0.7);">Pricing</a></li>
+          <li><a href="https://bambinoagency.com/contact" style="color: rgba(255,255,255,0.7);">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 1.2rem;">Legal</h3>
+        <ul style="display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.88rem;">
+          <li><a href="https://bambinoagency.com/privacy-policy" style="color: rgba(255,255,255,0.7);">Privacy Policy</a></li>
+          <li><a href="https://bambinoagency.com/terms" style="color: rgba(255,255,255,0.7);">Terms of Service</a></li>
+          <li><a href="https://bambinoagency.com/cookie-policy" style="color: rgba(255,255,255,0.7);">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; font-size: 0.82rem; color: rgba(255,255,255,0.35);">
+      &copy; 2026 Bambino Digital Marketing Agency Ltd. Registered in England &amp; Wales. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile nav toggle
+  const hamburger = document.querySelector('.nav-hamburger');
+  const navLinks = document.querySelector('.nav-links');
+  hamburger.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', open);
+  });
+
+  // Category filter
+  const pills = document.querySelectorAll('.filter-pill');
+  const cards = document.querySelectorAll('.blog-card');
+  pills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      pills.forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      const cat = pill.dataset.cat;
+      cards.forEach(card => {
+        if (cat === 'all' || card.dataset.cat === cat) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>
