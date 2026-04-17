@@ -144,7 +144,67 @@
     <loc>https://bambinoagency.com/services/seo-audit</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-18</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/services/linkedin-ads</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-04-18</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/services/tiktok-ads</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-04-18</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/services/google-shopping</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-04-18</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/services/cro</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-04-18</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/services/digital-pr</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-04-18</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/services/youtube-ads</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-04-18</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/services/amazon-ads</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-04-18</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/services/affiliate-marketing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-04-18</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/services/analytics</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-04-18</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/services/ai-training</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-04-18</lastmod>
   </url>
 
   <!-- Industries -->
