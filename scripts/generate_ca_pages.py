@@ -231,15 +231,15 @@ def build_page(slug, c):
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SEO Agency {name}, {province} | Top-Rated Digital Marketing | Bambino</title>
+  <title>SEO Agency {name}, {province} | Bambino</title>
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <meta name="description" content="Bambino is a top-rated SEO agency in {name}, {province}. We help {name} businesses grow organic traffic, generate qualified leads, and dominate Google search. Free audit available." />
+  <meta name="description" content="Top-rated SEO agency in {name}, {province}. We help {name} businesses rank higher on Google, generate qualified leads, and outrank competitors. Free audit." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://bambinoagency.com/ca/{slug}/seo-agency" />
   <link rel="alternate" hreflang="en-CA" href="https://bambinoagency.com/ca/{slug}/seo-agency" />
   <link rel="alternate" hreflang="en-GB" href="https://bambinoagency.com/local/manchester/seo-agency" />
-  <link rel="alternate" hreflang="en" href="https://bambinoagency.com/ca/{slug}/seo-agency" />
+  <link rel="alternate" hreflang="x-default" href="https://bambinoagency.com/local/manchester/seo-agency" />
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="SEO Agency {name} | Top-Rated Digital Marketing | Bambino" />
@@ -271,7 +271,7 @@ def build_page(slug, c):
           "@type": "City",
           "name": "{name}",
           "containedInPlace": {{
-            "@type": "Province",
+            "@type": "AdministrativeArea",
             "name": "{province_full}"
           }}
         }},

@@ -1,4 +1,6 @@
 User-agent: *
+Allow: /us/
+Allow: /ca/
 # Published local pages — Allow before Disallow
 Allow: /local/aberdeen/ai-automation-agency
 Allow: /local/aberdeen/content-marketing-agency
