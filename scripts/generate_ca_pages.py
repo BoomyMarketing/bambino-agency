@@ -25,6 +25,9 @@ CITIES = {
         "eeat_stat": "44% average increase in qualified organic leads within 5 months across 11 Toronto client campaigns (2024–2025)",
         "related_cities": ["ottawa", "hamilton", "kitchener", "vancouver"],
         "related_names": ["Ottawa", "Hamilton", "Kitchener", "Vancouver"],
+        "landscape": "Toronto's search market is Canada's most competitive by a wide margin. Bay Street finance, King West tech, and Yorkville luxury retail each operate as micro-markets with distinct keyword profiles and buyer intent patterns. Legal firms in downtown Toronto routinely invest $8,000–$15,000 CAD/month in SEO, creating an authority barrier that demands equally serious investment to penetrate. Real estate is dominated by national portals (Realtor.ca, Zolo, Housesigma), making neighbourhood-specific content and hyperlocal GBP strategy essential for individual brokerages. Toronto's tech corridor (Queen West, Liberty Village, Distillery District) is home to over 600 active SaaS companies competing for the same talent and client acquisition keywords. The silver lining: Toronto's sheer search volume means even a 2-3% market share of a high-volume keyword can generate hundreds of monthly visitors.",
+        "local_insight": "Toronto's neighbourhoods are brands in their own right — Leslieville, Parkdale, the Junction, and Roncesvalles each carry strong consumer identity. Local businesses that invest in neighbourhood-specific content, localised Google Business Profile posts, and community-relevant backlink acquisition consistently outrank generic 'Toronto' optimised pages in local map pack results. Toronto's multicultural demographics also create targeted language and cultural content opportunities that most agencies don't leverage.",
+        "competition": "Extreme — highest competition of any Canadian market",
     },
     "vancouver": {
         "name": "Vancouver",
@@ -44,6 +47,9 @@ CITIES = {
         "eeat_stat": "51% average increase in organic traffic within 5 months across 8 Vancouver client campaigns (2024–2025)",
         "related_cities": ["toronto", "calgary", "edmonton", "victoria"],
         "related_names": ["Toronto", "Calgary", "Edmonton", "Victoria"],
+        "landscape": "Vancouver's SEO market is shaped by two dominant forces: an extraordinarily competitive real estate sector (Vancouver remains one of North America's priciest housing markets) and a tech industry that has drawn Amazon, Microsoft, Apple, and scores of homegrown SaaS companies to the city. Real estate SEO here is intense — ranking for generic 'Vancouver homes' terms requires domain authority that only national portals or heavily invested local agencies can achieve. The smart play is hyper-specific neighbourhood and property-type targeting: 'Yaletown condo realtor' or 'Kitsilano detached homes' consistently offer more achievable paths to page one. Vancouver's film and media industry creates niche B2B SEO opportunities in production services, equipment rental, and creative staffing that reward specialist content with relatively low competition.",
+        "local_insight": "Vancouver's distinct neighbourhood identities — Gastown (creative, tech, tourist), Yaletown (luxury, professional), Kitsilano (wellness, family, lifestyle), Commercial Drive (independent, multicultural) — create clearly differentiated search audiences. Service businesses in these areas that build hyper-local content strategies and GBP signals consistently outperform generic Metro Vancouver targeting. Vancouver's outdoor lifestyle economy (ski, bike, paddleboard) also creates strong seasonal search patterns that reward advance content investment in Q3 for winter and Q1 for summer.",
+        "competition": "Very high — real estate and tech are fiercely competitive",
     },
     "calgary": {
         "name": "Calgary",
@@ -63,6 +69,9 @@ CITIES = {
         "eeat_stat": "38% average reduction in cost-per-lead via organic within 6 months across 7 Calgary client campaigns (2024–2025)",
         "related_cities": ["edmonton", "vancouver", "toronto", "red-deer"],
         "related_names": ["Edmonton", "Vancouver", "Toronto", "Red Deer"],
+        "landscape": "Calgary's SEO market is defined by its energy sector dominance and its economic diversification story. Oil sands and energy services B2B keywords are highly competitive at the corporate level but significantly more accessible for SMEs targeting mid-market procurement roles. Calgary's tech sector has grown rapidly since 2015 as energy companies diversified — companies like Neo Financial, Symend, and Benevity have anchored a legitimate startup ecosystem that creates SaaS SEO demand. Construction and real estate are perennially strong, with Calgary's suburban expansion (communities like Seton, Livingston, and Yorkville) generating constant search demand for local trades, developers, and property services. For SMEs, Calgary represents a compelling SEO ROI opportunity: lower agency density than Toronto or Vancouver, high average deal values, and a business community that remains relatively underinvested in organic search.",
+        "local_insight": "Calgary's community-based suburban geography creates distinct local SEO micro-markets. New communities like Seton, Mahogany, and Carrington are rapidly developing local search audiences hungry for nearby services. Businesses that claim and optimise GBP listings in specific Calgary communities early — before competition consolidates — consistently achieve local pack rankings at lower cost than more established areas. The Beltline and Inglewood districts carry strong independent business cultures where content that resonates locally generates both search visibility and community word-of-mouth.",
+        "competition": "Medium — strong ROI opportunity vs Toronto/Vancouver",
     },
     "edmonton": {
         "name": "Edmonton",
@@ -82,6 +91,9 @@ CITIES = {
         "eeat_stat": "42% average increase in organic search visibility within 6 months across 6 Edmonton client campaigns (2024–2025)",
         "related_cities": ["calgary", "vancouver", "toronto", "red-deer"],
         "related_names": ["Calgary", "Vancouver", "Toronto", "Red Deer"],
+        "landscape": "Edmonton's SEO market is driven by its unique combination of government, healthcare, and resource industries. The University of Alberta and Edmonton's hospital network create sustained high-volume search demand in healthcare, research, and education-adjacent services. Government procurement-adjacent B2B keywords — IT services, professional consulting, facilities management — represent a high-value, lower-competition niche that rewards specialist content. Edmonton's retail sector benefited enormously from the West Edmonton Mall economy, and local retailers competing for local search visibility face less dominant competition than comparable Toronto or Vancouver businesses. The city's growing tech community (anchored by Edmonton Economic Development's TechEdmonton cluster) is creating increasing SaaS keyword demand that remains ahead of available supply in organic content.",
+        "local_insight": "Edmonton's strong community identity means neighbourhood-specific content outperforms city-wide targeting across service verticals. The Strathcona arts district, Oliver residential neighbourhood, and Glenora luxury market each attract distinct consumer profiles. Edmonton's extreme seasonal climate (long winters, warm summers) also creates pronounced search seasonality — HVAC, landscaping, roofing, and home services businesses should build content ahead of demand peaks rather than reactively.",
+        "competition": "Medium — government and healthcare B2B are well-served niches",
     },
     "ottawa": {
         "name": "Ottawa",
@@ -101,6 +113,9 @@ CITIES = {
         "eeat_stat": "46% average increase in qualified leads within 5 months across 7 Ottawa client campaigns (2024–2025)",
         "related_cities": ["toronto", "montreal", "kingston", "hamilton"],
         "related_names": ["Toronto", "Montreal", "Kingston", "Hamilton"],
+        "landscape": "Ottawa's SEO market is unlike any other Canadian city: federal government employment creates a high-income, highly educated consumer base with strong purchasing power and above-average digital literacy. Kanata's Silicon Valley North tech cluster — home to Shopify (originally Ottawa-based), Ericsson, Nokia, and hundreds of cybersecurity companies — drives intense demand for B2B tech and professional services keywords. Ottawa's cybersecurity sector is world-class, with CSIS, CSE, and dozens of private intelligence firms anchoring a specialised B2B niche. The bilingual requirement (English/French) of many Ottawa businesses creates a genuine content moat: agencies that can execute dual-language SEO strategy have a structural advantage. Professional services, legal, and accounting firms in Ottawa face strong but manageable competition compared to Toronto.",
+        "local_insight": "Ottawa's neighbourhoods — Glebe, Westboro, Hintonburg, and ByWard Market — carry strong local identity and loyalty. Independent retailers, restaurants, and service businesses in these areas generate disproportionate search volume relative to their size. Ottawa's government procurement cycle creates predictable B2B search peaks around fiscal year end (March) when government buyers are actively seeking vendors. Professional services firms that time content campaigns around these cycles consistently see engagement uplift.",
+        "competition": "Medium — high-income market with strong B2B opportunity",
     },
     "montreal": {
         "name": "Montreal",
@@ -120,6 +135,9 @@ CITIES = {
         "eeat_stat": "49% average increase in organic traffic within 6 months across 9 Montreal client campaigns (2024–2025)",
         "related_cities": ["toronto", "ottawa", "quebec-city", "laval"],
         "related_names": ["Toronto", "Ottawa", "Quebec City", "Laval"],
+        "landscape": "Montreal's SEO market is unique in Canada: it's the only major city where bilingual content strategy (English/French) is a genuine competitive requirement for many businesses. The Montreal AI research cluster — Mila, CIFAR, and McGill University — has positioned the city as a global AI hub, attracting talent and investment from around the world and creating intense B2B demand for AI-adjacent services. The gaming industry (Ubisoft, EA, Behaviour Interactive) anchors creative economy keyword demand. Aerospace (Bombardier, CAE, Pratt & Whitney) creates specialized B2B SEO opportunities with high commercial intent. For English-language SEO specifically, Montreal businesses often face less competition than Toronto equivalents at similar search volumes, because many local competitors invest in French-only optimization and neglect the English search market.",
+        "local_insight": "Montreal's cultural neighbourhoods — the Plateau, Mile End, Rosemont, and Villeray — have strong independent business cultures and loyal local audiences. French-language local SEO is a distinct speciality: Google.ca in French operates differently from English search, and businesses that invest in French keyword research, French content, and French GBP citations gain access to Montreal's majority-language audience that most English-only agencies ignore. The bilingual opportunity is real — businesses that execute dual-language strategy consistently capture 40–60% more local search impressions than single-language competitors.",
+        "competition": "Medium-high — bilingual strategy creates a genuine competitive moat",
     },
     "winnipeg": {
         "name": "Winnipeg",
@@ -139,6 +157,9 @@ CITIES = {
         "eeat_stat": "37% average increase in organic leads within 6 months across 5 Winnipeg client campaigns (2024–2025)",
         "related_cities": ["calgary", "edmonton", "toronto", "brandon"],
         "related_names": ["Calgary", "Edmonton", "Toronto", "Brandon"],
+        "landscape": "Winnipeg's SEO market represents one of the highest-ROI opportunities among Canadian mid-size cities. Competition benchmarks remain well below Toronto, Vancouver, or Calgary levels — many established Winnipeg businesses still rely on word-of-mouth and haven't invested meaningfully in organic search, creating clear windows for well-executed campaigns. Manufacturing and agricultural services keywords are almost entirely uncontested at the content depth that modern SEO requires. Healthcare, legal, and home services face more competition but remain achievable with focused technical SEO and local authority building. Winnipeg's position as a major agricultural and logistics hub also creates B2B keyword demand around transport, grain handling, and food processing that national competitors typically don't optimise for at the local level.",
+        "local_insight": "Winnipeg's Exchange District and Osborne Village have active local business communities with strong neighbourhood search demand. The St. Boniface district — Winnipeg's French-speaking community — creates an additional bilingual content opportunity for businesses willing to serve that market. Winnipeg's extreme climate (coldest major Canadian city) generates strong seasonal search patterns: HVAC, roofing, and winter services businesses should begin content campaigns in August to capture September through January demand peaks.",
+        "competition": "Low-medium — high ROI, underdeveloped organic search market",
     },
     "quebec-city": {
         "name": "Quebec City",
@@ -158,6 +179,9 @@ CITIES = {
         "eeat_stat": "40% average increase in organic visibility within 7 months across 5 Quebec City client campaigns (2024–2025)",
         "related_cities": ["montreal", "ottawa", "toronto", "levis"],
         "related_names": ["Montreal", "Ottawa", "Toronto", "Lévis"],
+        "landscape": "Quebec City's SEO market is primarily French-language — the city has a lower proportion of English speakers than Montreal, and businesses targeting local consumers must invest in French keyword research and French content to compete effectively. The public sector dominates the economy: provincial government ministries, National Assembly, and associated professional services create substantial B2B keyword demand for consulting, IT, and professional services firms. Tourism is a major economic driver — Old Quebec is a UNESCO World Heritage site attracting 10 million visitors annually, and hospitality, dining, and experience businesses compete intensely for tourist-intent keywords in both French and English. Insurance is a notable outlier: Quebec City is disproportionately concentrated in insurance sector employment, creating a deep B2B ecosystem with specialised keyword demand.",
+        "local_insight": "Quebec City's seasonal tourism economy creates strong content strategy implications. Businesses that build French-language destination content for Old Quebec, Plains of Abraham, and Montmorency Falls in Q1 capture peak summer tourist search demand. Saint-Roch has transformed into Quebec City's creative and tech district, with a growing cluster of digital agencies and startups whose hiring, partnership, and service search patterns represent an underserved B2B niche. Winter Carnival (February) generates a predictable annual search spike that rewards businesses with relevant content already indexed.",
+        "competition": "Low-medium — French-language strategy is key competitive differentiator",
     },
     "hamilton": {
         "name": "Hamilton",
@@ -177,6 +201,9 @@ CITIES = {
         "eeat_stat": "43% average increase in organic leads within 5 months across 5 Hamilton client campaigns (2024–2025)",
         "related_cities": ["toronto", "kitchener", "burlington", "niagara"],
         "related_names": ["Toronto", "Kitchener", "Burlington", "Niagara"],
+        "landscape": "Hamilton's SEO market is at an inflection point. The city's transformation from a heavy industrial base to a creative and healthcare hub — often described as a 'second Brooklyn' for Toronto — is generating new search demand across arts, hospitality, and tech verticals that didn't exist a decade ago. McMaster University's health sciences campus and Hamilton Health Sciences (one of the largest hospital networks in Canada) anchor intense healthcare keyword competition. Locke Street and James Street North have become destination dining and retail strips, creating intense local competition for restaurant, boutique, and experience searches. For businesses willing to invest now, Hamilton offers Toronto-level search intent volume at a fraction of Toronto's competition levels — a compelling ROI window before the market matures.",
+        "local_insight": "Hamilton's neighbourhood identity is rapidly evolving, and content that captures that authentically earns strong local engagement and citation links. The James Street North arts community, Locke Street boutique dining, and Ancaster's upscale residential character each attract distinct consumer segments. Hamilton's Art Crawl event (monthly, James Street North) has become a national cultural reference point — hospitality and creative businesses near that corridor should build content around the event calendar to capture peak-period search traffic.",
+        "competition": "Medium — rising rapidly as city profile grows, invest now for advantage",
     },
     "kitchener": {
         "name": "Kitchener",
@@ -196,6 +223,9 @@ CITIES = {
         "eeat_stat": "52% average increase in qualified organic leads within 5 months across 6 Kitchener-Waterloo client campaigns (2024–2025)",
         "related_cities": ["toronto", "hamilton", "london", "guelph"],
         "related_names": ["Toronto", "Hamilton", "London", "Guelph"],
+        "landscape": "Kitchener-Waterloo's tech ecosystem is one of Canada's most concentrated — the University of Waterloo's co-op program produces more engineering and CS graduates than any Canadian institution, feeding a startup-dense environment that includes unicorns like Faire, Clio, and ApplyBoard. SEO competition in this market is notably sophisticated: tech-savvy marketing teams and well-funded startups have driven keyword competition beyond what most Ontario cities see. Insurance is a structural industry presence: Sun Life, Manulife, and Canada Life all have major Waterloo operations, creating intense financial services keyword competition. However, the manufacturing and professional services segments outside the tech core remain surprisingly underserved by organic search investment — a clear opportunity for non-tech businesses in the region.",
+        "local_insight": "Kitchener-Waterloo's dual city identity creates a strategic opportunity: content targeting 'Waterloo' specifically (strongly associated with the university, tech, and startups) reaches a different audience than 'Kitchener' (more associated with manufacturing, downtown revitalisation, and established business). Businesses serving both markets benefit from maintaining separate location pages and GBP profiles for each city. The Communitech tech hub is a credible local citation source — backlinks and mentions from Communitech-associated content carry strong local authority signals.",
+        "competition": "High in tech/SaaS; medium-low for manufacturing and professional services",
     },
 }
 
@@ -210,6 +240,9 @@ def build_page(slug, c):
     industries = c["industries"]
     neighborhoods = c["neighborhoods"]
     eeat_stat = c["eeat_stat"]
+    landscape = c.get("landscape", "")
+    local_insight = c.get("local_insight", "")
+    competition = c.get("competition", "")
 
     stats_cards = "\n".join([
         f'          <div class="insight-card"><span class="ins-num">{s["num"]}</span><span class="ins-lbl">{s["label"]}</span></div>'
@@ -336,6 +369,21 @@ def build_page(slug, c):
             "@type": "Question",
             "name": "Is there a contract or minimum term?",
             "acceptedAnswer": {{"@type": "Answer", "text": "No long-term contracts. All Bambino engagements are month-to-month with 30 days' notice to cancel. We're confident enough in our results that we don't need to lock clients in."}}
+          }},
+          {{
+            "@type": "Question",
+            "name": "How do you approach local SEO differently in {name}?",
+            "acceptedAnswer": {{"@type": "Answer", "text": "Every {name} campaign begins with a city-specific keyword audit covering local search volumes, competitor authority profiles, and neighbourhood-level intent patterns. We build targeted content for {name}'s key districts, optimise Google Business Profile signals, and acquire citations from {name}-specific directories and Canadian publications. Generic local SEO templates don't work in competitive Canadian markets — every strategy is built from {name} data."}}
+          }},
+          {{
+            "@type": "Question",
+            "name": "Do you optimise for AI search (ChatGPT, Perplexity, Google AI Overviews) in {name}?",
+            "acceptedAnswer": {{"@type": "Answer", "text": "Yes — AI search readiness is built into every campaign. We structure content, schema, and topical authority so {name} businesses appear in AI-generated answers from Google AI Overviews, ChatGPT, and Perplexity, capturing commercial visibility that most competitors are missing."}}
+          }},
+          {{
+            "@type": "Question",
+            "name": "What reporting do {name} clients receive?",
+            "acceptedAnswer": {{"@type": "Answer", "text": "Monthly Looker Studio dashboards covering keyword rankings, organic traffic, conversions, backlink growth, and Google Business Profile insights — all in CAD, all segmented for {name} geography. Growth and Scale clients receive bi-weekly or weekly strategy calls with a dedicated account manager in a Canadian-friendly time zone."}}
           }}
         ]
       }}
@@ -633,6 +681,29 @@ def build_page(slug, c):
     </div>
   </section>
 
+  <!-- ── SEO LANDSCAPE ── -->
+  <section id="landscape" aria-labelledby="landscape-heading" style="padding:5rem 0;background:var(--card);">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
+        <div>
+          <span class="section-label">{name} SEO Market</span>
+          <h2 id="landscape-heading" class="section-title">The {name} SEO Landscape: What You're Up Against</h2>
+          <p style="font-size:0.95rem;color:var(--muted);line-height:1.8;margin-bottom:1.5rem;">{landscape}</p>
+          <div style="background:var(--soft);border-radius:12px;padding:1.4rem 1.6rem;border-left:4px solid var(--orange);">
+            <p style="font-size:0.88rem;font-weight:700;color:var(--text);margin-bottom:0.4rem;">Competition level</p>
+            <p style="font-size:0.95rem;color:var(--orange);font-weight:600;">{competition}</p>
+          </div>
+        </div>
+        <div>
+          <span class="section-label">Local Insight</span>
+          <h3 style="font-family:var(--font-heading);font-size:1.5rem;color:var(--text);margin-bottom:1rem;">What Works in {name} — and What Doesn't</h3>
+          <p style="font-size:0.95rem;color:var(--muted);line-height:1.8;margin-bottom:1.5rem;">{local_insight}</p>
+          <a href="https://bambinoagency.com/contact" class="btn-orange">Get a {name}-Specific Strategy &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ── SERVICES ── -->
   <section id="services" aria-labelledby="services-title">
     <div class="container">
@@ -897,6 +968,22 @@ def build_page(slug, c):
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">Is there a contract or minimum term? <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
           <div class="faq-ans"><p>No long-term contracts. All Bambino engagements are month-to-month with 30 days' notice to cancel. We're confident enough in our results that we don't need to lock clients in.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How do you approach local SEO differently in {name} vs other Canadian cities? <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+          <div class="faq-ans"><p>Every {name} campaign starts with a market-specific keyword audit covering {name}'s actual search volumes, competitor authority profiles, and local intent patterns. We build neighbourhood-level content targeting, optimise Google Business Profile for {name}'s key districts, and acquire citations from {name}-specific directories and Canadian publications. Generic local SEO templates don't work in competitive Canadian markets — every strategy is built from {name}-specific data.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do you optimise {name} businesses for AI search (ChatGPT, Perplexity, Google AI Overviews)? <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+          <div class="faq-ans"><p>Yes — AI search readiness is built into every campaign we run. Google AI Overviews, ChatGPT web browsing, and Perplexity now answer millions of commercial queries without sending a click to traditional organic results. We structure content, schema markup, and topical authority to ensure your {name} business gets cited in AI-generated answers — capturing visibility that most {name} competitors are missing entirely.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do you work with {name} ecommerce businesses? <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+          <div class="faq-ans"><p>Yes. For {name} ecommerce businesses, we combine organic SEO (product page optimisation, category architecture, schema markup) with Google Shopping campaign management. We handle Merchant Center setup, product feed optimisation, and Performance Max campaigns — and tie organic and paid data into a single Looker Studio reporting dashboard so you always know which channels are driving {name} revenue.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What monthly reporting do {name} clients receive? <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+          <div class="faq-ans"><p>Monthly Looker Studio dashboards covering keyword rankings, organic traffic, conversions, backlink growth, and Google Business Profile insights — all in CAD, all segmented for {name} geography. Growth and Scale plan clients also receive bi-weekly or weekly strategy calls with a dedicated account manager in a Canadian-friendly time zone.</p></div>
         </div>
       </div>
     </div>

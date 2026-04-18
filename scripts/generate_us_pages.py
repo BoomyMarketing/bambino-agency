@@ -25,6 +25,9 @@ CITIES = {
         "eeat_stat": "47% average increase in qualified organic leads within 6 months across 12 NYC client campaigns (2024–2025)",
         "related_cities": ["los-angeles", "chicago", "philadelphia", "boston"],
         "related_names": ["Los Angeles", "Chicago", "Philadelphia", "Boston"],
+        "landscape": "New York's search landscape is unlike any other US market. With 200,000+ active businesses spanning finance, legal, media, and tech, organic search competition is extreme across every vertical. Law firms in Midtown budget $15,000+/month on SEO. Financial services brands in the Financial District run year-long link campaigns targeting single keywords. Real estate agencies in Brooklyn target ultra-specific neighbourhood terms — 'SoHo luxury loft broker' or 'Tribeca penthouse realtor.' For SMEs, the path to page one requires surgical keyword targeting, aggressive technical foundations, and a link-building strategy that earns placements in publications like Crain's New York Business and the New York Business Journal. Generic, cookie-cutter SEO does not work here.",
+        "local_insight": "Google Business Profile optimisation delivers exceptional ROI in New York: 46% of all Google searches carry local intent, and the NYC local pack competes fiercely across dozens of neighbourhoods. Top-ranking NYC agencies maintain separate GBP strategy for Manhattan, Brooklyn, and Queens — treating each borough as a distinct market with its own keyword profile and customer base.",
+        "competition": "Extreme — top 3 most competitive US market",
     },
     "los-angeles": {
         "name": "Los Angeles",
@@ -44,6 +47,9 @@ CITIES = {
         "eeat_stat": "53% average increase in organic traffic within 5 months across 9 LA client campaigns (2024–2025)",
         "related_cities": ["new-york", "san-diego", "phoenix", "san-francisco"],
         "related_names": ["New York", "San Diego", "Phoenix", "San Francisco"],
+        "landscape": "LA's search market is driven by entertainment, tech, and lifestyle — a uniquely visual and brand-heavy market where social proof, reviews, and rich media carry significant weight alongside traditional SEO signals. Competition peaks in legal, healthcare, real estate, and plastic surgery verticals. LA businesses face the added challenge of vast geographic spread: ranking in Santa Monica means little if your clients are in Downtown or the San Fernando Valley. Neighbourhood-level targeting across Hollywood, Culver City, Westwood, and Beverly Hills is essential. LA is also an early adopter market for AI search — a growing share of local queries are answered by Google AI Overviews, making GEO optimisation a competitive necessity rather than a nice-to-have.",
+        "local_insight": "In Los Angeles, Google Maps visibility drives a disproportionate share of new business inquiries. Healthcare providers, legal firms, and home service businesses in LA generate 40-65% of new client contacts directly from local pack results. A comprehensive Google Business Profile strategy — including weekly posts, Q&A management, and photo optimisation — is non-negotiable for competitive LA verticals.",
+        "competition": "Very high — especially legal, healthcare, real estate",
     },
     "chicago": {
         "name": "Chicago",
@@ -63,6 +69,9 @@ CITIES = {
         "eeat_stat": "41% average reduction in cost-per-lead via organic within 7 months across 8 Chicago client campaigns (2024–2025)",
         "related_cities": ["new-york", "houston", "dallas", "milwaukee"],
         "related_names": ["New York", "Houston", "Dallas", "Milwaukee"],
+        "landscape": "Chicago's B2B-heavy economy means SEO strategy here leans toward longer buying cycles and high-value content. Fortune 500 companies anchor the Loop with in-house SEO teams, creating stiff competition for generic head terms. The smart play for Chicago SMEs: hyper-specific industry and location combinations — 'Chicago construction law firm SEO' rather than 'Chicago lawyer SEO' — combined with link acquisition from publications like Crain's Chicago Business, Chicago Tribune, and industry trade media. Chicago's manufacturing and logistics sectors represent underserved SEO opportunities where well-structured technical content can capture high-intent B2B queries with modest competition.",
+        "local_insight": "Chicago's neighbourhood identity is strong — residents and businesses strongly self-identify with their area (Lincoln Park, Wicker Park, River North). Service businesses that create neighbourhood-specific landing pages and Google Business Profile content consistently outperform those using generic city-wide targeting. A 'Lincoln Park dental practice' page will outrank a 'Chicago dental practice' page for residents actively searching in that neighbourhood.",
+        "competition": "High — particularly finance, legal, healthcare",
     },
     "houston": {
         "name": "Houston",
@@ -82,6 +91,9 @@ CITIES = {
         "eeat_stat": "38% average increase in organic lead volume within 6 months across 7 Houston client campaigns (2024–2025)",
         "related_cities": ["dallas", "san-antonio", "austin", "new-york"],
         "related_names": ["Dallas", "San Antonio", "Austin", "New York"],
+        "landscape": "Houston's SEO market is shaped by its dominant industries and sprawling geography. Energy sector companies — from majors like ExxonMobil and Chevron down to mid-market oilfield services firms — compete aggressively for executive-level B2B keywords. Healthcare in the Texas Medical Center, the world's largest medical complex, drives intense competition for patient-facing terms across oncology, cardiology, and specialist services. The city's 669 square miles mean successful Houston SEO must balance city-wide domain authority with hyper-local signals for distinct districts: Galleria, The Heights, Sugar Land, and The Woodlands each carry unique search intent patterns that reward geographically targeted content strategies.",
+        "local_insight": "Houston's lack of zoning and diverse economic base means local SEO opportunities span an unusually wide range of verticals. Home services, legal, and healthcare are perennially competitive. The energy sector offers B2B SEO opportunities with high commercial intent and lower consumer competition. Targeting The Woodlands or Sugar Land as distinct suburban markets — not just 'Greater Houston' — consistently produces stronger local pack rankings for service-area businesses.",
+        "competition": "High — especially energy B2B, healthcare, legal",
     },
     "phoenix": {
         "name": "Phoenix",
@@ -101,6 +113,9 @@ CITIES = {
         "eeat_stat": "44% average increase in organic traffic within 5 months across 6 Phoenix client campaigns (2024–2025)",
         "related_cities": ["los-angeles", "san-diego", "las-vegas", "denver"],
         "related_names": ["Los Angeles", "San Diego", "Las Vegas", "Denver"],
+        "landscape": "Phoenix is one of the fastest-growing major US metro markets for SEO competition, with new businesses entering at pace as the population swells by 100,000+ residents annually. The Sun Belt boom has attracted established brands from California and the Northeast who arrive with existing domain authority, raising competitive baselines across legal, healthcare, and real estate. Phoenix's tri-city geography — Phoenix, Scottsdale, and Tempe each carry distinct search audiences — creates both a challenge and an opportunity for businesses willing to develop targeted landing pages and Google Business Profile strategies per city. Semiconductor and tech manufacturing SEO is a specialised, lower-competition niche growing alongside the $52B TSMC investment in the region.",
+        "local_insight": "Phoenix's extreme summer heat creates strong seasonal search patterns across HVAC, home cooling, and outdoor services categories. Businesses in these verticals should prioritise content creation in Q1 to capture peak summer demand. Scottsdale's luxury hospitality and real estate market operates on different keyword patterns than broader Phoenix searches — dedicated Scottsdale-focused pages consistently outperform Phoenix-wide content for that audience.",
+        "competition": "Medium-high and rising rapidly with metro growth",
     },
     "philadelphia": {
         "name": "Philadelphia",
@@ -120,6 +135,9 @@ CITIES = {
         "eeat_stat": "36% average increase in organic visibility within 6 months across 6 Philadelphia client campaigns (2024–2025)",
         "related_cities": ["new-york", "chicago", "baltimore", "washington-dc"],
         "related_names": ["New York", "Chicago", "Baltimore", "Washington DC"],
+        "landscape": "Philadelphia's SEO market offers a compelling combination: the scale of a major East Coast metro with measurably less competition and lower cost-per-click than New York or Washington DC. Healthcare dominates — Jefferson Health, Penn Medicine, and CHOP compete intensely for patient-facing search terms, but SME healthcare providers face less resistance than in comparable New York markets. Education institutions (UPenn, Temple, Drexel) generate significant local keyword demand. Philly's growing tech scene in University City creates B2B SaaS keyword opportunities that remain underleveraged. For businesses willing to invest in organic now, Philadelphia represents one of the highest-ROI major US markets for SEO spend.",
+        "local_insight": "Philadelphia's strong neighbourhood identities — Fishtown, Northern Liberties, South Philly — create opportunities that city-wide targeting misses entirely. A Fishtown restaurant or boutique that targets neighbourhood-specific terms consistently outranks generic 'Philadelphia' optimised competitors for residents and visitors seeking hyper-local recommendations. Neighbourhood-level Google Business Profile strategies are particularly effective in Philly's dense, walkable urban core.",
+        "competition": "Medium — high ROI vs New York or DC equivalents",
     },
     "san-antonio": {
         "name": "San Antonio",
@@ -139,6 +157,9 @@ CITIES = {
         "eeat_stat": "42% average increase in qualified leads within 5 months across 5 San Antonio client campaigns (2024–2025)",
         "related_cities": ["houston", "dallas", "austin", "el-paso"],
         "related_names": ["Houston", "Dallas", "Austin", "El Paso"],
+        "landscape": "San Antonio's SEO market is shaped by two dominant forces: a massive military presence (Joint Base San Antonio is the largest US military installation) and a tourism economy anchored by the Alamo and River Walk. Together, these sectors generate unusually high search volume for hospitality, healthcare, and government-adjacent services. The cybersecurity industry is emerging rapidly — San Antonio is home to more than 80 cybersecurity firms and is one of the top US markets for cyber workforce demand, creating a high-value B2B SEO niche that remains relatively underleveraged. For SMEs, the path to page one in San Antonio is more accessible than in Dallas or Houston: lower domain authority thresholds, less PPC-driven price inflation on organic keywords, and a local business community that still under-invests in content marketing.",
+        "local_insight": "San Antonio's tourism ecosystem creates unique local SEO patterns. Hospitality, dining, and attractions see enormous seasonal search spikes in spring and summer, tied to River Walk foot traffic and Fiesta San Antonio. Service businesses near the Medical Center and Fort Sam Houston benefit from targeting military-affiliated search terms and TRICARE-eligible healthcare queries — a high-intent, underserved segment that rewards focused local content strategy.",
+        "competition": "Medium — accessible market with strong niche opportunities",
     },
     "dallas": {
         "name": "Dallas",
@@ -158,6 +179,9 @@ CITIES = {
         "eeat_stat": "49% average increase in organic traffic within 6 months across 8 Dallas client campaigns (2024–2025)",
         "related_cities": ["houston", "san-antonio", "austin", "chicago"],
         "related_names": ["Houston", "San Antonio", "Austin", "Chicago"],
+        "landscape": "Dallas-Fort Worth is one of the most competitive SEO markets in Texas and increasingly rivals coastal markets in search difficulty. The DFW metroplex's 23 Fortune 500 headquarters anchor intense B2B keyword competition across finance, tech, and telecom verticals — AT&T, American Airlines, and Kimberly-Clark all maintain sophisticated digital marketing operations that raise competitive baselines. Real estate in Frisco, Plano, and Allen is hyper-competitive with national portal dominance. However, DFW's rapid population growth (adding 150,000 residents annually) means new search demand constantly outpaces established competition, creating windows for well-executed campaigns to rank for high-volume terms before incumbents consolidate them. The key differentiation in Dallas is E-E-A-T depth: thin-content pages get displaced quickly; authoritative long-form content commands durable rankings.",
+        "local_insight": "Dallas's suburban markets — Frisco, Plano, McKinney, and Allen — each operate as distinct search economies with strong local identity. A Frisco-based healthcare practice or law firm that targets suburb-specific terms consistently outranks generic 'Dallas' optimized content for North Dallas residents. DFW's business community is also unusually active on LinkedIn, making content that bridges SEO and thought leadership particularly effective for B2B client acquisition.",
+        "competition": "High — finance, real estate, legal among most competitive TX verticals",
     },
     "san-diego": {
         "name": "San Diego",
@@ -177,6 +201,9 @@ CITIES = {
         "eeat_stat": "45% average increase in organic leads within 6 months across 6 San Diego client campaigns (2024–2025)",
         "related_cities": ["los-angeles", "phoenix", "las-vegas", "san-francisco"],
         "related_names": ["Los Angeles", "Phoenix", "Las Vegas", "San Francisco"],
+        "landscape": "San Diego's SEO market is defined by its distinctive industry mix: biotech and life sciences (Sorrento Valley is one of the densest biotech clusters in the US), defense contracting (the Navy's largest shore installation is here), and a tourism economy that rivals Miami and Las Vegas. These industries create search opportunity patterns unlike any other California market. Biotech and life sciences B2B SEO — targeting procurement managers, clinical directors, and research buyers — operates with low consumer competition but high commercial intent. Tourism-adjacent businesses face extreme seasonality, with search volume peaks in June through September requiring advance content investment in Q1. La Jolla's luxury real estate and healthcare markets operate at premium price points that reward high-quality, E-E-A-T-rich content strategies.",
+        "local_insight": "San Diego's geography creates distinct search micro-markets: La Jolla (luxury, healthcare, finance), Mission Valley (retail, hospitality), Gaslamp Quarter (entertainment, tourism), and Carlsbad/Encinitas (family, wellness, retail). Businesses that treat these as separate markets — with dedicated landing pages, Google Business Profile strategies, and neighborhood-specific content — consistently outperform those using a single 'San Diego' approach. The cross-border economy with Tijuana also generates unique search patterns for legal, healthcare, and real estate businesses near the border.",
+        "competition": "Medium-high — biotech B2B is lower competition; tourism and real estate are fierce",
     },
     "austin": {
         "name": "Austin",
@@ -196,6 +223,9 @@ CITIES = {
         "eeat_stat": "52% average increase in organic traffic within 5 months across 7 Austin client campaigns (2024–2025)",
         "related_cities": ["dallas", "houston", "san-antonio", "denver"],
         "related_names": ["Dallas", "Houston", "San Antonio", "Denver"],
+        "landscape": "Austin's SEO market is one of the fastest-evolving in the United States, shaped by a 35% business growth rate since 2020 and the arrival of major tech headquarters from Tesla, Apple, Oracle, and Dell. The influx of Silicon Valley transplants has brought West Coast marketing sophistication to a market that previously operated at lower competitive baselines — search difficulty across SaaS, fintech, and healthcare has risen significantly since 2022. Austin's tech community is an early adopter of AI search tools: a higher-than-average share of Austin searches now route through AI Overviews and ChatGPT, making GEO optimization especially critical here. The city's music and entertainment ecosystem (South Congress, Red River Cultural District) creates niche local SEO opportunities with passionate, high-engagement audiences.",
+        "local_insight": "Austin's rapid expansion means its search geography is genuinely fragmented — The Domain (tech/retail), East Austin (food/creative), South Congress (boutiques/lifestyle), and Westlake (luxury real estate/family) each have distinct search audiences. Businesses that invest in neighbourhood-specific content and Google Business Profile signals consistently outrank city-wide competitors. Austin's SXSW season (March) and Formula 1 Grand Prix (October) create annual search volume spikes that reward businesses with advance content in place.",
+        "competition": "High and rapidly rising — SaaS, fintech, real estate most competitive",
     },
 }
 
@@ -210,6 +240,9 @@ def build_page(slug, c):
     industries = c["industries"]
     neighborhoods = c["neighborhoods"]
     eeat_stat = c["eeat_stat"]
+    landscape = c.get("landscape", "")
+    local_insight = c.get("local_insight", "")
+    competition = c.get("competition", "")
 
     stats_cards = "\n".join([
         f'          <div class="insight-card"><span class="ins-num">{s["num"]}</span><span class="ins-lbl">{s["label"]}</span></div>'
@@ -336,6 +369,21 @@ def build_page(slug, c):
             "@type": "Question",
             "name": "Is there a contract or minimum term?",
             "acceptedAnswer": {{"@type": "Answer", "text": "No long-term contracts. All Bambino engagements are month-to-month with 30 days' notice to cancel. We're confident enough in our results that we don't need to lock clients in."}}
+          }},
+          {{
+            "@type": "Question",
+            "name": "How do you approach local SEO differently in {name}?",
+            "acceptedAnswer": {{"@type": "Answer", "text": "Every {name} campaign begins with a city-specific keyword audit covering local search volumes, competitor authority profiles, and neighbourhood-level intent patterns. We build targeted content for {name}'s key districts, optimise Google Business Profile signals, and acquire citations from {name}-specific directories and publications. Generic local SEO frameworks don't work in competitive US markets — every strategy is built from {name} data."}}
+          }},
+          {{
+            "@type": "Question",
+            "name": "Do you optimise for AI search (ChatGPT, Perplexity, Google AI Overviews) in {name}?",
+            "acceptedAnswer": {{"@type": "Answer", "text": "Yes — AI search readiness is built into every campaign. We structure content, schema, and topical authority to ensure {name} businesses appear in AI-generated answers from Google AI Overviews, ChatGPT, and Perplexity, capturing commercial visibility that most competitors are missing."}}
+          }},
+          {{
+            "@type": "Question",
+            "name": "What reporting do {name} clients receive?",
+            "acceptedAnswer": {{"@type": "Answer", "text": "Monthly Looker Studio dashboards covering keyword rankings, organic traffic, conversions, backlink growth, and Google Business Profile insights — all segmented for {name} search geography. Growth and Scale clients receive bi-weekly or weekly strategy calls with a dedicated account manager."}}
           }}
         ]
       }}
@@ -520,6 +568,7 @@ def build_page(slug, c):
     @media (max-width: 768px) {{
       .nav-links {{ display: none; }} .nav-hamburger {{ display: flex; }}
       .market-grid {{ grid-template-columns: 1fr; }}
+      #landscape > .container > div {{ grid-template-columns: 1fr !important; }}
       .why-grid {{ grid-template-columns: 1fr; }}
       .process-steps {{ grid-template-columns: 1fr 1fr; }}
       .results-grid {{ grid-template-columns: 1fr; }}
@@ -631,6 +680,29 @@ def build_page(slug, c):
           <div class="insight-cards reveal">
 {stats_cards}
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SEO LANDSCAPE ── -->
+  <section id="landscape" aria-labelledby="landscape-heading" style="padding:5rem 0;background:var(--soft);">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;" class="reveal">
+        <div>
+          <span class="section-label">{name} SEO Market</span>
+          <h2 id="landscape-heading" class="section-title">The {name} SEO Landscape: What You're Up Against</h2>
+          <p style="font-size:0.95rem;color:var(--muted);line-height:1.8;margin-bottom:1.5rem;">{landscape}</p>
+          <div style="background:var(--card);border-radius:12px;padding:1.4rem 1.6rem;border-left:4px solid var(--orange);box-shadow:var(--shadow);">
+            <p style="font-size:0.88rem;font-weight:700;color:var(--text);margin-bottom:0.4rem;">Competition level</p>
+            <p style="font-size:0.95rem;color:var(--orange);font-weight:600;">{competition}</p>
+          </div>
+        </div>
+        <div>
+          <span class="section-label">Local Insight</span>
+          <h3 style="font-family:var(--font-heading);font-size:1.5rem;color:var(--text);margin-bottom:1rem;">What Works in {name} — and What Doesn't</h3>
+          <p style="font-size:0.95rem;color:var(--muted);line-height:1.8;margin-bottom:1.5rem;">{local_insight}</p>
+          <a href="https://bambinoagency.com/contact" class="btn-orange">Get a {name}-Specific Strategy &rarr;</a>
         </div>
       </div>
     </div>
@@ -905,6 +977,22 @@ def build_page(slug, c):
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">Do you offer a free SEO audit for {name} businesses?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
           <div class="faq-ans"><p>Yes. We offer a complimentary 30-minute SEO audit call. We'll review your current rankings, identify technical issues, and outline the top 3 quick-win opportunities — with no obligation to proceed.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How do you approach local SEO differently in {name} vs other US cities?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+          <div class="faq-ans"><p>Every {name} campaign starts with a market-specific keyword audit covering {name}'s actual search volumes, competitor authority profiles, and local intent patterns. We build neighbourhood-level content targeting, optimise Google Business Profile for {name}'s most relevant districts, and build citations from {name}-specific business directories and publications. Cookie-cutter local SEO templates don't work in competitive US markets — every strategy is built from {name}-specific data.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do you optimise {name} websites for AI search (ChatGPT, Perplexity, Google AI Overviews)?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+          <div class="faq-ans"><p>Yes — AI search readiness is built into every campaign we run. Google AI Overviews, ChatGPT web browsing, and Perplexity now answer millions of commercial queries without sending a click to traditional organic results. We structure content, schema markup, and topical authority to ensure your {name} business gets cited in AI-generated answers — capturing visibility that most {name} competitors are missing entirely.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can you help a {name} ecommerce business rank on Google Shopping?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+          <div class="faq-ans"><p>Yes. For {name} ecommerce businesses, we combine organic SEO (product page optimization, category architecture, schema markup) with Google Shopping campaign management. We handle Merchant Center setup, product feed optimization, and Performance Max campaigns — and we tie organic and paid data together in a single reporting dashboard so you can see exactly which channels are driving {name} revenue.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What reporting do {name} clients receive?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+          <div class="faq-ans"><p>Monthly Looker Studio dashboards covering keyword rankings, organic traffic, conversion data, backlink growth, and Google Business Profile insights. All reporting is delivered in US-friendly formats, with data segmented by {name} search geography. Growth and Scale plan clients also receive bi-weekly or weekly strategy calls with a dedicated account manager.</p></div>
         </div>
       </div>
     </div>
