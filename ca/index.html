@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SEO Agency Canada | Top-Rated Digital Marketing | Bambino</title>
+  <title>Digital Marketing Agency Canada | SEO, Google Ads &amp; More | Bambino</title>
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  <meta name="description" content="Bambino is a top-rated SEO agency serving major Canadian cities. We help Canadian businesses grow organic traffic, generate qualified leads, and dominate Google. Transparent CAD pricing. Free audit available." />
+  <meta name="description" content="Bambino serves major Canadian cities with SEO, Google Ads, and full-service digital marketing. Transparent CAD pricing, no contracts. Free audit for Canadian businesses." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://bambinoagency.com/ca" />
   <link rel="alternate" hreflang="en-CA" href="https://bambinoagency.com/ca" />
@@ -13,8 +13,8 @@
   <link rel="alternate" hreflang="en" href="https://bambinoagency.com/ca" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="SEO Agency Canada | Bambino" />
-  <meta property="og:description" content="Top-rated SEO agency serving major Canadian cities. Transparent CAD pricing from $1,700/month. 400+ clients, 97% retention." />
+  <meta property="og:title" content="Digital Marketing Agency Canada | SEO, Google Ads | Bambino" />
+  <meta property="og:description" content="SEO, Google Ads, and digital marketing for major Canadian cities. Transparent CAD pricing, no contracts. 400+ clients, 97% retention." />
   <meta property="og:url" content="https://bambinoagency.com/ca" />
   <meta property="og:locale" content="en_CA" />
   <meta property="og:image" content="https://bambinoagency.com/img/og-default.jpg" />
@@ -106,12 +106,13 @@
     .cities-intro h2 { font-family: var(--font-heading); font-size: clamp(1.8rem,3.5vw,2.6rem); margin-bottom: 0.8rem; }
     .cities-intro p { color: var(--muted); max-width: 60ch; margin: 0 auto; line-height: 1.75; }
     .cities-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.2rem; }
-    .city-card { background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 1.8rem; transition: var(--transition); display: flex; flex-direction: column; gap: 0.6rem; }
-    .city-card:hover { border-color: var(--orange); box-shadow: 0 8px 32px rgba(0,0,0,0.1); transform: translateY(-3px); }
+    .city-card { background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 1.8rem; display: flex; flex-direction: column; gap: 0.6rem; }
     .city-name { font-family: var(--font-heading); font-size: 1.3rem; color: var(--text); }
     .city-state { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--orange); }
-    .city-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.65; }
-    .city-link { font-size: 0.85rem; font-weight: 700; color: var(--orange); margin-top: auto; display: flex; align-items: center; gap: 0.3rem; }
+    .city-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.65; flex-grow: 1; }
+    .city-services { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.8rem; }
+    .svc-pill { font-size: 0.76rem; font-weight: 600; color: var(--green); background: rgba(3,76,60,0.06); border: 1px solid rgba(3,76,60,0.18); padding: 0.32rem 0.8rem; border-radius: 100px; transition: var(--transition); }
+    .svc-pill:hover { background: var(--orange); color: #fff; border-color: var(--orange); }
 
     .cad-badge { display: inline-block; background: rgba(3,76,60,0.08); border: 1px solid rgba(3,76,60,0.2); color: var(--green); font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 100px; letter-spacing: 0.05em; }
 
@@ -221,81 +222,121 @@
   <section id="cities" aria-labelledby="cities-title">
     <div class="container">
       <div class="cities-intro">
-        <span class="section-label">10 Major Canadian Cities</span>
-        <h2 id="cities-title">Choose Your City</h2>
-        <p>Select your city below to view local market insights, transparent CAD pricing, and city-specific SEO strategies for your business.</p>
+        <span class="section-label">10 Major Canadian Cities — 3 Services Each</span>
+        <h2 id="cities-title">Choose Your City &amp; Service</h2>
+        <p>Select your city to access SEO, Google Ads, and full-service digital marketing — with transparent CAD pricing and city-specific market intelligence.</p>
       </div>
       <div class="cities-grid">
 
-        <a href="https://bambinoagency.com/ca/toronto/seo-agency" class="city-card">
-          <p class="city-state">Toronto, ON &nbsp;<span class="cad-badge">from CAD $1,700</span></p>
+        <div class="city-card">
+          <p class="city-state">Toronto, ON</p>
           <p class="city-name">Toronto</p>
           <p class="city-desc">Canada's largest city and financial capital. 97,000+ businesses, $450 billion metro GDP.</p>
-          <span class="city-link">View Toronto SEO &rarr;</span>
-        </a>
+          <div class="city-services">
+            <a href="https://bambinoagency.com/ca/toronto/seo-agency" class="svc-pill">SEO Agency</a>
+            <a href="https://bambinoagency.com/ca/toronto/digital-marketing-agency" class="svc-pill">Digital Marketing</a>
+            <a href="https://bambinoagency.com/ca/toronto/google-ads-agency" class="svc-pill">Google Ads</a>
+          </div>
+        </div>
 
-        <a href="https://bambinoagency.com/ca/vancouver/seo-agency" class="city-card">
-          <p class="city-state">Vancouver, BC &nbsp;<span class="cad-badge">from CAD $1,700</span></p>
+        <div class="city-card">
+          <p class="city-state">Vancouver, BC</p>
           <p class="city-name">Vancouver</p>
           <p class="city-desc">Canada's Pacific gateway and fastest-growing tech hub. 80,000+ businesses, $160 billion metro economy.</p>
-          <span class="city-link">View Vancouver SEO &rarr;</span>
-        </a>
+          <div class="city-services">
+            <a href="https://bambinoagency.com/ca/vancouver/seo-agency" class="svc-pill">SEO Agency</a>
+            <a href="https://bambinoagency.com/ca/vancouver/digital-marketing-agency" class="svc-pill">Digital Marketing</a>
+            <a href="https://bambinoagency.com/ca/vancouver/google-ads-agency" class="svc-pill">Google Ads</a>
+          </div>
+        </div>
 
-        <a href="https://bambinoagency.com/ca/calgary/seo-agency" class="city-card">
-          <p class="city-state">Calgary, AB &nbsp;<span class="cad-badge">from CAD $1,700</span></p>
+        <div class="city-card">
+          <p class="city-state">Calgary, AB</p>
           <p class="city-name">Calgary</p>
           <p class="city-desc">Western Canada's energy capital reinventing itself as a tech and professional services hub.</p>
-          <span class="city-link">View Calgary SEO &rarr;</span>
-        </a>
+          <div class="city-services">
+            <a href="https://bambinoagency.com/ca/calgary/seo-agency" class="svc-pill">SEO Agency</a>
+            <a href="https://bambinoagency.com/ca/calgary/digital-marketing-agency" class="svc-pill">Digital Marketing</a>
+            <a href="https://bambinoagency.com/ca/calgary/google-ads-agency" class="svc-pill">Google Ads</a>
+          </div>
+        </div>
 
-        <a href="https://bambinoagency.com/ca/edmonton/seo-agency" class="city-card">
-          <p class="city-state">Edmonton, AB &nbsp;<span class="cad-badge">from CAD $1,700</span></p>
+        <div class="city-card">
+          <p class="city-state">Edmonton, AB</p>
           <p class="city-name">Edmonton</p>
           <p class="city-desc">Alberta's provincial capital. 1 million+ metro with government, healthcare, energy, and growing tech.</p>
-          <span class="city-link">View Edmonton SEO &rarr;</span>
-        </a>
+          <div class="city-services">
+            <a href="https://bambinoagency.com/ca/edmonton/seo-agency" class="svc-pill">SEO Agency</a>
+            <a href="https://bambinoagency.com/ca/edmonton/digital-marketing-agency" class="svc-pill">Digital Marketing</a>
+            <a href="https://bambinoagency.com/ca/edmonton/google-ads-agency" class="svc-pill">Google Ads</a>
+          </div>
+        </div>
 
-        <a href="https://bambinoagency.com/ca/ottawa/seo-agency" class="city-card">
-          <p class="city-state">Ottawa, ON &nbsp;<span class="cad-badge">from CAD $1,700</span></p>
+        <div class="city-card">
+          <p class="city-state">Ottawa, ON</p>
           <p class="city-name">Ottawa</p>
           <p class="city-desc">Canada's capital and Silicon Valley North. Highest median household income of any major Canadian city.</p>
-          <span class="city-link">View Ottawa SEO &rarr;</span>
-        </a>
+          <div class="city-services">
+            <a href="https://bambinoagency.com/ca/ottawa/seo-agency" class="svc-pill">SEO Agency</a>
+            <a href="https://bambinoagency.com/ca/ottawa/digital-marketing-agency" class="svc-pill">Digital Marketing</a>
+            <a href="https://bambinoagency.com/ca/ottawa/google-ads-agency" class="svc-pill">Google Ads</a>
+          </div>
+        </div>
 
-        <a href="https://bambinoagency.com/ca/montreal/seo-agency" class="city-card">
-          <p class="city-state">Montreal, QC &nbsp;<span class="cad-badge">from CAD $1,700</span></p>
+        <div class="city-card">
+          <p class="city-state">Montreal, QC</p>
           <p class="city-name">Montreal</p>
           <p class="city-desc">Quebec's economic capital. Bilingual 2.1M market with a world-class AI research cluster and creative economy.</p>
-          <span class="city-link">View Montreal SEO &rarr;</span>
-        </a>
+          <div class="city-services">
+            <a href="https://bambinoagency.com/ca/montreal/seo-agency" class="svc-pill">SEO Agency</a>
+            <a href="https://bambinoagency.com/ca/montreal/digital-marketing-agency" class="svc-pill">Digital Marketing</a>
+            <a href="https://bambinoagency.com/ca/montreal/google-ads-agency" class="svc-pill">Google Ads</a>
+          </div>
+        </div>
 
-        <a href="https://bambinoagency.com/ca/winnipeg/seo-agency" class="city-card">
-          <p class="city-state">Winnipeg, MB &nbsp;<span class="cad-badge">from CAD $1,700</span></p>
+        <div class="city-card">
+          <p class="city-state">Winnipeg, MB</p>
           <p class="city-name">Winnipeg</p>
           <p class="city-desc">The geographic centre of Canada. Manufacturing, agriculture, finance, and fast-emerging tech sector.</p>
-          <span class="city-link">View Winnipeg SEO &rarr;</span>
-        </a>
+          <div class="city-services">
+            <a href="https://bambinoagency.com/ca/winnipeg/seo-agency" class="svc-pill">SEO Agency</a>
+            <a href="https://bambinoagency.com/ca/winnipeg/digital-marketing-agency" class="svc-pill">Digital Marketing</a>
+            <a href="https://bambinoagency.com/ca/winnipeg/google-ads-agency" class="svc-pill">Google Ads</a>
+          </div>
+        </div>
 
-        <a href="https://bambinoagency.com/ca/quebec-city/seo-agency" class="city-card">
-          <p class="city-state">Quebec City, QC &nbsp;<span class="cad-badge">from CAD $1,700</span></p>
+        <div class="city-card">
+          <p class="city-state">Quebec City, QC</p>
           <p class="city-name">Quebec City</p>
           <p class="city-desc">Quebec's provincial capital. Predominantly French-speaking market with strong government, tourism, and tech sectors.</p>
-          <span class="city-link">View Quebec City SEO &rarr;</span>
-        </a>
+          <div class="city-services">
+            <a href="https://bambinoagency.com/ca/quebec-city/seo-agency" class="svc-pill">SEO Agency</a>
+            <a href="https://bambinoagency.com/ca/quebec-city/digital-marketing-agency" class="svc-pill">Digital Marketing</a>
+            <a href="https://bambinoagency.com/ca/quebec-city/google-ads-agency" class="svc-pill">Google Ads</a>
+          </div>
+        </div>
 
-        <a href="https://bambinoagency.com/ca/hamilton/seo-agency" class="city-card">
-          <p class="city-state">Hamilton, ON &nbsp;<span class="cad-badge">from CAD $1,700</span></p>
+        <div class="city-card">
+          <p class="city-state">Hamilton, ON</p>
           <p class="city-name">Hamilton</p>
           <p class="city-desc">Ontario's fastest-transforming city. Creative and tech hub anchored by McMaster University and life sciences.</p>
-          <span class="city-link">View Hamilton SEO &rarr;</span>
-        </a>
+          <div class="city-services">
+            <a href="https://bambinoagency.com/ca/hamilton/seo-agency" class="svc-pill">SEO Agency</a>
+            <a href="https://bambinoagency.com/ca/hamilton/digital-marketing-agency" class="svc-pill">Digital Marketing</a>
+            <a href="https://bambinoagency.com/ca/hamilton/google-ads-agency" class="svc-pill">Google Ads</a>
+          </div>
+        </div>
 
-        <a href="https://bambinoagency.com/ca/kitchener/seo-agency" class="city-card">
-          <p class="city-state">Kitchener, ON &nbsp;<span class="cad-badge">from CAD $1,700</span></p>
+        <div class="city-card">
+          <p class="city-state">Kitchener, ON</p>
           <p class="city-name">Kitchener</p>
           <p class="city-desc">Canada's Technology Triangle. 1,000+ tech companies in the Kitchener–Cambridge–Waterloo corridor.</p>
-          <span class="city-link">View Kitchener SEO &rarr;</span>
-        </a>
+          <div class="city-services">
+            <a href="https://bambinoagency.com/ca/kitchener/seo-agency" class="svc-pill">SEO Agency</a>
+            <a href="https://bambinoagency.com/ca/kitchener/digital-marketing-agency" class="svc-pill">Digital Marketing</a>
+            <a href="https://bambinoagency.com/ca/kitchener/google-ads-agency" class="svc-pill">Google Ads</a>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -304,8 +345,8 @@
   <section id="cta">
     <div class="container">
       <div class="cta-inner">
-        <h2 class="cta-title">Ready to Rank on Page One in Your Canadian City?</h2>
-        <p class="cta-sub">Get a free 30-minute SEO audit — we'll identify your top 3 quick-win opportunities with no obligation. Transparent CAD pricing, no lock-in.</p>
+        <h2 class="cta-title">Ready to Grow Your Canadian Business?</h2>
+        <p class="cta-sub">Get a free 30-minute audit — we'll review your current SEO, paid ads, and digital marketing performance, then recommend the right channel mix for your Canadian market. Transparent CAD pricing, no lock-in.</p>
         <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
           <a href="https://bambinoagency.com/contact" class="btn-orange" style="font-size:1rem;padding:1rem 2.5rem">Get My Free Audit &rarr;</a>
           <a href="https://bambinoagency.com/pricing" class="btn-white">View CAD Pricing</a>
