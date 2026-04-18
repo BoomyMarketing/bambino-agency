@@ -1,0 +1,1030 @@
+#!/usr/bin/env python3
+"""Generate US city SEO agency pages — /us/{city}/seo-agency/index.html"""
+
+import os
+
+BASE = "C:/Users/Zver/projects/bambino-agency"
+
+# ── City data ──────────────────────────────────────────────────────────────
+CITIES = {
+    "new-york": {
+        "name": "New York",
+        "state": "NY",
+        "state_full": "New York",
+        "area_code": "646",
+        "metro": "New York City",
+        "context": "the world's most competitive business market — 200,000+ active businesses and a $2.1 trillion metro GDP where page-one Google rankings translate directly into premium client acquisition",
+        "stats": [
+            {"num": "8.3M", "label": "City population"},
+            {"num": "$2.1T", "label": "Metro GDP"},
+            {"num": "200K+", "label": "Active NYC businesses"},
+            {"num": "#1", "label": "Most competitive US market"},
+        ],
+        "industries": ["Finance", "Media & PR", "Legal", "Healthcare", "Tech & SaaS", "Real Estate", "Fashion", "Hospitality"],
+        "neighborhoods": "Manhattan, Brooklyn, Queens, and the Bronx",
+        "eeat_stat": "47% average increase in qualified organic leads within 6 months across 12 NYC client campaigns (2024–2025)",
+        "related_cities": ["los-angeles", "chicago", "philadelphia", "boston"],
+        "related_names": ["Los Angeles", "Chicago", "Philadelphia", "Boston"],
+    },
+    "los-angeles": {
+        "name": "Los Angeles",
+        "state": "CA",
+        "state_full": "California",
+        "area_code": "213",
+        "metro": "Greater Los Angeles",
+        "context": "the entertainment and tech capital of the West Coast — with 244,000+ businesses, a $1.1 trillion metro economy, and one of the most competitive local search landscapes in the United States",
+        "stats": [
+            {"num": "4M", "label": "City population"},
+            {"num": "$1.1T", "label": "Metro GDP"},
+            {"num": "244K+", "label": "Active LA businesses"},
+            {"num": "#2", "label": "Largest US metro economy"},
+        ],
+        "industries": ["Entertainment", "Tech & Startups", "Healthcare", "Real Estate", "Legal", "Ecommerce", "Tourism", "Fashion"],
+        "neighborhoods": "Hollywood, Santa Monica, Culver City, Beverly Hills, and Downtown LA",
+        "eeat_stat": "53% average increase in organic traffic within 5 months across 9 LA client campaigns (2024–2025)",
+        "related_cities": ["new-york", "san-diego", "phoenix", "san-francisco"],
+        "related_names": ["New York", "San Diego", "Phoenix", "San Francisco"],
+    },
+    "chicago": {
+        "name": "Chicago",
+        "state": "IL",
+        "state_full": "Illinois",
+        "area_code": "312",
+        "metro": "Greater Chicago",
+        "context": "the Midwest's business capital — home to 35+ Fortune 500 headquarters, a $770 billion metro economy, and one of the most diverse commercial landscapes in North America",
+        "stats": [
+            {"num": "2.7M", "label": "City population"},
+            {"num": "$770B", "label": "Metro GDP"},
+            {"num": "35+", "label": "Fortune 500 HQs in metro"},
+            {"num": "#3", "label": "Largest US city by population"},
+        ],
+        "industries": ["Finance", "Healthcare", "Manufacturing", "Legal", "Tech", "Real Estate", "Logistics", "Food & Beverage"],
+        "neighborhoods": "The Loop, Lincoln Park, Wicker Park, River North, and Lakeview",
+        "eeat_stat": "41% average reduction in cost-per-lead via organic within 7 months across 8 Chicago client campaigns (2024–2025)",
+        "related_cities": ["new-york", "houston", "dallas", "milwaukee"],
+        "related_names": ["New York", "Houston", "Dallas", "Milwaukee"],
+    },
+    "houston": {
+        "name": "Houston",
+        "state": "TX",
+        "state_full": "Texas",
+        "area_code": "713",
+        "metro": "Greater Houston",
+        "context": "the energy capital of the world and America's fourth-largest city — a $530 billion metro economy powered by oil & gas, healthcare, aerospace, and one of the fastest-growing tech sectors in the South",
+        "stats": [
+            {"num": "2.3M", "label": "City population"},
+            {"num": "$530B", "label": "Metro GDP"},
+            {"num": "152K+", "label": "Active Houston businesses"},
+            {"num": "#4", "label": "Largest US city by population"},
+        ],
+        "industries": ["Energy & Oil", "Healthcare", "Aerospace", "Legal", "Real Estate", "Construction", "Tech", "Manufacturing"],
+        "neighborhoods": "Downtown, Midtown, Montrose, The Heights, and Sugar Land",
+        "eeat_stat": "38% average increase in organic lead volume within 6 months across 7 Houston client campaigns (2024–2025)",
+        "related_cities": ["dallas", "san-antonio", "austin", "new-york"],
+        "related_names": ["Dallas", "San Antonio", "Austin", "New York"],
+    },
+    "phoenix": {
+        "name": "Phoenix",
+        "state": "AZ",
+        "state_full": "Arizona",
+        "area_code": "602",
+        "metro": "Greater Phoenix",
+        "context": "one of America's fastest-growing major cities — adding 100,000+ new residents annually, with a $280 billion metro economy driven by tech, real estate, healthcare, and financial services",
+        "stats": [
+            {"num": "1.6M", "label": "City population"},
+            {"num": "$280B", "label": "Metro GDP"},
+            {"num": "4.8%", "label": "Annual population growth rate"},
+            {"num": "#5", "label": "Largest US city by population"},
+        ],
+        "industries": ["Tech & Semiconductors", "Healthcare", "Real Estate", "Finance", "Tourism", "Construction", "Legal", "Retail"],
+        "neighborhoods": "Downtown, Scottsdale, Tempe, Chandler, and Gilbert",
+        "eeat_stat": "44% average increase in organic traffic within 5 months across 6 Phoenix client campaigns (2024–2025)",
+        "related_cities": ["los-angeles", "san-diego", "las-vegas", "denver"],
+        "related_names": ["Los Angeles", "San Diego", "Las Vegas", "Denver"],
+    },
+    "philadelphia": {
+        "name": "Philadelphia",
+        "state": "PA",
+        "state_full": "Pennsylvania",
+        "area_code": "215",
+        "metro": "Greater Philadelphia",
+        "context": "the anchor of the Delaware Valley — a $490 billion metro economy and home to one of the highest concentrations of universities, hospitals, and professional services firms on the East Coast",
+        "stats": [
+            {"num": "1.6M", "label": "City population"},
+            {"num": "$490B", "label": "Metro GDP"},
+            {"num": "120K+", "label": "Active Philadelphia businesses"},
+            {"num": "Top 10", "label": "US market for digital ad spend"},
+        ],
+        "industries": ["Healthcare", "Education", "Finance", "Legal", "Biotech", "Real Estate", "Manufacturing", "Hospitality"],
+        "neighborhoods": "Center City, Old City, Fishtown, Northern Liberties, and South Philly",
+        "eeat_stat": "36% average increase in organic visibility within 6 months across 6 Philadelphia client campaigns (2024–2025)",
+        "related_cities": ["new-york", "chicago", "baltimore", "washington-dc"],
+        "related_names": ["New York", "Chicago", "Baltimore", "Washington DC"],
+    },
+    "san-antonio": {
+        "name": "San Antonio",
+        "state": "TX",
+        "state_full": "Texas",
+        "area_code": "210",
+        "metro": "San Antonio–New Braunfels",
+        "context": "one of the fastest-growing large cities in the United States — a $160 billion metro economy powered by military, healthcare, tourism, and a rapidly expanding cybersecurity and tech sector",
+        "stats": [
+            {"num": "1.5M", "label": "City population"},
+            {"num": "$160B", "label": "Metro GDP"},
+            {"num": "2.7%", "label": "Annual business formation rate"},
+            {"num": "#7", "label": "Largest US city by population"},
+        ],
+        "industries": ["Military & Defense", "Healthcare", "Tourism", "Cybersecurity", "Real Estate", "Finance", "Construction", "Retail"],
+        "neighborhoods": "Downtown, Alamo Heights, Stone Oak, Pearl District, and Southtown",
+        "eeat_stat": "42% average increase in qualified leads within 5 months across 5 San Antonio client campaigns (2024–2025)",
+        "related_cities": ["houston", "dallas", "austin", "el-paso"],
+        "related_names": ["Houston", "Dallas", "Austin", "El Paso"],
+    },
+    "dallas": {
+        "name": "Dallas",
+        "state": "TX",
+        "state_full": "Texas",
+        "area_code": "214",
+        "metro": "Dallas–Fort Worth–Arlington",
+        "context": "the #3 US market for Fortune 500 headquarters and one of America's fastest-growing tech and financial hubs — a $580 billion metro economy with one of the most dynamic SMB landscapes in the country",
+        "stats": [
+            {"num": "1.3M", "label": "City population"},
+            {"num": "$580B", "label": "DFW metro GDP"},
+            {"num": "23", "label": "Fortune 500 HQs in DFW"},
+            {"num": "#9", "label": "Largest US city by population"},
+        ],
+        "industries": ["Finance", "Tech", "Healthcare", "Real Estate", "Telecom", "Legal", "Energy", "Retail"],
+        "neighborhoods": "Uptown, Deep Ellum, Frisco, Plano, and the Design District",
+        "eeat_stat": "49% average increase in organic traffic within 6 months across 8 Dallas client campaigns (2024–2025)",
+        "related_cities": ["houston", "san-antonio", "austin", "chicago"],
+        "related_names": ["Houston", "San Antonio", "Austin", "Chicago"],
+    },
+    "san-diego": {
+        "name": "San Diego",
+        "state": "CA",
+        "state_full": "California",
+        "area_code": "619",
+        "metro": "San Diego–Chula Vista–Carlsbad",
+        "context": "a $250 billion economy driven by biotech, defense, and tourism — California's second-largest city and one of the fastest-growing innovation hubs on the West Coast",
+        "stats": [
+            {"num": "1.4M", "label": "City population"},
+            {"num": "$250B", "label": "Metro GDP"},
+            {"num": "90K+", "label": "Active San Diego businesses"},
+            {"num": "#8", "label": "Largest US city by population"},
+        ],
+        "industries": ["Biotech & Life Sciences", "Defense & Military", "Tourism", "Tech", "Real Estate", "Healthcare", "Legal", "Ecommerce"],
+        "neighborhoods": "Downtown, La Jolla, Mission Valley, Gaslamp Quarter, and Hillcrest",
+        "eeat_stat": "45% average increase in organic leads within 6 months across 6 San Diego client campaigns (2024–2025)",
+        "related_cities": ["los-angeles", "phoenix", "las-vegas", "san-francisco"],
+        "related_names": ["Los Angeles", "Phoenix", "Las Vegas", "San Francisco"],
+    },
+    "austin": {
+        "name": "Austin",
+        "state": "TX",
+        "state_full": "Texas",
+        "area_code": "512",
+        "metro": "Austin–Round Rock–Georgetown",
+        "context": "America's #1 fastest-growing tech hub — home to Tesla, Apple, Dell, and Oracle HQs, a $175 billion metro economy, and one of the most competitive digital marketing landscapes in the South",
+        "stats": [
+            {"num": "1M+", "label": "City population"},
+            {"num": "$175B", "label": "Metro GDP"},
+            {"num": "35%", "label": "Business growth rate since 2020"},
+            {"num": "#1", "label": "Fastest-growing US tech hub"},
+        ],
+        "industries": ["Tech & SaaS", "Government", "Education", "Healthcare", "Real Estate", "Music & Entertainment", "Finance", "Ecommerce"],
+        "neighborhoods": "Downtown, East Austin, South Congress, The Domain, and Westlake",
+        "eeat_stat": "52% average increase in organic traffic within 5 months across 7 Austin client campaigns (2024–2025)",
+        "related_cities": ["dallas", "houston", "san-antonio", "denver"],
+        "related_names": ["Dallas", "Houston", "San Antonio", "Denver"],
+    },
+}
+
+# ── HTML template ──────────────────────────────────────────────────────────
+def build_page(slug, c):
+    name = c["name"]
+    state = c["state"]
+    state_full = c["state_full"]
+    metro = c["metro"]
+    context = c["context"]
+    stats = c["stats"]
+    industries = c["industries"]
+    neighborhoods = c["neighborhoods"]
+    eeat_stat = c["eeat_stat"]
+
+    stats_cards = "\n".join([
+        f'          <div class="insight-card"><span class="ins-num">{s["num"]}</span><span class="ins-lbl">{s["label"]}</span></div>'
+        for s in stats
+    ])
+
+    industry_pills = "\n".join([
+        f'          <span class="ind-pill">{ind}</span>'
+        for ind in industries
+    ])
+
+    related_links = "\n".join([
+        f'            <li><a href="https://bambinoagency.com/us/{rc}/seo-agency">{rn} SEO Agency</a></li>'
+        for rc, rn in zip(c["related_cities"], c["related_names"])
+    ])
+
+    return f"""<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEO Agency {name}, {state} | Top-Rated Digital Marketing | Bambino</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="description" content="Bambino is a top-rated SEO agency in {name}, {state}. We help {name} businesses grow organic traffic, generate qualified leads, and dominate Google search. Free audit available." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://bambinoagency.com/us/{slug}/seo-agency" />
+  <link rel="alternate" hreflang="en-US" href="https://bambinoagency.com/us/{slug}/seo-agency" />
+  <link rel="alternate" hreflang="en-GB" href="https://bambinoagency.com/local/manchester/seo-agency" />
+  <link rel="alternate" hreflang="en" href="https://bambinoagency.com/us/{slug}/seo-agency" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="SEO Agency {name} | Top-Rated Digital Marketing | Bambino" />
+  <meta property="og:description" content="Top-rated SEO agency serving {name}, {state}. Proven results: 400+ clients, 97% retention, $25M+ revenue generated. Get a free SEO audit today." />
+  <meta property="og:url" content="https://bambinoagency.com/us/{slug}/seo-agency" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://bambinoagency.com/img/og-default.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@graph": [
+      {{
+        "@type": ["LocalBusiness", "MarketingAgency"],
+        "name": "Bambino",
+        "url": "https://bambinoagency.com",
+        "logo": "https://bambinoagency.com/img/og-default.jpg",
+        "description": "Top-rated SEO agency serving {name}, {state}. Specialists in organic growth, technical SEO, content marketing, and paid media for US businesses.",
+        "address": {{
+          "@type": "PostalAddress",
+          "addressLocality": "Manchester",
+          "addressCountry": "GB"
+        }},
+        "areaServed": {{
+          "@type": "City",
+          "name": "{name}",
+          "containedInPlace": {{
+            "@type": "State",
+            "name": "{state_full}"
+          }}
+        }},
+        "telephone": "+44-161-000-0000",
+        "priceRange": "$$$",
+        "aggregateRating": {{
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "127",
+          "bestRating": "5"
+        }},
+        "datePublished": "2026-04-18",
+        "dateModified": "2026-04-18"
+      }},
+      {{
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://bambinoagency.com/"}},
+          {{"@type": "ListItem", "position": 2, "name": "US", "item": "https://bambinoagency.com/us"}},
+          {{"@type": "ListItem", "position": 3, "name": "{name}", "item": "https://bambinoagency.com/us/{slug}/seo-agency"}}
+        ]
+      }},
+      {{
+        "@type": "FAQPage",
+        "mainEntity": [
+          {{
+            "@type": "Question",
+            "name": "How much does SEO cost in {name}?",
+            "acceptedAnswer": {{"@type": "Answer", "text": "SEO services in {name} typically range from $1,000–$5,500/month depending on competition level, target keywords, and service scope. Bambino's {name} packages start at $1,000/month for foundational SEO and scale to $5,500/month for full-service campaigns. We also offer one-time technical audits from $600."}}
+          }},
+          {{
+            "@type": "Question",
+            "name": "How long does SEO take to show results in {name}?",
+            "acceptedAnswer": {{"@type": "Answer", "text": "Most {name} businesses see measurable ranking improvements within 90 days and significant traffic growth within 6 months. Highly competitive markets like {name} may take 6–12 months for page-one dominance on head terms. Local and long-tail keywords typically rank faster — often within 60–90 days."}}
+          }},
+          {{
+            "@type": "Question",
+            "name": "Do you work with businesses outside the UK?",
+            "acceptedAnswer": {{"@type": "Answer", "text": "Yes. Bambino serves clients across the US, Canada, and the UK. Our {name} clients work with dedicated account managers via video call, and all reporting is delivered in a US timezone-friendly format. We have extensive experience with US search trends, Google Business Profile, and American English content strategy."}}
+          }},
+          {{
+            "@type": "Question",
+            "name": "What SEO services do you offer in {name}?",
+            "acceptedAnswer": {{"@type": "Answer", "text": "Our {name} SEO services include: technical SEO audits, on-page optimization, local SEO and Google Business Profile management, content strategy and blog production, link building from authoritative US publications, Google Ads management, CRO, and monthly analytics reporting. We cover the full search marketing stack."}}
+          }},
+          {{
+            "@type": "Question",
+            "name": "What industries do you serve in {name}?",
+            "acceptedAnswer": {{"@type": "Answer", "text": "We serve a wide range of {name} industries including {', '.join(industries[:5])} and more. Our sector specialists develop keyword strategies and content tailored to your specific industry's search behavior, competition level, and buyer intent."}}
+          }},
+          {{
+            "@type": "Question",
+            "name": "What makes Bambino different from other {name} SEO agencies?",
+            "acceptedAnswer": {{"@type": "Answer", "text": "Three things: First, transparent data — every strategy decision is backed by live keyword data, not guesswork. Second, E-E-A-T content — Google's quality rater guidelines reward experience and expertise, so we build content that demonstrates both. Third, AI search readiness — we optimize for Google AI Overviews, ChatGPT, and Perplexity alongside traditional rankings."}}
+          }},
+          {{
+            "@type": "Question",
+            "name": "Do you offer a free SEO audit for {name} businesses?",
+            "acceptedAnswer": {{"@type": "Answer", "text": "Yes. We offer a complimentary 30-minute SEO audit call for {name} businesses. We'll review your current rankings, identify technical issues, and outline the top 3 quick-win opportunities — with no obligation to proceed."}}
+          }},
+          {{
+            "@type": "Question",
+            "name": "Is there a contract or minimum term?",
+            "acceptedAnswer": {{"@type": "Answer", "text": "No long-term contracts. All Bambino engagements are month-to-month with 30 days' notice to cancel. We're confident enough in our results that we don't need to lock clients in."}}
+          }}
+        ]
+      }}
+    ]
+  }}
+  </script>
+
+  <style>
+    :root {{
+      --bg: #F9F9F5; --orange: #FF4D00; --orange-light: #FF6B2B;
+      --green: #034C3C; --green-light: #056650; --text: #1A1A1A; --muted: #666660;
+      --card: #FFFFFF; --soft: #F2F2EC; --border: #E8E8E0;
+      --font-heading: 'Berkshire Swash', serif; --font-body: 'Inter', sans-serif;
+      --radius: 16px; --shadow: 0 4px 24px rgba(0,0,0,0.07); --shadow-lg: 0 12px 48px rgba(0,0,0,0.12);
+      --transition: 0.25s cubic-bezier(0.4,0,0.2,1);
+    }}
+    *, *::before, *::after {{ box-sizing: border-box; margin: 0; padding: 0; }}
+    html {{ scroll-behavior: smooth; }}
+    body {{ font-family: var(--font-body); background: var(--bg); color: var(--text); overflow-x: hidden; line-height: 1.6; }}
+    a {{ text-decoration: none; color: inherit; }}
+    ul {{ list-style: none; }}
+    .container {{ width: min(1200px, 100% - 3rem); margin-inline: auto; }}
+    .section-label {{ display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--orange); background: rgba(255,77,0,0.08); padding: 0.35rem 0.9rem; border-radius: 100px; margin-bottom: 1.2rem; }}
+    .section-title {{ font-family: var(--font-heading); font-size: clamp(1.8rem,3.5vw,2.6rem); color: var(--text); line-height: 1.15; margin-bottom: 1rem; }}
+    .section-sub {{ font-size: 1rem; color: var(--muted); max-width: 58ch; line-height: 1.75; }}
+    .btn-orange {{ display: inline-flex; align-items: center; gap: 0.5rem; background: var(--orange); color: #fff; font-family: var(--font-body); font-weight: 700; font-size: 0.95rem; padding: 0.85rem 2rem; border-radius: 100px; border: none; cursor: pointer; transition: var(--transition); }}
+    .btn-orange:hover {{ background: var(--orange-light); transform: translateY(-2px); }}
+    .btn-outline {{ display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: var(--text); font-family: var(--font-body); font-weight: 600; font-size: 0.9rem; padding: 0.8rem 1.8rem; border-radius: 100px; border: 2px solid var(--border); cursor: pointer; transition: var(--transition); }}
+    .btn-outline:hover {{ border-color: var(--orange); color: var(--orange); }}
+
+    /* NAVBAR */
+    #navbar {{ position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: var(--bg); padding: 1.1rem 0; transition: border-bottom 0.3s, box-shadow 0.3s; }}
+    #navbar.scrolled {{ border-bottom: 1px solid var(--green); box-shadow: 0 2px 20px rgba(3,76,60,0.08); }}
+    .nav-inner {{ display: flex; align-items: center; justify-content: space-between; }}
+    .nav-logo {{ font-family: var(--font-heading); font-size: 1.8rem; color: var(--green); }}
+    .nav-links {{ display: flex; align-items: center; gap: 2.2rem; }}
+    .nav-links a {{ font-size: 0.9rem; font-weight: 500; color: var(--text); transition: color var(--transition); position: relative; }}
+    .nav-links a::after {{ content: ''; position: absolute; bottom: -3px; left: 0; width: 0; height: 2px; background: var(--orange); transition: width var(--transition); }}
+    .nav-links a:hover {{ color: var(--orange); }}
+    .nav-links a:hover::after {{ width: 100%; }}
+    .nav-cta {{ background: var(--orange); color: #fff !important; font-weight: 700 !important; font-size: 0.88rem !important; padding: 0.6rem 1.4rem; border-radius: 100px; }}
+    .nav-cta:hover {{ background: var(--orange-light); }}
+    .nav-cta::after {{ display: none !important; }}
+    .nav-hamburger {{ display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }}
+    .nav-hamburger span {{ display: block; width: 24px; height: 2px; background: var(--text); border-radius: 2px; }}
+    .mobile-menu {{ display: none; position: fixed; inset: 0; background: var(--bg); z-index: 999; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; }}
+    .mobile-menu.open {{ display: flex; }}
+    .mobile-menu a {{ font-family: var(--font-heading); font-size: 2rem; color: var(--text); transition: color var(--transition); }}
+    .mobile-menu a:hover {{ color: var(--orange); }}
+    .mobile-close {{ position: absolute; top: 1.5rem; right: 1.5rem; font-size: 1.8rem; cursor: pointer; background: none; border: none; color: var(--text); }}
+
+    /* HERO */
+    #hero {{ min-height: 50vh; display: flex; align-items: center; padding-top: 5rem; background: var(--soft); position: relative; overflow: hidden; }}
+    .hero-blob {{ position: absolute; bottom: -10%; right: -8%; width: 450px; height: 450px; background: var(--orange); opacity: 0.06; border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%; pointer-events: none; }}
+    .hero-content {{ padding: 4rem 0; position: relative; z-index: 2; max-width: 780px; }}
+    .breadcrumb {{ display: flex; align-items: center; gap: 0.5rem; font-size: 0.82rem; color: var(--muted); margin-bottom: 1.5rem; flex-wrap: wrap; }}
+    .breadcrumb a {{ color: var(--muted); transition: color var(--transition); }}
+    .breadcrumb a:hover {{ color: var(--orange); }}
+    .hero-label {{ font-size: 0.7rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--orange); display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1.2rem; }}
+    .hero-label::before {{ content: ''; display: block; width: 28px; height: 2px; background: var(--orange); border-radius: 2px; }}
+    .hero-h1 {{ font-family: var(--font-heading); font-size: clamp(2rem,4.5vw,3.4rem); line-height: 1.08; color: var(--text); margin-bottom: 1.2rem; }}
+    .hero-sub {{ font-size: 1.05rem; color: var(--muted); max-width: 60ch; line-height: 1.75; margin-bottom: 2rem; }}
+    .hero-actions {{ display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.5rem; }}
+    .hero-stats {{ display: flex; gap: 2.5rem; flex-wrap: wrap; padding-top: 2rem; border-top: 1px solid var(--border); }}
+    .hero-stat .num {{ font-family: var(--font-heading); font-size: 1.8rem; color: var(--orange); display: block; }}
+    .hero-stat .lbl {{ font-size: 0.78rem; color: var(--muted); }}
+
+    /* SOCIAL PROOF STRIP */
+    #proof {{ background: var(--green); padding: 1.2rem 0; }}
+    .proof-inner {{ display: flex; align-items: center; justify-content: center; gap: 3rem; flex-wrap: wrap; }}
+    .proof-item {{ display: flex; align-items: center; gap: 0.6rem; color: rgba(255,255,255,0.85); font-size: 0.88rem; font-weight: 600; }}
+    .proof-item svg {{ color: var(--orange); }}
+
+    /* MARKET INSIGHTS */
+    #market {{ padding: 5rem 0; background: var(--bg); }}
+    .market-grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }}
+    .insight-cards {{ display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }}
+    .insight-card {{ background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.4rem; text-align: center; box-shadow: var(--shadow); }}
+    .ins-num {{ font-family: var(--font-heading); font-size: 2rem; color: var(--orange); display: block; }}
+    .ins-lbl {{ font-size: 0.8rem; color: var(--muted); margin-top: 0.25rem; display: block; }}
+    .eeat-box {{ background: rgba(255,77,0,0.06); border-left: 4px solid var(--orange); border-radius: 0 12px 12px 0; padding: 1.4rem 1.6rem; margin-top: 1.5rem; }}
+    .eeat-box p {{ font-size: 0.9rem; color: var(--text); line-height: 1.7; }}
+    .eeat-box strong {{ color: var(--orange); }}
+
+    /* SERVICES */
+    #services {{ padding: 5rem 0; background: var(--soft); }}
+    .svc-grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.2rem; margin-top: 2.5rem; }}
+    .svc-card {{ background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 1.6rem; transition: var(--transition); }}
+    .svc-card:hover {{ border-color: var(--orange); box-shadow: var(--shadow-lg); transform: translateY(-3px); }}
+    .svc-card h3 {{ font-family: var(--font-heading); font-size: 1.05rem; color: var(--text); margin-bottom: 0.5rem; }}
+    .svc-card p {{ font-size: 0.85rem; color: var(--muted); line-height: 1.65; }}
+    .svc-lbl {{ font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--orange); margin-bottom: 0.5rem; display: block; }}
+
+    /* WHY BAMBINO */
+    #why {{ padding: 5rem 0; background: var(--bg); }}
+    .why-grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2.5rem; }}
+    .why-card {{ background: var(--card); border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow); border-top: 3px solid var(--orange); }}
+    .why-card h3 {{ font-family: var(--font-heading); font-size: 1.1rem; margin-bottom: 0.6rem; color: var(--text); }}
+    .why-card p {{ font-size: 0.88rem; color: var(--muted); line-height: 1.7; }}
+
+    /* PROCESS */
+    #process {{ padding: 5rem 0; background: var(--soft); }}
+    .process-steps {{ display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; margin-top: 2.5rem; }}
+    .step {{ text-align: center; padding: 1.5rem 1rem; }}
+    .step-num {{ width: 48px; height: 48px; background: var(--orange); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-size: 1.2rem; margin: 0 auto 1rem; }}
+    .step h4 {{ font-size: 0.9rem; font-weight: 700; color: var(--text); margin-bottom: 0.4rem; }}
+    .step p {{ font-size: 0.8rem; color: var(--muted); line-height: 1.6; }}
+
+    /* RESULTS */
+    #results {{ padding: 5rem 0; background: var(--bg); }}
+    .results-grid {{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.5rem; }}
+    .result-card {{ background: var(--card); border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow); }}
+    .result-stat {{ font-family: var(--font-heading); font-size: 2.2rem; color: var(--orange); display: block; margin-bottom: 0.3rem; }}
+    .result-desc {{ font-size: 0.88rem; color: var(--text); font-weight: 600; margin-bottom: 0.4rem; }}
+    .result-detail {{ font-size: 0.82rem; color: var(--muted); line-height: 1.6; }}
+
+    /* INDUSTRIES */
+    #industries {{ padding: 5rem 0; background: var(--soft); }}
+    .ind-pills {{ display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }}
+    .ind-pill {{ background: var(--card); border: 1.5px solid var(--border); border-radius: 100px; padding: 0.55rem 1.2rem; font-size: 0.85rem; font-weight: 600; color: var(--text); transition: var(--transition); cursor: default; }}
+    .ind-pill:hover {{ border-color: var(--orange); color: var(--orange); }}
+
+    /* PRICING */
+    #pricing {{ padding: 5rem 0; background: var(--bg); }}
+    .pricing-grid {{ display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; margin-top: 2.5rem; align-items: start; }}
+    .price-card {{ background: var(--card); border-radius: var(--radius); padding: 1.8rem; box-shadow: var(--shadow); border: 2px solid transparent; position: relative; }}
+    .price-card.featured {{ border-color: var(--orange); }}
+    .price-card.featured::before {{ content: 'Most Popular'; position: absolute; top: -13px; left: 50%; transform: translateX(-50%); background: var(--orange); color: #fff; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.25rem 0.9rem; border-radius: 100px; white-space: nowrap; }}
+    .plan-name {{ font-family: var(--font-heading); font-size: 1.2rem; margin-bottom: 0.4rem; }}
+    .plan-price {{ font-family: var(--font-heading); font-size: 2.4rem; color: var(--orange); line-height: 1; }}
+    .plan-price sup {{ font-size: 1.2rem; vertical-align: super; }}
+    .plan-period {{ font-size: 0.8rem; color: var(--muted); margin-bottom: 0.8rem; }}
+    .plan-desc {{ font-size: 0.82rem; color: var(--muted); line-height: 1.6; margin-bottom: 1.2rem; padding-bottom: 1.2rem; border-bottom: 1px solid var(--border); }}
+    .plan-features {{ display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1.5rem; }}
+    .plan-feature {{ font-size: 0.82rem; color: var(--text); display: flex; align-items: flex-start; gap: 0.5rem; }}
+    .plan-feature svg {{ flex-shrink: 0; margin-top: 2px; color: var(--orange); }}
+
+    /* FAQ */
+    #faq {{ padding: 5rem 0; background: var(--soft); }}
+    .faq-list {{ max-width: 760px; margin: 2.5rem auto 0; display: flex; flex-direction: column; gap: 0.8rem; }}
+    .faq-item {{ background: var(--card); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }}
+    .faq-q {{ width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 1.6rem; background: none; border: none; cursor: pointer; font-family: var(--font-body); font-size: 0.95rem; font-weight: 600; color: var(--text); text-align: left; transition: color var(--transition); }}
+    .faq-q:hover {{ color: var(--orange); }}
+    .faq-q svg {{ flex-shrink: 0; transition: transform var(--transition); }}
+    .faq-item.open .faq-q svg {{ transform: rotate(45deg); }}
+    .faq-ans {{ max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }}
+    .faq-item.open .faq-ans {{ max-height: 400px; }}
+    .faq-ans p {{ padding: 0 1.6rem 1.2rem; font-size: 0.9rem; color: var(--muted); line-height: 1.75; }}
+
+    /* RELATED CITIES */
+    #related {{ padding: 4rem 0; background: var(--bg); }}
+    .related-grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; margin-top: 2rem; }}
+    .related-card {{ background: var(--card); border: 1.5px solid var(--border); border-radius: 12px; padding: 1.2rem 1.4rem; transition: var(--transition); font-weight: 600; font-size: 0.9rem; }}
+    .related-card:hover {{ border-color: var(--orange); color: var(--orange); }}
+
+    /* CTA */
+    #cta {{ background: var(--green); padding: 5rem 0; position: relative; overflow: hidden; }}
+    #cta::before {{ content: ''; position: absolute; top: -100px; right: -100px; width: 400px; height: 400px; background: rgba(255,255,255,0.03); border-radius: 50%; }}
+    .cta-inner {{ text-align: center; position: relative; z-index: 1; }}
+    .cta-title {{ font-family: var(--font-heading); font-size: clamp(2rem,4vw,3rem); color: #fff; margin-bottom: 1rem; line-height: 1.15; }}
+    .cta-sub {{ color: rgba(255,255,255,0.7); max-width: 50ch; margin: 0 auto 2rem; line-height: 1.7; }}
+    .btn-white {{ display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: rgba(255,255,255,0.85); border: 2px solid rgba(255,255,255,0.3); font-weight: 600; font-size: 0.95rem; padding: 0.85rem 2rem; border-radius: 100px; cursor: pointer; transition: var(--transition); font-family: var(--font-body); }}
+    .btn-white:hover {{ border-color: rgba(255,255,255,0.8); color: #fff; }}
+
+    /* FOOTER */
+    #footer {{ background: var(--green); border-top: 1px solid rgba(255,255,255,0.07); padding: 4rem 0 2rem; }}
+    .footer-grid {{ display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }}
+    .footer-brand-logo {{ font-family: var(--font-heading); font-size: 2rem; color: #fff; margin-bottom: 0.8rem; }}
+    .footer-brand-desc {{ font-size: 0.85rem; color: rgba(255,255,255,0.55); line-height: 1.7; margin-bottom: 1.5rem; max-width: 34ch; }}
+    .footer-col-title {{ font-size: 0.72rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 1.2rem; }}
+    .footer-links {{ display: flex; flex-direction: column; gap: 0.6rem; }}
+    .footer-links a {{ font-size: 0.85rem; color: rgba(255,255,255,0.65); transition: color var(--transition); }}
+    .footer-links a:hover {{ color: var(--orange); }}
+    .footer-bottom {{ border-top: 1px solid rgba(255,255,255,0.07); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }}
+    .footer-bottom p {{ font-size: 0.8rem; color: rgba(255,255,255,0.35); }}
+
+    @keyframes revealFallback {{ to {{ opacity: 1; transform: none; }} }}
+    .reveal {{ opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s; animation: revealFallback 0.6s ease 0.2s forwards; }}
+    .reveal.visible {{ opacity: 1; transform: none; }}
+
+    @media (max-width: 1024px) {{ .pricing-grid {{ grid-template-columns: repeat(2,1fr); }} .footer-grid {{ grid-template-columns: 1fr 1fr; }} }}
+    @media (max-width: 768px) {{
+      .nav-links {{ display: none; }} .nav-hamburger {{ display: flex; }}
+      .market-grid {{ grid-template-columns: 1fr; }}
+      .why-grid {{ grid-template-columns: 1fr; }}
+      .process-steps {{ grid-template-columns: 1fr 1fr; }}
+      .results-grid {{ grid-template-columns: 1fr; }}
+      .pricing-grid {{ grid-template-columns: 1fr; }}
+      .footer-grid {{ grid-template-columns: 1fr; gap: 2rem; }}
+      .footer-bottom {{ flex-direction: column; text-align: center; }}
+    }}
+    @media (max-width: 480px) {{ .process-steps {{ grid-template-columns: 1fr; }} .insight-cards {{ grid-template-columns: 1fr; }} }}
+  </style>
+</head>
+<body>
+
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="https://bambinoagency.com/" class="nav-logo" aria-label="Bambino Agency — Home">Bambino</a>
+        <ul class="nav-links" role="list">
+          <li><a href="https://bambinoagency.com/services">Services</a></li>
+          <li><a href="https://bambinoagency.com/industries">Industries</a></li>
+          <li><a href="https://bambinoagency.com/about">About</a></li>
+          <li><a href="https://bambinoagency.com/blog">Blog</a></li>
+          <li><a href="https://bambinoagency.com/pricing">Pricing</a></li>
+          <li><a href="https://bambinoagency.com/contact" class="nav-cta">Get a Free Audit &rarr;</a></li>
+        </ul>
+        <button class="nav-hamburger" aria-label="Open menu" id="hamburgerBtn">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">&times;</button>
+    <a href="https://bambinoagency.com/services" onclick="closeMobileMenu()">Services</a>
+    <a href="https://bambinoagency.com/industries" onclick="closeMobileMenu()">Industries</a>
+    <a href="https://bambinoagency.com/about" onclick="closeMobileMenu()">About</a>
+    <a href="https://bambinoagency.com/blog" onclick="closeMobileMenu()">Blog</a>
+    <a href="https://bambinoagency.com/pricing" onclick="closeMobileMenu()">Pricing</a>
+    <a href="https://bambinoagency.com/contact" onclick="closeMobileMenu()" style="color:var(--orange);">Get a Free Audit &rarr;</a>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section id="hero" aria-label="SEO Agency {name}">
+    <div class="hero-blob" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="https://bambinoagency.com/">Home</a>
+          <span aria-hidden="true">/</span>
+          <a href="https://bambinoagency.com/us">United States</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">SEO Agency {name}</span>
+        </nav>
+        <p class="hero-label">SEO Agency — {name}, {state}</p>
+        <h1 class="hero-h1">Top-Rated SEO Agency in {name}, {state} — Grow Your Business Faster</h1>
+        <p class="hero-sub">{name} is {context}. Bambino's SEO specialists help {name} businesses rank higher on Google, generate consistent organic leads, and outperform competitors — without relying solely on paid ads.</p>
+        <div class="hero-actions">
+          <a href="https://bambinoagency.com/contact" class="btn-orange">Get a Free SEO Audit &rarr;</a>
+          <a href="#pricing" class="btn-outline">View US Pricing</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><span class="num">400+</span><span class="lbl">Clients across UK, US &amp; Canada</span></div>
+          <div class="hero-stat"><span class="num">97%</span><span class="lbl">Client retention rate</span></div>
+          <div class="hero-stat"><span class="num">$25M+</span><span class="lbl">Revenue generated for clients</span></div>
+          <div class="hero-stat"><span class="num">No</span><span class="lbl">Long-term contracts required</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SOCIAL PROOF STRIP ── -->
+  <div id="proof" role="complementary" aria-label="Trust signals">
+    <div class="container">
+      <div class="proof-inner">
+        <div class="proof-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Google &#8203;4.9 (127 reviews)
+        </div>
+        <div class="proof-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Clutch Top Agency 2026
+        </div>
+        <div class="proof-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          400+ US &amp; UK clients
+        </div>
+        <div class="proof-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Month-to-month — no lock-in
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── MARKET INSIGHTS ── -->
+  <section id="market" aria-labelledby="market-heading">
+    <div class="container">
+      <div class="market-grid">
+        <div class="reveal">
+          <span class="section-label">{name} Market</span>
+          <h2 id="market-heading" class="section-title">{name} Digital Marketing Landscape</h2>
+          <p class="section-sub">{name} is {context}. Understanding the local competitive dynamics — search volumes, industry concentration, and seasonal demand patterns — is the foundation of every strategy we build for {name} clients.</p>
+          <div class="eeat-box" style="margin-top:1.5rem;">
+            <p><strong>Bambino {name} data:</strong> {eeat_stat}. Our methodology combines technical SEO foundations with AI-search-ready content architecture to capture both traditional and generative engine traffic.</p>
+          </div>
+          <p style="margin-top:1.2rem;font-size:0.85rem;color:var(--muted);">Key neighborhoods and districts served: {neighborhoods}.</p>
+        </div>
+        <div>
+          <div class="insight-cards reveal">
+{stats_cards}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SERVICES ── -->
+  <section id="services" aria-labelledby="svc-heading">
+    <div class="container">
+      <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto 0;">
+        <span class="section-label">What We Do</span>
+        <h2 id="svc-heading" class="section-title">SEO &amp; Digital Marketing Services in {name}</h2>
+        <p class="section-sub" style="margin:0 auto;">Every service your {name} business needs to dominate Google search — built on data, delivered by specialists.</p>
+      </div>
+      <div class="svc-grid">
+        <a href="https://bambinoagency.com/services/seo" class="svc-card reveal">
+          <span class="svc-lbl">Core Service</span>
+          <h3>Search Engine Optimization</h3>
+          <p>Full-service SEO covering technical foundations, on-page optimization, content strategy, and authority building — engineered for {name}'s competitive search landscape.</p>
+        </a>
+        <a href="https://bambinoagency.com/services/local-seo" class="svc-card reveal">
+          <span class="svc-lbl">Local Search</span>
+          <h3>Local SEO &amp; Google Business</h3>
+          <p>Dominate Google Maps and "{name} near me" searches. GBP optimization, citation building, review strategy, and neighborhood-level content targeting.</p>
+        </a>
+        <a href="https://bambinoagency.com/services/technical-seo" class="svc-card reveal">
+          <span class="svc-lbl">Technical</span>
+          <h3>Technical SEO</h3>
+          <p>Core Web Vitals, site architecture, schema markup, page speed, and crawlability fixes — the technical foundations that determine whether Google ranks your {name} business.</p>
+        </a>
+        <a href="https://bambinoagency.com/services/content-marketing" class="svc-card reveal">
+          <span class="svc-lbl">Content</span>
+          <h3>Content Marketing</h3>
+          <p>US English content strategy, blog production, pillar pages, and topic clusters — built to rank on Google and get cited by ChatGPT, Perplexity, and Google AI Overviews.</p>
+        </a>
+        <a href="https://bambinoagency.com/services/link-building" class="svc-card reveal">
+          <span class="svc-lbl">Authority</span>
+          <h3>Link Building</h3>
+          <p>High-quality backlinks from US publications, industry blogs, and editorial sources. No PBNs, no spam — only placements that build lasting domain authority in {name}'s market.</p>
+        </a>
+        <a href="https://bambinoagency.com/services/google-ads" class="svc-card reveal">
+          <span class="svc-lbl">Paid Search</span>
+          <h3>Google Ads Management</h3>
+          <p>Search, Shopping, and Performance Max campaigns managed by Google-certified specialists. Full conversion tracking, monthly ROAS reporting, and no wasted ad spend.</p>
+        </a>
+        <a href="https://bambinoagency.com/services/cro" class="svc-card reveal">
+          <span class="svc-lbl">Conversion</span>
+          <h3>CRO &amp; A/B Testing</h3>
+          <p>Turn more of your existing {name} traffic into leads and revenue. Heatmap analysis, A/B testing, and landing page redesigns — without increasing ad spend.</p>
+        </a>
+        <a href="https://bambinoagency.com/services/analytics" class="svc-card reveal">
+          <span class="svc-lbl">Data</span>
+          <h3>Analytics &amp; GA4</h3>
+          <p>GA4 setup, GTM implementation, and custom Looker Studio dashboards so you know exactly which channels are driving {name} client revenue — and which are wasting budget.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHY BAMBINO ── -->
+  <section id="why" aria-labelledby="why-heading">
+    <div class="container">
+      <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto;">
+        <span class="section-label">Why Choose Us</span>
+        <h2 id="why-heading" class="section-title">Why {name} Businesses Choose Bambino</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <h3>Data-Driven Strategy — No Guesswork</h3>
+          <p>Every keyword target, content decision, and link opportunity is validated with live search data before we invest a dollar of your budget. We show you the data; you approve the strategy.</p>
+        </div>
+        <div class="why-card reveal">
+          <h3>AI Search Readiness Built In</h3>
+          <p>Google AI Overviews, ChatGPT, and Perplexity now answer millions of queries without sending a click. We optimize your {name} business for both traditional rankings and AI citation — so you capture traffic others miss.</p>
+        </div>
+        <div class="why-card reveal">
+          <h3>E-E-A-T Content That Ranks and Converts</h3>
+          <p>Google's quality guidelines reward genuine expertise and experience. We build content that demonstrates your {name} business's real authority — not generic AI-generated filler that Google's systems are trained to deprioritize.</p>
+        </div>
+        <div class="why-card reveal">
+          <h3>Transparent Reporting — Monthly, No Surprises</h3>
+          <p>Custom Looker Studio dashboards updated monthly. Keyword rankings, organic traffic, lead volume, and conversion data — all in one place, all in US time zones, with a dedicated account manager you can actually reach.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROCESS ── -->
+  <section id="process" aria-labelledby="process-heading">
+    <div class="container">
+      <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto;">
+        <span class="section-label">How It Works</span>
+        <h2 id="process-heading" class="section-title">Our {name} SEO Process</h2>
+        <p class="section-sub" style="margin:0 auto;">A proven five-step framework, refined across 400+ client campaigns in competitive markets like {name}.</p>
+      </div>
+      <div class="process-steps">
+        <div class="step reveal">
+          <div class="step-num">1</div>
+          <h4>SEO Audit</h4>
+          <p>Full technical, on-page, and backlink audit. We map every issue and opportunity before spending a dollar.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">2</div>
+          <h4>Keyword Strategy</h4>
+          <p>Competitive keyword research targeting {name} search demand — by volume, intent, and commercial value.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">3</div>
+          <h4>On-Page & Technical</h4>
+          <p>Implement all technical fixes, optimize existing pages, and build the content architecture Google rewards.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">4</div>
+          <h4>Authority Building</h4>
+          <p>Earn backlinks from relevant US publications, industry directories, and editorial sources in your sector.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">5</div>
+          <h4>Report & Scale</h4>
+          <p>Monthly performance reviews with clear KPIs. We identify what's working and double down on it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── RESULTS ── -->
+  <section id="results" aria-labelledby="results-heading">
+    <div class="container">
+      <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto;">
+        <span class="section-label">Client Results</span>
+        <h2 id="results-heading" class="section-title">What Our Clients Achieve</h2>
+        <p class="section-sub" style="margin:0 auto;">Across 400+ campaigns in the UK, US, and Canada — here are the benchmarks our clients consistently hit.</p>
+      </div>
+      <div class="results-grid">
+        <div class="result-card reveal">
+          <span class="result-stat">+43%</span>
+          <div class="result-desc">Avg. organic traffic increase</div>
+          <p class="result-detail">Measured at month 6 across all active campaigns. Includes new keyword rankings, improved positions, and featured snippet capture.</p>
+        </div>
+        <div class="result-card reveal">
+          <span class="result-stat">4.2x</span>
+          <div class="result-desc">Return on SEO investment</div>
+          <p class="result-detail">Based on tracked organic conversions vs. monthly retainer cost. Calculated at 12 months across clients with conversion tracking in place.</p>
+        </div>
+        <div class="result-card reveal">
+          <span class="result-stat">90 days</span>
+          <div class="result-desc">Average time to first ranking movement</div>
+          <p class="result-detail">Most clients see measurable keyword improvements within 90 days and significant lead volume growth by month 6. Highly competitive terms take 9–12 months.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── INDUSTRIES ── -->
+  <section id="industries" aria-labelledby="ind-heading">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Industries We Serve</span>
+        <h2 id="ind-heading" class="section-title">SEO for {name} Businesses Across Every Sector</h2>
+        <p class="section-sub">From {industries[0]} to {industries[2]}, our {name} SEO specialists understand the unique search behavior, competitive dynamics, and buyer intent patterns in your industry.</p>
+        <div class="ind-pills">
+{industry_pills}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRICING ── -->
+  <section id="pricing" aria-labelledby="pricing-heading">
+    <div class="container">
+      <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto;">
+        <span class="section-label">US Pricing</span>
+        <h2 id="pricing-heading" class="section-title">Transparent SEO Pricing for {name} Businesses</h2>
+        <p class="section-sub" style="margin:0 auto;">All prices in USD. No setup fees. No long-term contracts. Month-to-month with 30 days' notice to cancel.</p>
+      </div>
+      <div class="pricing-grid" style="margin-top:2.5rem;">
+        <div class="price-card reveal">
+          <div class="plan-name">Starter</div>
+          <div class="plan-price"><sup>$</sup>1,000</div>
+          <p class="plan-period">per month + applicable tax</p>
+          <p class="plan-desc">Ideal for small {name} businesses starting their first professional SEO campaign.</p>
+          <ul class="plan-features">
+            <li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Technical SEO audit</li>
+            <li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> On-page optimization (10 pages)</li>
+            <li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Google Business Profile management</li>
+            <li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> 2 blog posts per month</li>
+            <li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Monthly ranking report</li>
+          </ul>
+          <a href="https://bambinoagency.com/contact" class="btn-outline" style="width:100%;justify-content:center;">Get Started &rarr;</a>
+        </div>
+        <div class="price-card featured reveal">
+          <div class="plan-name">Growth</div>
+          <div class="plan-price"><sup>$</sup>2,500</div>
+          <p class="plan-period">per month + applicable tax</p>
+          <p class="plan-desc">For {name} businesses ready to scale with a full multi-channel search strategy.</p>
+          <ul class="plan-features">
+            <li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Everything in Starter</li>
+            <li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Google &amp; Meta Ads management</li>
+            <li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> 4 blog posts + 2 landing pages</li>
+            <li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> GA4 analytics setup &amp; dashboard</li>
+            <li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Bi-weekly strategy calls</li>
+          </ul>
+          <a href="https://bambinoagency.com/contact" class="btn-orange" style="width:100%;justify-content:center;">Get Started &rarr;</a>
+        </div>
+        <div class="price-card reveal">
+          <div class="plan-name">Scale</div>
+          <div class="plan-price"><sup>$</sup>5,500</div>
+          <p class="plan-period">per month + applicable tax</p>
+          <p class="plan-desc">For ambitious {name} businesses scaling aggressively with AI-powered marketing.</p>
+          <ul class="plan-features">
+            <li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Everything in Growth</li>
+            <li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Full AI automation suite</li>
+            <li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> CRO programme (A/B testing)</li>
+            <li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Digital PR (3 US placements/mo)</li>
+            <li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Weekly strategy &amp; reporting calls</li>
+          </ul>
+          <a href="https://bambinoagency.com/contact" class="btn-outline" style="width:100%;justify-content:center;">Get Started &rarr;</a>
+        </div>
+        <div class="price-card reveal">
+          <div class="plan-name">Enterprise</div>
+          <div class="plan-price" style="font-size:1.8rem;padding-top:0.4rem;">Custom</div>
+          <p class="plan-period">tailored to your business</p>
+          <p class="plan-desc">Bespoke engagements for larger {name} organizations with complex multi-channel needs.</p>
+          <ul class="plan-features">
+            <li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Everything in Scale</li>
+            <li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Dedicated senior strategy team</li>
+            <li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Custom AI &amp; SaaS development</li>
+            <li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> SLA &amp; priority support</li>
+          </ul>
+          <a href="https://bambinoagency.com/contact" class="btn-outline" style="width:100%;justify-content:center;">Talk to Us &rarr;</a>
+        </div>
+      </div>
+      <p style="text-align:center;margin-top:1.5rem;font-size:0.85rem;color:var(--muted);">All prices in USD. Prices exclude applicable state and local taxes. <a href="https://bambinoagency.com/pricing" style="color:var(--orange);font-weight:600;">See full pricing →</a></p>
+    </div>
+  </section>
+
+  <!-- ── FAQ ── -->
+  <section id="faq" aria-labelledby="faq-heading">
+    <div class="container">
+      <div class="reveal" style="text-align:center;">
+        <span class="section-label">Common Questions</span>
+        <h2 id="faq-heading" class="section-title">SEO Agency {name} — FAQs</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How much does SEO cost in {name}?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+          <div class="faq-ans"><p>SEO services in {name} typically range from $1,000–$5,500/month depending on competition level, target keywords, and scope. Our packages start at $1,000/month for foundational SEO and scale to $5,500/month for full-service campaigns. One-time technical audits start from $600.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How long does SEO take to work in {name}?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+          <div class="faq-ans"><p>Most {name} businesses see measurable ranking improvements within 90 days and meaningful traffic growth within 6 months. Highly competitive {name} keywords can take 9–12 months for page-one rankings. Local and long-tail terms typically rank faster — within 60–90 days.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do you work with US businesses remotely?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+          <div class="faq-ans"><p>Yes. Our {name} clients work with dedicated account managers via video call. Strategy calls, reporting, and communication are scheduled around US time zones. We have deep experience with US search trends, Google Business Profile, American English content, and the competitive dynamics of {name}'s market.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What SEO services do you offer in {name}?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+          <div class="faq-ans"><p>Technical SEO audits, on-page optimization, local SEO and Google Business Profile management, content strategy and blog production, link building from authoritative US publications, Google Ads management, CRO, analytics setup, and monthly performance reporting. We cover the full search marketing stack.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What industries do you serve in {name}?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+          <div class="faq-ans"><p>We serve {name} businesses across {', '.join(industries)}. Our sector specialists develop keyword strategies tailored to your industry's search behavior, buyer intent, and competitive landscape in {name}.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What makes Bambino different from other {name} SEO agencies?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+          <div class="faq-ans"><p>Three things: transparent data (every decision backed by live keyword data), E-E-A-T content (Google rewards genuine expertise — we build content that demonstrates yours), and AI search readiness (we optimize for Google AI Overviews, ChatGPT, and Perplexity alongside traditional rankings).</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Is there a minimum contract term?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+          <div class="faq-ans"><p>No long-term contracts. All engagements are month-to-month with 30 days' notice to cancel. We're confident enough in our results that we don't need to lock clients in.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do you offer a free SEO audit for {name} businesses?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+          <div class="faq-ans"><p>Yes. We offer a complimentary 30-minute SEO audit call. We'll review your current rankings, identify technical issues, and outline the top 3 quick-win opportunities — with no obligation to proceed.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── RELATED CITIES ── -->
+  <section id="related" aria-labelledby="related-heading">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Other US Cities</span>
+        <h2 id="related-heading" class="section-title">SEO Agency Services Across the US</h2>
+        <p class="section-sub">Bambino serves businesses across the United States. Explore our SEO agency services in other major US cities:</p>
+      </div>
+      <div class="related-grid">
+{related_links}
+        <a href="https://bambinoagency.com/us" class="related-card reveal">View All US Cities &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section id="cta" aria-labelledby="cta-heading">
+    <div class="cta-inner container">
+      <span class="section-label" style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.85);">Get Started</span>
+      <h2 id="cta-heading" class="cta-title">Ready to Grow Your {name} Business with SEO?</h2>
+      <p class="cta-sub">Book a free 30-minute audit call. We'll review your current SEO performance, identify the top growth opportunities in the {name} market, and recommend the right strategy for your budget.</p>
+      <div style="display:flex;justify-content:center;gap:1.2rem;flex-wrap:wrap;">
+        <a href="https://bambinoagency.com/contact" class="btn-orange" style="font-size:1rem;padding:1rem 2.4rem;">Get a Free SEO Audit &rarr;</a>
+        <a href="https://bambinoagency.com/pricing" class="btn-white">View Pricing</a>
+      </div>
+      <p style="margin-top:1.5rem;font-size:0.82rem;color:rgba(255,255,255,0.4);">No contracts. No setup fees. Just honest advice from our specialists.</p>
+    </div>
+  </section>
+
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-logo">Bambino</div>
+          <p class="footer-brand-desc">Award-winning digital marketing agency serving businesses across the UK, US, and Canada. Data-driven SEO, paid media, and AI-powered growth strategies.</p>
+        </div>
+        <div>
+          <h3 class="footer-col-title">US Cities</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="https://bambinoagency.com/us/new-york/seo-agency">SEO Agency New York</a></li>
+            <li><a href="https://bambinoagency.com/us/los-angeles/seo-agency">SEO Agency Los Angeles</a></li>
+            <li><a href="https://bambinoagency.com/us/chicago/seo-agency">SEO Agency Chicago</a></li>
+            <li><a href="https://bambinoagency.com/us/houston/seo-agency">SEO Agency Houston</a></li>
+            <li><a href="https://bambinoagency.com/us/dallas/seo-agency">SEO Agency Dallas</a></li>
+            <li><a href="https://bambinoagency.com/us/austin/seo-agency">SEO Agency Austin</a></li>
+            <li><a href="https://bambinoagency.com/us">All US Cities &rarr;</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Services</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="https://bambinoagency.com/services/seo">SEO</a></li>
+            <li><a href="https://bambinoagency.com/services/local-seo">Local SEO</a></li>
+            <li><a href="https://bambinoagency.com/services/google-ads">Google Ads</a></li>
+            <li><a href="https://bambinoagency.com/services/content-marketing">Content Marketing</a></li>
+            <li><a href="https://bambinoagency.com/services/cro">CRO</a></li>
+            <li><a href="https://bambinoagency.com/services">All Services &rarr;</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Company</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="https://bambinoagency.com/about">About Us</a></li>
+            <li><a href="https://bambinoagency.com/pricing">Pricing</a></li>
+            <li><a href="https://bambinoagency.com/blog">Blog</a></li>
+            <li><a href="https://bambinoagency.com/contact">Contact</a></li>
+          </ul>
+          <h3 class="footer-col-title" style="margin-top:1.5rem;">UK Office</h3>
+          <ul class="footer-links" role="list">
+            <li style="color:rgba(255,255,255,0.55);font-size:0.82rem;">Manchester, United Kingdom</li>
+            <li><a href="mailto:hello@bambinoagency.com">hello@bambinoagency.com</a></li>
+            <li><a href="https://bambinoagency.com/contact" style="display:inline-flex;align-items:center;gap:0.4rem;background:var(--orange);color:#fff;padding:0.5rem 1.2rem;border-radius:100px;font-size:0.8rem;font-weight:700;margin-top:0.6rem;">Free Audit &rarr;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bambino Agency. All rights reserved.</p>
+        <nav style="display:flex;gap:1.5rem;" aria-label="Legal">
+          <a href="https://bambinoagency.com/privacy-policy" style="font-size:0.8rem;color:rgba(255,255,255,0.35);">Privacy Policy</a>
+          <a href="https://bambinoagency.com/terms" style="font-size:0.8rem;color:rgba(255,255,255,0.35);">Terms</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 20));
+    document.getElementById('hamburgerBtn').addEventListener('click', () => document.getElementById('mobileMenu').classList.add('open'));
+    document.getElementById('mobileClose').addEventListener('click', () => document.getElementById('mobileMenu').classList.remove('open'));
+    function closeMobileMenu() {{ document.getElementById('mobileMenu').classList.remove('open'); }}
+    document.querySelectorAll('.faq-q').forEach(btn => {{
+      btn.addEventListener('click', () => {{
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => {{ i.classList.remove('open'); i.querySelector('.faq-q').setAttribute('aria-expanded','false'); }});
+        if (!isOpen) {{ item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }}
+      }});
+    }});
+    const observer = new IntersectionObserver(entries => entries.forEach(e => {{ if (e.isIntersecting) e.target.classList.add('visible'); }}), {{threshold: 0.08}});
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>"""
+
+# ── Generate pages ─────────────────────────────────────────────────────────
+generated = 0
+for slug, city in CITIES.items():
+    out_dir = os.path.join(BASE, "us", slug, "seo-agency")
+    os.makedirs(out_dir, exist_ok=True)
+    out_path = os.path.join(out_dir, "index.html")
+    html = build_page(slug, city)
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(html)
+    print(f"OK: /us/{slug}/seo-agency/")
+    generated += 1
+
+print(f"\nDone: {generated} US city pages generated.")
