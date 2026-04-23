@@ -170,9 +170,9 @@
     box-shadow: var(--shadow);
   }
   .type-label { font-size: 11px; font-weight: 600; color: var(--text-muted); font-family: monospace; text-transform: uppercase; letter-spacing: 0.08em; }
-  .t-h1 { font-family: var(--font-heading); font-size: 50px; font-weight: 800; color: var(--text-heading); line-height: 1.1; }
-  .t-h2 { font-family: var(--font-heading); font-size: 36px; font-weight: 700; color: var(--text-heading); line-height: 1.2; }
-  .t-h3 { font-family: var(--font-heading); font-size: 26px; font-weight: 700; color: var(--text-heading); line-height: 1.3; }
+  .t-h1 { font-family: var(--font-heading); font-size: clamp(2rem, 7vw, 5.5rem); font-weight: 800; color: var(--text-heading); line-height: 1.1; }
+  .t-h2 { font-family: var(--font-heading); font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; color: var(--text-heading); line-height: 1.2; }
+  .t-h3 { font-family: var(--font-heading); font-size: clamp(1.125rem, 1vw + 0.9rem, 1.375rem); font-weight: 700; color: var(--text-heading); line-height: 1.3; }
   .t-h4 { font-family: var(--font-body); font-size: 20px; font-weight: 700; color: var(--text-heading); }
   .t-body { font-size: 16px; color: var(--text); }
   .t-small { font-size: 14px; color: var(--text-muted); }
@@ -457,15 +457,15 @@
     <p class="ds-section-desc">Heading font: Playfair Display (editorial serif) — Body font: Inter. Warm, trustworthy, British.</p>
     <div class="type-samples">
       <div class="type-row">
-        <div class="type-label">H1 / 50px<br>Playfair 800</div>
+        <div class="type-label">H1 / clamp(2rem,7vw,5.5rem)<br>Berkshire Swash</div>
         <div class="t-h1">Grow Your Business</div>
       </div>
       <div class="type-row">
-        <div class="type-label">H2 / 36px<br>Playfair 700</div>
+        <div class="type-label">H2 / clamp(2rem,4vw,3rem)<br>Berkshire Swash</div>
         <div class="t-h2">Digital Marketing Manchester</div>
       </div>
       <div class="type-row">
-        <div class="type-label">H3 / 26px<br>Playfair 700</div>
+        <div class="type-label">H3 / clamp(1.125rem,1vw+0.9rem,1.375rem)<br>Berkshire Swash</div>
         <div class="t-h3">SEO Services for UK Businesses</div>
       </div>
       <div class="type-row">
