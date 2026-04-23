@@ -43,7 +43,7 @@
     @media (max-width: 768px) {
       .nav-links { display: none; position: fixed; top: 72px; left: 0; right: 0; background: var(--bg); flex-direction: column; gap: 0; border-bottom: 1px solid var(--border); padding: 1rem 0; }
       .nav-links.open { display: flex; }
-      .nav-links a { padding: 0.75rem 1.5rem; width: 100%; }
+      .nav-links li a { padding: 0.75rem 1.5rem; width: 100%; display: block; }
       .nav-hamburger { display: flex; }
       .article-layout { grid-template-columns: 1fr !important; }
       .article-sidebar { display: none; }
@@ -61,7 +61,7 @@
     .faq-item { background: var(--card); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); margin-bottom: 1rem; }
     .faq-question { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 1.5rem; background: none; border: none; cursor: pointer; font-family: var(--font-body); font-size: 1rem; font-weight: 600; color: var(--text); text-align: left; }
     .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
-    .faq-item.open .faq-answer { max-height: 500px; }
+    .faq-item.open .faq-answer { max-height: 600px; }
     .faq-answer p { padding: 0 1.5rem 1.2rem; font-size: 0.95rem; color: var(--muted); line-height: 1.75; }
     .faq-icon { font-size: 1.2rem; transition: transform 0.3s; flex-shrink: 0; }
     .faq-item.open .faq-icon { transform: rotate(45deg); }
@@ -85,6 +85,48 @@
     .byline-text strong { color: var(--text); display: block; }
     .highlight-box { background: rgba(255,77,0,0.06); border-left: 4px solid var(--orange); border-radius: 0 var(--radius) var(--radius) 0; padding: 1.25rem 1.5rem; margin-bottom: 1.5rem; }
     .highlight-box p { margin: 0; font-size: 0.98rem; }
+    .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+    .pricing-card { background: var(--card); border-radius: var(--radius); padding: 1.75rem; box-shadow: var(--shadow); border-top: 4px solid var(--border); }
+    .pricing-card.featured { border-top-color: var(--orange); }
+    .pricing-card .price { font-family: var(--font-heading); font-size: 1.8rem; color: var(--text); margin: 0.5rem 0; }
+    .pricing-card .price span { font-size: 1rem; font-family: var(--font-body); color: var(--muted); }
+    .pricing-card h4 { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--orange); margin-bottom: 0.25rem; }
+    .pricing-card ul { margin: 1rem 0 0; padding: 0; gap: 0.45rem; }
+    .pricing-card li { font-size: 0.85rem; color: var(--muted); padding-left: 1.1rem; position: relative; }
+    .pricing-card li::before { content: '✓'; position: absolute; left: 0; color: var(--green); font-weight: 700; }
+
+    /* MEGA MENU */
+    .nav-has-mega { position: relative; }
+    .nav-mega-toggle { display: flex !important; align-items: center; gap: 0.4rem; cursor: pointer; }
+    .nav-mega-toggle svg { transition: transform 0.2s ease; flex-shrink: 0; }
+    .nav-has-mega.active .nav-mega-toggle svg { transform: rotate(180deg); }
+    .mega-menu {
+      display: none;
+      position: fixed;
+      top: 62px;
+      left: 0; right: 0;
+      background: var(--bg, #F9F9F5);
+      border-top: 2px solid var(--orange, #FF4D00);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.13);
+      z-index: 998;
+      padding: 2rem 0 1.5rem;
+    }
+    .nav-has-mega.active .mega-menu { display: block; animation: megaFadeIn 0.16s ease; }
+    @keyframes megaFadeIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
+    .mega-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1.5rem 1.2rem; }
+    .mega-col { }
+    .mega-cat { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--orange, #FF4D00); margin-bottom: 0.45rem; margin-top: 0; line-height: 1.4; }
+    .mega-col a { display: block; font-size: 0.81rem; color: var(--text, #1a1a1a); padding: 0.16rem 0; transition: color 0.15s; font-weight: 400; line-height: 1.5; }
+    .mega-col a:hover { color: var(--orange, #FF4D00); }
+    .mega-col a::after { display: none !important; }
+    .mega-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 1.2rem; padding-top: 0.9rem; border-top: 1px solid var(--border, #e5e5e0); }
+    .mega-all { font-size: 0.84rem; font-weight: 600; color: var(--green, #034C3C); }
+    .mega-all:hover { color: var(--orange, #FF4D00); }
+    .mega-all::after { display: none !important; }
+    .mega-cta { font-size: 0.81rem; font-weight: 700; background: var(--orange, #FF4D00); color: #fff !important; padding: 0.45rem 1.1rem; border-radius: 100px; transition: background 0.15s; }
+    .mega-cta:hover { background: #e64500 !important; }
+    .mega-cta::after { display: none !important; }
+    @media (max-width: 960px) { .mega-menu { display: none !important; } }
   </style>
   <script type="application/ld+json">
   {
@@ -97,9 +139,9 @@
         "description": "How UK SaaS companies grow faster with specialist marketing agencies. SEO, content, AI outbound and paid acquisition strategies that reduce CAC and grow MRR.",
         "url": "https://bambinoagency.com/blog/saas-marketing-agency-uk",
         "datePublished": "2026-04-17",
-        "dateModified": "2026-04-17",
+        "dateModified": "2026-04-23",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "name": "Sarah K.",
           "worksFor": { "@type": "Organization", "name": "Bambino" }
         },
@@ -156,6 +198,22 @@
               "@type": "Answer",
               "text": "Yes. Bambino works with pre-Series A SaaS companies through to scale-ups. Our Growth package (£2,000/month) is designed for early-stage SaaS focusing on one primary channel."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "What is PLG vs SLG in SaaS marketing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PLG (product-led growth) uses free trial or freemium to drive user acquisition — the product sells itself. SLG (sales-led growth) requires demo pipeline and a sales team to close deals. Each model requires a fundamentally different marketing architecture."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What red flags should I watch for when choosing a SaaS marketing agency?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Avoid agencies that report on traffic and impressions rather than demo volume and CAC, promise guaranteed results within 30 days, have no SaaS-specific case studies, or lack experience with your growth motion (PLG vs SLG)."
+            }
           }
         ]
       }
@@ -167,17 +225,112 @@
 <nav id="navbar" aria-label="Main navigation">
   <div class="nav-inner container">
     <a href="https://bambinoagency.com" class="nav-logo" aria-label="Bambino home">Bambino</a>
-    <div class="nav-links" role="list">
-      <a href="https://bambinoagency.com/services" role="listitem">Services</a>
-      <a href="https://bambinoagency.com/industries" role="listitem">Industries</a>
-      
-      <a href="https://bambinoagency.com/blog" role="listitem">Blog</a>
-      <a href="https://bambinoagency.com/pricing" role="listitem">Pricing</a>
-      <a href="https://bambinoagency.com/contact" class="nav-cta" role="listitem">Free Audit</a>
-    </div>
-    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
+    <ul class="nav-links" id="nav-links" role="list">
+      <li class="nav-has-mega">
+        <a href="https://bambinoagency.com/services" class="nav-mega-toggle" aria-haspopup="true" aria-expanded="false">Services <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+        <div class="mega-menu" role="region" aria-label="Services menu">
+          <div class="container">
+            <div class="mega-grid">
+                  <div class="mega-col">
+                    <p class="mega-cat">Search &amp; AI Visibility</p>
+                    <a href="https://bambinoagency.com/services/seo">SEO</a>
+                    <a href="https://bambinoagency.com/services/geo">GEO / AI Search</a>
+                    <a href="https://bambinoagency.com/services/technical-seo">Technical SEO</a>
+                    <a href="https://bambinoagency.com/services/local-seo">Local SEO</a>
+                    <a href="https://bambinoagency.com/services/enterprise-seo">Enterprise SEO</a>
+                    <a href="https://bambinoagency.com/services/international-seo">International SEO</a>
+                    <a href="https://bambinoagency.com/services/link-building">Link Building</a>
+                  </div>
+                  <div class="mega-col">
+                    <p class="mega-cat">Paid Media</p>
+                    <a href="https://bambinoagency.com/services/google-ads">Google Ads</a>
+                    <a href="https://bambinoagency.com/services/ppc">PPC Management</a>
+                    <a href="https://bambinoagency.com/services/meta-ads">Meta Ads</a>
+                    <a href="https://bambinoagency.com/services/linkedin-ads">LinkedIn Ads</a>
+                    <a href="https://bambinoagency.com/services/youtube-ads">YouTube Ads</a>
+                    <a href="https://bambinoagency.com/services/tiktok-ads">TikTok Ads</a>
+                    <a href="https://bambinoagency.com/services/pinterest-ads">Pinterest Ads</a>
+                    <a href="https://bambinoagency.com/services/google-shopping">Google Shopping</a>
+                    <a href="https://bambinoagency.com/services/retail-media">Retail Media</a>
+                    <a href="https://bambinoagency.com/services/podcast-advertising">Podcast Advertising</a>
+                  </div>
+                  <div class="mega-col">
+                    <p class="mega-cat">Social &amp; Creator</p>
+                    <a href="https://bambinoagency.com/services/social-media">Social Media</a>
+                    <a href="https://bambinoagency.com/services/influencer-marketing">Influencer Marketing</a>
+                    <a href="https://bambinoagency.com/services/ugc-content">UGC Content</a>
+                    <a href="https://bambinoagency.com/services/community-building">Community Building</a>
+                    <a href="https://bambinoagency.com/services/experiential-marketing">Experiential Marketing</a>
+                    <p class="mega-cat" style="margin-top:1.2rem">Content &amp; Video</p>
+                    <a href="https://bambinoagency.com/services/content-marketing">Content Marketing</a>
+                    <a href="https://bambinoagency.com/services/video-marketing">Video Marketing</a>
+                    <a href="https://bambinoagency.com/services/digital-pr">Digital PR</a>
+                    <a href="https://bambinoagency.com/services/performance-creative">Performance Creative</a>
+                  </div>
+                  <div class="mega-col">
+                    <p class="mega-cat">Web &amp; Brand</p>
+                    <a href="https://bambinoagency.com/services/web-design">Web Design</a>
+                    <a href="https://bambinoagency.com/services/webflow">Webflow Development</a>
+                    <a href="https://bambinoagency.com/services/framer">Framer Development</a>
+                    <a href="https://bambinoagency.com/services/branding">Branding</a>
+                    <a href="https://bambinoagency.com/services/cro">CRO</a>
+                    <a href="https://bambinoagency.com/services/aso">App Store Optimisation</a>
+                    <a href="https://bambinoagency.com/services/analytics-ga4">Analytics &amp; GA4</a>
+                    <a href="https://bambinoagency.com/services/attribution-mmm">Attribution &amp; MMM</a>
+                    <a href="https://bambinoagency.com/services/cdp">CDP Implementation</a>
+                    <p class="mega-cat" style="margin-top:1.2rem">AI &amp; Automation</p>
+                    <a href="https://bambinoagency.com/services/ai-automations">AI Automations</a>
+                    <a href="https://bambinoagency.com/services/voice-ai">Voice AI</a>
+                    <a href="https://bambinoagency.com/services/ai-outbound">AI Outbound Sales</a>
+                    <a href="https://bambinoagency.com/services/conversational-marketing">Conversational Marketing</a>
+                    <a href="https://bambinoagency.com/services/marketing-automation">Marketing Automation</a>
+                    <a href="https://bambinoagency.com/services/sms-marketing">SMS Marketing</a>
+                  </div>
+                  <div class="mega-col">
+                    <p class="mega-cat">Operations &amp; Growth</p>
+                    <a href="https://bambinoagency.com/services/revops">RevOps</a>
+                    <a href="https://bambinoagency.com/services/hubspot">HubSpot</a>
+                    <a href="https://bambinoagency.com/services/klaviyo">Klaviyo</a>
+                    <a href="https://bambinoagency.com/services/salesforce-marketing-cloud">Salesforce Marketing Cloud</a>
+                    <a href="https://bambinoagency.com/services/fractional-cmo">Fractional CMO</a>
+                    <a href="https://bambinoagency.com/services/growth-marketing">Growth Marketing</a>
+                    <a href="https://bambinoagency.com/services/plg">Product-Led Growth</a>
+                    <p class="mega-cat" style="margin-top:1.2rem">B2B &amp; Enterprise</p>
+                    <a href="https://bambinoagency.com/services/lead-generation">Lead Generation</a>
+                    <a href="https://bambinoagency.com/services/abm">Account-Based Marketing</a>
+                    <a href="https://bambinoagency.com/services/amazon-marketing">Amazon Marketing</a>
+                    <a href="https://bambinoagency.com/services/demand-generation">Demand Generation</a>
+                    <a href="https://bambinoagency.com/services/b2b-saas-growth">B2B SaaS Growth</a>
+                    <a href="https://bambinoagency.com/services/sdr-bdr-as-a-service">SDR / BDR as a Service</a>
+                    <a href="https://bambinoagency.com/services/ctv-advertising">CTV Advertising</a>
+                    <a href="https://bambinoagency.com/services/dooh">DOOH Advertising</a>
+                  </div>
+                  <div class="mega-col">
+                    <p class="mega-cat">eCommerce &amp; Retention</p>
+                    <a href="https://bambinoagency.com/services/shopify-marketing">Shopify Marketing</a>
+                    <a href="https://bambinoagency.com/services/amazon-dsp">Amazon DSP</a>
+                    <a href="https://bambinoagency.com/services/lifecycle-marketing">Lifecycle Marketing</a>
+                    <a href="https://bambinoagency.com/services/subscription-commerce">Subscription Commerce</a>
+                    <a href="https://bambinoagency.com/services/email-marketing">Email Marketing</a>
+                    <a href="https://bambinoagency.com/services/reputation-management">Reputation Management</a>
+                  </div>
+                </div>
+                <div class="mega-footer">
+              <a href="https://bambinoagency.com/services" class="mega-all">View all services &rarr;</a>
+              <a href="https://bambinoagency.com/contact" class="mega-cta">Get a Free Audit &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li><a href="https://bambinoagency.com/industries">Industries</a></li>
+      <li><a href="https://bambinoagency.com/about">About</a></li>
+      <li><a href="https://bambinoagency.com/blog">Blog</a></li>
+      <li><a href="https://bambinoagency.com/pricing">Pricing</a></li>
+      <li><a href="https://bambinoagency.com/contact" class="nav-cta">Get a Free Audit &rarr;</a></li>
+    </ul>
   </div>
 </nav>
 
@@ -197,7 +350,7 @@
         <div class="byline-avatar">SK</div>
         <div class="byline-text">
           <strong>Sarah K., Head of Content &mdash; Semrush Academy Certified</strong>
-          April 2026 &bull; 9 min read
+          April 2026 &bull; 11 min read
         </div>
       </div>
     </div>
@@ -210,7 +363,7 @@
         <p>B2B SaaS marketing is fundamentally different from marketing a product or local service. Longer sales cycles, multiple stakeholders, product-led vs sales-led growth motions, and metrics like CAC, LTV and MRR rather than simple revenue. Here&rsquo;s how UK SaaS companies work with specialist marketing agencies to accelerate growth in 2026.</p>
 
         <div class="highlight-box">
-          <p><strong>SaaS growth benchmarks from our campaigns:</strong> UK B2B SaaS companies that combine SEO-led content with AI outbound sequences see a median 2.4x pipeline acceleration in months 4&ndash;9 compared to paid-only strategies &mdash; with blended CAC typically 35% lower by month 12 (Bambino SaaS client data, 2025, n=14 UK SaaS companies).</p>
+          <p><strong>SaaS growth benchmarks from our campaigns:</strong> UK B2B SaaS companies that combine SEO-led content with AI outbound sequences see a median 2.4&times; pipeline acceleration in months 4&ndash;9 compared to paid-only strategies &mdash; with blended CAC typically 35% lower by month 12 (Bambino SaaS client data, 2025, n=14 UK SaaS companies).</p>
         </div>
 
         <h2 id="saas-marketing-different">Why SaaS Marketing Is Different</h2>
@@ -225,8 +378,27 @@
         </ul>
 
         <div class="highlight-box">
-          <p><strong>The core challenge:</strong> SaaS marketing must simultaneously build category awareness, generate qualified demo pipeline, and support customer retention &mdash; all while keeping CAC low enough that LTV/CAC stays above 3x. Generalist agencies rarely have the framework to do this.</p>
+          <p><strong>The core challenge:</strong> SaaS marketing must simultaneously build category awareness, generate qualified demo pipeline, and support customer retention &mdash; all while keeping CAC low enough that LTV/CAC stays above 3&times;. Generalist agencies rarely have the framework to do this.</p>
         </div>
+
+        <h2 id="plg-vs-slg">PLG vs SLG: Choosing Your Growth Motion</h2>
+        <p>Before selecting marketing channels, you need to define your primary growth motion. This single decision shapes everything else &mdash; from content strategy to channel mix to the metrics you optimise for.</p>
+
+        <table>
+          <thead>
+            <tr><th>Dimension</th><th>Product-Led Growth (PLG)</th><th>Sales-Led Growth (SLG)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Primary conversion</strong></td><td>Free trial / freemium sign-up</td><td>Demo / discovery call booked</td></tr>
+            <tr><td><strong>ACV sweet spot</strong></td><td>Under &pound;10,000/year</td><td>&pound;10,000+ / year</td></tr>
+            <tr><td><strong>Time to value</strong></td><td>Days to weeks (self-serve)</td><td>Weeks to months (sales cycle)</td></tr>
+            <tr><td><strong>Marketing focus</strong></td><td>Activation, viral loops, in-app</td><td>Pipeline, ABM, outbound</td></tr>
+            <tr><td><strong>Key metric</strong></td><td>Activation rate, PQL conversion</td><td>Demo-to-close rate, pipeline velocity</td></tr>
+            <tr><td><strong>Best channels</strong></td><td>SEO, product communities, G2</td><td>LinkedIn Ads, AI outbound, events</td></tr>
+          </tbody>
+        </table>
+
+        <p>Many growth-stage SaaS companies run a hybrid motion &mdash; PLG for SMB, SLG for enterprise. In this model, marketing must generate both self-serve sign-ups and enterprise demos simultaneously, which requires a clear segmentation strategy and separate channel attribution models.</p>
 
         <h2 id="seo-for-saas">SEO for B2B SaaS Companies</h2>
         <p>SaaS SEO is highly specific. The goal is not traffic for its own sake &mdash; it is capturing buyers who are actively evaluating software in your category. Four content types drive the majority of demo conversions from organic search:</p>
@@ -259,14 +431,14 @@
           <li><strong>Personalised email sequences at scale:</strong> Each email references the prospect&rsquo;s specific tech stack, recent funding round, or relevant job postings &mdash; at thousands of contacts per month.</li>
           <li><strong>LinkedIn automation:</strong> Connection requests plus follow-up message sequences at volume, integrated with email for a multi-touch approach.</li>
           <li><strong>Multi-touch sequences:</strong> Email, LinkedIn, and phone coordinated in a single cadence &mdash; typically 6&ndash;9 touches over 3&ndash;4 weeks for each prospect.</li>
-          <li><strong>Demonstrated results:</strong> Bambino&rsquo;s <a href="https://bambinoagency.com/services/ai-outbound" style="color: var(--orange);">AI outbound</a> clients average 3&ndash;5x more booked demos compared to manual outbound at equivalent send volume.</li>
+          <li><strong>Demonstrated results:</strong> Bambino&rsquo;s <a href="https://bambinoagency.com/services/ai-outbound" style="color: var(--orange);">AI outbound</a> clients average 3&ndash;5&times; more booked demos compared to manual outbound at equivalent send volume.</li>
         </ul>
 
         <p>Key metrics to track for SaaS AI outbound:</p>
         <ul>
           <li><strong>Reply rate:</strong> Target 8&ndash;15% of total touches. Below 5% signals ICP or messaging issues.</li>
           <li><strong>Meeting booking rate:</strong> Target 2&ndash;5% of total touches. This is the core pipeline metric.</li>
-          <li><strong>Positive reply rate:</strong> Separate interested replies from unsubscribes. This reveals true resonance.</li>
+          <li><strong>Positive reply rate:</strong> Separate interested replies from unsubscribes. This reveals true resonance with your ICP.</li>
         </ul>
 
         <h2 id="content-strategy">Content Strategy for SaaS</h2>
@@ -281,7 +453,7 @@
 
         <p><strong>Distribution channels that matter for B2B SaaS:</strong></p>
         <ul>
-          <li>LinkedIn (founder and team posts, not just company page &mdash; personal profiles drive 5&ndash;10x the reach of company accounts)</li>
+          <li>LinkedIn (founder and team posts &mdash; personal profiles drive 5&ndash;10&times; the reach of company accounts)</li>
           <li>Newsletter (weekly or biweekly to your ICP prospect list and customer base)</li>
           <li>Community (relevant Slack groups, Reddit communities, and industry forums where your ICP is active)</li>
           <li>G2 and Capterra (reviews generate content signals and capture high-intent comparison traffic independently)</li>
@@ -290,9 +462,9 @@
         <h2 id="paid-acquisition">Paid Acquisition for B2B SaaS</h2>
         <p>Paid channels can compress the timeline for demo pipeline &mdash; particularly useful for early-stage companies before organic and outbound channels reach full velocity. Two primary channels dominate B2B SaaS paid acquisition in the UK.</p>
 
-        <p><strong>Google Ads</strong> captures high-intent search traffic for your software category. Targeting searches like &ldquo;best [software category] UK&rdquo; or &ldquo;[category] tool for [industry]&rdquo; reaches buyers in active evaluation mode. The goal is always demo or trial sign-ups, not raw clicks. Typical SaaS Google Ads CAC ranges from <strong>&pound;150 to &pound;800</strong> depending on average contract value (ACV) and category competitiveness. See our <a href="https://bambinoagency.com/services/google-ads" style="color: var(--orange);">Google Ads service</a> for SaaS-specific campaign structures.</p>
+        <p><strong>Google Ads</strong> captures high-intent search traffic for your software category. Targeting searches like &ldquo;best [software category] UK&rdquo; or &ldquo;[category] tool for [industry]&rdquo; reaches buyers in active evaluation mode. Typical SaaS Google Ads CAC ranges from <strong>&pound;150 to &pound;800</strong> depending on ACV and category competitiveness. See our <a href="https://bambinoagency.com/services/google-ads" style="color: var(--orange);">Google Ads service</a> for SaaS-specific campaign structures.</p>
 
-        <p><strong>LinkedIn Ads</strong> allow hyper-precise ICP targeting by job title, company size, industry, seniority, and even specific companies (ABM). CPC is higher than Google (&pound;5&ndash;&pound;15 per click) but the audience quality for B2B SaaS is unmatched. LinkedIn is particularly effective for:</p>
+        <p><strong>LinkedIn Ads</strong> allow hyper-precise ICP targeting by job title, company size, industry, seniority, and specific companies (ABM). CPC is higher than Google (&pound;5&ndash;&pound;15 per click) but the audience quality for B2B SaaS is unmatched. LinkedIn is particularly effective for:</p>
         <ul>
           <li>Account-based marketing (ABM) campaigns targeting named accounts</li>
           <li>Retargeting visitors who have viewed your pricing or features pages</li>
@@ -300,7 +472,75 @@
           <li>Lead gen forms that capture demo requests without requiring a landing page visit</li>
         </ul>
 
-        <p><strong>Retargeting</strong> sits across both channels and is frequently underused by SaaS companies. Serving targeted ads to visitors who did not convert &mdash; especially those who visited pricing or comparison pages &mdash; delivers retargeting ROI typically <strong>3&ndash;5x higher</strong> than equivalent cold acquisition spend. The audience is warm; they just needed more time or a different message.</p>
+        <p><strong>Retargeting</strong> sits across both channels and is frequently underused by SaaS companies. Serving targeted ads to visitors who did not convert &mdash; especially those who visited pricing or comparison pages &mdash; delivers retargeting ROI typically <strong>3&ndash;5&times; higher</strong> than equivalent cold acquisition spend. The audience is warm; they just needed more time or a different message.</p>
+
+        <h2 id="choose-agency">How to Choose a SaaS Marketing Agency</h2>
+        <p>Not every digital marketing agency is equipped to work with SaaS businesses. The wrong agency will optimise for traffic and impressions rather than demo volume and CAC &mdash; metrics that look good in reports but don&rsquo;t move MRR. Here is what to look for and what to avoid.</p>
+
+        <h3>What to look for</h3>
+        <ul>
+          <li><strong>SaaS-specific case studies:</strong> Ask to see examples from companies at your growth stage and ACV range. Metrics should reference CAC, demo volume, or pipeline contribution &mdash; not just traffic growth.</li>
+          <li><strong>Understanding of your growth motion:</strong> A good agency will ask whether you are PLG or SLG before proposing a channel mix. If they jump straight to &ldquo;we&rsquo;ll do SEO and Google Ads&rdquo; without understanding your motion, walk away.</li>
+          <li><strong>Channel expertise that matches your stage:</strong> Early-stage SaaS needs outbound velocity. Growth-stage SaaS needs SEO compounding. Scale-ups need multi-channel attribution. A one-size-fits-all approach is a red flag.</li>
+          <li><strong>Transparent reporting on pipeline metrics:</strong> Insist on monthly reporting that connects marketing activity to demo booked, pipeline created, and MRR influenced &mdash; not just impressions and sessions.</li>
+          <li><strong>ICP clarity process:</strong> The first month of any SaaS engagement should involve deep ICP definition. If an agency skips this and goes straight to execution, expect wasted budget on the wrong prospects.</li>
+        </ul>
+
+        <h3>Red flags to avoid</h3>
+        <ul>
+          <li>Promises of guaranteed results within 30 days (SEO takes 6&ndash;12 months; outbound takes 4&ndash;6 weeks to ramp)</li>
+          <li>No experience with your software category or ACV range</li>
+          <li>Monthly reports that lead with sessions and impressions rather than pipeline metrics</li>
+          <li>Lock-in contracts longer than 6 months with no break clause</li>
+          <li>Generalist agency claiming SaaS specialism with no SaaS-specific case studies</li>
+        </ul>
+
+        <h2 id="packages">Bambino SaaS Marketing Packages</h2>
+        <p>Bambino offers three SaaS-specific engagement tiers, designed around growth stage rather than channel selection. All packages include ICP definition, monthly pipeline reporting, and a dedicated SaaS growth strategist.</p>
+
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h4>Seed</h4>
+            <div class="price">&pound;2,000<span>/month</span></div>
+            <p style="font-size: 0.82rem; color: var(--muted); margin: 0.5rem 0 1rem;">Pre-Series A &bull; 1 channel focus</p>
+            <ul>
+              <li>ICP definition workshop</li>
+              <li>AI outbound (500 contacts/mo)</li>
+              <li>Email sequence copywriting</li>
+              <li>Monthly pipeline report</li>
+              <li>Dedicated Slack channel</li>
+            </ul>
+          </div>
+          <div class="pricing-card featured">
+            <h4>Growth</h4>
+            <div class="price">&pound;4,500<span>/month</span></div>
+            <p style="font-size: 0.82rem; color: var(--muted); margin: 0.5rem 0 1rem;">Series A&ndash;B &bull; Multi-channel</p>
+            <ul>
+              <li>AI outbound (2,000 contacts/mo)</li>
+              <li>SaaS SEO (comparison + use-case pages)</li>
+              <li>LinkedIn Ads management</li>
+              <li>Content: 4 articles/month</li>
+              <li>CAC/LTV pipeline dashboard</li>
+              <li>Fortnightly strategy calls</li>
+            </ul>
+          </div>
+          <div class="pricing-card">
+            <h4>Scale</h4>
+            <div class="price">&pound;8,000<span>/month</span></div>
+            <p style="font-size: 0.82rem; color: var(--muted); margin: 0.5rem 0 1rem;">Series B+ &bull; Full-funnel</p>
+            <ul>
+              <li>AI outbound + LinkedIn ABM</li>
+              <li>Full SEO programme (programmatic + pillar)</li>
+              <li>Google + LinkedIn Ads</li>
+              <li>Content: 8 articles/month</li>
+              <li>RevOps &amp; HubSpot integration</li>
+              <li>Weekly growth reviews</li>
+              <li>Fractional CMO access</li>
+            </ul>
+          </div>
+        </div>
+
+        <p style="font-size: 0.9rem; color: var(--muted);">All packages require a 3-month minimum engagement. Custom enterprise packages are available for Series C+ and pre-IPO SaaS companies. <a href="https://bambinoagency.com/contact" style="color: var(--orange);">Get in touch</a> to discuss your specific requirements.</p>
 
         <h2 id="faq">Frequently Asked Questions</h2>
 
@@ -311,7 +551,7 @@
 
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">How much does SaaS marketing cost in the UK? <span class="faq-icon">+</span></button>
-          <div class="faq-answer"><p>B2B SaaS marketing retainers typically range from &pound;2,000&ndash;&pound;8,000/month depending on channels and growth stage. Early-stage companies often start with one channel (SEO or outbound); growth-stage companies run multi-channel programmes spanning SEO, outbound, content, and paid. Bambino&rsquo;s Growth package starts at &pound;2,000/month.</p></div>
+          <div class="faq-answer"><p>B2B SaaS marketing retainers typically range from &pound;2,000&ndash;&pound;8,000/month depending on channels and growth stage. Early-stage companies often start with one channel (SEO or outbound); growth-stage companies run multi-channel programmes spanning SEO, outbound, content, and paid. Bambino&rsquo;s Seed package starts at &pound;2,000/month.</p></div>
         </div>
 
         <div class="faq-item">
@@ -326,7 +566,17 @@
 
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">Can Bambino work with early-stage SaaS startups? <span class="faq-icon">+</span></button>
-          <div class="faq-answer"><p>Yes. We work with pre-Series A SaaS companies through to scale-ups. Our Growth package (&pound;2,000/month) is designed for early-stage SaaS focusing on one primary channel &mdash; typically AI outbound for rapid pipeline validation, or SEO if PMF is already confirmed. <a href="https://bambinoagency.com/contact" style="color: var(--orange);">Book a strategy session</a> to discuss your stage and goals.</p></div>
+          <div class="faq-answer"><p>Yes. We work with pre-Series A SaaS companies through to scale-ups. Our Seed package (&pound;2,000/month) is designed for early-stage SaaS focusing on one primary channel &mdash; typically AI outbound for rapid pipeline validation, or SEO if PMF is already confirmed. <a href="https://bambinoagency.com/contact" style="color: var(--orange);">Book a strategy session</a> to discuss your stage and goals.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What is PLG vs SLG in SaaS marketing? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>PLG (product-led growth) uses free trial or freemium to drive user acquisition &mdash; the product sells itself through self-serve onboarding. SLG (sales-led growth) requires demo pipeline and a sales team to close deals. Each model requires a fundamentally different marketing architecture: PLG focuses on activation rates and viral loops; SLG focuses on pipeline, ABM, and demo conversion rates.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What red flags should I watch for when choosing a SaaS agency? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Avoid agencies that: report on traffic and impressions rather than demo volume and CAC; promise guaranteed results within 30 days; have no SaaS-specific case studies at your growth stage; lack experience with your growth motion (PLG vs SLG); or require long lock-in contracts with no break clause. Ask every agency for the CAC they achieved for a comparable SaaS client &mdash; good agencies will have this data ready.</p></div>
         </div>
 
         <div style="background: var(--soft); border-radius: var(--radius); padding: 2.5rem; text-align: center; margin-top: 3rem;">
@@ -342,13 +592,13 @@
               <span style="font-size: 0.7rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--orange);">AI Outbound</span>
               <p style="font-weight: 600; color: var(--text); margin: 0.5rem 0 0; font-size: 0.95rem; line-height: 1.4;">What Is AI Outbound Sales?</p>
             </a>
-            <a href="https://bambinoagency.com/blog/seo-vs-google-ads" style="display: block; background: var(--card); border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow); transition: var(--transition);" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
-              <span style="font-size: 0.7rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--orange);">SEO &amp; Paid</span>
-              <p style="font-weight: 600; color: var(--text); margin: 0.5rem 0 0; font-size: 0.95rem; line-height: 1.4;">SEO vs Google Ads</p>
+            <a href="https://bambinoagency.com/blog/what-is-revops-uk" style="display: block; background: var(--card); border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow); transition: var(--transition);" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+              <span style="font-size: 0.7rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--orange);">RevOps</span>
+              <p style="font-weight: 600; color: var(--text); margin: 0.5rem 0 0; font-size: 0.95rem; line-height: 1.4;">What Is RevOps? The UK Guide</p>
             </a>
-            <a href="https://bambinoagency.com/blog/ai-marketing-trends-uk-2026" style="display: block; background: var(--card); border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow); transition: var(--transition);" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
-              <span style="font-size: 0.7rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--orange);">AI Marketing</span>
-              <p style="font-weight: 600; color: var(--text); margin: 0.5rem 0 0; font-size: 0.95rem; line-height: 1.4;">AI Marketing Trends UK 2026</p>
+            <a href="https://bambinoagency.com/blog/hubspot-vs-salesforce-uk" style="display: block; background: var(--card); border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow); transition: var(--transition);" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+              <span style="font-size: 0.7rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--orange);">CRM</span>
+              <p style="font-weight: 600; color: var(--text); margin: 0.5rem 0 0; font-size: 0.95rem; line-height: 1.4;">HubSpot vs Salesforce UK</p>
             </a>
           </div>
         </div>
@@ -359,11 +609,14 @@
         <div class="sidebar-card">
           <h3>Table of Contents</h3>
           <nav class="toc-list" aria-label="Table of contents">
-            <a href="#saas-marketing-different">Why SaaS Marketing Is Different</a>
+            <a href="#saas-marketing-different">Why SaaS Is Different</a>
+            <a href="#plg-vs-slg">PLG vs SLG</a>
             <a href="#seo-for-saas">SEO for B2B SaaS</a>
-            <a href="#ai-outbound">AI Outbound for SaaS</a>
+            <a href="#ai-outbound">AI Outbound</a>
             <a href="#content-strategy">Content Strategy</a>
             <a href="#paid-acquisition">Paid Acquisition</a>
+            <a href="#choose-agency">How to Choose an Agency</a>
+            <a href="#packages">Bambino Packages</a>
             <a href="#faq">FAQ</a>
           </nav>
         </div>
@@ -376,8 +629,8 @@
           <h3>Related Articles</h3>
           <div class="toc-list">
             <a href="https://bambinoagency.com/blog/what-is-ai-outbound-sales">What Is AI Outbound Sales?</a>
-            <a href="https://bambinoagency.com/blog/seo-vs-google-ads">SEO vs Google Ads</a>
-            <a href="https://bambinoagency.com/blog/ai-marketing-trends-uk-2026">AI Marketing Trends UK 2026</a>
+            <a href="https://bambinoagency.com/blog/what-is-revops-uk">What Is RevOps UK</a>
+            <a href="https://bambinoagency.com/blog/hubspot-vs-salesforce-uk">HubSpot vs Salesforce UK</a>
           </div>
         </div>
       </aside>
@@ -437,21 +690,51 @@
 </footer>
 
 <script>
-  const hamburger = document.querySelector('.nav-hamburger');
-  const navLinks = document.querySelector('.nav-links');
-  hamburger.addEventListener('click', () => {
-    const open = navLinks.classList.toggle('open');
-    hamburger.setAttribute('aria-expanded', open);
-  });
-  document.querySelectorAll('.faq-question').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const item = btn.closest('.faq-item');
-      const isOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-      document.querySelectorAll('.faq-question').forEach(b => b.setAttribute('aria-expanded', 'false'));
-      if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
+(function() {
+  var hamburger = document.getElementById('hamburger');
+  var navLinks = document.getElementById('nav-links');
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', function() {
+      var open = navLinks.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+
+  var megaParent = document.querySelector('.nav-has-mega');
+  var megaToggle = document.querySelector('.nav-mega-toggle');
+  if (megaToggle && megaParent) {
+    megaToggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      var isActive = megaParent.classList.toggle('active');
+      megaToggle.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+    });
+    document.addEventListener('click', function(e) {
+      if (!megaParent.contains(e.target)) {
+        megaParent.classList.remove('active');
+        megaToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        megaParent.classList.remove('active');
+        megaToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  document.querySelectorAll('.faq-question').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = btn.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+      document.querySelectorAll('.faq-question').forEach(function(b) { b.setAttribute('aria-expanded', 'false'); });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
     });
   });
+})();
 </script>
 </body>
 </html>

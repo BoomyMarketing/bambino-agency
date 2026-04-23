@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Data Platform (CDP) Agency UK — Segment, Tealium &amp; First-Party Data | Bambino</title>
+  <meta name="description" content="CDP implementation agency for UK businesses. Segment, Tealium, RudderStack and reverse ETL setup. Unify your customer data and activate it across every channel.">
+  <link rel="canonical" href="https://bambinoagency.com/services/cdp">
+  <meta property="og:title" content="Customer Data Platform (CDP) Agency UK — Segment, Tealium &amp; First-Party Data | Bambino">
+  <meta property="og:description" content="CDP implementation agency for UK businesses. Segment, Tealium, RudderStack and reverse ETL setup. Unify your customer data and activate it across every channel.">
+  <meta property="og:url" content="https://bambinoagency.com/services/cdp">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Bambino Agency">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Customer Data Platform (CDP) Agency UK — Segment, Tealium &amp; First-Party Data | Bambino">
+  <meta name="twitter:description" content="CDP implementation agency for UK businesses. Segment, Tealium, RudderStack and reverse ETL setup. Unify your customer data and activate it across every channel.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://bambinoagency.com/services/cdp#service",
+        "name": "Customer Data Platform (CDP) Implementation",
+        "description": "CDP implementation agency for UK businesses. We design, build and activate Segment, Tealium, mParticle, RudderStack and Hightouch implementations — unified customer data, GDPR-compliant by design.",
+        "provider": {
+          "@type": "Organization",
+          "name": "Bambino Agency",
+          "url": "https://bambinoagency.com"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "United Kingdom"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "5000",
+          "priceCurrency": "GBP",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "5000",
+            "priceCurrency": "GBP",
+            "unitText": "month",
+            "description": "From £5,000/month"
+          }
+        },
+        "serviceType": "CDP Implementation & Consultancy"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://bambinoagency.com/services/cdp#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://bambinoagency.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://bambinoagency.com/services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "CDP Implementation",
+            "item": "https://bambinoagency.com/services/cdp"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://bambinoagency.com/services/cdp#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the difference between a CDP and a CRM?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A CRM (Customer Relationship Management system) is an operational tool your sales and support teams use to manage contacts, deals and service tickets. It holds records that humans create and update. A CDP (Customer Data Platform) is an infrastructure layer that automatically collects behavioural and transactional data from every digital touchpoint — website, app, email, offline — and stitches it into a single, unified customer profile in real time. The CDP feeds your CRM, not the other way around."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need a data warehouse before implementing a CDP?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not necessarily. Platforms like Segment and RudderStack can send data directly to destinations (Meta, Google, HubSpot, Klaviyo) without a warehouse in the middle. However, if you want reverse ETL — pulling enriched data from a warehouse back into your marketing tools — you will need a warehouse such as BigQuery or Snowflake. We assess your current stack in the discovery phase and recommend the architecture that fits your maturity level and budget."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does a CDP implementation take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A standard Segment or RudderStack implementation for a mid-market business typically takes 8–14 weeks from kick-off to first activations going live. This includes a two-week data audit and schema design, four to six weeks of instrumentation and source integration, and two weeks of destination activation and testing. Enterprise implementations involving Tealium or mParticle with complex identity resolution can run 16–24 weeks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Segment the right CDP for my business?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Segment (Twilio) is the most widely adopted CDP and is an excellent fit for growth-stage and mid-market businesses that need fast time-to-value and a broad integration library of 400+ destinations. It is less suitable if you require full data residency in the UK or EU (RudderStack self-hosted is better for that), if you are primarily mobile-first at enterprise scale (mParticle is stronger), or if you have a heavy Salesforce or Adobe stack (Tealium may integrate more natively). We run a platform selection workshop as part of every discovery engagement."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does a CDP help with UK GDPR compliance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A CDP gives you a single, authoritative record of every customer's consent state, updated in real time from your consent management platform (CMP). When a user withdraws consent, the CDP propagates that suppression to every downstream destination automatically — Meta, Google, HubSpot, Klaviyo — within seconds. This is far more reliable than manually managing suppression lists across each tool. We implement Consent Mode v2 and ICO-aligned consent architecture as standard on every CDP build."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is reverse ETL and do I need it?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Reverse ETL is the process of taking data that lives in your data warehouse (BigQuery, Snowflake, Redshift) — which may include enriched customer scores, lifetime value calculations, or offline purchase history — and syncing it back into your operational marketing tools like HubSpot, Salesforce, Klaviyo or Meta Custom Audiences. Tools like Hightouch and Census specialise in this. You need it if your most valuable customer data lives in a warehouse but your marketing team cannot access it for segmentation and activation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need a developer to maintain a CDP?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Initial implementation requires engineering resource to instrument your website and apps with the CDP's tracking library. Once built, day-to-day management — adding new destinations, creating audiences, adjusting mappings — can largely be handled by a technically confident marketer or analytics manager. We provide full training and documentation as part of every project, and our ongoing management retainer includes developer hours for any schema changes or new source integrations."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #F9F9F5;
+      --orange: #FF4D00;
+      --orange-light: #FF6B2B;
+      --green: #034C3C;
+      --text: #1A1A1A;
+      --muted: #666660;
+      --card: #FFFFFF;
+      --soft: #F2F2EC;
+      --border: #E8E8E0;
+      --font-heading: 'Berkshire Swash', serif;
+      --font-body: 'Inter', sans-serif;
+      --radius: 16px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.07);
+      --shadow-lg: 0 12px 48px rgba(0,0,0,0.12);
+      --transition: 0.25s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); background: var(--bg); color: var(--text); line-height: 1.65; font-size: 1rem; -webkit-font-smoothing: antialiased; }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    .container { max-width: 1160px; margin: 0 auto; padding: 0 1.5rem; }
+    .container--narrow { max-width: 820px; margin: 0 auto; padding: 0 1.5rem; }
+    section { padding: 5rem 0; }
+
+    /* ── NAV ─────────────────────────────────────────── */
+    .site-nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+      background: var(--bg); border-bottom: 1px solid var(--border);
+      height: 62px; display: flex; align-items: center;
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: 1160px; margin: 0 auto; padding: 0 1.5rem; }
+    .nav-logo { font-family: var(--font-heading); font-size: 1.5rem; color: var(--green); letter-spacing: -0.02em; }
+    .nav-logo span { color: var(--orange); }
+    .nav-links { display: flex; align-items: center; gap: 1.8rem; }
+    .nav-links > li > a { font-size: 0.88rem; font-weight: 500; color: var(--text); transition: color var(--transition); }
+    .nav-links > li > a:hover { color: var(--orange); }
+    .nav-links > li > a::after { display: none; }
+    .nav-cta { background: var(--orange); color: #fff !important; padding: 0.5rem 1.2rem; border-radius: 100px; font-weight: 600; font-size: 0.84rem !important; transition: background var(--transition) !important; }
+    .nav-cta:hover { background: var(--orange-light) !important; color: #fff !important; }
+
+    /* Mega menu */
+    .nav-has-mega { position: relative; }
+    .nav-mega-toggle { display: flex !important; align-items: center; gap: 0.4rem; cursor: pointer; }
+    .nav-mega-toggle svg { transition: transform 0.2s ease; flex-shrink: 0; }
+    .nav-has-mega.active .nav-mega-toggle svg { transform: rotate(180deg); }
+    .mega-menu { display: none; position: fixed; top: 62px; left: 0; right: 0; background: var(--bg, #F9F9F5); border-top: 2px solid var(--orange, #FF4D00); box-shadow: 0 8px 40px rgba(0,0,0,0.13); z-index: 998; padding: 2rem 0 1.5rem; }
+    .nav-has-mega.active .mega-menu { display: block; animation: megaFadeIn 0.16s ease; }
+    @keyframes megaFadeIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
+    .mega-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1.5rem 1.2rem; }
+    .mega-cat { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--orange, #FF4D00); margin-bottom: 0.45rem; margin-top: 0; line-height: 1.4; }
+    .mega-col a { display: block; font-size: 0.81rem; color: var(--text, #1a1a1a); padding: 0.16rem 0; transition: color 0.15s; font-weight: 400; line-height: 1.5; }
+    .mega-col a:hover { color: var(--orange, #FF4D00); }
+    .mega-col a::after { display: none !important; }
+    .mega-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 1.2rem; padding-top: 0.9rem; border-top: 1px solid var(--border, #e5e5e0); }
+    .mega-all { font-size: 0.84rem; font-weight: 600; color: var(--green, #034C3C); }
+    .mega-all::after { display: none !important; }
+    .mega-cta { font-size: 0.81rem; font-weight: 700; background: var(--orange, #FF4D00); color: #fff !important; padding: 0.45rem 1.1rem; border-radius: 100px; }
+    .mega-cta::after { display: none !important; }
+    @media (max-width: 960px) { .mega-menu { display: none !important; } }
+
+    /* Mobile menu */
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; border: none; background: none; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--text); border-radius: 2px; transition: var(--transition); }
+    .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+    .mobile-menu { display: none; position: fixed; inset: 0; background: var(--bg); z-index: 1000; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { font-size: 1.5rem; font-weight: 600; color: var(--text); }
+    .mobile-menu a:hover { color: var(--orange); }
+    .mobile-menu .mob-cta { background: var(--orange); color: #fff !important; padding: 0.75rem 2rem; border-radius: 100px; }
+    .mobile-close { position: absolute; top: 1.5rem; right: 1.5rem; background: none; border: none; cursor: pointer; font-size: 1.5rem; color: var(--text); }
+    @media (max-width: 960px) { .hamburger { display: flex; } .nav-links { display: none; } }
+
+    /* ── BREADCRUMB ──────────────────────────────────── */
+    .breadcrumb { padding: 5.5rem 0 0; }
+    .breadcrumb ol { display: flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; color: var(--muted); }
+    .breadcrumb ol li::after { content: '/'; margin-left: 0.5rem; }
+    .breadcrumb ol li:last-child::after { display: none; }
+    .breadcrumb ol a { color: var(--muted); }
+    .breadcrumb ol a:hover { color: var(--orange); }
+
+    /* ── HERO ────────────────────────────────────────── */
+    .hero { padding: 3rem 0 5rem; }
+    .hero-label { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--soft); border: 1px solid var(--border); border-radius: 100px; padding: 0.35rem 1rem; font-size: 0.78rem; font-weight: 600; color: var(--orange); letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 1.5rem; }
+    .hero-label::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--orange); }
+    .hero h1 { font-family: var(--font-heading); font-size: clamp(2.2rem, 5vw, 3.6rem); line-height: 1.15; color: var(--green); margin-bottom: 1.25rem; max-width: 820px; }
+    .hero h1 em { font-style: normal; color: var(--orange); }
+    .hero-sub { font-size: 1.15rem; color: var(--muted); max-width: 640px; margin-bottom: 2rem; line-height: 1.7; }
+    .hero-actions { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 3.5rem; }
+    .btn-primary { background: var(--orange); color: #fff; padding: 0.85rem 1.75rem; border-radius: 100px; font-weight: 700; font-size: 0.95rem; transition: background var(--transition), transform var(--transition); display: inline-flex; align-items: center; gap: 0.4rem; }
+    .btn-primary:hover { background: var(--orange-light); transform: translateY(-1px); color: #fff; }
+    .btn-secondary { background: transparent; color: var(--green); border: 2px solid var(--green); padding: 0.8rem 1.6rem; border-radius: 100px; font-weight: 600; font-size: 0.95rem; transition: all var(--transition); }
+    .btn-secondary:hover { background: var(--green); color: #fff; }
+    .hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .hero-stat { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow); }
+    .hero-stat .stat-num { font-family: var(--font-heading); font-size: 2.2rem; color: var(--green); line-height: 1; margin-bottom: 0.4rem; }
+    .hero-stat .stat-num em { color: var(--orange); font-style: normal; }
+    .hero-stat .stat-label { font-size: 0.85rem; color: var(--muted); }
+
+    /* ── SECTION COMMON ──────────────────────────────── */
+    .section-eyebrow { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,77,0,0.08); border: 1px solid rgba(255,77,0,0.2); border-radius: 100px; padding: 0.35rem 1rem; font-size: 0.75rem; font-weight: 700; color: var(--orange); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 1rem; }
+    .section-title { font-family: var(--font-heading); font-size: clamp(1.7rem, 3.2vw, 2.5rem); color: var(--green); margin-bottom: 0.9rem; line-height: 1.2; }
+    .section-sub { font-size: 1.05rem; color: var(--muted); max-width: 640px; margin-bottom: 2.5rem; }
+
+    /* ── WHAT IS CDP ─────────────────────────────────── */
+    .what-cdp { background: var(--soft); }
+    .what-cdp-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+    .what-cdp-content .section-sub { margin-bottom: 1.5rem; }
+    .cdp-definition { background: var(--card); border-left: 4px solid var(--orange); border-radius: 0 var(--radius) var(--radius) 0; padding: 1.5rem 1.75rem; margin-bottom: 1.5rem; box-shadow: var(--shadow); }
+    .cdp-definition p { font-size: 1rem; color: var(--text); line-height: 1.7; font-style: italic; }
+    .cdp-pillars { display: flex; flex-direction: column; gap: 1rem; }
+    .cdp-pillar { display: flex; gap: 1rem; align-items: flex-start; }
+    .cdp-pillar-num { width: 36px; height: 36px; border-radius: 50%; background: var(--orange); color: #fff; font-weight: 700; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .cdp-pillar-body h4 { font-size: 0.95rem; font-weight: 700; color: var(--green); margin-bottom: 0.25rem; }
+    .cdp-pillar-body p { font-size: 0.87rem; color: var(--muted); }
+    .not-cdp-box { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem; box-shadow: var(--shadow); }
+    .not-cdp-box h3 { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.2rem; }
+    .not-cdp-list { display: flex; flex-direction: column; gap: 0.85rem; }
+    .not-cdp-item { display: flex; gap: 0.75rem; align-items: flex-start; }
+    .not-cdp-item .nci-badge { background: rgba(255,77,0,0.08); color: var(--orange); border-radius: 6px; padding: 0.2rem 0.6rem; font-size: 0.75rem; font-weight: 700; white-space: nowrap; flex-shrink: 0; margin-top: 1px; }
+    .not-cdp-item p { font-size: 0.85rem; color: var(--muted); line-height: 1.55; }
+
+    /* ── WHY NOW ─────────────────────────────────────── */
+    .why-now { background: var(--green); color: #fff; }
+    .why-now-header { text-align: center; margin-bottom: 3rem; }
+    .why-now-header .section-eyebrow { color: var(--orange); background: rgba(255,77,0,0.15); border-color: rgba(255,77,0,0.3); }
+    .why-now-header h2 { font-family: var(--font-heading); font-size: clamp(1.8rem, 3.5vw, 2.8rem); color: #fff; margin-bottom: 1rem; }
+    .why-now-header p { font-size: 1.05rem; color: rgba(255,255,255,0.75); max-width: 680px; margin: 0 auto; }
+    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .why-card { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: var(--radius); padding: 1.75rem; }
+    .why-card h3 { font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.7rem; }
+    .why-card h3 .icon { width: 32px; height: 32px; border-radius: 8px; background: var(--orange); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+    .why-card p { font-size: 0.9rem; color: rgba(255,255,255,0.72); line-height: 1.65; }
+
+    /* ── PLATFORMS ───────────────────────────────────── */
+    .platforms { background: var(--bg); }
+    .platforms-header { text-align: center; margin-bottom: 3rem; }
+    .platforms-header .section-sub { margin-left: auto; margin-right: auto; }
+    .platforms-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .platform-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem 1.75rem; box-shadow: var(--shadow); transition: box-shadow var(--transition), transform var(--transition); }
+    .platform-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); }
+    .platform-card .pc-icon { width: 52px; height: 52px; border-radius: 14px; background: linear-gradient(135deg, var(--orange) 0%, var(--orange-light) 100%); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 1.25rem; }
+    .platform-card .pc-badge { display: inline-block; background: rgba(3,76,60,0.08); color: var(--green); border-radius: 6px; padding: 0.15rem 0.6rem; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+    .platform-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--green); margin-bottom: 0.6rem; }
+    .platform-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.65; margin-bottom: 1rem; }
+    .platform-card ul { padding-left: 0; }
+    .platform-card ul li { font-size: 0.84rem; color: var(--text); padding: 0.2rem 0; padding-left: 1.1rem; position: relative; }
+    .platform-card ul li::before { content: '→'; position: absolute; left: 0; color: var(--orange); font-weight: 700; }
+
+    /* ── CDP SERVICES ────────────────────────────────── */
+    .cdp-services { background: var(--soft); }
+    .cdp-services-header { text-align: center; margin-bottom: 3rem; }
+    .cdp-services-header .section-sub { margin-left: auto; margin-right: auto; }
+    .services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
+    .service-tile { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.25rem; box-shadow: var(--shadow); transition: box-shadow var(--transition), transform var(--transition); }
+    .service-tile:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+    .service-tile .st-icon { width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, var(--orange) 0%, var(--orange-light) 100%); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-bottom: 1rem; }
+    .service-tile h3 { font-size: 0.95rem; font-weight: 700; color: var(--green); margin-bottom: 0.45rem; }
+    .service-tile p { font-size: 0.83rem; color: var(--muted); line-height: 1.6; }
+
+    /* ── ACTIVATION DIAGRAM ──────────────────────────── */
+    .activation { background: var(--bg); }
+    .activation-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    .activation-content .section-sub { margin-bottom: 1.5rem; }
+    .activation-diagram { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow); }
+    .activation-diagram h3 { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.5rem; text-align: center; }
+    .diag-sources { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-bottom: 1rem; }
+    .diag-tag { background: var(--soft); border: 1px solid var(--border); border-radius: 8px; padding: 0.4rem 0.6rem; font-size: 0.78rem; font-weight: 500; color: var(--text); text-align: center; }
+    .diag-arrow { text-align: center; color: var(--orange); font-size: 1.4rem; line-height: 1.4; margin: 0.5rem 0; }
+    .diag-cdp { background: linear-gradient(135deg, var(--green) 0%, #056349 100%); color: #fff; border-radius: 12px; padding: 1rem; text-align: center; margin-bottom: 1rem; }
+    .diag-cdp strong { font-size: 1rem; display: block; }
+    .diag-cdp span { font-size: 0.78rem; opacity: 0.8; }
+    .diag-channels { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+    .diag-channel { background: linear-gradient(135deg, var(--orange) 0%, var(--orange-light) 100%); color: #fff; border-radius: 8px; padding: 0.4rem 0.6rem; font-size: 0.78rem; font-weight: 600; text-align: center; }
+    .activation-list { display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem; }
+    .activation-item { display: flex; gap: 1rem; align-items: flex-start; }
+    .activation-item .ai-icon { width: 36px; height: 36px; border-radius: 10px; background: rgba(3,76,60,0.08); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+    .activation-item h4 { font-size: 0.9rem; font-weight: 700; color: var(--green); margin-bottom: 0.2rem; }
+    .activation-item p { font-size: 0.83rem; color: var(--muted); }
+
+    /* ── COMPARISON TABLE ────────────────────────────── */
+    .comparison { background: var(--soft); }
+    .comparison-header { text-align: center; margin-bottom: 2.5rem; }
+    .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .comp-table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+    .comp-table th { background: var(--green); color: #fff; font-size: 0.85rem; font-weight: 700; padding: 1rem 1.2rem; text-align: left; }
+    .comp-table td { padding: 0.9rem 1.2rem; font-size: 0.87rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+    .comp-table tr:last-child td { border-bottom: none; }
+    .comp-table tr:nth-child(even) td { background: var(--soft); }
+    .comp-table .tag-good { display: inline-block; background: rgba(3,76,60,0.1); color: var(--green); border-radius: 6px; padding: 0.15rem 0.5rem; font-size: 0.78rem; font-weight: 600; }
+    .comp-table .tag-bad { display: inline-block; background: rgba(255,77,0,0.08); color: var(--orange); border-radius: 6px; padding: 0.15rem 0.5rem; font-size: 0.78rem; font-weight: 600; }
+    .comp-table .tag-ok { display: inline-block; background: rgba(0,0,0,0.06); color: var(--muted); border-radius: 6px; padding: 0.15rem 0.5rem; font-size: 0.78rem; font-weight: 600; }
+
+    /* ── REVERSE ETL ─────────────────────────────────── */
+    .retl { background: var(--bg); }
+    .retl-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+    .retl-content .section-sub { margin-bottom: 1.5rem; }
+    .retl-steps { display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem; }
+    .retl-step { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.1rem 1.3rem; display: flex; gap: 1rem; align-items: flex-start; box-shadow: var(--shadow); }
+    .retl-step .rs-num { width: 32px; height: 32px; border-radius: 50%; background: var(--orange); color: #fff; font-weight: 700; font-size: 0.8rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .retl-step h4 { font-size: 0.9rem; font-weight: 700; color: var(--green); margin-bottom: 0.2rem; }
+    .retl-step p { font-size: 0.83rem; color: var(--muted); }
+    .retl-tools { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem; box-shadow: var(--shadow); }
+    .retl-tools h3 { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.2rem; }
+    .retl-tool-list { display: flex; flex-direction: column; gap: 0.85rem; }
+    .retl-tool-item { display: flex; gap: 0.75rem; align-items: flex-start; padding-bottom: 0.85rem; border-bottom: 1px solid var(--border); }
+    .retl-tool-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .retl-tool-item .rti-icon { font-size: 1.3rem; flex-shrink: 0; }
+    .retl-tool-item h4 { font-size: 0.9rem; font-weight: 700; color: var(--green); margin-bottom: 0.15rem; }
+    .retl-tool-item p { font-size: 0.82rem; color: var(--muted); }
+
+    /* ── UK GDPR ─────────────────────────────────────── */
+    .uk-gdpr { background: var(--soft); }
+    .uk-gdpr-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+    .uk-gdpr-content .section-sub { margin-bottom: 1.5rem; }
+    .compliance-list { display: flex; flex-direction: column; gap: 1rem; }
+    .compliance-item { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem 1.5rem; display: flex; gap: 1rem; align-items: flex-start; box-shadow: var(--shadow); }
+    .compliance-item .ci-icon { width: 40px; height: 40px; border-radius: 10px; background: rgba(3,76,60,0.08); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
+    .compliance-item h4 { font-size: 0.9rem; font-weight: 700; color: var(--green); margin-bottom: 0.25rem; }
+    .compliance-item p { font-size: 0.83rem; color: var(--muted); }
+    .uk-checklist { margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.65rem; }
+    .uk-checklist li { display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.9rem; color: var(--text); }
+    .uk-checklist li::before { content: '✓'; color: var(--green); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+
+    /* ── PROCESS ─────────────────────────────────────── */
+    .process { background: var(--bg); }
+    .process-header { text-align: center; margin-bottom: 3rem; }
+    .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative; }
+    .process-steps::before { content: ''; position: absolute; top: 28px; left: calc(12.5% + 28px); right: calc(12.5% + 28px); height: 2px; background: linear-gradient(90deg, var(--orange), var(--orange-light)); z-index: 0; }
+    .process-step { text-align: center; position: relative; z-index: 1; padding: 0 1rem; }
+    .process-step-num { width: 56px; height: 56px; border-radius: 50%; background: var(--orange); color: #fff; font-weight: 800; font-size: 1.2rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; box-shadow: 0 4px 16px rgba(255,77,0,0.3); }
+    .process-step h3 { font-size: 1rem; font-weight: 700; color: var(--green); margin-bottom: 0.5rem; }
+    .process-step p { font-size: 0.84rem; color: var(--muted); line-height: 1.6; }
+
+    /* ── PRICING ─────────────────────────────────────── */
+    .pricing { background: var(--soft); }
+    .pricing-header { text-align: center; margin-bottom: 3rem; }
+    .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .pricing-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow); transition: box-shadow var(--transition), transform var(--transition); position: relative; }
+    .pricing-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); }
+    .pricing-card.featured { border-color: var(--orange); border-width: 2px; }
+    .pricing-card .featured-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--orange); color: #fff; font-size: 0.72rem; font-weight: 700; padding: 0.25rem 0.9rem; border-radius: 100px; white-space: nowrap; }
+    .pricing-card .pc-type { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--orange); margin-bottom: 0.5rem; }
+    .pricing-card .pc-name { font-size: 1.15rem; font-weight: 700; color: var(--green); margin-bottom: 1rem; }
+    .pricing-card .pc-price { font-family: var(--font-heading); font-size: 2.2rem; color: var(--green); line-height: 1; margin-bottom: 0.3rem; }
+    .pricing-card .pc-price-note { font-size: 0.82rem; color: var(--muted); margin-bottom: 1.5rem; }
+    .pricing-card ul { display: flex; flex-direction: column; gap: 0.55rem; margin-bottom: 1.75rem; }
+    .pricing-card ul li { font-size: 0.86rem; color: var(--text); padding-left: 1.2rem; position: relative; }
+    .pricing-card ul li::before { content: '✓'; position: absolute; left: 0; color: var(--green); font-weight: 700; }
+    .pricing-card .btn-primary, .pricing-card .btn-secondary { display: block; text-align: center; width: 100%; }
+
+    /* ── FAQ ─────────────────────────────────────────── */
+    .faq { background: var(--bg); }
+    .faq-header { text-align: center; margin-bottom: 2.5rem; }
+    .faq-list { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: var(--card); box-shadow: var(--shadow); }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { width: 100%; background: none; border: none; padding: 1.4rem 1.75rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; cursor: pointer; text-align: left; font-size: 0.97rem; font-weight: 600; color: var(--text); font-family: var(--font-body); transition: color var(--transition); }
+    .faq-q:hover { color: var(--orange); }
+    .faq-q .faq-icon { width: 28px; height: 28px; border-radius: 50%; background: var(--soft); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background var(--transition), transform var(--transition); }
+    .faq-q.active .faq-icon { background: var(--orange); transform: rotate(45deg); }
+    .faq-q.active { color: var(--orange); }
+    .faq-a { display: none; padding: 0 1.75rem 1.4rem; font-size: 0.9rem; color: var(--muted); line-height: 1.7; }
+    .faq-a.open { display: block; }
+
+    /* ── CTA SECTION ─────────────────────────────────── */
+    .cta-section { background: var(--green); }
+    .cta-inner { text-align: center; }
+    .cta-inner h2 { font-family: var(--font-heading); font-size: clamp(1.8rem, 3.5vw, 2.7rem); color: #fff; margin-bottom: 1rem; }
+    .cta-inner p { font-size: 1.05rem; color: rgba(255,255,255,0.8); max-width: 520px; margin: 0 auto 2rem; }
+    .cta-inner .btn-primary { background: var(--orange); font-size: 1rem; padding: 0.95rem 2rem; }
+    .cta-inner .btn-primary:hover { background: var(--orange-light); }
+    .cta-trust { margin-top: 1.5rem; font-size: 0.82rem; color: rgba(255,255,255,0.55); }
+
+    /* ── RELATED ─────────────────────────────────────── */
+    .related { background: var(--bg); }
+    .related-header { text-align: center; margin-bottom: 2rem; }
+    .related-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; }
+    .related-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.2rem; text-align: center; transition: box-shadow var(--transition), transform var(--transition); }
+    .related-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+    .related-card .rc-icon { font-size: 1.5rem; margin-bottom: 0.6rem; }
+    .related-card h4 { font-size: 0.88rem; font-weight: 700; color: var(--green); margin-bottom: 0.25rem; }
+    .related-card p { font-size: 0.78rem; color: var(--muted); }
+    .related-card::after { display: none; }
+
+    /* ── FOOTER ──────────────────────────────────────── */
+    .site-footer { background: var(--green); color: #fff; padding: 4rem 0 2rem; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+    .footer-brand .nav-logo { color: #fff; margin-bottom: 1rem; display: inline-block; }
+    .footer-brand p { font-size: 0.88rem; color: rgba(255,255,255,0.65); line-height: 1.7; max-width: 300px; }
+    .footer-col h5 { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 1rem; }
+    .footer-col a { display: block; font-size: 0.87rem; color: rgba(255,255,255,0.75); padding: 0.22rem 0; transition: color var(--transition); }
+    .footer-col a:hover { color: var(--orange); }
+    .footer-bottom { display: flex; align-items: center; justify-content: space-between; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.12); font-size: 0.82rem; color: rgba(255,255,255,0.4); flex-wrap: wrap; gap: 0.5rem; }
+    .footer-bottom a { color: rgba(255,255,255,0.5); }
+    .footer-bottom a:hover { color: var(--orange); }
+
+    /* ── REVEAL ──────────────────────────────────────── */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.55s ease, transform 0.55s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* ── RESPONSIVE ──────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .platforms-grid { grid-template-columns: repeat(2, 1fr); }
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .why-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+      .related-grid { grid-template-columns: repeat(3, 1fr); }
+      .what-cdp-inner { grid-template-columns: 1fr; }
+      .activation-inner { grid-template-columns: 1fr; }
+      .retl-inner { grid-template-columns: 1fr; }
+      .uk-gdpr-inner { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+      section { padding: 3.5rem 0; }
+      .hero-stats { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+      .platforms-grid { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .process-steps { grid-template-columns: 1fr 1fr; gap: 2rem; }
+      .process-steps::before { display: none; }
+      .pricing-grid { grid-template-columns: 1fr; }
+      .related-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+      .diag-sources { grid-template-columns: 1fr; }
+      .diag-channels { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 2rem; }
+      .process-steps { grid-template-columns: 1fr; }
+      .related-grid { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── MOBILE MENU ──────────────────────────────────── -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">&#x2715;</button>
+    <a href="https://bambinoagency.com/services">Services</a>
+    <a href="https://bambinoagency.com/industries">Industries</a>
+    <a href="https://bambinoagency.com/about">About</a>
+    <a href="https://bambinoagency.com/blog">Blog</a>
+    <a href="https://bambinoagency.com/pricing">Pricing</a>
+    <a href="https://bambinoagency.com/contact" class="mob-cta">Get a Free Audit &rarr;</a>
+  </div>
+
+  <!-- ── NAV ─────────────────────────────────────────── -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="https://bambinoagency.com" class="nav-logo">Bambino<span>.</span></a>
+      <ul class="nav-links" role="list">
+        <li class="nav-has-mega">
+          <a href="https://bambinoagency.com/services" class="nav-mega-toggle" aria-haspopup="true" aria-expanded="false">Services <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+          <div class="mega-menu" role="region" aria-label="Services menu">
+            <div class="container">
+              <div class="mega-grid">
+                  <div class="mega-col">
+                    <p class="mega-cat">Search &amp; AI Visibility</p>
+                    <a href="https://bambinoagency.com/services/seo">SEO</a>
+                    <a href="https://bambinoagency.com/services/geo">GEO / AI Search</a>
+                    <a href="https://bambinoagency.com/services/technical-seo">Technical SEO</a>
+                    <a href="https://bambinoagency.com/services/local-seo">Local SEO</a>
+                    <a href="https://bambinoagency.com/services/enterprise-seo">Enterprise SEO</a>
+                    <a href="https://bambinoagency.com/services/international-seo">International SEO</a>
+                    <a href="https://bambinoagency.com/services/link-building">Link Building</a>
+                  </div>
+                  <div class="mega-col">
+                    <p class="mega-cat">Paid Media</p>
+                    <a href="https://bambinoagency.com/services/google-ads">Google Ads</a>
+                    <a href="https://bambinoagency.com/services/ppc">PPC Management</a>
+                    <a href="https://bambinoagency.com/services/meta-ads">Meta Ads</a>
+                    <a href="https://bambinoagency.com/services/linkedin-ads">LinkedIn Ads</a>
+                    <a href="https://bambinoagency.com/services/youtube-ads">YouTube Ads</a>
+                    <a href="https://bambinoagency.com/services/tiktok-ads">TikTok Ads</a>
+                    <a href="https://bambinoagency.com/services/pinterest-ads">Pinterest Ads</a>
+                    <a href="https://bambinoagency.com/services/google-shopping">Google Shopping</a>
+                    <a href="https://bambinoagency.com/services/retail-media">Retail Media</a>
+                    <a href="https://bambinoagency.com/services/podcast-advertising">Podcast Advertising</a>
+                  </div>
+                  <div class="mega-col">
+                    <p class="mega-cat">Social &amp; Creator</p>
+                    <a href="https://bambinoagency.com/services/social-media">Social Media</a>
+                    <a href="https://bambinoagency.com/services/influencer-marketing">Influencer Marketing</a>
+                    <a href="https://bambinoagency.com/services/ugc-content">UGC Content</a>
+                    <a href="https://bambinoagency.com/services/community-building">Community Building</a>
+                    <a href="https://bambinoagency.com/services/experiential-marketing">Experiential Marketing</a>
+                    <p class="mega-cat" style="margin-top:1.2rem">Content &amp; Video</p>
+                    <a href="https://bambinoagency.com/services/content-marketing">Content Marketing</a>
+                    <a href="https://bambinoagency.com/services/video-marketing">Video Marketing</a>
+                    <a href="https://bambinoagency.com/services/digital-pr">Digital PR</a>
+                    <a href="https://bambinoagency.com/services/performance-creative">Performance Creative</a>
+                  </div>
+                  <div class="mega-col">
+                    <p class="mega-cat">Web &amp; Brand</p>
+                    <a href="https://bambinoagency.com/services/web-design">Web Design</a>
+                    <a href="https://bambinoagency.com/services/webflow">Webflow Development</a>
+                    <a href="https://bambinoagency.com/services/framer">Framer Development</a>
+                    <a href="https://bambinoagency.com/services/branding">Branding</a>
+                    <a href="https://bambinoagency.com/services/cro">CRO</a>
+                    <a href="https://bambinoagency.com/services/aso">App Store Optimisation</a>
+                    <a href="https://bambinoagency.com/services/analytics-ga4">Analytics &amp; GA4</a>
+                    <a href="https://bambinoagency.com/services/attribution-mmm">Attribution &amp; MMM</a>
+                    <a href="https://bambinoagency.com/services/cdp">CDP Implementation</a>
+                    <p class="mega-cat" style="margin-top:1.2rem">AI &amp; Automation</p>
+                    <a href="https://bambinoagency.com/services/ai-automations">AI Automations</a>
+                    <a href="https://bambinoagency.com/services/voice-ai">Voice AI</a>
+                    <a href="https://bambinoagency.com/services/ai-outbound">AI Outbound Sales</a>
+                    <a href="https://bambinoagency.com/services/conversational-marketing">Conversational Marketing</a>
+                    <a href="https://bambinoagency.com/services/marketing-automation">Marketing Automation</a>
+                    <a href="https://bambinoagency.com/services/sms-marketing">SMS Marketing</a>
+                  </div>
+                  <div class="mega-col">
+                    <p class="mega-cat">Operations &amp; Growth</p>
+                    <a href="https://bambinoagency.com/services/revops">RevOps</a>
+                    <a href="https://bambinoagency.com/services/hubspot">HubSpot</a>
+                    <a href="https://bambinoagency.com/services/klaviyo">Klaviyo</a>
+                    <a href="https://bambinoagency.com/services/salesforce-marketing-cloud">Salesforce Marketing Cloud</a>
+                    <a href="https://bambinoagency.com/services/fractional-cmo">Fractional CMO</a>
+                    <a href="https://bambinoagency.com/services/growth-marketing">Growth Marketing</a>
+                    <a href="https://bambinoagency.com/services/plg">Product-Led Growth</a>
+                    <p class="mega-cat" style="margin-top:1.2rem">B2B &amp; Enterprise</p>
+                    <a href="https://bambinoagency.com/services/lead-generation">Lead Generation</a>
+                    <a href="https://bambinoagency.com/services/abm">Account-Based Marketing</a>
+                    <a href="https://bambinoagency.com/services/amazon-marketing">Amazon Marketing</a>
+                    <a href="https://bambinoagency.com/services/demand-generation">Demand Generation</a>
+                    <a href="https://bambinoagency.com/services/b2b-saas-growth">B2B SaaS Growth</a>
+                    <a href="https://bambinoagency.com/services/sdr-bdr-as-a-service">SDR / BDR as a Service</a>
+                    <a href="https://bambinoagency.com/services/ctv-advertising">CTV Advertising</a>
+                    <a href="https://bambinoagency.com/services/dooh">DOOH Advertising</a>
+                  </div>
+                  <div class="mega-col">
+                    <p class="mega-cat">eCommerce &amp; Retention</p>
+                    <a href="https://bambinoagency.com/services/shopify-marketing">Shopify Marketing</a>
+                    <a href="https://bambinoagency.com/services/amazon-dsp">Amazon DSP</a>
+                    <a href="https://bambinoagency.com/services/lifecycle-marketing">Lifecycle Marketing</a>
+                    <a href="https://bambinoagency.com/services/subscription-commerce">Subscription Commerce</a>
+                    <a href="https://bambinoagency.com/services/email-marketing">Email Marketing</a>
+                    <a href="https://bambinoagency.com/services/reputation-management">Reputation Management</a>
+                  </div>
+                </div>
+                <div class="mega-footer"><a href="https://bambinoagency.com/services" class="mega-all">View all services &rarr;</a><a href="https://bambinoagency.com/contact" class="mega-cta">Get a Free Audit &rarr;</a></div>
+            </div>
+          </div>
+        </li>
+        <li><a href="https://bambinoagency.com/industries">Industries</a></li>
+        <li><a href="https://bambinoagency.com/about">About</a></li>
+        <li><a href="https://bambinoagency.com/blog">Blog</a></li>
+        <li><a href="https://bambinoagency.com/pricing">Pricing</a></li>
+        <li><a href="https://bambinoagency.com/contact" class="nav-cta">Get a Free Audit &rarr;</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── BREADCRUMB ──────────────────────────────────── -->
+  <div class="breadcrumb">
+    <div class="container">
+      <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://bambinoagency.com" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1">
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://bambinoagency.com/services" itemprop="item"><span itemprop="name">Services</span></a>
+          <meta itemprop="position" content="2">
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span itemprop="name">CDP Implementation</span>
+          <meta itemprop="position" content="3">
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- ── HERO ─────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-label">CDP Implementation Agency UK</div>
+      <h1>Customer Data Platform Agency UK — <em>One Customer View.</em> Every Channel Activated.</h1>
+      <p class="hero-sub">We implement Segment, Tealium, mParticle, RudderStack and Hightouch for UK businesses — unifying every data source into a single customer profile and activating it across paid media, email, personalisation and analytics. GDPR-compliant by design, ICO-aligned from day one.</p>
+      <div class="hero-actions">
+        <a href="https://bambinoagency.com/contact" class="btn-primary">Get a Free CDP Audit &rarr;</a>
+        <a href="#platforms" class="btn-secondary">View CDP Platforms</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat reveal">
+          <div class="stat-num"><em>3.1×</em></div>
+          <div class="stat-label">Average personalisation lift for brands with a unified customer profile</div>
+        </div>
+        <div class="hero-stat reveal reveal-delay-1">
+          <div class="stat-num"><em>40%</em></div>
+          <div class="stat-label">Reduction in wasted ad spend from deduplicating customer audiences</div>
+        </div>
+        <div class="hero-stat reveal reveal-delay-2">
+          <div class="stat-num">100<em>%</em></div>
+          <div class="stat-label">GDPR-compliant by design — ICO-aligned consent architecture on every build</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHAT IS A CDP ─────────────────────────────────── -->
+  <section class="what-cdp">
+    <div class="container">
+      <div class="what-cdp-inner">
+        <div class="what-cdp-content reveal">
+          <span class="section-eyebrow">What Is a CDP?</span>
+          <h2 class="section-title">The Infrastructure Layer Your Marketing Stack Is Missing</h2>
+          <div class="cdp-definition">
+            <p>A Customer Data Platform (CDP) is a packaged software system that creates a persistent, unified customer database — collecting data from every source, resolving identities across devices and channels, and making that unified profile available to every downstream marketing and analytics tool in real time.</p>
+          </div>
+          <p class="section-sub">Most UK businesses are already generating enormous quantities of customer data. The problem is it lives in silos — website behaviour in GA4, purchase history in Shopify, email engagement in Klaviyo, CRM records in HubSpot, offline transactions in a POS system. A CDP is the connective tissue that stitches all of this together into a single source of truth, then activates it across every channel simultaneously.</p>
+          <div class="cdp-pillars">
+            <div class="cdp-pillar">
+              <div class="cdp-pillar-num">1</div>
+              <div class="cdp-pillar-body">
+                <h4>Collect — Every touchpoint, one pipeline</h4>
+                <p>Server-side and client-side data collection from websites, mobile apps, CRMs, eCommerce platforms, call centres and offline sources flows into a single stream.</p>
+              </div>
+            </div>
+            <div class="cdp-pillar">
+              <div class="cdp-pillar-num">2</div>
+              <div class="cdp-pillar-body">
+                <h4>Unify — Identity resolution at scale</h4>
+                <p>Probabilistic and deterministic matching stitches anonymous and known profiles together. One customer browsing on mobile, converting on desktop and phoning support becomes one unified profile — not three separate records.</p>
+              </div>
+            </div>
+            <div class="cdp-pillar">
+              <div class="cdp-pillar-num">3</div>
+              <div class="cdp-pillar-body">
+                <h4>Activate — Real-time audience delivery</h4>
+                <p>Audience segments built from your unified profiles are pushed to Meta, Google, HubSpot, Klaviyo, Salesforce and 400+ other destinations in real time — no manual CSV exports, no stale data.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <div class="not-cdp-box">
+            <h3>What a CDP Is NOT</h3>
+            <div class="not-cdp-list">
+              <div class="not-cdp-item">
+                <span class="nci-badge">CRM</span>
+                <p>A CRM (HubSpot, Salesforce) is an operational tool for managing contacts, deals and service tickets. It holds records humans create. A CDP collects behavioural data automatically and feeds the CRM — not the other way round.</p>
+              </div>
+              <div class="not-cdp-item">
+                <span class="nci-badge">DMP</span>
+                <p>A Data Management Platform (DMP) works with anonymous, third-party cookie data for programmatic targeting. In a post-cookie world, DMPs are declining. CDPs work with consented, first-party data and persist customer profiles indefinitely.</p>
+              </div>
+              <div class="not-cdp-item">
+                <span class="nci-badge">Data Warehouse</span>
+                <p>A data warehouse (BigQuery, Snowflake) is optimised for analytical queries across historical data. It is not built for real-time activation. A CDP can sit on top of a warehouse, or alongside it via reverse ETL — but they serve different purposes.</p>
+              </div>
+              <div class="not-cdp-item">
+                <span class="nci-badge">Analytics Tool</span>
+                <p>GA4, Mixpanel and Amplitude are analytics tools. They tell you what happened. A CDP is the activation layer — it takes what you know about a customer and acts on it across every marketing channel simultaneously.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHY UK BUSINESSES NEED A CDP NOW ─────────────── -->
+  <section class="why-now">
+    <div class="container">
+      <div class="why-now-header reveal">
+        <span class="section-eyebrow">Why Now?</span>
+        <h2>The Post-Cookie World Has Made First-Party Data a Competitive Moat</h2>
+        <p>UK businesses that build a CDP-powered first-party data infrastructure now will have a decisive advantage over competitors still relying on third-party signals, duplicate audiences and disconnected stacks.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <h3><span class="icon">🍪</span>Third-Party Cookies Are Gone</h3>
+          <p>Chrome's deprecation of third-party cookies has eliminated the targeting and measurement infrastructure most UK brands relied on for a decade. First-party data collected directly from your customers — with their consent — is now the only durable signal. A CDP makes that data actionable at scale.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-1">
+          <h3><span class="icon">⚖️</span>ICO Guidance Is Tightening</h3>
+          <p>The ICO has issued clear guidance on consent, legitimate interest and data minimisation under the UK GDPR. Businesses without a systematic approach to consent propagation across their martech stack face real compliance risk. A CDP with a consent management integration closes this gap automatically.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-2">
+          <h3><span class="icon">💸</span>Wasted Ad Spend from Duplicate Profiles</h3>
+          <p>Without identity resolution, you are likely targeting the same customer four or five times across different devices in a single retargeting campaign. CDP-powered audience deduplication typically reduces wasted paid media spend by 30–40% whilst improving conversion rates on the same budget.</p>
+        </div>
+        <div class="why-card reveal">
+          <h3><span class="icon">🎯</span>Personalisation at Scale</h3>
+          <p>Personalisation that moves the revenue needle requires a unified, real-time customer profile. Without a CDP, personalisation is limited to what a single tool knows — which is always a partial view. With a CDP, every tool in your stack shares the same complete picture of each customer.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-1">
+          <h3><span class="icon">🔗</span>Disconnected Martech Stacks</h3>
+          <p>The average UK mid-market business runs 22 separate marketing tools. Each holds a different, conflicting version of customer data. A CDP becomes the single source of truth — every tool reads from and writes to the same unified profile, eliminating data inconsistencies across the stack.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-2">
+          <h3><span class="icon">📊</span>Measurement Gaps Post-iOS 17</h3>
+          <p>Apple's privacy changes have created 30–40% measurement gaps for businesses that rely on pixel-based tracking. A server-side CDP implementation — sending conversion events directly from your server rather than the browser — recovers the majority of this lost signal, dramatically improving Meta and Google ad performance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PLATFORMS ──────────────────────────────────────── -->
+  <section class="platforms" id="platforms">
+    <div class="container">
+      <div class="platforms-header reveal">
+        <span class="section-eyebrow">CDP Platforms</span>
+        <h2 class="section-title">The CDP Platforms We Implement</h2>
+        <p class="section-sub">We are platform-agnostic, recommending the solution that fits your business model, budget, technical maturity and UK data residency requirements — not the one we have a commercial incentive to sell.</p>
+      </div>
+      <div class="platforms-grid">
+        <div class="platform-card reveal">
+          <div class="pc-icon">⚡</div>
+          <span class="pc-badge">Most Popular</span>
+          <h3>Segment (Twilio)</h3>
+          <p>The most widely adopted CDP globally, with 400+ pre-built integrations and a developer-friendly SDK. Segment is the go-to choice for growth-stage and mid-market UK businesses that need fast time-to-value and a breadth of destination connections.</p>
+          <ul>
+            <li>400+ integrations across paid, email, analytics and data warehouse</li>
+            <li>Connections API for server-side event forwarding</li>
+            <li>Profiles and Audiences for real-time segmentation</li>
+            <li>Twilio Engage for cross-channel messaging</li>
+            <li>Best for: growth-stage to mid-market, SaaS, eCommerce</li>
+          </ul>
+        </div>
+        <div class="platform-card reveal reveal-delay-1">
+          <div class="pc-icon">🏢</div>
+          <span class="pc-badge">Enterprise</span>
+          <h3>Tealium</h3>
+          <p>Born from tag management (Tealium iQ TMS), Tealium AudienceStream is the enterprise CDP of choice for businesses with complex data governance requirements, deep Adobe and Salesforce integrations, and large IT organisations.</p>
+          <ul>
+            <li>Deep integration with Adobe Experience Cloud and Salesforce</li>
+            <li>Tealium iQ TMS for server-side tag management</li>
+            <li>Robust data governance and compliance controls</li>
+            <li>UK/EU data residency options available</li>
+            <li>Best for: enterprise, financial services, retail</li>
+          </ul>
+        </div>
+        <div class="platform-card reveal reveal-delay-2">
+          <div class="pc-icon">📱</div>
+          <span class="pc-badge">Mobile-First</span>
+          <h3>mParticle</h3>
+          <p>The leading CDP for mobile-first businesses. mParticle's data quality controls, schema enforcement and real-time identity graph make it the preferred choice for apps with millions of MAUs where data quality and speed are non-negotiable.</p>
+          <ul>
+            <li>Best-in-class mobile SDKs (iOS, Android, React Native)</li>
+            <li>Real-time identity resolution across device graph</li>
+            <li>Data quality rules and schema validation</li>
+            <li>Deep integrations with AppsFlyer, Adjust and mobile MMPs</li>
+            <li>Best for: mobile apps, gaming, on-demand services</li>
+          </ul>
+        </div>
+        <div class="platform-card reveal">
+          <div class="pc-icon">🔓</div>
+          <span class="pc-badge">Open-Source</span>
+          <h3>RudderStack</h3>
+          <p>The open-source, warehouse-native CDP. RudderStack can be self-hosted on your own UK or EU infrastructure, making it the only CDP option that gives you complete data sovereignty — critical for businesses with strict ICO or sector-specific data residency requirements.</p>
+          <ul>
+            <li>Self-hosted option for full UK data residency</li>
+            <li>Warehouse-native architecture (BigQuery, Snowflake, Redshift)</li>
+            <li>200+ integrations, Segment-compatible API</li>
+            <li>Open-source core, no vendor lock-in</li>
+            <li>Best for: data-sensitive industries, GDPR-strict businesses</li>
+          </ul>
+        </div>
+        <div class="platform-card reveal reveal-delay-1">
+          <div class="pc-icon">🔄</div>
+          <span class="pc-badge">Reverse ETL</span>
+          <h3>Hightouch</h3>
+          <p>Hightouch is not a traditional CDP — it is the market-leading reverse ETL platform that pulls enriched customer data from your data warehouse (BigQuery, Snowflake) and syncs it into your operational marketing tools. It makes your warehouse the source of truth for activation.</p>
+          <ul>
+            <li>Syncs BigQuery/Snowflake data to 200+ destinations</li>
+            <li>Audience builder for non-technical marketers</li>
+            <li>Customer Studio for self-serve segmentation</li>
+            <li>Real-time and scheduled sync options</li>
+            <li>Best for: data-warehouse-first businesses, BI-heavy teams</li>
+          </ul>
+        </div>
+        <div class="platform-card reveal reveal-delay-2">
+          <div class="pc-icon">🛍️</div>
+          <span class="pc-badge">eCommerce</span>
+          <h3>Klaviyo CDP</h3>
+          <p>Klaviyo's built-in CDP capabilities — launched in 2023 — make it an increasingly compelling option for Shopify merchants who already use Klaviyo for email and SMS. The CDP layer unifies on-site behaviour, purchase data and email engagement into a single profile without needing a separate tool.</p>
+          <ul>
+            <li>Native Shopify integration — zero additional instrumentation</li>
+            <li>Predictive analytics (CLV, churn risk, next order date)</li>
+            <li>Unified profiles across email, SMS and on-site behaviour</li>
+            <li>No additional CDP licence cost for Klaviyo users</li>
+            <li>Best for: Shopify-native eCommerce brands</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CDP SERVICES ───────────────────────────────────── -->
+  <section class="cdp-services">
+    <div class="container">
+      <div class="cdp-services-header reveal">
+        <span class="section-eyebrow">Our CDP Services</span>
+        <h2 class="section-title">End-to-End CDP Consultancy &amp; Implementation</h2>
+        <p class="section-sub">From the initial data audit through to live activations and ongoing governance, we cover every stage of the CDP journey — so your team gets a production-ready implementation, not a half-finished build.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-tile reveal">
+          <div class="st-icon">🔍</div>
+          <h3>Discovery &amp; Data Audit</h3>
+          <p>We map every data source you have — website, app, CRM, eComm, offline — assess data quality, identify gaps and produce a detailed architecture recommendation before a single line of code is written.</p>
+        </div>
+        <div class="service-tile reveal reveal-delay-1">
+          <div class="st-icon">📐</div>
+          <h3>Schema Design &amp; Taxonomy</h3>
+          <p>We define your event taxonomy, trait naming conventions and identity strategy — the structural decisions that determine how useful your CDP data will be for segmentation and activation downstream.</p>
+        </div>
+        <div class="service-tile reveal reveal-delay-2">
+          <div class="st-icon">⚙️</div>
+          <h3>Platform Implementation</h3>
+          <p>Full CDP platform setup, workspace configuration, source instrumentation and quality assurance. We instrument your website, app and server-side pipelines to the specification agreed in schema design.</p>
+        </div>
+        <div class="service-tile reveal reveal-delay-3">
+          <div class="st-icon">🔌</div>
+          <h3>Source Integrations</h3>
+          <p>We connect your website (via analytics.js or server-side), mobile app, CRM (HubSpot, Salesforce), eCommerce platform (Shopify, Magento), email platform, offline data feeds and data warehouse as sources.</p>
+        </div>
+        <div class="service-tile reveal">
+          <div class="st-icon">📡</div>
+          <h3>Destination Activations</h3>
+          <p>We connect your CDP to Meta CAPI, Google Enhanced Conversions, HubSpot, Klaviyo, Salesforce, Iterable, Braze, Intercom, Amplitude and any other tool in your stack — with correct event mapping and data validation.</p>
+        </div>
+        <div class="service-tile reveal reveal-delay-1">
+          <div class="st-icon">🧬</div>
+          <h3>Identity Resolution</h3>
+          <p>We configure deterministic and probabilistic identity resolution to merge anonymous and known profiles — reducing duplicate profiles, improving audience match rates and ensuring a true single customer view.</p>
+        </div>
+        <div class="service-tile reveal reveal-delay-2">
+          <div class="st-icon">🛡️</div>
+          <h3>GDPR Consent Architecture</h3>
+          <p>We integrate your CMP (Cookiebot, OneTrust, Usercentrics) with your CDP to ensure consent signals propagate to every downstream destination automatically — compliant with UK GDPR and ICO guidance on Consent Mode v2.</p>
+        </div>
+        <div class="service-tile reveal reveal-delay-3">
+          <div class="st-icon">📚</div>
+          <h3>Training &amp; Documentation</h3>
+          <p>We produce full implementation documentation, data dictionaries and runbooks — and train your marketing, analytics and engineering teams so they can manage and extend the CDP confidently without depending on us for every change.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ACTIVATION DIAGRAM ─────────────────────────────── -->
+  <section class="activation">
+    <div class="container">
+      <div class="activation-inner">
+        <div class="activation-content reveal">
+          <span class="section-eyebrow">How It Works</span>
+          <h2 class="section-title">From Data Silos to Activated Customer Profiles</h2>
+          <p class="section-sub">A CDP implementation transforms a fragmented martech stack into a coherent, always-on customer data infrastructure. Every source feeds the central profile. Every activation channel draws from the same unified truth.</p>
+          <div class="activation-list">
+            <div class="activation-item">
+              <div class="ai-icon">🌐</div>
+              <div>
+                <h4>Website &amp; App Events</h4>
+                <p>Page views, clicks, form submissions, purchases and custom events are captured via client-side SDK or server-side API and streamed directly into the CDP.</p>
+              </div>
+            </div>
+            <div class="activation-item">
+              <div class="ai-icon">🧩</div>
+              <div>
+                <h4>Identity Stitching</h4>
+                <p>Anonymous visitors are merged with known customers the moment they identify themselves — via email sign-up, login or purchase — creating a continuous journey from first visit to loyal customer.</p>
+              </div>
+            </div>
+            <div class="activation-item">
+              <div class="ai-icon">🎯</div>
+              <div>
+                <h4>Real-Time Audience Activation</h4>
+                <p>Audiences built from CDP profiles — high-value customers, lapsed purchasers, cart abandoners, trial users — are pushed to paid media, email and personalisation tools in real time, without manual exports.</p>
+              </div>
+            </div>
+            <div class="activation-item">
+              <div class="ai-icon">📊</div>
+              <div>
+                <h4>Analytics &amp; Warehouse Forwarding</h4>
+                <p>Cleaned, schema-validated event data is forwarded to your data warehouse (BigQuery, Snowflake) and analytics tools (Amplitude, Mixpanel, Looker Studio) simultaneously — a single instrumentation point for all analytics needs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <div class="activation-diagram">
+            <h3>CDP Data Flow</h3>
+            <div class="diag-sources">
+              <div class="diag-tag">Website</div>
+              <div class="diag-tag">Mobile App</div>
+              <div class="diag-tag">CRM / HubSpot</div>
+              <div class="diag-tag">Shopify / eComm</div>
+              <div class="diag-tag">Email Platform</div>
+              <div class="diag-tag">Offline / POS</div>
+            </div>
+            <div class="diag-arrow">↓</div>
+            <div class="diag-cdp">
+              <strong>Customer Data Platform</strong>
+              <span>Collect · Unify · Profile · Segment</span>
+            </div>
+            <div class="diag-arrow">↓</div>
+            <div class="diag-channels">
+              <div class="diag-channel">Meta &amp; Google Ads</div>
+              <div class="diag-channel">Email &amp; SMS</div>
+              <div class="diag-channel">Web Personalisation</div>
+              <div class="diag-channel">Analytics &amp; BI</div>
+              <div class="diag-channel">Data Warehouse</div>
+              <div class="diag-channel">CRM Enrichment</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── COMPARISON TABLE ───────────────────────────────── -->
+  <section class="comparison">
+    <div class="container">
+      <div class="comparison-header reveal">
+        <span class="section-eyebrow">Platform Comparison</span>
+        <h2 class="section-title">CDP vs CRM vs DMP vs Data Warehouse</h2>
+        <p class="section-sub" style="margin: 0 auto 2.5rem;">Understanding which layer of your data stack does what — and how they work together — is essential to building an architecture that lasts.</p>
+      </div>
+      <div class="table-wrap reveal">
+        <table class="comp-table">
+          <thead>
+            <tr>
+              <th>Platform Type</th>
+              <th>Primary Purpose</th>
+              <th>Data Type</th>
+              <th>Real-Time Activation</th>
+              <th>Identity Resolution</th>
+              <th>GDPR Consent</th>
+              <th>UK Examples</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>CDP</strong></td>
+              <td>Collect, unify &amp; activate customer data</td>
+              <td>First-party, behavioural, transactional</td>
+              <td><span class="tag-good">Yes — real-time</span></td>
+              <td><span class="tag-good">Core capability</span></td>
+              <td><span class="tag-good">Built-in consent propagation</span></td>
+              <td>Segment, Tealium, RudderStack</td>
+            </tr>
+            <tr>
+              <td><strong>CRM</strong></td>
+              <td>Manage customer relationships &amp; sales pipeline</td>
+              <td>Contact records, deals, service tickets</td>
+              <td><span class="tag-ok">Partial</span></td>
+              <td><span class="tag-bad">Manual deduplication</span></td>
+              <td><span class="tag-ok">Basic consent fields</span></td>
+              <td>HubSpot, Salesforce, Pipedrive</td>
+            </tr>
+            <tr>
+              <td><strong>DMP</strong></td>
+              <td>Programmatic ad targeting with third-party data</td>
+              <td>Anonymous, third-party cookie segments</td>
+              <td><span class="tag-ok">Delayed</span></td>
+              <td><span class="tag-bad">Anonymous only</span></td>
+              <td><span class="tag-bad">Cookie-dependent</span></td>
+              <td>Adobe Audience Manager, Lotame</td>
+            </tr>
+            <tr>
+              <td><strong>Data Warehouse</strong></td>
+              <td>Store &amp; query historical data at scale</td>
+              <td>All structured data, batch ingestion</td>
+              <td><span class="tag-bad">Not built for activation</span></td>
+              <td><span class="tag-ok">Via custom SQL</span></td>
+              <td><span class="tag-ok">Requires custom build</span></td>
+              <td>BigQuery, Snowflake, Redshift</td>
+            </tr>
+            <tr>
+              <td><strong>Analytics Tool</strong></td>
+              <td>Analyse user behaviour &amp; business performance</td>
+              <td>Behavioural, session, funnel data</td>
+              <td><span class="tag-bad">Reporting only</span></td>
+              <td><span class="tag-ok">Limited</span></td>
+              <td><span class="tag-ok">Consent Mode supported</span></td>
+              <td>GA4, Amplitude, Mixpanel</td>
+            </tr>
+            <tr>
+              <td><strong>Reverse ETL</strong></td>
+              <td>Sync warehouse data back to marketing tools</td>
+              <td>Enriched, modelled warehouse data</td>
+              <td><span class="tag-good">Scheduled or real-time</span></td>
+              <td><span class="tag-ok">Depends on warehouse model</span></td>
+              <td><span class="tag-ok">Inherits warehouse governance</span></td>
+              <td>Hightouch, Census, Polytomic</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── REVERSE ETL ────────────────────────────────────── -->
+  <section class="retl">
+    <div class="container">
+      <div class="retl-inner">
+        <div class="retl-content reveal">
+          <span class="section-eyebrow">Reverse ETL</span>
+          <h2 class="section-title">Your Data Warehouse Already Knows Everything — Now Make It Act</h2>
+          <p class="section-sub">Many UK businesses have invested heavily in data warehouses — BigQuery, Snowflake, Redshift — that contain incredibly rich, modelled customer data. Lifetime value scores, churn propensity, product affinity, RFM segments. But that data sits idle because it cannot reach the marketing tools your team actually uses to run campaigns.</p>
+          <p style="font-size:0.95rem;color:var(--muted);line-height:1.7;margin-bottom:1.5rem;">Reverse ETL solves this. Platforms like Hightouch and Census query your warehouse on a schedule (or in real time), and sync the results directly into HubSpot, Salesforce, Klaviyo, Braze, Meta Custom Audiences, Google Customer Match and 200+ other tools. No engineering tickets. No CSV exports. No stale data.</p>
+          <p style="font-size:0.95rem;color:var(--muted);line-height:1.7;">If your business is warehouse-mature but marketing-activation-limited, reverse ETL is often a faster, more cost-effective path to personalisation at scale than a full CDP implementation.</p>
+          <div class="retl-steps">
+            <div class="retl-step">
+              <div class="rs-num">1</div>
+              <div>
+                <h4>Model your customer data in the warehouse</h4>
+                <p>dbt or SQL models transform raw event data into clean customer tables — CLV scores, segments, product affinities.</p>
+              </div>
+            </div>
+            <div class="retl-step">
+              <div class="rs-num">2</div>
+              <div>
+                <h4>Connect Hightouch to your warehouse</h4>
+                <p>Hightouch queries your warehouse tables on a schedule you define — every 15 minutes, hourly, or triggered by a dbt run.</p>
+              </div>
+            </div>
+            <div class="retl-step">
+              <div class="rs-num">3</div>
+              <div>
+                <h4>Define syncs to your marketing tools</h4>
+                <p>Map warehouse fields to destination fields — no code required. Push CLV scores to HubSpot contact properties, or high-value segments to Meta Custom Audiences.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <div class="retl-tools">
+            <h3>Reverse ETL Tools We Implement</h3>
+            <div class="retl-tool-list">
+              <div class="retl-tool-item">
+                <div class="rti-icon">⚡</div>
+                <div>
+                  <h4>Hightouch</h4>
+                  <p>Market leader in reverse ETL. Best-in-class audience builder, Customer Studio for self-serve segmentation, and the broadest destination library. Our preferred platform for most UK businesses.</p>
+                </div>
+              </div>
+              <div class="retl-tool-item">
+                <div class="rti-icon">📦</div>
+                <div>
+                  <h4>Census</h4>
+                  <p>Strong alternative to Hightouch with excellent data transformation capabilities and a clean UI. Particularly well-suited for B2B businesses syncing account-level data to Salesforce.</p>
+                </div>
+              </div>
+              <div class="retl-tool-item">
+                <div class="rti-icon">🔄</div>
+                <div>
+                  <h4>dbt + Airflow (Custom)</h4>
+                  <p>For businesses with mature data engineering teams, we can design custom reverse ETL pipelines using dbt for transformation and Airflow or Prefect for orchestration — no additional tool licence required.</p>
+                </div>
+              </div>
+              <div class="retl-tool-item">
+                <div class="rti-icon">☁️</div>
+                <div>
+                  <h4>Segment Reverse ETL</h4>
+                  <p>Segment's native reverse ETL feature allows Segment customers to sync warehouse data into the Segment ecosystem and onward to any Segment destination — a clean option if you are already on Segment.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── UK GDPR & ICO COMPLIANCE ───────────────────────── -->
+  <section class="uk-gdpr">
+    <div class="container">
+      <div class="uk-gdpr-inner">
+        <div class="uk-gdpr-content reveal">
+          <span class="section-eyebrow">UK GDPR &amp; ICO Compliance</span>
+          <h2 class="section-title">GDPR-Compliant CDP Architecture — ICO-Aligned by Design</h2>
+          <p class="section-sub">Every CDP implementation we deliver is built with UK GDPR compliance as a first principle — not bolted on after the fact. We design consent propagation, data residency and DSAR workflows into the architecture from day one.</p>
+          <ul class="uk-checklist">
+            <li>Consent Mode v2 implementation across all CDP destinations</li>
+            <li>CMP integration (OneTrust, Cookiebot, Usercentrics) with real-time consent signal propagation</li>
+            <li>Legitimate interest assessments (LIAs) documented for all processing activities</li>
+            <li>Data residency configuration — UK or EU server regions where required</li>
+            <li>DSAR (Data Subject Access Request) workflow documentation</li>
+            <li>Right to erasure — automated suppression propagation to all downstream destinations</li>
+            <li>Data retention policies configured at the CDP and warehouse level</li>
+            <li>ICO-aligned privacy notices and consent language reviewed</li>
+            <li>Server-side tracking to reduce reliance on consent-blocked client-side pixels</li>
+          </ul>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <div class="compliance-list">
+            <div class="compliance-item">
+              <div class="ci-icon">🛡️</div>
+              <div>
+                <h4>Consent Mode v2</h4>
+                <p>We implement Google's Consent Mode v2 as standard on every CDP build — ensuring that ad personalisation and measurement signals are only sent when the appropriate consent signals are present, in line with ICO guidance.</p>
+              </div>
+            </div>
+            <div class="compliance-item">
+              <div class="ci-icon">🏠</div>
+              <div>
+                <h4>UK &amp; EU Data Residency</h4>
+                <p>For businesses with strict data localisation requirements, we configure CDP and warehouse infrastructure to keep all customer data within UK or EU server regions — RudderStack self-hosted is particularly well-suited to this requirement.</p>
+              </div>
+            </div>
+            <div class="compliance-item">
+              <div class="ci-icon">🔕</div>
+              <div>
+                <h4>Automated Consent Propagation</h4>
+                <p>When a customer withdraws consent via your CMP, the CDP automatically suppresses their profile from all downstream destinations — Meta, Google, HubSpot, email platforms — within seconds, without manual intervention.</p>
+              </div>
+            </div>
+            <div class="compliance-item">
+              <div class="ci-icon">📋</div>
+              <div>
+                <h4>DSAR &amp; Right to Erasure</h4>
+                <p>We document the complete data lineage of every customer record — which sources contributed, which destinations received it — so that Data Subject Access Requests and erasure requests can be fulfilled accurately and efficiently.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROCESS ────────────────────────────────────────── -->
+  <section class="process">
+    <div class="container">
+      <div class="process-header reveal">
+        <span class="section-eyebrow">Our Process</span>
+        <h2 class="section-title">How We Deliver Your CDP Implementation</h2>
+        <p class="section-sub" style="margin: 0 auto 3rem;">A structured four-phase process that eliminates the guesswork, reduces rework and gets your CDP producing value quickly.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step reveal">
+          <div class="process-step-num">1</div>
+          <h3>Audit</h3>
+          <p>We assess your current data sources, martech stack, analytics quality and business goals — producing a detailed data audit report, platform recommendation and implementation roadmap before any build begins.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-1">
+          <div class="process-step-num">2</div>
+          <h3>Architecture</h3>
+          <p>We design your event taxonomy, identity resolution strategy, consent architecture and destination mapping. Schema design decisions made here determine the long-term usefulness of your CDP — we take time to get them right.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-2">
+          <div class="process-step-num">3</div>
+          <h3>Build</h3>
+          <p>Our engineers instrument your website, app and server-side pipelines to the agreed specification — with QA validation at every stage. We test event schemas, identity resolution, consent propagation and destination delivery before sign-off.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-3">
+          <div class="process-step-num">4</div>
+          <h3>Activate</h3>
+          <p>With your CDP live and data flowing, we build your first audiences, configure destination activations — Meta CAPI, Google Enhanced Conversions, Klaviyo, HubSpot — and train your team to manage and extend the system independently.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRICING ────────────────────────────────────────── -->
+  <section class="pricing">
+    <div class="container">
+      <div class="pricing-header reveal">
+        <span class="section-eyebrow">Pricing</span>
+        <h2 class="section-title">CDP Implementation Pricing</h2>
+        <p class="section-sub" style="margin: 0 auto 3rem;">Transparent, outcome-focused pricing. All engagements begin with a discovery audit so we scope accurately — no surprises mid-project.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card reveal">
+          <div class="pc-type">Phase 1</div>
+          <div class="pc-name">Discovery &amp; Data Audit</div>
+          <div class="pc-price">£3,500</div>
+          <div class="pc-price-note">One-off project fee</div>
+          <ul>
+            <li>Full data source audit across your stack</li>
+            <li>Platform selection recommendation</li>
+            <li>Event taxonomy design workshop</li>
+            <li>Identity resolution strategy</li>
+            <li>Consent architecture review</li>
+            <li>Implementation roadmap &amp; SOW</li>
+            <li>Deliverable: 30-page audit report</li>
+          </ul>
+          <a href="https://bambinoagency.com/contact" class="btn-secondary">Start with an Audit</a>
+        </div>
+        <div class="pricing-card featured reveal reveal-delay-1">
+          <div class="featured-badge">Most Popular</div>
+          <div class="pc-type">Phase 2</div>
+          <div class="pc-name">CDP Implementation Project</div>
+          <div class="pc-price">£15k–£40k</div>
+          <div class="pc-price-note">Fixed-price project (scope-dependent)</div>
+          <ul>
+            <li>Full CDP platform setup &amp; configuration</li>
+            <li>Website &amp; app source instrumentation</li>
+            <li>CRM &amp; eComm source integrations</li>
+            <li>Destination activations (Meta, Google, email)</li>
+            <li>Identity resolution configuration</li>
+            <li>GDPR consent architecture build</li>
+            <li>QA, testing &amp; sign-off</li>
+            <li>Team training &amp; full documentation</li>
+          </ul>
+          <a href="https://bambinoagency.com/contact" class="btn-primary">Get a Project Quote &rarr;</a>
+        </div>
+        <div class="pricing-card reveal reveal-delay-2">
+          <div class="pc-type">Phase 3</div>
+          <div class="pc-name">Ongoing Management</div>
+          <div class="pc-price">£5,000</div>
+          <div class="pc-price-note">Per month, minimum 3 months</div>
+          <ul>
+            <li>Ongoing schema maintenance &amp; new sources</li>
+            <li>New destination connections &amp; activations</li>
+            <li>Monthly audience build &amp; activation</li>
+            <li>Data quality monitoring &amp; alerting</li>
+            <li>Consent &amp; compliance reviews</li>
+            <li>Dedicated CDP engineer (10 hrs/month)</li>
+            <li>Monthly reporting &amp; strategic review</li>
+          </ul>
+          <a href="https://bambinoagency.com/contact" class="btn-secondary">Enquire About Retainer</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ────────────────────────────────────────────── -->
+  <section class="faq">
+    <div class="container--narrow">
+      <div class="faq-header reveal">
+        <span class="section-eyebrow">FAQ</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-sub" style="margin: 0 auto 2.5rem;">Everything UK businesses typically ask before embarking on a CDP implementation.</p>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            What is the difference between a CDP and a CRM?
+            <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2 6h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-a">A CRM (Customer Relationship Management system) is an operational tool your sales and support teams use to manage contacts, deals and service tickets. It holds records that humans create and update. A CDP (Customer Data Platform) is an infrastructure layer that automatically collects behavioural and transactional data from every digital touchpoint — website, app, email, offline — and stitches it into a single, unified customer profile in real time. The CDP feeds your CRM, not the other way around.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Do I need a data warehouse before implementing a CDP?
+            <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2 6h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-a">Not necessarily. Platforms like Segment and RudderStack can send data directly to destinations (Meta, Google, HubSpot, Klaviyo) without a warehouse in the middle. However, if you want reverse ETL — pulling enriched data from a warehouse back into your marketing tools — you will need a warehouse such as BigQuery or Snowflake. We assess your current stack in the discovery phase and recommend the architecture that fits your maturity level and budget.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            How long does a CDP implementation take?
+            <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2 6h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-a">A standard Segment or RudderStack implementation for a mid-market business typically takes 8–14 weeks from kick-off to first activations going live. This includes a two-week data audit and schema design, four to six weeks of instrumentation and source integration, and two weeks of destination activation and testing. Enterprise implementations involving Tealium or mParticle with complex identity resolution can run 16–24 weeks.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Is Segment the right CDP for my business?
+            <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2 6h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-a">Segment (Twilio) is the most widely adopted CDP and is an excellent fit for growth-stage and mid-market businesses that need fast time-to-value and a broad integration library of 400+ destinations. It is less suitable if you require full data residency in the UK or EU (RudderStack self-hosted is better for that), if you are primarily mobile-first at enterprise scale (mParticle is stronger), or if you have a heavy Salesforce or Adobe stack (Tealium may integrate more natively). We run a platform selection workshop as part of every discovery engagement.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            How does a CDP help with UK GDPR compliance?
+            <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2 6h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-a">A CDP gives you a single, authoritative record of every customer's consent state, updated in real time from your consent management platform (CMP). When a user withdraws consent, the CDP propagates that suppression to every downstream destination automatically — Meta, Google, HubSpot, Klaviyo — within seconds. This is far more reliable than manually managing suppression lists across each tool. We implement Consent Mode v2 and ICO-aligned consent architecture as standard on every CDP build.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            What is reverse ETL and do I need it?
+            <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2 6h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-a">Reverse ETL is the process of taking data that lives in your data warehouse (BigQuery, Snowflake, Redshift) — which may include enriched customer scores, lifetime value calculations, or offline purchase history — and syncing it back into your operational marketing tools like HubSpot, Salesforce, Klaviyo or Meta Custom Audiences. Tools like Hightouch and Census specialise in this. You need it if your most valuable customer data lives in a warehouse but your marketing team cannot access it for segmentation and activation.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Do I need a developer to maintain a CDP?
+            <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2 6h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-a">Initial implementation requires engineering resource to instrument your website and apps with the CDP's tracking library. Once built, day-to-day management — adding new destinations, creating audiences, adjusting mappings — can largely be handled by a technically confident marketer or analytics manager. We provide full training and documentation as part of every project, and our ongoing management retainer includes developer hours for any schema changes or new source integrations.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ────────────────────────────────────────────── -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <h2>Ready to Unify Your Customer Data?</h2>
+        <p>Book a free CDP discovery call. We'll audit your current data stack, identify the gaps and recommend the right platform and architecture for your business — no obligations, no jargon.</p>
+        <a href="https://bambinoagency.com/contact" class="btn-primary">Get a Free CDP Audit &rarr;</a>
+        <div class="cta-trust">CDP Implementation · Segment · Tealium · RudderStack · Hightouch · UK GDPR Compliant</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── RELATED SERVICES ───────────────────────────────── -->
+  <section class="related">
+    <div class="container">
+      <div class="related-header reveal">
+        <span class="section-eyebrow">Related Services</span>
+        <h2 class="section-title">Complete the Data Stack</h2>
+      </div>
+      <div class="related-grid">
+        <a href="https://bambinoagency.com/services/analytics-ga4" class="related-card reveal">
+          <div class="rc-icon">📊</div>
+          <h4>Analytics &amp; GA4</h4>
+          <p>GA4 implementation, event taxonomy, custom dimensions and reporting.</p>
+        </a>
+        <a href="https://bambinoagency.com/services/attribution-mmm" class="related-card reveal reveal-delay-1">
+          <div class="rc-icon">📐</div>
+          <h4>Attribution &amp; MMM</h4>
+          <p>Post-cookie measurement, marketing mix modelling and incrementality testing.</p>
+        </a>
+        <a href="https://bambinoagency.com/services/marketing-automation" class="related-card reveal reveal-delay-2">
+          <div class="rc-icon">⚙️</div>
+          <h4>Marketing Automation</h4>
+          <p>Lifecycle automation, triggered campaigns and behavioural personalisation.</p>
+        </a>
+        <a href="https://bambinoagency.com/services/revops" class="related-card reveal reveal-delay-3">
+          <div class="rc-icon">🔄</div>
+          <h4>RevOps</h4>
+          <p>Revenue operations, CRM architecture and go-to-market data infrastructure.</p>
+        </a>
+        <a href="https://bambinoagency.com/services/hubspot" class="related-card reveal reveal-delay-4">
+          <div class="rc-icon">🧡</div>
+          <h4>HubSpot</h4>
+          <p>HubSpot implementation, custom properties and CDP-to-CRM data pipelines.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="https://bambinoagency.com" class="nav-logo">Bambino<span>.</span></a>
+          <p>A full-service digital marketing agency helping UK businesses grow through data, technology and creative performance marketing.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Data &amp; Analytics</h5>
+          <a href="https://bambinoagency.com/services/cdp">CDP Implementation</a>
+          <a href="https://bambinoagency.com/services/analytics-ga4">Analytics &amp; GA4</a>
+          <a href="https://bambinoagency.com/services/attribution-mmm">Attribution &amp; MMM</a>
+          <a href="https://bambinoagency.com/services/revops">RevOps</a>
+          <a href="https://bambinoagency.com/services/hubspot">HubSpot</a>
+        </div>
+        <div class="footer-col">
+          <h5>Paid Media</h5>
+          <a href="https://bambinoagency.com/services/google-ads">Google Ads</a>
+          <a href="https://bambinoagency.com/services/meta-ads">Meta Ads</a>
+          <a href="https://bambinoagency.com/services/ppc">PPC Management</a>
+          <a href="https://bambinoagency.com/services/linkedin-ads">LinkedIn Ads</a>
+          <a href="https://bambinoagency.com/services/youtube-ads">YouTube Ads</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="https://bambinoagency.com/about">About</a>
+          <a href="https://bambinoagency.com/blog">Blog</a>
+          <a href="https://bambinoagency.com/pricing">Pricing</a>
+          <a href="https://bambinoagency.com/contact">Contact</a>
+          <a href="https://bambinoagency.com/privacy">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Bambino Agency Ltd. All rights reserved.</span>
+        <span><a href="https://bambinoagency.com/privacy">Privacy</a> &middot; <a href="https://bambinoagency.com/terms">Terms</a> &middot; <a href="https://bambinoagency.com/cookies">Cookies</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── MEGA MENU JS ───────────────────────────────────── -->
+  <script>
+  (function(){var mp=document.querySelector('.nav-has-mega'),mt=document.querySelector('.nav-mega-toggle');if(mt&&mp){mt.addEventListener('click',function(e){e.preventDefault();var a=mp.classList.toggle('active');mt.setAttribute('aria-expanded',a?'true':'false')});document.addEventListener('click',function(e){if(!mp.contains(e.target)){mp.classList.remove('active');mt.setAttribute('aria-expanded','false')}});document.addEventListener('keydown',function(e){if(e.key==='Escape'){mp.classList.remove('active');mt.setAttribute('aria-expanded','false')}})}})();
+  </script>
+
+  <!-- ── MOBILE MENU JS ────────────────────────────────── -->
+  <script>
+  (function(){
+    var ham=document.getElementById('hamburger'),
+        mob=document.getElementById('mobileMenu'),
+        cls=document.getElementById('mobileClose');
+    if(ham&&mob){
+      ham.addEventListener('click',function(){
+        var open=mob.classList.toggle('open');
+        ham.classList.toggle('open',open);
+        ham.setAttribute('aria-expanded',open?'true':'false');
+        document.body.style.overflow=open?'hidden':'';
+      });
+      if(cls){cls.addEventListener('click',function(){
+        mob.classList.remove('open');
+        ham.classList.remove('open');
+        ham.setAttribute('aria-expanded','false');
+        document.body.style.overflow='';
+      });}
+    }
+  })();
+  </script>
+
+  <!-- ── FAQ JS ────────────────────────────────────────── -->
+  <script>
+  (function(){
+    var items=document.querySelectorAll('.faq-item');
+    items.forEach(function(item){
+      var btn=item.querySelector('.faq-q'),
+          ans=item.querySelector('.faq-a');
+      if(btn&&ans){
+        btn.addEventListener('click',function(){
+          var isOpen=btn.classList.contains('active');
+          items.forEach(function(i){
+            i.querySelector('.faq-q').classList.remove('active');
+            i.querySelector('.faq-a').classList.remove('open');
+            i.querySelector('.faq-q').setAttribute('aria-expanded','false');
+          });
+          if(!isOpen){
+            btn.classList.add('active');
+            ans.classList.add('open');
+            btn.setAttribute('aria-expanded','true');
+          }
+        });
+      }
+    });
+  })();
+  </script>
+
+  <!-- ── REVEAL ANIMATIONS JS ──────────────────────────── -->
+  <script>
+  (function(){
+    if(!('IntersectionObserver' in window))return;
+    var els=document.querySelectorAll('.reveal');
+    var obs=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}
+      });
+    },{threshold:0.12});
+    els.forEach(function(el){obs.observe(el);});
+  })();
+  </script>
+
+</body>
+</html>

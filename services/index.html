@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Digital Marketing Services UK — All Services | Bambino Agency</title>
+  <title>Digital Marketing Services UK — 70+ Services | Bambino Agency</title>
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <meta name="description" content="Full-service digital marketing agency in Manchester. SEO, PPC, LinkedIn Ads, TikTok Ads, CRO, Digital PR, AI Automations, Web Design and more — 29 services, one agency." />
+  <meta name="description" content="Full-service digital marketing agency in Manchester. SEO, PPC, CRO, Branding, HubSpot, Klaviyo, RevOps, UGC, Influencer Marketing and more — 70+ services, one agency." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://bambinoagency.com/services" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Digital Marketing Services UK — All 29 Services | Bambino" />
+  <meta property="og:title" content="Digital Marketing Services UK — All 70+ Services | Bambino" />
   <meta property="og:description" content="Every digital marketing service your UK business needs under one roof. SEO, Paid Media, CRO, Digital PR, Social Media, Web Design, and AI services." />
   <meta property="og:url" content="https://bambinoagency.com/services" />
   <meta property="og:locale" content="en_GB" />
@@ -18,7 +18,7 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Digital Marketing Services UK — All 29 Services | Bambino" />
+  <meta name="twitter:title" content="Digital Marketing Services UK — All 70+ Services | Bambino" />
   <meta name="twitter:description" content="Every digital marketing service your UK business needs under one roof." />
   <meta name="twitter:image" content="https://bambinoagency.com/img/og-default.jpg" />
 
@@ -203,6 +203,39 @@
       #filter-bar { top: 65px; }
     }
     @media (max-width: 480px) { .stats-grid { grid-template-columns: 1fr; } }
+  
+    /* MEGA MENU */
+    .nav-has-mega { position: relative; }
+    .nav-mega-toggle { display: flex !important; align-items: center; gap: 0.4rem; cursor: pointer; }
+    .nav-mega-toggle svg { transition: transform 0.2s ease; flex-shrink: 0; }
+    .nav-has-mega.active .nav-mega-toggle svg { transform: rotate(180deg); }
+    .mega-menu {
+      display: none;
+      position: fixed;
+      top: 62px;
+      left: 0; right: 0;
+      background: var(--bg, #F9F9F5);
+      border-top: 2px solid var(--orange, #FF4D00);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.13);
+      z-index: 998;
+      padding: 2rem 0 1.5rem;
+    }
+    .nav-has-mega.active .mega-menu { display: block; animation: megaFadeIn 0.16s ease; }
+    @keyframes megaFadeIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
+    .mega-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1.5rem 1.2rem; }
+    .mega-col { }
+    .mega-cat { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--orange, #FF4D00); margin-bottom: 0.45rem; margin-top: 0; line-height: 1.4; }
+    .mega-col a { display: block; font-size: 0.81rem; color: var(--text, #1a1a1a); padding: 0.16rem 0; transition: color 0.15s; font-weight: 400; line-height: 1.5; }
+    .mega-col a:hover { color: var(--orange, #FF4D00); }
+    .mega-col a::after { display: none !important; }
+    .mega-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 1.2rem; padding-top: 0.9rem; border-top: 1px solid var(--border, #e5e5e0); }
+    .mega-all { font-size: 0.84rem; font-weight: 600; color: var(--green, #034C3C); }
+    .mega-all:hover { color: var(--orange, #FF4D00); }
+    .mega-all::after { display: none !important; }
+    .mega-cta { font-size: 0.81rem; font-weight: 700; background: var(--orange, #FF4D00); color: #fff !important; padding: 0.45rem 1.1rem; border-radius: 100px; transition: background 0.15s; }
+    .mega-cta:hover { background: #e64500 !important; }
+    .mega-cta::after { display: none !important; }
+    @media (max-width: 960px) { .mega-menu { display: none !important; } }
   </style>
 </head>
 <body>
@@ -212,7 +245,102 @@
       <div class="nav-inner">
         <a href="https://bambinoagency.com/" class="nav-logo" aria-label="Bambino Agency — Home">Bambino</a>
         <ul class="nav-links" role="list">
-          <li><a href="https://bambinoagency.com/services" style="color:var(--orange);">Services</a></li>
+          <li class="nav-has-mega">
+            <a href="https://bambinoagency.com/services" class="nav-mega-toggle" aria-haspopup="true" aria-expanded="false">Services <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+            <div class="mega-menu" role="region" aria-label="Services menu">
+              <div class="container">
+                <div class="mega-grid">
+                  <div class="mega-col">
+                    <p class="mega-cat">Search &amp; AI Visibility</p>
+                    <a href="https://bambinoagency.com/services/seo">SEO</a>
+                    <a href="https://bambinoagency.com/services/geo">GEO / AI Search</a>
+                    <a href="https://bambinoagency.com/services/technical-seo">Technical SEO</a>
+                    <a href="https://bambinoagency.com/services/local-seo">Local SEO</a>
+                    <a href="https://bambinoagency.com/services/enterprise-seo">Enterprise SEO</a>
+                    <a href="https://bambinoagency.com/services/international-seo">International SEO</a>
+                    <a href="https://bambinoagency.com/services/link-building">Link Building</a>
+                  </div>
+                  <div class="mega-col">
+                    <p class="mega-cat">Paid Media</p>
+                    <a href="https://bambinoagency.com/services/google-ads">Google Ads</a>
+                    <a href="https://bambinoagency.com/services/ppc">PPC Management</a>
+                    <a href="https://bambinoagency.com/services/meta-ads">Meta Ads</a>
+                    <a href="https://bambinoagency.com/services/linkedin-ads">LinkedIn Ads</a>
+                    <a href="https://bambinoagency.com/services/youtube-ads">YouTube Ads</a>
+                    <a href="https://bambinoagency.com/services/tiktok-ads">TikTok Ads</a>
+                    <a href="https://bambinoagency.com/services/pinterest-ads">Pinterest Ads</a>
+                    <a href="https://bambinoagency.com/services/google-shopping">Google Shopping</a>
+                    <a href="https://bambinoagency.com/services/retail-media">Retail Media</a>
+                    <a href="https://bambinoagency.com/services/podcast-advertising">Podcast Advertising</a>
+                  </div>
+                  <div class="mega-col">
+                    <p class="mega-cat">Social &amp; Creator</p>
+                    <a href="https://bambinoagency.com/services/social-media">Social Media</a>
+                    <a href="https://bambinoagency.com/services/influencer-marketing">Influencer Marketing</a>
+                    <a href="https://bambinoagency.com/services/ugc-content">UGC Content</a>
+                    <a href="https://bambinoagency.com/services/community-building">Community Building</a>
+                    <a href="https://bambinoagency.com/services/experiential-marketing">Experiential Marketing</a>
+                    <p class="mega-cat" style="margin-top:1.2rem">Content &amp; Video</p>
+                    <a href="https://bambinoagency.com/services/content-marketing">Content Marketing</a>
+                    <a href="https://bambinoagency.com/services/video-marketing">Video Marketing</a>
+                    <a href="https://bambinoagency.com/services/digital-pr">Digital PR</a>
+                    <a href="https://bambinoagency.com/services/performance-creative">Performance Creative</a>
+                  </div>
+                  <div class="mega-col">
+                    <p class="mega-cat">Web &amp; Brand</p>
+                    <a href="https://bambinoagency.com/services/web-design">Web Design</a>
+                    <a href="https://bambinoagency.com/services/webflow">Webflow Development</a>
+                    <a href="https://bambinoagency.com/services/framer">Framer Development</a>
+                    <a href="https://bambinoagency.com/services/branding">Branding</a>
+                    <a href="https://bambinoagency.com/services/cro">CRO</a>
+                    <a href="https://bambinoagency.com/services/aso">App Store Optimisation</a>
+                    <a href="https://bambinoagency.com/services/analytics-ga4">Analytics &amp; GA4</a>
+                    <a href="https://bambinoagency.com/services/attribution-mmm">Attribution &amp; MMM</a>
+                    <a href="https://bambinoagency.com/services/cdp">CDP Implementation</a>
+                    <p class="mega-cat" style="margin-top:1.2rem">AI &amp; Automation</p>
+                    <a href="https://bambinoagency.com/services/ai-automations">AI Automations</a>
+                    <a href="https://bambinoagency.com/services/voice-ai">Voice AI</a>
+                    <a href="https://bambinoagency.com/services/ai-outbound">AI Outbound Sales</a>
+                    <a href="https://bambinoagency.com/services/conversational-marketing">Conversational Marketing</a>
+                    <a href="https://bambinoagency.com/services/marketing-automation">Marketing Automation</a>
+                    <a href="https://bambinoagency.com/services/sms-marketing">SMS Marketing</a>
+                  </div>
+                  <div class="mega-col">
+                    <p class="mega-cat">Operations &amp; Growth</p>
+                    <a href="https://bambinoagency.com/services/revops">RevOps</a>
+                    <a href="https://bambinoagency.com/services/hubspot">HubSpot</a>
+                    <a href="https://bambinoagency.com/services/klaviyo">Klaviyo</a>
+                    <a href="https://bambinoagency.com/services/salesforce-marketing-cloud">Salesforce Marketing Cloud</a>
+                    <a href="https://bambinoagency.com/services/fractional-cmo">Fractional CMO</a>
+                    <a href="https://bambinoagency.com/services/growth-marketing">Growth Marketing</a>
+                    <a href="https://bambinoagency.com/services/plg">Product-Led Growth</a>
+                    <p class="mega-cat" style="margin-top:1.2rem">B2B &amp; Enterprise</p>
+                    <a href="https://bambinoagency.com/services/lead-generation">Lead Generation</a>
+                    <a href="https://bambinoagency.com/services/abm">Account-Based Marketing</a>
+                    <a href="https://bambinoagency.com/services/amazon-marketing">Amazon Marketing</a>
+                    <a href="https://bambinoagency.com/services/demand-generation">Demand Generation</a>
+                    <a href="https://bambinoagency.com/services/b2b-saas-growth">B2B SaaS Growth</a>
+                    <a href="https://bambinoagency.com/services/sdr-bdr-as-a-service">SDR / BDR as a Service</a>
+                    <a href="https://bambinoagency.com/services/ctv-advertising">CTV Advertising</a>
+                    <a href="https://bambinoagency.com/services/dooh">DOOH Advertising</a>
+                  </div>
+                  <div class="mega-col">
+                    <p class="mega-cat">eCommerce &amp; Retention</p>
+                    <a href="https://bambinoagency.com/services/shopify-marketing">Shopify Marketing</a>
+                    <a href="https://bambinoagency.com/services/amazon-dsp">Amazon DSP</a>
+                    <a href="https://bambinoagency.com/services/lifecycle-marketing">Lifecycle Marketing</a>
+                    <a href="https://bambinoagency.com/services/subscription-commerce">Subscription Commerce</a>
+                    <a href="https://bambinoagency.com/services/email-marketing">Email Marketing</a>
+                    <a href="https://bambinoagency.com/services/reputation-management">Reputation Management</a>
+                  </div>
+                </div>
+                <div class="mega-footer">
+                  <a href="https://bambinoagency.com/services" class="mega-all">View all services &rarr;</a>
+                  <a href="https://bambinoagency.com/contact" class="mega-cta">Get a Free Audit &rarr;</a>
+                </div>
+              </div>
+            </div>
+          </li>
           <li><a href="https://bambinoagency.com/industries">Industries</a></li>
           <li><a href="https://bambinoagency.com/about">About</a></li>
           <li><a href="https://bambinoagency.com/blog">Blog</a></li>
@@ -232,9 +360,8 @@
     <a href="https://bambinoagency.com/industries" onclick="closeMobileMenu()">Industries</a>
     <a href="https://bambinoagency.com/about" onclick="closeMobileMenu()">About</a>
     <a href="https://bambinoagency.com/blog" onclick="closeMobileMenu()">Blog</a>
-    <a href="https://bambinoagency.com/blog" onclick="closeMobileMenu()">Blog</a>
     <a href="https://bambinoagency.com/pricing" onclick="closeMobileMenu()">Pricing</a>
-    <a href="https://bambinoagency.com/contact" onclick="closeMobileMenu()" style="color:var(--orange);">Get a Free Audit &rarr;</a>
+    <a href="https://bambinoagency.com/contact" onclick="closeMobileMenu()" style="color: var(--orange);">Get a Free Audit &rarr;</a>
   </div>
 
   <!-- HERO -->
@@ -249,13 +376,13 @@
         </nav>
         <p class="hero-label">Full-Service Digital Marketing</p>
         <h1 class="hero-h1">Every Marketing Service Your UK Business Needs — One Agency</h1>
-        <p class="hero-sub">From organic search to paid media, from web design to AI automations — Bambino is the UK's most complete digital marketing agency. 29 services. 400+ UK clients. Measurable ROI on everything we do.</p>
+        <p class="hero-sub">From organic search to paid media, from branding to RevOps — Bambino is the UK's most complete digital marketing agency. 70+ services. 400+ UK clients. Measurable ROI on everything we do.</p>
         <div style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;">
           <a href="https://bambinoagency.com/contact" class="btn-orange">Get a Free Strategy Call &rarr;</a>
           <a href="https://bambinoagency.com/pricing" style="font-size:0.9rem;font-weight:600;color:var(--text);">View Pricing</a>
         </div>
         <div class="hero-stats">
-          <div class="hero-stat"><span class="num">29</span><span class="lbl">Marketing services under one roof</span></div>
+          <div class="hero-stat"><span class="num">70+</span><span class="lbl">Marketing services under one roof</span></div>
           <div class="hero-stat"><span class="num">400+</span><span class="lbl">UK businesses we've grown</span></div>
           <div class="hero-stat"><span class="num">97%</span><span class="lbl">Client retention rate</span></div>
           <div class="hero-stat"><span class="num">£25M+</span><span class="lbl">Revenue generated for clients</span></div>
@@ -274,6 +401,10 @@
         <button class="filter-btn" onclick="filterCat('web', this)">Web &amp; CRO</button>
         <button class="filter-btn" onclick="filterCat('social', this)">Social &amp; Email</button>
         <button class="filter-btn" onclick="filterCat('ai', this)">AI Services</button>
+        <button class="filter-btn" onclick="filterCat('brand', this)">Brand &amp; Creative</button>
+        <button class="filter-btn" onclick="filterCat('ops', this)">Operations &amp; Growth</button>
+        <button class="filter-btn" onclick="filterCat('ecom', this)">eCommerce &amp; Retention</button>
+        <button class="filter-btn" onclick="filterCat('advanced', this)">Advanced Media</button>
       </div>
     </div>
   </div>
@@ -452,6 +583,14 @@
           <span class="svc-card-link">Learn more &rarr;</span>
         </a>
 
+        <a href="https://bambinoagency.com/services/podcast-advertising" class="svc-card reveal">
+          <span class="svc-card-label">Audio</span>
+          <h3>Podcast Advertising</h3>
+          <p>Host-read sponsorships, pre/mid-roll ads, and branded podcast production across 9.1M weekly UK listeners. Attribution via Chartable, Podsights, and promo codes.</p>
+          <span class="svc-card-price">From £2,500/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+
       </div>
     </div>
   </section>
@@ -490,6 +629,22 @@
           <h3>Analytics &amp; GA4</h3>
           <p>GA4 audit, reconfiguration, and GTM implementation. Custom Looker Studio dashboards and attribution setup so you know exactly which channels drive profit.</p>
           <span class="svc-card-price">From £1,500 setup + £600/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+
+        <a href="https://bambinoagency.com/services/attribution-mmm" class="svc-card reveal">
+          <span class="svc-card-label">Measurement</span>
+          <h3>Attribution &amp; MMM</h3>
+          <p>Go beyond last-click. Marketing Mix Modelling, incrementality testing, and multi-touch attribution to understand the true contribution of every channel. UK GDPR-compliant.</p>
+          <span class="svc-card-price">From £3,500/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+
+        <a href="https://bambinoagency.com/services/framer" class="svc-card reveal">
+          <span class="svc-card-label">No-Code</span>
+          <h3>Framer Development</h3>
+          <p>Design-led Framer websites for startups and scale-ups. Live in 2–4 weeks with 98+ Lighthouse scores, built-in CMS, animations, and A/B testing — zero dev handoff.</p>
+          <span class="svc-card-price">From £3,500 (project)</span>
           <span class="svc-card-link">Learn more &rarr;</span>
         </a>
 
@@ -596,11 +751,341 @@
     </div>
   </section>
 
+  <!-- ── BRAND & CREATIVE ── -->
+  <section class="cat-section" id="cat-brand" data-cat="brand">
+    <div class="container">
+      <div class="cat-header reveal">
+        <div class="cat-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF4D00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <span class="section-label">Brand &amp; Creative</span>
+        <h2>Brand Identity, Creative &amp; Content Production</h2>
+        <p>From brand strategy to performance creative — everything your brand needs to stand out, convert, and be remembered.</p>
+      </div>
+      <div class="svc-grid">
+        <a href="https://bambinoagency.com/services/branding" class="svc-card reveal">
+          <span class="svc-card-label">Brand Identity</span>
+          <h3>Branding</h3>
+          <p>Full brand identity: logo, guidelines, typography, colour palette, tone of voice, and visual assets. From brand refresh to full rebrand — including UK trademark guidance.</p>
+          <span class="svc-card-price">From £15,000 (project)</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/ugc-content" class="svc-card reveal">
+          <span class="svc-card-label">Creator Content</span>
+          <h3>UGC Content Production</h3>
+          <p>Creator-made ad content that looks organic and converts at scale. 500+ vetted UK UGC creators, performance testing framework, and paid amplification support.</p>
+          <span class="svc-card-price">From £2,500/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/influencer-marketing" class="svc-card reveal">
+          <span class="svc-card-label">Influencer</span>
+          <h3>Influencer Marketing</h3>
+          <p>Nano to mega influencer campaigns across Instagram, TikTok, YouTube, and LinkedIn. Full ASA compliance, contract management, and ROI reporting.</p>
+          <span class="svc-card-price">From £2,000/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/video-marketing" class="svc-card reveal">
+          <span class="svc-card-label">Video</span>
+          <h3>Video Marketing</h3>
+          <p>Brand films, explainer videos, social shorts, and product demos — with full distribution strategy across YouTube, LinkedIn, Instagram Reels, and TikTok.</p>
+          <span class="svc-card-price">From £1,500/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/performance-creative" class="svc-card reveal">
+          <span class="svc-card-label">Ad Creative</span>
+          <h3>Performance Creative</h3>
+          <p>Data-driven ad creative for Meta, TikTok, YouTube, and Google Display. 12+ variants/month, systematic A/B testing, and creative iteration based on live performance data.</p>
+          <span class="svc-card-price">From £2,500/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/reputation-management" class="svc-card reveal">
+          <span class="svc-card-label">ORM</span>
+          <h3>Reputation Management</h3>
+          <p>SERP control, review generation and response, crisis management, and brand monitoring across Trustpilot, Google, Glassdoor, and 5+ other platforms.</p>
+          <span class="svc-card-price">From £2,000/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/experiential-marketing" class="svc-card reveal">
+          <span class="svc-card-label">Events</span>
+          <h3>Experiential Marketing</h3>
+          <p>Pop-up activations, branded events, trade show strategy, and immersive brand experiences across UK cities. Measured by footfall, earned media value, and UGC volume.</p>
+          <span class="svc-card-price">From £5,000 (activation)</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/podcast-marketing" class="svc-card reveal">
+          <span class="svc-card-label">Audio</span>
+          <h3>Podcast Marketing</h3>
+          <p>Launch, grow, and monetise your brand's own podcast. Full production, Spotify &amp; Apple distribution, guest booking, SEO transcripts, and listener growth campaigns.</p>
+          <span class="svc-card-price">From £2,500/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── OPERATIONS & GROWTH ── -->
+  <section class="cat-section" id="cat-ops" data-cat="ops" style="background:var(--soft);">
+    <div class="container">
+      <div class="cat-header reveal">
+        <div class="cat-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF4D00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <span class="section-label">Operations &amp; Growth</span>
+        <h2>Revenue Operations, Platforms &amp; Growth Marketing</h2>
+        <p>Align marketing, sales, and customer success — then grow systematically with data-driven experiments and enterprise-grade platforms.</p>
+      </div>
+      <div class="svc-grid">
+        <a href="https://bambinoagency.com/services/revops" class="svc-card reveal">
+          <span class="svc-card-label">RevOps</span>
+          <h3>RevOps / GTM Engineering</h3>
+          <p>Align marketing, sales, and CS ops into one revenue system. CRM architecture, pipeline modelling, attribution, and GTM engineering for B2B businesses scaling past £1M ARR.</p>
+          <span class="svc-card-price">From £4,500/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/hubspot" class="svc-card reveal">
+          <span class="svc-card-label">HubSpot</span>
+          <h3>HubSpot Implementation</h3>
+          <p>Certified HubSpot partner. All 5 Hubs implemented, data migration, workflow automation, GDPR configuration, and ongoing retainer support.</p>
+          <span class="svc-card-price">From £8,500 (implementation)</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/salesforce-marketing-cloud" class="svc-card reveal">
+          <span class="svc-card-label">Salesforce</span>
+          <h3>Salesforce Marketing Cloud</h3>
+          <p>Enterprise SFMC implementation: Journey Builder, Email Studio, Advertising Studio, and Interaction Studio — for 150K+ contact databases and multi-brand operations.</p>
+          <span class="svc-card-price">From £5,000/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/marketing-automation" class="svc-card reveal">
+          <span class="svc-card-label">Automation</span>
+          <h3>Marketing Automation</h3>
+          <p>Lead nurture sequences, lead scoring, CRM enrichment, abandoned cart flows, and onboarding sequences — across HubSpot, Klaviyo, ActiveCampaign, and Marketo.</p>
+          <span class="svc-card-price">From £2,500/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/lead-generation" class="svc-card reveal">
+          <span class="svc-card-label">Lead Gen</span>
+          <h3>Lead Generation</h3>
+          <p>Multi-channel lead generation: Google Ads, LinkedIn, content SEO, AI outbound, and email. GDPR+PECR compliant, with CPL benchmarks by UK industry.</p>
+          <span class="svc-card-price">From £2,500/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/growth-marketing" class="svc-card reveal">
+          <span class="svc-card-label">Growth</span>
+          <h3>Growth Marketing</h3>
+          <p>AARRR framework, 2-week experiment sprints, data-driven hypothesis testing, and scaling of winning channels — for startups and scale-ups targeting rapid MRR growth.</p>
+          <span class="svc-card-price">From £4,000/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/fractional-cmo" class="svc-card reveal">
+          <span class="svc-card-label">Leadership</span>
+          <h3>Fractional CMO</h3>
+          <p>Senior marketing leadership without full-time cost. 2–4 days/week, monthly board reporting, team oversight, and full marketing strategy ownership.</p>
+          <span class="svc-card-price">From £3,500/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/abm" class="svc-card reveal">
+          <span class="svc-card-label">B2B</span>
+          <h3>Account-Based Marketing</h3>
+          <p>Target your highest-value accounts with precision. ICP definition, target account list, LinkedIn and programmatic activation, and sales-marketing SLA alignment.</p>
+          <span class="svc-card-price">From £3,500/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/conversational-marketing" class="svc-card reveal">
+          <span class="svc-card-label">Chatbot</span>
+          <h3>Conversational Marketing</h3>
+          <p>Chatbots, live chat, WhatsApp Business, and AI messaging that converts visitors in real time. Intercom, Drift, HubSpot, and ManyChat implementations.</p>
+          <span class="svc-card-price">From £2,000/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/plg" class="svc-card reveal">
+          <span class="svc-card-label">SaaS Growth</span>
+          <h3>Product-Led Growth (PLG)</h3>
+          <p>Turn your product into your primary growth engine. Onboarding optimisation, PQL scoring, freemium strategy, viral loop engineering, and expansion revenue playbooks.</p>
+          <span class="svc-card-price">From £4,500/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/demand-generation" class="svc-card reveal">
+          <span class="svc-card-label">B2B</span>
+          <h3>Demand Generation</h3>
+          <p>Create demand before capturing it. Dark funnel strategy, thought leadership, community-led growth, and always-on content that shortens B2B sales cycles by 30–40%.</p>
+          <span class="svc-card-price">From £4,500/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/b2b-saas-growth" class="svc-card reveal">
+          <span class="svc-card-label">SaaS</span>
+          <h3>B2B SaaS Growth</h3>
+          <p>Full-funnel growth marketing for UK SaaS companies. PLG vs SLG strategy, ICP refinement, pricing optimisation, and the full SaaS growth stack from trial to expansion.</p>
+          <span class="svc-card-price">From £4,500/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/sdr-bdr-as-a-service" class="svc-card reveal">
+          <span class="svc-card-label">Outbound</span>
+          <h3>SDR / BDR as a Service</h3>
+          <p>Dedicated human SDRs and BDRs for high-value outbound — ICP list building, personalised email, LinkedIn social selling, and cold calling. UK GDPR and TPS compliant.</p>
+          <span class="svc-card-price">From £3,500/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/cdp" class="svc-card reveal">
+          <span class="svc-card-label">Data</span>
+          <h3>CDP Implementation</h3>
+          <p>Segment, Tealium, RudderStack, and Hightouch implementations that unify your customer data and activate it across every channel. UK GDPR-compliant by design.</p>
+          <span class="svc-card-price">From £5,000/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ECOMMERCE & RETENTION ── -->
+  <section class="cat-section" id="cat-ecom" data-cat="ecom">
+    <div class="container">
+      <div class="cat-header reveal">
+        <div class="cat-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF4D00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        </div>
+        <span class="section-label">eCommerce &amp; Retention</span>
+        <h2>eCommerce Growth, Retention &amp; Lifecycle Marketing</h2>
+        <p>Acquire, retain, and grow your ecommerce customers — from Shopify and Amazon to Klaviyo email flows and subscription commerce.</p>
+      </div>
+      <div class="svc-grid">
+        <a href="https://bambinoagency.com/services/shopify-marketing" class="svc-card reveal">
+          <span class="svc-card-label">Shopify</span>
+          <h3>Shopify Marketing</h3>
+          <p>Full-funnel Shopify growth: Google Shopping, Meta Ads, Klaviyo email, TikTok Shop, and Shopify CRO. Average 3.4x ROAS for Bambino Shopify clients.</p>
+          <span class="svc-card-price">From £2,000/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/klaviyo" class="svc-card reveal">
+          <span class="svc-card-label">Email &amp; SMS</span>
+          <h3>Klaviyo</h3>
+          <p>12 essential email and SMS flows, RFM segmentation, A/B testing, and GDPR compliance for UK ecommerce brands. Average 35% of revenue attributed to Klaviyo.</p>
+          <span class="svc-card-price">From £2,500/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/amazon-marketing" class="svc-card reveal">
+          <span class="svc-card-label">Amazon</span>
+          <h3>Amazon Marketing</h3>
+          <p>Amazon PPC, Amazon SEO, A+ Content, and Brand Registry — full-service Amazon marketing for UK sellers. Average 47% ACOS improvement within 90 days.</p>
+          <span class="svc-card-price">From £2,000/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/lifecycle-marketing" class="svc-card reveal">
+          <span class="svc-card-label">Lifecycle</span>
+          <h3>Lifecycle Marketing</h3>
+          <p>Nurture customers from prospect to advocate across email, SMS, and retargeting. Average 23% LTV increase for Bambino lifecycle marketing clients in 12 months.</p>
+          <span class="svc-card-price">From £2,500/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/subscription-commerce" class="svc-card reveal">
+          <span class="svc-card-label">Subscriptions</span>
+          <h3>Subscription Commerce</h3>
+          <p>Grow MRR and reduce churn for subscription brands. Subscriber acquisition, onboarding optimisation, pause/skip flows, and win-back campaigns.</p>
+          <span class="svc-card-price">From £2,000/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/sms-marketing" class="svc-card reveal">
+          <span class="svc-card-label">SMS</span>
+          <h3>SMS Marketing</h3>
+          <p>98% open rate SMS campaigns — fully PECR and GDPR compliant. Promotional, abandoned cart, re-engagement, and appointment reminder flows for UK businesses.</p>
+          <span class="svc-card-price">From £1,200/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/retail-media" class="svc-card reveal">
+          <span class="svc-card-label">Retail Media</span>
+          <h3>Retail Media Advertising</h3>
+          <p>Advertising on Tesco Media, Boots, Nectar360, Amazon, and B&amp;Q. Harness first-party retail data for closed-loop attribution and in-store sales uplift measurement.</p>
+          <span class="svc-card-price">From £2,500/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/community-building" class="svc-card reveal">
+          <span class="svc-card-label">Community</span>
+          <h3>Community Building</h3>
+          <p>Build an owned brand community on Slack, Circle, or Discord that reduces CAC, increases LTV, and turns customers into advocates. Full strategy and moderation.</p>
+          <span class="svc-card-price">From £2,500/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ADVANCED MEDIA & SPECIALIST ── -->
+  <section class="cat-section" id="cat-advanced" data-cat="advanced" style="background:var(--soft);">
+    <div class="container">
+      <div class="cat-header reveal">
+        <div class="cat-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF4D00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <span class="section-label">Advanced Media &amp; Specialist</span>
+        <h2>Specialist Channels, International &amp; Enterprise SEO</h2>
+        <p>Advanced media channels, international expansion, enterprise-scale SEO, and specialist platforms for established brands ready to scale beyond the basics.</p>
+      </div>
+      <div class="svc-grid">
+        <a href="https://bambinoagency.com/services/enterprise-seo" class="svc-card reveal">
+          <span class="svc-card-label">Enterprise</span>
+          <h3>Enterprise SEO</h3>
+          <p>Scalable SEO for 10,000+ page sites: JavaScript SEO, log file analysis, programmatic content, and multi-stakeholder governance. From £8,000/mo.</p>
+          <span class="svc-card-price">From £8,000/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/international-seo" class="svc-card reveal">
+          <span class="svc-card-label">International</span>
+          <h3>International SEO</h3>
+          <p>Hreflang implementation, ccTLD vs subdirectory architecture, localisation strategy, and international link building for expansion into 60+ markets.</p>
+          <span class="svc-card-price">From £3,500/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/ctv-advertising" class="svc-card reveal">
+          <span class="svc-card-label">Streaming TV</span>
+          <h3>Connected TV Advertising</h3>
+          <p>Reach 26M UK CTV households on ITVX, Channel 4, Sky/NOW TV, and YouTube TV. Non-skippable programmatic video with household-level targeting.</p>
+          <span class="svc-card-price">From £5,000/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/dooh" class="svc-card reveal">
+          <span class="svc-card-label">Out-of-Home</span>
+          <h3>Digital Out-of-Home (DOOH)</h3>
+          <p>Programmatic digital billboard advertising across 30K+ UK screens. Roadside, shopping centres, London Underground, airports, and gym networks.</p>
+          <span class="svc-card-price">From £3,000/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/amazon-dsp" class="svc-card reveal">
+          <span class="svc-card-label">Amazon</span>
+          <h3>Amazon DSP</h3>
+          <p>Programmatic advertising using Amazon's first-party shopper data — on and off Amazon. Display, video, and streaming TV ad formats with purchase-based attribution.</p>
+          <span class="svc-card-price">From £5,000/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/pinterest-ads" class="svc-card reveal">
+          <span class="svc-card-label">Pinterest</span>
+          <h3>Pinterest Ads</h3>
+          <p>Reach 20M UK Pinterest users — 83% of whom use Pinterest to make purchase decisions. Shopping catalogue setup, promoted pins, and collection ad management.</p>
+          <span class="svc-card-price">From £1,500/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/webflow" class="svc-card reveal">
+          <span class="svc-card-label">No-Code</span>
+          <h3>Webflow Development</h3>
+          <p>Design, build, and launch in Webflow. New builds, WordPress migrations, CMS setup, SEO configuration, and HubSpot integration. Average 4-week launch.</p>
+          <span class="svc-card-price">From £8,000 (project)</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+        <a href="https://bambinoagency.com/services/aso" class="svc-card reveal">
+          <span class="svc-card-label">App Store</span>
+          <h3>App Store Optimisation</h3>
+          <p>Rank higher in the Apple App Store and Google Play. Keyword strategy, metadata optimisation, screenshot design, review management, and monthly rank tracking.</p>
+          <span class="svc-card-price">From £1,500/mo</span>
+          <span class="svc-card-link">Learn more &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- STATS -->
   <section id="stats" aria-label="Agency results">
     <div class="container">
       <div class="stats-grid">
-        <div class="stat-item reveal"><span class="num">29</span><span class="lbl">Services across SEO, Paid Media, AI, Web &amp; Social</span></div>
+        <div class="stat-item reveal"><span class="num">70+</span><span class="lbl">Services across SEO, Paid Media, AI, Web &amp; Social</span></div>
         <div class="stat-item reveal" style="transition-delay:0.1s;"><span class="num">400+</span><span class="lbl">UK businesses grown since launch</span></div>
         <div class="stat-item reveal" style="transition-delay:0.2s;"><span class="num">97%</span><span class="lbl">Client retention — the industry average is 60%</span></div>
         <div class="stat-item reveal" style="transition-delay:0.3s;"><span class="num">£25M+</span><span class="lbl">Revenue generated for UK clients</span></div>
@@ -705,6 +1190,29 @@
     hamburgerBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
     mobileClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
     function closeMobileMenu() { mobileMenu.classList.remove('open'); }
+    // Mega menu
+    (function() {
+      var megaParent = document.querySelector('.nav-has-mega');
+      var megaTrigger = document.querySelector('.nav-mega-toggle');
+      if (!megaParent || !megaTrigger) return;
+      megaTrigger.addEventListener('click', function(e) {
+        e.preventDefault();
+        var open = megaParent.classList.toggle('active');
+        megaTrigger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      document.addEventListener('click', function(e) {
+        if (!megaParent.contains(e.target)) {
+          megaParent.classList.remove('active');
+          megaTrigger.setAttribute('aria-expanded', 'false');
+        }
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          megaParent.classList.remove('active');
+          megaTrigger.setAttribute('aria-expanded', 'false');
+        }
+      });
+    })();
 
     function filterCat(cat, btn) {
       document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));

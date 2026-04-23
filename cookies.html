@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cookie Policy | Bambino Agency Manchester</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="description" content="Bambino Agency's Cookie Policy — what cookies we use, why we use them, and how to manage your preferences under PECR and UK GDPR." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://bambinoagency.com/cookies" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Cookie Policy | Bambino Agency Manchester" />
+  <meta property="og:description" content="What cookies Bambino Agency uses, why we use them, and how to manage your cookie preferences." />
+  <meta property="og:url" content="https://bambinoagency.com/cookies" />
+  <meta property="og:site_name" content="Bambino" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:image" content="https://bambinoagency.com/img/og-default.jpg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #F9F9F5;
+      --orange: #FF4D00;
+      --orange-light: #FF6B2B;
+      --orange-glow: rgba(255, 77, 0, 0.25);
+      --green: #034C3C;
+      --green-light: #056650;
+      --text: #1A1A1A;
+      --muted: #666660;
+      --card: #FFFFFF;
+      --soft: #F2F2EC;
+      --border: #E8E8E0;
+      --font-heading: 'Berkshire Swash', serif;
+      --font-body: 'Inter', sans-serif;
+      --radius: 16px;
+      --radius-sm: 8px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.07);
+      --shadow-lg: 0 12px 48px rgba(0,0,0,0.12);
+      --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--font-body); background: var(--bg); color: var(--text); overflow-x: hidden; line-height: 1.6; }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    .container { width: min(1200px, 100% - 3rem); margin-inline: auto; }
+
+    .section-label {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--orange);
+      background: rgba(255, 77, 0, 0.08);
+      padding: 0.35rem 0.9rem;
+      border-radius: 100px;
+      margin-bottom: 1.2rem;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--text);
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+
+    .btn-orange {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--orange);
+      color: #fff;
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 0.85rem 2rem;
+      border-radius: 100px;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      letter-spacing: 0.02em;
+    }
+    .btn-orange:hover { background: var(--orange-light); transform: translateY(-2px) scale(1.03); }
+
+    /* NAVBAR */
+    #navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      background: var(--bg);
+      padding: 1.1rem 0;
+      transition: border-bottom 0.3s ease, box-shadow 0.3s ease;
+    }
+    #navbar.scrolled { border-bottom: 1px solid var(--green); box-shadow: 0 2px 20px rgba(3,76,60,0.08); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { font-family: var(--font-heading); font-size: 1.8rem; color: var(--green); letter-spacing: -0.01em; }
+    .nav-links { display: flex; align-items: center; gap: 2.2rem; }
+    .nav-links a { font-size: 0.9rem; font-weight: 500; color: var(--text); transition: color var(--transition); position: relative; }
+    .nav-links a::after { content: ''; position: absolute; bottom: -3px; left: 0; width: 0; height: 2px; background: var(--orange); transition: width var(--transition); }
+    .nav-links a:hover { color: var(--orange); }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-cta { background: var(--orange); color: #fff !important; font-weight: 700 !important; font-size: 0.88rem !important; padding: 0.6rem 1.4rem; border-radius: 100px; transition: var(--transition) !important; }
+    .nav-cta:hover { background: var(--orange-light); transform: scale(1.04); }
+    .nav-cta::after { display: none !important; }
+    .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+    .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--text); border-radius: 2px; transition: var(--transition); }
+
+    /* MOBILE MENU */
+    .mobile-menu { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--bg); z-index: 999; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { font-family: var(--font-heading); font-size: 2rem; color: var(--text); transition: color var(--transition); }
+    .mobile-menu a:hover { color: var(--orange); }
+    .mobile-close { position: absolute; top: 1.5rem; right: 1.5rem; font-size: 1.8rem; color: var(--text); cursor: pointer; background: none; border: none; line-height: 1; }
+
+    /* FOOTER */
+    #footer { background: var(--green); border-top: 1px solid rgba(255,255,255,0.07); padding: 4rem 0 2rem; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+    .footer-brand-logo { font-family: var(--font-heading); font-size: 2rem; color: #fff; margin-bottom: 0.8rem; }
+    .footer-brand-desc { font-size: 0.88rem; color: rgba(255,255,255,0.55); line-height: 1.7; margin-bottom: 1.5rem; max-width: 36ch; }
+    .footer-socials { display: flex; gap: 0.8rem; }
+    .footer-social-link { width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.7); font-size: 0.9rem; transition: var(--transition); border: 1px solid rgba(255,255,255,0.1); }
+    .footer-social-link:hover { background: var(--orange); color: #fff; border-color: var(--orange); transform: translateY(-2px); }
+    .footer-col-title { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 1.3rem; }
+    .footer-links { display: flex; flex-direction: column; gap: 0.65rem; }
+    .footer-links a { font-size: 0.88rem; color: rgba(255,255,255,0.65); transition: color var(--transition); }
+    .footer-links a:hover { color: var(--orange); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.07); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .footer-bottom p { font-size: 0.82rem; color: rgba(255,255,255,0.35); }
+    .footer-bottom-links { display: flex; gap: 1.5rem; }
+    .footer-bottom-links a { font-size: 0.82rem; color: rgba(255,255,255,0.35); transition: color var(--transition); }
+    .footer-bottom-links a:hover { color: var(--orange); }
+
+    /* REVEAL */
+    .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translate(0, 0); }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+      .cookie-table-wrap { overflow-x: auto; }
+    }
+
+    /* Fallback: show content even if JS fails */
+    @keyframes revealFallback { to { opacity: 1; transform: none; } }
+    .reveal { animation: revealFallback 0.6s ease 0.3s forwards; }
+
+    /* MEGA MENU */
+    .nav-has-mega { position: relative; }
+    .nav-mega-toggle { display: flex !important; align-items: center; gap: 0.4rem; cursor: pointer; }
+    .nav-mega-toggle svg { transition: transform 0.2s ease; flex-shrink: 0; }
+    .nav-has-mega.active .nav-mega-toggle svg { transform: rotate(180deg); }
+    .mega-menu {
+      display: none;
+      position: fixed;
+      top: 62px;
+      left: 0; right: 0;
+      background: var(--bg, #F9F9F5);
+      border-top: 2px solid var(--orange, #FF4D00);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.13);
+      z-index: 998;
+      padding: 2rem 0 1.5rem;
+    }
+    .nav-has-mega.active .mega-menu { display: block; animation: megaFadeIn 0.16s ease; }
+    @keyframes megaFadeIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
+    .mega-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1.5rem 1.2rem; }
+    .mega-col { }
+    .mega-cat { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--orange, #FF4D00); margin-bottom: 0.45rem; margin-top: 0; line-height: 1.4; }
+    .mega-col a { display: block; font-size: 0.81rem; color: var(--text, #1a1a1a); padding: 0.16rem 0; transition: color 0.15s; font-weight: 400; line-height: 1.5; }
+    .mega-col a:hover { color: var(--orange, #FF4D00); }
+    .mega-col a::after { display: none !important; }
+    .mega-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 1.2rem; padding-top: 0.9rem; border-top: 1px solid var(--border, #e5e5e0); }
+    .mega-all { font-size: 0.84rem; font-weight: 600; color: var(--green, #034C3C); }
+    .mega-all:hover { color: var(--orange, #FF4D00); }
+    .mega-all::after { display: none !important; }
+    .mega-cta { font-size: 0.81rem; font-weight: 700; background: var(--orange, #FF4D00); color: #fff !important; padding: 0.45rem 1.1rem; border-radius: 100px; transition: background 0.15s; }
+    .mega-cta:hover { background: #e64500 !important; }
+    .mega-cta::after { display: none !important; }
+    @media (max-width: 960px) { .mega-menu { display: none !important; } }
+
+    /* LEGAL PAGE STYLES */
+    .legal-hero {
+      padding-top: 7rem;
+      padding-bottom: 3rem;
+      background: var(--soft);
+    }
+    .legal-hero-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--orange);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 1.2rem;
+    }
+    .legal-hero-label::before { content: ''; display: block; width: 28px; height: 2px; background: var(--orange); border-radius: 2px; }
+    .legal-hero h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.15;
+      color: var(--text);
+      margin-bottom: 1rem;
+    }
+    .legal-hero p {
+      font-size: 1rem;
+      color: var(--muted);
+      max-width: 60ch;
+      line-height: 1.7;
+    }
+    .legal-meta {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+    .legal-meta-item {
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+    .legal-meta-item strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .legal-body {
+      padding: 4rem 0 6rem;
+      background: var(--bg);
+    }
+    .legal-layout {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    .legal-toc {
+      position: sticky;
+      top: 90px;
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+    .legal-toc-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    .legal-toc-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .legal-toc-links a {
+      font-size: 0.82rem;
+      color: var(--muted);
+      transition: color var(--transition);
+      padding: 0.2rem 0;
+      border-left: 2px solid transparent;
+      padding-left: 0.6rem;
+    }
+    .legal-toc-links a:hover {
+      color: var(--orange);
+      border-left-color: var(--orange);
+    }
+
+    .legal-content section {
+      margin-bottom: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .legal-content section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    .legal-content h2 {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      color: var(--text);
+      margin-bottom: 1rem;
+      scroll-margin-top: 90px;
+    }
+    .legal-content h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-top: 1.5rem;
+      margin-bottom: 0.6rem;
+    }
+    .legal-content p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+    .legal-content p:last-child { margin-bottom: 0; }
+    .legal-content ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .legal-content ul li {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 0.4rem;
+    }
+    .legal-content a {
+      color: var(--orange);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .legal-content a:hover { color: var(--orange-light); }
+
+    .legal-info-box {
+      background: var(--soft);
+      border-left: 3px solid var(--orange);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 1.2rem 1.5rem;
+      margin: 1.2rem 0;
+    }
+    .legal-info-box p { margin-bottom: 0; font-size: 0.9rem; }
+
+    /* COOKIE TYPE CARDS */
+    .cookie-type-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1.2rem;
+    }
+    .cookie-type-card {
+      background: var(--card);
+      border-radius: var(--radius-sm);
+      padding: 1.4rem;
+      box-shadow: var(--shadow);
+    }
+    .cookie-type-card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 0.6rem;
+    }
+    .cookie-type-badge {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.6rem;
+      border-radius: 100px;
+      flex-shrink: 0;
+    }
+    .badge-necessary { background: rgba(3,76,60,0.1); color: var(--green); }
+    .badge-analytics { background: rgba(255,77,0,0.08); color: var(--orange); }
+    .badge-marketing { background: rgba(139,92,246,0.1); color: #7C3AED; }
+    .badge-functional { background: rgba(245,158,11,0.1); color: #D97706; }
+    .cookie-type-card h4 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .cookie-type-card p {
+      font-size: 0.84rem;
+      color: var(--muted);
+      line-height: 1.65;
+      margin-bottom: 0;
+    }
+    .cookie-type-consent {
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-top: 0.6rem;
+    }
+    .consent-not-required { color: var(--green); }
+    .consent-required { color: var(--orange); }
+
+    /* COOKIE TABLE */
+    .cookie-table-wrap {
+      overflow-x: auto;
+      margin-top: 1.2rem;
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow);
+    }
+    .cookie-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--card);
+      font-size: 0.85rem;
+    }
+    .cookie-table th {
+      background: var(--green);
+      color: rgba(255,255,255,0.85);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.85rem 1rem;
+      text-align: left;
+      white-space: nowrap;
+    }
+    .cookie-table td {
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid var(--border);
+      color: var(--muted);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+    .cookie-table tr:last-child td { border-bottom: none; }
+    .cookie-table tr:hover td { background: var(--soft); }
+    .cookie-table .cookie-name {
+      font-family: monospace;
+      font-size: 0.82rem;
+      color: var(--text);
+      font-weight: 600;
+    }
+    .cookie-table .cookie-category {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 0.15rem 0.5rem;
+      border-radius: 100px;
+    }
+
+    /* MANAGE COOKIES */
+    .opt-out-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+    .opt-out-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      background: var(--card);
+      border-radius: var(--radius-sm);
+      padding: 1rem 1.2rem;
+      box-shadow: var(--shadow);
+    }
+    .opt-out-name {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text);
+      min-width: 140px;
+    }
+    .opt-out-desc {
+      font-size: 0.84rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .opt-out-desc a {
+      color: var(--orange);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    @media (max-width: 900px) {
+      .legal-layout { grid-template-columns: 1fr; }
+      .legal-toc { position: static; }
+      .cookie-type-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="https://bambinoagency.com/" class="nav-logo" aria-label="Bambino Agency &mdash; Home">Bambino</a>
+        <ul class="nav-links" role="list">
+          <li class="nav-has-mega">
+            <a href="https://bambinoagency.com/services" class="nav-mega-toggle" aria-haspopup="true" aria-expanded="false">Services <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+            <div class="mega-menu" role="region" aria-label="Services menu">
+              <div class="container">
+                <div class="mega-grid">
+                  <div class="mega-col">
+                    <p class="mega-cat">Search &amp; AI Visibility</p>
+                    <a href="https://bambinoagency.com/services/seo">SEO</a>
+                    <a href="https://bambinoagency.com/services/geo">GEO / AI Search</a>
+                    <a href="https://bambinoagency.com/services/technical-seo">Technical SEO</a>
+                    <a href="https://bambinoagency.com/services/local-seo">Local SEO</a>
+                    <a href="https://bambinoagency.com/services/enterprise-seo">Enterprise SEO</a>
+                    <a href="https://bambinoagency.com/services/international-seo">International SEO</a>
+                    <a href="https://bambinoagency.com/services/link-building">Link Building</a>
+                  </div>
+                  <div class="mega-col">
+                    <p class="mega-cat">Paid Media</p>
+                    <a href="https://bambinoagency.com/services/google-ads">Google Ads</a>
+                    <a href="https://bambinoagency.com/services/ppc">PPC Management</a>
+                    <a href="https://bambinoagency.com/services/meta-ads">Meta Ads</a>
+                    <a href="https://bambinoagency.com/services/linkedin-ads">LinkedIn Ads</a>
+                    <a href="https://bambinoagency.com/services/youtube-ads">YouTube Ads</a>
+                    <a href="https://bambinoagency.com/services/tiktok-ads">TikTok Ads</a>
+                    <a href="https://bambinoagency.com/services/pinterest-ads">Pinterest Ads</a>
+                    <a href="https://bambinoagency.com/services/google-shopping">Google Shopping</a>
+                    <a href="https://bambinoagency.com/services/retail-media">Retail Media</a>
+                    <a href="https://bambinoagency.com/services/podcast-advertising">Podcast Advertising</a>
+                  </div>
+                  <div class="mega-col">
+                    <p class="mega-cat">Social &amp; Creator</p>
+                    <a href="https://bambinoagency.com/services/social-media">Social Media</a>
+                    <a href="https://bambinoagency.com/services/influencer-marketing">Influencer Marketing</a>
+                    <a href="https://bambinoagency.com/services/ugc-content">UGC Content</a>
+                    <a href="https://bambinoagency.com/services/community-building">Community Building</a>
+                    <a href="https://bambinoagency.com/services/experiential-marketing">Experiential Marketing</a>
+                    <p class="mega-cat" style="margin-top:1.2rem">Content &amp; Video</p>
+                    <a href="https://bambinoagency.com/services/content-marketing">Content Marketing</a>
+                    <a href="https://bambinoagency.com/services/video-marketing">Video Marketing</a>
+                    <a href="https://bambinoagency.com/services/digital-pr">Digital PR</a>
+                    <a href="https://bambinoagency.com/services/performance-creative">Performance Creative</a>
+                  </div>
+                  <div class="mega-col">
+                    <p class="mega-cat">Web &amp; Brand</p>
+                    <a href="https://bambinoagency.com/services/web-design">Web Design</a>
+                    <a href="https://bambinoagency.com/services/webflow">Webflow Development</a>
+                    <a href="https://bambinoagency.com/services/framer">Framer Development</a>
+                    <a href="https://bambinoagency.com/services/branding">Branding</a>
+                    <a href="https://bambinoagency.com/services/cro">CRO</a>
+                    <a href="https://bambinoagency.com/services/aso">App Store Optimisation</a>
+                    <a href="https://bambinoagency.com/services/analytics-ga4">Analytics &amp; GA4</a>
+                    <a href="https://bambinoagency.com/services/attribution-mmm">Attribution &amp; MMM</a>
+                    <a href="https://bambinoagency.com/services/cdp">CDP Implementation</a>
+                    <p class="mega-cat" style="margin-top:1.2rem">AI &amp; Automation</p>
+                    <a href="https://bambinoagency.com/services/ai-automations">AI Automations</a>
+                    <a href="https://bambinoagency.com/services/voice-ai">Voice AI</a>
+                    <a href="https://bambinoagency.com/services/ai-outbound">AI Outbound Sales</a>
+                    <a href="https://bambinoagency.com/services/conversational-marketing">Conversational Marketing</a>
+                    <a href="https://bambinoagency.com/services/marketing-automation">Marketing Automation</a>
+                    <a href="https://bambinoagency.com/services/sms-marketing">SMS Marketing</a>
+                  </div>
+                  <div class="mega-col">
+                    <p class="mega-cat">Operations &amp; Growth</p>
+                    <a href="https://bambinoagency.com/services/revops">RevOps</a>
+                    <a href="https://bambinoagency.com/services/hubspot">HubSpot</a>
+                    <a href="https://bambinoagency.com/services/klaviyo">Klaviyo</a>
+                    <a href="https://bambinoagency.com/services/salesforce-marketing-cloud">Salesforce Marketing Cloud</a>
+                    <a href="https://bambinoagency.com/services/fractional-cmo">Fractional CMO</a>
+                    <a href="https://bambinoagency.com/services/growth-marketing">Growth Marketing</a>
+                    <a href="https://bambinoagency.com/services/plg">Product-Led Growth</a>
+                    <p class="mega-cat" style="margin-top:1.2rem">B2B &amp; Enterprise</p>
+                    <a href="https://bambinoagency.com/services/lead-generation">Lead Generation</a>
+                    <a href="https://bambinoagency.com/services/abm">Account-Based Marketing</a>
+                    <a href="https://bambinoagency.com/services/amazon-marketing">Amazon Marketing</a>
+                    <a href="https://bambinoagency.com/services/demand-generation">Demand Generation</a>
+                    <a href="https://bambinoagency.com/services/b2b-saas-growth">B2B SaaS Growth</a>
+                    <a href="https://bambinoagency.com/services/sdr-bdr-as-a-service">SDR / BDR as a Service</a>
+                    <a href="https://bambinoagency.com/services/ctv-advertising">CTV Advertising</a>
+                    <a href="https://bambinoagency.com/services/dooh">DOOH Advertising</a>
+                  </div>
+                  <div class="mega-col">
+                    <p class="mega-cat">eCommerce &amp; Retention</p>
+                    <a href="https://bambinoagency.com/services/shopify-marketing">Shopify Marketing</a>
+                    <a href="https://bambinoagency.com/services/amazon-dsp">Amazon DSP</a>
+                    <a href="https://bambinoagency.com/services/lifecycle-marketing">Lifecycle Marketing</a>
+                    <a href="https://bambinoagency.com/services/subscription-commerce">Subscription Commerce</a>
+                    <a href="https://bambinoagency.com/services/email-marketing">Email Marketing</a>
+                    <a href="https://bambinoagency.com/services/reputation-management">Reputation Management</a>
+                  </div>
+                </div>
+                <div class="mega-footer">
+                  <a href="https://bambinoagency.com/services" class="mega-all">View all services &rarr;</a>
+                  <a href="https://bambinoagency.com/contact" class="mega-cta">Get a Free Audit &rarr;</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="https://bambinoagency.com/industries">Industries</a></li>
+          <li><a href="https://bambinoagency.com/about">About</a></li>
+          <li><a href="https://bambinoagency.com/blog">Blog</a></li>
+          <li><a href="https://bambinoagency.com/pricing">Pricing</a></li>
+          <li><a href="https://bambinoagency.com/contact" class="nav-cta">Get a Free Audit &rarr;</a></li>
+        </ul>
+        <button class="nav-hamburger" aria-label="Open menu" id="hamburgerBtn">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">&times;</button>
+    <a href="https://bambinoagency.com/services" onclick="closeMobileMenu()">Services</a>
+    <a href="https://bambinoagency.com/industries" onclick="closeMobileMenu()">Industries</a>
+    <a href="https://bambinoagency.com/about" onclick="closeMobileMenu()">About</a>
+    <a href="https://bambinoagency.com/blog" onclick="closeMobileMenu()">Blog</a>
+    <a href="https://bambinoagency.com/pricing" onclick="closeMobileMenu()">Pricing</a>
+    <a href="https://bambinoagency.com/contact" onclick="closeMobileMenu()" style="color: var(--orange);">Get a Free Audit &rarr;</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="legal-hero" aria-label="Cookie Policy">
+    <div class="container">
+      <p class="legal-hero-label">Legal</p>
+      <h1>Cookie Policy</h1>
+      <p>This policy explains what cookies are, which cookies we use on bambinoagency.com, why we use them, and how you can manage your preferences. We comply with the Privacy and Electronic Communications Regulations (PECR) and UK GDPR.</p>
+      <div class="legal-meta">
+        <div class="legal-meta-item"><strong>Last updated:</strong> 24 April 2026</div>
+        <div class="legal-meta-item"><strong>Applies to:</strong> bambinoagency.com</div>
+        <div class="legal-meta-item"><strong>Regulation:</strong> PECR &amp; UK GDPR</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BODY -->
+  <div class="legal-body">
+    <div class="container">
+      <div class="legal-layout">
+
+        <!-- TABLE OF CONTENTS -->
+        <aside class="legal-toc" aria-label="Table of contents">
+          <p class="legal-toc-title">Contents</p>
+          <nav class="legal-toc-links">
+            <a href="#what-are-cookies">1. What Are Cookies?</a>
+            <a href="#types-of-cookies">2. Types of Cookies</a>
+            <a href="#cookie-table">3. Cookies We Use</a>
+            <a href="#manage-cookies">4. Managing Cookies</a>
+            <a href="#consent-banner">5. Cookie Consent</a>
+          </nav>
+        </aside>
+
+        <!-- CONTENT -->
+        <div class="legal-content">
+
+          <section id="what-are-cookies">
+            <h2>1. What Are Cookies?</h2>
+            <p>Cookies are small text files that are placed on your device (computer, tablet, or mobile) when you visit a website. They are widely used to make websites work, or work more efficiently, and to provide information to website owners.</p>
+            <p>Cookies can be set by the website you are visiting (&ldquo;first-party cookies&rdquo;) or by third-party services operating on that website (&ldquo;third-party cookies&rdquo;). Cookies can be &ldquo;session cookies&rdquo;, which are deleted when you close your browser, or &ldquo;persistent cookies&rdquo;, which remain on your device for a set period or until you delete them.</p>
+            <p>In addition to cookies, we may use similar technologies such as web beacons (small transparent images embedded in web pages or emails) and pixels that help us track interactions with our advertising campaigns. These work alongside cookies and are subject to the same rules under PECR.</p>
+            <div class="legal-info-box">
+              <p>Under the Privacy and Electronic Communications Regulations (PECR), we must obtain your consent before setting any non-essential cookies on your device. Strictly necessary cookies are exempt from this requirement.</p>
+            </div>
+          </section>
+
+          <section id="types-of-cookies">
+            <h2>2. Types of Cookies We Use</h2>
+            <p>We categorise the cookies on our website into four types:</p>
+            <div class="cookie-type-grid">
+
+              <div class="cookie-type-card">
+                <div class="cookie-type-card-header">
+                  <span class="cookie-type-badge badge-necessary">Strictly Necessary</span>
+                </div>
+                <h4>Strictly Necessary</h4>
+                <p>These cookies are essential for the website to function. They enable core functionality such as security, session management, and accessibility. Without these cookies, the website cannot operate properly.</p>
+                <p class="cookie-type-consent consent-not-required">No consent required</p>
+              </div>
+
+              <div class="cookie-type-card">
+                <div class="cookie-type-card-header">
+                  <span class="cookie-type-badge badge-analytics">Performance / Analytics</span>
+                </div>
+                <h4>Performance &amp; Analytics</h4>
+                <p>These cookies collect anonymous information about how visitors use our website — for example, which pages are visited most often and whether users get error messages. We use Google Analytics 4 (GA4) for this purpose. The data is aggregated and cannot identify you personally.</p>
+                <p class="cookie-type-consent consent-required">Consent required</p>
+              </div>
+
+              <div class="cookie-type-card">
+                <div class="cookie-type-card-header">
+                  <span class="cookie-type-badge badge-marketing">Marketing / Targeting</span>
+                </div>
+                <h4>Marketing &amp; Targeting</h4>
+                <p>These cookies are used to deliver adverts that are relevant to you and your interests. They may also be used to limit the number of times you see an advertisement and to measure the effectiveness of our advertising campaigns. Set by Google Ads, LinkedIn, and Meta.</p>
+                <p class="cookie-type-consent consent-required">Consent required</p>
+              </div>
+
+              <div class="cookie-type-card">
+                <div class="cookie-type-card-header">
+                  <span class="cookie-type-badge badge-functional">Functional</span>
+                </div>
+                <h4>Functional</h4>
+                <p>These cookies allow the website to remember choices you make (such as your cookie consent preferences) and provide enhanced, more personalised features. They may be set by us or by third-party providers whose services we have added to our pages.</p>
+                <p class="cookie-type-consent consent-required">Consent required</p>
+              </div>
+
+            </div>
+          </section>
+
+          <section id="cookie-table">
+            <h2>3. Cookies We Use</h2>
+            <p>The table below lists the specific cookies currently in use on bambinoagency.com. We review this list regularly and will update it whenever our cookie usage changes.</p>
+            <div class="cookie-table-wrap">
+              <table class="cookie-table" role="table" aria-label="Cookies used on bambinoagency.com">
+                <thead>
+                  <tr>
+                    <th scope="col">Cookie Name</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Purpose</th>
+                    <th scope="col">Duration</th>
+                    <th scope="col">Provider</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Strictly Necessary -->
+                  <tr>
+                    <td><span class="cookie-name">bambino_consent</span></td>
+                    <td><span class="cookie-category badge-necessary">Necessary</span></td>
+                    <td>Stores your cookie consent preferences to avoid showing the consent banner on every page visit.</td>
+                    <td>13 months</td>
+                    <td>Bambino Agency</td>
+                  </tr>
+                  <tr>
+                    <td><span class="cookie-name">PHPSESSID</span></td>
+                    <td><span class="cookie-category badge-necessary">Necessary</span></td>
+                    <td>Session identifier used to maintain your session state across page requests. Deleted when the browser is closed.</td>
+                    <td>Session</td>
+                    <td>Bambino Agency</td>
+                  </tr>
+                  <!-- Analytics -->
+                  <tr>
+                    <td><span class="cookie-name">_ga</span></td>
+                    <td><span class="cookie-category badge-analytics">Analytics</span></td>
+                    <td>Google Analytics 4 — distinguishes unique users by assigning a randomly generated client ID. Used to calculate session and user metrics for our site analytics reports.</td>
+                    <td>2 years</td>
+                    <td>Google</td>
+                  </tr>
+                  <tr>
+                    <td><span class="cookie-name">_ga_XXXXXXXXXX</span></td>
+                    <td><span class="cookie-category badge-analytics">Analytics</span></td>
+                    <td>Google Analytics 4 — persists the session state and tracks session-level data including page views and events for the GA4 measurement ID assigned to this site.</td>
+                    <td>2 years</td>
+                    <td>Google</td>
+                  </tr>
+                  <tr>
+                    <td><span class="cookie-name">_gid</span></td>
+                    <td><span class="cookie-category badge-analytics">Analytics</span></td>
+                    <td>Google Analytics — distinguishes users across sessions within a 24-hour period. Helps differentiate between new and returning visitors.</td>
+                    <td>24 hours</td>
+                    <td>Google</td>
+                  </tr>
+                  <tr>
+                    <td><span class="cookie-name">_gat</span></td>
+                    <td><span class="cookie-category badge-analytics">Analytics</span></td>
+                    <td>Google Analytics — used to throttle the request rate, limiting data collection on high-traffic sites.</td>
+                    <td>1 minute</td>
+                    <td>Google</td>
+                  </tr>
+                  <!-- Marketing -->
+                  <tr>
+                    <td><span class="cookie-name">_gcl_au</span></td>
+                    <td><span class="cookie-category badge-marketing">Marketing</span></td>
+                    <td>Google Ads — used by Google AdSense to measure the efficiency of advertising on websites that use its services and to track conversions.</td>
+                    <td>3 months</td>
+                    <td>Google</td>
+                  </tr>
+                  <tr>
+                    <td><span class="cookie-name">IDE</span></td>
+                    <td><span class="cookie-category badge-marketing">Marketing</span></td>
+                    <td>Google DoubleClick — used to register and report users&rsquo; actions after viewing or clicking an advertisement. Enables measurement of ad effectiveness and retargeting.</td>
+                    <td>13 months</td>
+                    <td>Google</td>
+                  </tr>
+                  <tr>
+                    <td><span class="cookie-name">li_fat_id</span></td>
+                    <td><span class="cookie-category badge-marketing">Marketing</span></td>
+                    <td>LinkedIn Insight Tag — first-party member indirect identifier used for conversion tracking, retargeting, and analytics for LinkedIn advertising campaigns.</td>
+                    <td>30 days</td>
+                    <td>LinkedIn</td>
+                  </tr>
+                  <tr>
+                    <td><span class="cookie-name">bcookie</span></td>
+                    <td><span class="cookie-category badge-marketing">Marketing</span></td>
+                    <td>LinkedIn — browser identifier cookie used to uniquely identify devices accessing LinkedIn to detect abuse and diagnostic purposes on and off LinkedIn.</td>
+                    <td>2 years</td>
+                    <td>LinkedIn</td>
+                  </tr>
+                  <tr>
+                    <td><span class="cookie-name">_fbp</span></td>
+                    <td><span class="cookie-category badge-marketing">Marketing</span></td>
+                    <td>Meta (Facebook) Pixel — used to identify browsers for the purposes of providing advertising and analytics services and to distinguish unique users.</td>
+                    <td>3 months</td>
+                    <td>Meta</td>
+                  </tr>
+                  <!-- Functional -->
+                  <tr>
+                    <td><span class="cookie-name">__hs_cookie_cat_pref</span></td>
+                    <td><span class="cookie-category badge-functional">Functional</span></td>
+                    <td>HubSpot — stores your cookie consent preferences as recorded within HubSpot&rsquo;s cookie consent banner.</td>
+                    <td>13 months</td>
+                    <td>HubSpot</td>
+                  </tr>
+                  <tr>
+                    <td><span class="cookie-name">hubspotutk</span></td>
+                    <td><span class="cookie-category badge-functional">Functional</span></td>
+                    <td>HubSpot — tracks a visitor&rsquo;s identity and associates form submissions with contact records in HubSpot CRM. Used to de-duplicate contacts.</td>
+                    <td>13 months</td>
+                    <td>HubSpot</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p style="margin-top: 1rem;">Cookie durations shown are maximum values. Session cookies expire when you close your browser. The exact cookie IDs for Google Analytics (e.g. <code style="font-family: monospace; font-size: 0.85rem; background: var(--soft); padding: 0.1rem 0.3rem; border-radius: 4px;">_ga_XXXXXXXXXX</code>) will reflect the specific GA4 Measurement ID assigned to this property.</p>
+          </section>
+
+          <section id="manage-cookies">
+            <h2>4. How to Manage Cookies</h2>
+            <p>You can control and manage cookies in a number of ways. Please be aware that removing or blocking some cookies may impact your experience of our website.</p>
+
+            <h3>Browser settings</h3>
+            <p>Most browsers allow you to refuse or delete cookies. The method varies by browser. Select your browser below for guidance:</p>
+            <ul>
+              <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer">Google Chrome</a></li>
+              <li><a href="https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop" target="_blank" rel="noopener noreferrer">Mozilla Firefox</a></li>
+              <li><a href="https://support.apple.com/en-gb/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer">Apple Safari</a></li>
+              <li><a href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer">Microsoft Edge</a></li>
+            </ul>
+
+            <h3>Opt-out tools for third-party services</h3>
+            <p>You can opt out of third-party advertising and analytics cookies directly through the providers&rsquo; own tools:</p>
+            <div class="opt-out-list">
+              <div class="opt-out-item">
+                <span class="opt-out-name">Google Analytics</span>
+                <span class="opt-out-desc">Install the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">Google Analytics Opt-out Browser Add-on</a> to prevent your data from being used by GA. You can also adjust your Google account&rsquo;s <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer">ad personalisation settings</a>.</span>
+              </div>
+              <div class="opt-out-item">
+                <span class="opt-out-name">Google Ads</span>
+                <span class="opt-out-desc">Manage your ad preferences and opt out of personalised advertising via <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer">Google Ad Settings</a> or through the <a href="https://youronlinechoices.eu/" target="_blank" rel="noopener noreferrer">Your Online Choices</a> tool.</span>
+              </div>
+              <div class="opt-out-item">
+                <span class="opt-out-name">LinkedIn</span>
+                <span class="opt-out-desc">Opt out of LinkedIn interest-based advertising via your <a href="https://www.linkedin.com/psettings/advertising" target="_blank" rel="noopener noreferrer">LinkedIn account advertising preferences</a>. You do not need a LinkedIn account to opt out.</span>
+              </div>
+              <div class="opt-out-item">
+                <span class="opt-out-name">Meta (Facebook)</span>
+                <span class="opt-out-desc">Manage your ad preferences via your <a href="https://www.facebook.com/adpreferences" target="_blank" rel="noopener noreferrer">Facebook Ad Preferences</a> page, or use the <a href="https://youronlinechoices.eu/" target="_blank" rel="noopener noreferrer">Your Online Choices</a> platform.</span>
+              </div>
+              <div class="opt-out-item">
+                <span class="opt-out-name">All Advertising Cookies</span>
+                <span class="opt-out-desc">Visit <a href="https://youronlinechoices.eu/" target="_blank" rel="noopener noreferrer">Your Online Choices (youronlinechoices.eu)</a> to opt out of a wide range of third-party behavioural advertising cookies in one place.</span>
+              </div>
+            </div>
+          </section>
+
+          <section id="consent-banner">
+            <h2>5. Cookie Consent Banner</h2>
+            <p>When you first visit bambinoagency.com, you will see a cookie consent banner that allows you to accept or decline non-essential cookies. We will not set analytics, marketing, or functional cookies until you have provided your consent.</p>
+            <p>Your consent preferences are stored in a first-party cookie (<code style="font-family: monospace; font-size: 0.85rem; background: var(--soft); padding: 0.1rem 0.3rem; border-radius: 4px;">bambino_consent</code>) for 13 months, in line with ICO guidance. After this period, we will ask for your consent again.</p>
+            <p>You can change or withdraw your consent at any time by clicking the &ldquo;Cookie Settings&rdquo; link in the footer of this page, or by contacting us at <a href="mailto:hello@bambinoagency.com">hello@bambinoagency.com</a>. Withdrawing consent will not affect the lawfulness of any processing carried out before you withdrew it.</p>
+            <div class="legal-info-box">
+              <p>For further information about how we handle your personal data more broadly — including your rights under UK GDPR, legal bases for processing, and third-party data sharing — please read our <a href="https://bambinoagency.com/privacy">Privacy Policy</a>.</p>
+            </div>
+            <p>This policy was last reviewed and updated on <strong>24 April 2026</strong>. We will update this page whenever we make material changes to the cookies we use.</p>
+          </section>
+
+        </div><!-- /.legal-content -->
+      </div><!-- /.legal-layout -->
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-logo">Bambino</div>
+          <p class="footer-brand-desc">Manchester&rsquo;s leading digital marketing agency, helping UK businesses grow faster with data-driven strategies that deliver real, measurable ROI.</p>
+          <div class="footer-socials" aria-label="Social media links">
+            <a href="https://linkedin.com/company/bambinoagency" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Bambino on LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://twitter.com/bambinoagency" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Bambino on X / Twitter">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a href="https://instagram.com/bambinoagency" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Bambino on Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://facebook.com/bambinoagency" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Bambino on Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Services</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="https://bambinoagency.com/services/seo">SEO &amp; Content</a></li>
+            <li><a href="https://bambinoagency.com/services/google-ads">Google Ads</a></li>
+            <li><a href="https://bambinoagency.com/services/meta-ads">Meta Ads</a></li>
+            <li><a href="https://bambinoagency.com/services/ppc">PPC Management</a></li>
+            <li><a href="https://bambinoagency.com/services/social-media">Social Media</a></li>
+            <li><a href="https://bambinoagency.com/services/web-design">Web Design</a></li>
+            <li><a href="https://bambinoagency.com/services/email-marketing">Email Marketing</a></li>
+            <li><a href="https://bambinoagency.com/services/ai-automations">AI Automations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Top Locations</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="https://bambinoagency.com/local/manchester/seo-agency">SEO Manchester</a></li>
+            <li><a href="https://bambinoagency.com/local/london/seo-agency">SEO London</a></li>
+            <li><a href="https://bambinoagency.com/local/birmingham/seo-agency">SEO Birmingham</a></li>
+            <li><a href="https://bambinoagency.com/local/manchester/google-ads-agency">Google Ads Manchester</a></li>
+            <li><a href="https://bambinoagency.com/local/manchester/ppc-agency">PPC Manchester</a></li>
+            <li><a href="https://bambinoagency.com/local/manchester/digital-marketing-agency">Digital Marketing Manchester</a></li>
+            <li><a href="https://bambinoagency.com/local/leeds/seo-agency">SEO Leeds</a></li>
+            <li><a href="https://bambinoagency.com/local/bristol/seo-agency">SEO Bristol</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Company</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="https://bambinoagency.com/about">About Us</a></li>
+            <li><a href="https://bambinoagency.com/services">All Services</a></li>
+            <li><a href="https://bambinoagency.com/pricing">Pricing</a></li>
+            <li><a href="https://bambinoagency.com/contact">Contact</a></li>
+          </ul>
+          <h3 class="footer-col-title" style="margin-top:1.5rem">Worldwide</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="https://bambinoagency.com/us">United States &rarr;</a></li>
+            <li><a href="https://bambinoagency.com/ca">Canada &rarr;</a></li>
+          </ul>
+          <h3 class="footer-col-title" style="margin-top:1.5rem">Contact</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="tel:+441610000000">+44 161 000 0000</a></li>
+            <li><a href="mailto:hello@bambinoagency.com">hello@bambinoagency.com</a></li>
+            <li><a href="https://bambinoagency.com/contact" class="btn-orange" style="font-size:0.82rem;padding:0.65rem 1.4rem;display:inline-flex;margin-top:0.8rem;">Free Audit &rarr;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bambino Agency. All rights reserved. Manchester, United Kingdom.</p>
+        <nav class="footer-bottom-links" aria-label="Legal links">
+          <a href="https://bambinoagency.com/privacy">Privacy Policy</a>
+          <a href="https://bambinoagency.com/terms">Terms of Service</a>
+          <a href="https://bambinoagency.com/cookies">Cookie Policy</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Mobile menu
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileClose = document.getElementById('mobileClose');
+    hamburgerBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
+    mobileClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    function closeMobileMenu() { mobileMenu.classList.remove('open'); }
+
+    // Mega menu
+    (function() {
+      var megaParent = document.querySelector('.nav-has-mega');
+      var megaTrigger = document.querySelector('.nav-mega-toggle');
+      if (!megaParent || !megaTrigger) return;
+      megaTrigger.addEventListener('click', function(e) {
+        e.preventDefault();
+        var open = megaParent.classList.toggle('active');
+        megaTrigger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      document.addEventListener('click', function(e) {
+        if (!megaParent.contains(e.target)) {
+          megaParent.classList.remove('active');
+          megaTrigger.setAttribute('aria-expanded', 'false');
+        }
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          megaParent.classList.remove('active');
+          megaTrigger.setAttribute('aria-expanded', 'false');
+        }
+      });
+    })();
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

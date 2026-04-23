@@ -33,15 +33,145 @@ Conversational AI phone agents for inbound call handling, appointment booking, l
 ### AI Automations
 End-to-end workflow automation using AI tools including Make, Zapier, n8n, and custom LLM integrations. Common use cases: lead routing, proposal generation, CRM enrichment, reporting automation, and internal knowledge bases.
 
+### Branding & Creative
+Brand identity, logo design, brand guidelines, tone of voice, and full visual system design for UK businesses. From refresh to full rebrand. UK trademark guidance included. From £15,000.
+
+### CRO (Conversion Rate Optimisation)
+A/B testing, heatmaps, session recording analysis, UX research, and landing page optimisation. Average 34% conversion rate improvement within 90 days. From £1,200/month.
+
+### Lead Generation
+Multi-channel B2B and B2C lead generation: Google Ads, LinkedIn, content SEO, AI outbound, and email. GDPR and PECR compliant. CPL benchmarks by UK industry. From £2,500/month.
+
+### HubSpot Implementation
+Certified HubSpot partner. All 5 Hubs (Marketing, Sales, Service, CMS, Operations). Data migration, workflow automation, GDPR configuration, and team training. From £8,500.
+
+### Klaviyo
+Email and SMS marketing for UK ecommerce. 12 essential flows, RFM segmentation, UK GDPR compliance. Average 35% of ecommerce revenue attributed to Klaviyo. From £2,500/month.
+
+### RevOps / GTM Engineering
+Revenue operations: CRM architecture, pipeline modelling, attribution, sales-marketing-CS alignment, and GTM engineering. HubSpot and Salesforce expertise. From £4,500/month.
+
+### Amazon Marketing
+Amazon PPC, Amazon SEO, A+ Content, and Brand Registry for UK sellers. Average 47% ACOS improvement. From £2,000/month. Separate Amazon DSP service for programmatic advertising.
+
+### UGC Content Production
+User-generated content from 500+ vetted UK creators. Creator-made ads for Meta, TikTok, and YouTube. Performance testing framework. From £2,500/month.
+
+### Influencer Marketing
+Nano to mega influencer campaigns across Instagram, TikTok, YouTube, and LinkedIn. Full ASA compliance (#ad labelling, CAP Code). From £2,000/month.
+
+### Shopify Marketing
+Full-funnel Shopify growth: Google Shopping, Meta Ads, Klaviyo, TikTok Shop, and Shopify CRO. Average 3.4x ROAS. From £2,000/month.
+
+### Salesforce Marketing Cloud
+Enterprise SFMC implementation: Journey Builder, Email Studio, Advertising Studio. For 150K+ contact databases. From £5,000/month.
+
+### Marketing Automation
+Lead nurture, lead scoring, CRM enrichment, and workflow automation across HubSpot, Klaviyo, ActiveCampaign, and Marketo. From £2,500/month.
+
+### Reputation Management (ORM)
+SERP control, review generation, crisis management, and brand monitoring across Trustpilot, Google, Glassdoor, and more. From £2,000/month.
+
+### Video Marketing
+Brand films, explainer videos, social shorts, and YouTube strategy. Full distribution across UK digital channels. From £1,500/month.
+
+### Fractional CMO
+Senior marketing leadership 2–4 days/week. Marketing strategy, team oversight, board reporting, and budget ownership. From £3,500/month.
+
+### Webflow Development
+New builds, WordPress to Webflow migrations, CMS setup, and HubSpot integration. Average 4-week project timeline. From £8,000.
+
+### Growth Marketing
+AARRR framework, 2-week experiment sprints, and systematic scaling of winning channels. For startups and scale-ups targeting rapid MRR growth. From £4,000/month.
+
+### Account-Based Marketing (ABM)
+Target high-value accounts with precision. ICP definition, LinkedIn and programmatic activation, and sales alignment. From £3,500/month.
+
+### Enterprise SEO
+SEO for 10,000+ page sites. JavaScript SEO, log file analysis, programmatic content, and executive reporting. From £8,000/month.
+
+### International SEO
+Hreflang, ccTLD architecture, localisation, and international link building for expansion into 60+ markets. From £3,500/month.
+
+### Retail Media
+Advertising on Tesco Media, Boots, Nectar360, Amazon, and B&Q. Closed-loop attribution using retailer first-party data. From £2,500/month.
+
+### Connected TV Advertising (CTV)
+Programmatic video on ITVX, Channel 4, Sky/NOW TV, and YouTube TV. 26M UK CTV households reachable. From £5,000/month.
+
+### DOOH (Digital Out-of-Home)
+Programmatic digital billboard advertising across 30K+ UK screens. Roadside, shopping centres, Underground, airports. From £3,000/month.
+
+### Amazon DSP
+Programmatic advertising using Amazon's first-party shopper data — on and off Amazon. Display, video, and streaming TV formats. From £5,000/month.
+
+### Lifecycle Marketing
+Full customer lifecycle from prospect to advocate. Email, SMS, push, and retargeting across all funnel stages. Average 23% LTV increase. From £2,500/month.
+
+### Subscription Commerce Marketing
+Grow MRR, reduce churn for subscription brands. Works with ReCharge, Chargebee, Zuora. Average 18% churn reduction. From £2,000/month.
+
+### SMS Marketing
+98% open rate SMS campaigns. PECR and GDPR compliant. Promotional, abandoned cart, re-engagement, and reminder flows. From £1,200/month.
+
+### Performance Creative
+Data-driven ad creative for Meta, TikTok, YouTube, and Google Display. 12+ variants/month with systematic A/B testing. From £2,500/month.
+
+### Conversational Marketing
+Chatbots, live chat, WhatsApp Business, and AI messaging. Intercom, Drift, HubSpot, and ManyChat implementations. From £2,000/month.
+
+### Demand Generation
+Create demand before capturing it. Dark funnel strategy, thought leadership, community-led growth, and always-on content for B2B. Separates demand creation from lead capture. From £4,500/month.
+
+### B2B SaaS Growth Marketing
+Full-funnel growth marketing for UK SaaS businesses. PLG vs SLG strategy, ICP definition, pricing optimisation, and the complete SaaS growth stack from trial to expansion revenue. From £4,500/month.
+
+### Product-Led Growth (PLG)
+Turn your product into your primary growth engine. Onboarding optimisation, PQL (Product Qualified Lead) scoring, freemium strategy, viral loop engineering, and expansion revenue playbooks. From £4,500/month.
+
+### SDR / BDR as a Service
+Dedicated human SDRs and BDRs for outbound — ICP list building, personalised email sequences, LinkedIn social selling, cold calling, and CRM logging. UK GDPR, TPS, and CTPS compliant. From £3,500/month.
+
+### Customer Data Platform (CDP) Implementation
+Segment, Tealium, mParticle, RudderStack, and Hightouch implementations. Unify customer data from every touchpoint and activate it across all marketing channels. UK GDPR-compliant by design. From £5,000/month.
+
+### Attribution & Marketing Mix Modelling (MMM)
+Go beyond last-click attribution. Marketing Mix Modelling, incrementality testing, and multi-touch attribution using Haus, Recast, and Google Meridian. Post-cookie measurement for UK brands. From £3,500/month.
+
+### Podcast Advertising
+Host-read sponsorships, pre/mid-roll ads, branded podcast production, and programmatic audio across 9.1M weekly UK listeners. Attribution via Chartable, Podsights, and promo codes. Networks: Acast, Spotify, Global. From £2,500/month.
+
+### Framer Development
+Design-to-publish Framer websites for UK startups and scale-ups. Live in 2–4 weeks. Built-in CMS, animations, A/B testing, and 98+ Lighthouse scores. Zero developer handoff required. From £3,500/project.
+
+### Experiential Marketing
+Pop-up activations, brand events, trade show strategy, and immersive brand experiences across UK cities. Measured by footfall, earned media value, and UGC volume generated. From £5,000/activation.
+
+### App Store Optimisation (ASO)
+Rank higher in Apple App Store and Google Play. Keyword strategy, metadata optimisation, screenshot design, and review management. From £1,500/month.
+
+### Community Building
+Build owned brand communities on Slack, Circle, or Discord. Strategy, programming, moderation, and member acquisition. From £2,500/month.
+
+### Salesforce Marketing Cloud
+Enterprise SFMC implementation for large businesses with complex CRM and multi-channel needs. From £5,000/month.
+
+### Pinterest Ads
+Reach 20M UK Pinterest users. Shopping catalogue setup, promoted pins, and collection ads for home, fashion, and lifestyle brands. From £1,500/month.
+
 ### Additional Services
-- Meta Ads (Facebook/Instagram)
-- LinkedIn Ads
-- Email Marketing
-- Content Marketing
-- Web Design
+- Meta Ads (Facebook/Instagram) — From £800/month
+- LinkedIn Ads — From £800/month
+- YouTube Ads — From £800/month
+- TikTok Ads — From £800/month
+- Email Marketing — From £500/month
+- Content Marketing — From £800/month
+- Web Design — From £5,000 project
 - SaaS Products
-- Social Media Management
-- Performance Marketing
+- Social Media Management — From £800/month
+- Digital PR — From £2,500/month
+- Google Shopping — From £600/month
+- Analytics & GA4 — From £500/month
 
 ## Methodology
 

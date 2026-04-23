@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Is RevOps? The Complete UK B2B Guide for 2026 | Bambino</title>
+  <meta name="description" content="RevOps explained for UK B2B teams. What revenue operations is, why it matters, and how to implement it. Expert guide from Bambino Agency, Manchester.">
+  <link rel="canonical" href="https://bambinoagency.com/blog/what-is-revops-uk">
+  <meta property="og:title" content="What Is RevOps? The Complete UK B2B Guide for 2026 | Bambino">
+  <meta property="og:description" content="RevOps explained for UK B2B teams. What revenue operations is, why it matters, and how to implement it. Expert guide from Bambino Agency, Manchester.">
+  <meta property="og:url" content="https://bambinoagency.com/blog/what-is-revops-uk">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://bambinoagency.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://bambinoagency.com/og-image.png">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg: #F9F9F5; --orange: #FF4D00; --orange-light: #FF6B2B; --green: #034C3C; --text: #1A1A1A; --muted: #666660; --card: #FFFFFF; --soft: #F2F2EC; --border: #E8E8E0; --font-heading: 'Berkshire Swash', serif; --font-body: 'Inter', sans-serif; --radius: 16px; --shadow: 0 4px 24px rgba(0,0,0,0.07); --transition: 0.25s cubic-bezier(0.4,0,0.2,1); }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-body); background: var(--bg); color: var(--text); line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    .container { width: min(1200px, 100% - 3rem); margin-inline: auto; }
+    .section-label { display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--orange); background: rgba(255,77,0,0.08); padding: 0.35rem 0.9rem; border-radius: 100px; margin-bottom: 1.2rem; }
+    .section-title { font-family: var(--font-heading); font-size: clamp(2rem,4vw,3rem); color: var(--text); line-height: 1.15; margin-bottom: 1rem; }
+    .btn-orange { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--orange); color: #fff; font-family: var(--font-body); font-weight: 700; font-size: 0.95rem; padding: 0.85rem 2rem; border-radius: 100px; transition: var(--transition); }
+    .btn-orange:hover { background: var(--orange-light); transform: translateY(-2px); }
+
+    /* NAV */
+    #navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: var(--bg); padding: 1.1rem 0; border-bottom: 1px solid var(--border); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { font-family: var(--font-heading); font-size: 1.8rem; color: var(--green); }
+    .nav-links { display: flex; align-items: center; gap: 2.2rem; padding: 0; }
+    .nav-links li { list-style: none; }
+    .nav-links a { font-size: 0.9rem; font-weight: 500; color: var(--text); }
+    .nav-links a:hover { color: var(--orange); }
+    .nav-cta { background: var(--orange); color: #fff !important; font-weight: 700 !important; padding: 0.6rem 1.4rem; border-radius: 100px; }
+    .nav-cta::after { display: none !important; }
+    .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+    .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--text); border-radius: 2px; }
+
+    /* MOBILE MENU */
+    .mobile-menu { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--bg); z-index: 999; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { font-family: var(--font-heading); font-size: 2rem; color: var(--text); transition: color var(--transition); }
+    .mobile-menu a:hover { color: var(--orange); }
+    .mobile-close { position: absolute; top: 1.5rem; right: 1.5rem; font-size: 1.8rem; cursor: pointer; background: none; border: none; color: var(--text); }
+
+    @media (max-width: 960px) {
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+    }
+
+    /* MEGA MENU */
+    .nav-has-mega { position: relative; }
+    .nav-mega-toggle { display: flex !important; align-items: center; gap: 0.4rem; cursor: pointer; }
+    .nav-mega-toggle svg { transition: transform 0.2s ease; flex-shrink: 0; }
+    .nav-has-mega.active .nav-mega-toggle svg { transform: rotate(180deg); }
+    .mega-menu {
+      display: none;
+      position: fixed;
+      top: 62px;
+      left: 0; right: 0;
+      background: var(--bg, #F9F9F5);
+      border-top: 2px solid var(--orange, #FF4D00);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.13);
+      z-index: 998;
+      padding: 2rem 0 1.5rem;
+    }
+    .nav-has-mega.active .mega-menu { display: block; animation: megaFadeIn 0.16s ease; }
+    @keyframes megaFadeIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
+    .mega-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1.5rem 1.2rem; }
+    .mega-col { }
+    .mega-cat { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--orange, #FF4D00); margin-bottom: 0.45rem; margin-top: 0; line-height: 1.4; }
+    .mega-col a { display: block; font-size: 0.81rem; color: var(--text, #1a1a1a); padding: 0.16rem 0; transition: color 0.15s; font-weight: 400; line-height: 1.5; }
+    .mega-col a:hover { color: var(--orange, #FF4D00); }
+    .mega-col a::after { display: none !important; }
+    .mega-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 1.2rem; padding-top: 0.9rem; border-top: 1px solid var(--border, #e5e5e0); }
+    .mega-all { font-size: 0.84rem; font-weight: 600; color: var(--green, #034C3C); }
+    .mega-all:hover { color: var(--orange, #FF4D00); }
+    .mega-all::after { display: none !important; }
+    .mega-cta { font-size: 0.81rem; font-weight: 700; background: var(--orange, #FF4D00); color: #fff !important; padding: 0.45rem 1.1rem; border-radius: 100px; transition: background 0.15s; }
+    .mega-cta:hover { background: #e64500 !important; }
+    .mega-cta::after { display: none !important; }
+    @media (max-width: 960px) { .mega-menu { display: none !important; } }
+
+    /* ARTICLE */
+    .article-body h2 { font-family: var(--font-heading); font-size: clamp(1.5rem,3vw,2rem); color: var(--text); margin: 2.5rem 0 1rem; line-height: 1.2; }
+    .article-body h3 { font-family: var(--font-heading); font-size: 1.3rem; color: var(--text); margin: 2rem 0 0.75rem; }
+    .article-body p { font-size: 1.05rem; color: var(--muted); line-height: 1.8; margin-bottom: 1.5rem; }
+    .article-body ul, .article-body ol { padding-left: 1.5rem; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; }
+    .article-body li { font-size: 1rem; color: var(--muted); line-height: 1.7; }
+    .article-body strong { color: var(--text); font-weight: 700; }
+    .article-body table { width: 100%; border-collapse: collapse; margin-bottom: 2rem; font-size: 0.92rem; }
+    .article-body th { background: var(--green); color: #fff; padding: 0.75rem 1rem; text-align: left; }
+    .article-body td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); color: var(--muted); }
+    .article-body tr:nth-child(even) td { background: var(--soft); }
+    .article-body a { color: var(--orange); }
+    .article-body a:hover { text-decoration: underline; }
+
+    /* FAQ */
+    .faq-item { background: var(--card); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); margin-bottom: 1rem; }
+    .faq-question { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 1.5rem; background: none; border: none; cursor: pointer; font-family: var(--font-body); font-size: 1rem; font-weight: 600; color: var(--text); text-align: left; }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+    .faq-item.open .faq-answer { max-height: 500px; }
+    .faq-answer p { padding: 0 1.5rem 1.2rem; font-size: 0.95rem; color: var(--muted); line-height: 1.75; margin: 0; }
+    .faq-icon { font-size: 1.2rem; transition: transform 0.3s; flex-shrink: 0; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+
+    /* BREADCRUMB */
+    .breadcrumb { display: flex; align-items: center; gap: 0.5rem; font-size: 0.82rem; color: var(--muted); margin-bottom: 2rem; flex-wrap: wrap; }
+    .breadcrumb a { color: var(--muted); }
+    .breadcrumb a:hover { color: var(--orange); }
+
+    /* LAYOUT */
+    .article-hero { padding: 8rem 0 3rem; }
+    .article-layout { display: grid; grid-template-columns: 1fr 300px; gap: 4rem; align-items: start; }
+    .article-sidebar { position: sticky; top: 100px; }
+    .sidebar-card { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 1.5rem; margin-bottom: 1.5rem; }
+    .sidebar-card h3 { font-family: var(--font-heading); font-size: 1rem; margin-bottom: 1rem; color: var(--text); }
+    .toc-list { display: flex; flex-direction: column; gap: 0.5rem; }
+    .toc-list a { font-size: 0.85rem; color: var(--muted); padding: 0.3rem 0; border-left: 2px solid var(--border); padding-left: 0.75rem; transition: var(--transition); }
+    .toc-list a:hover { color: var(--orange); border-color: var(--orange); }
+    .cta-box { background: var(--green); border-radius: var(--radius); padding: 2rem; text-align: center; }
+    .cta-box h3 { font-family: var(--font-heading); color: #fff; font-size: 1.2rem; margin-bottom: 0.75rem; }
+    .cta-box p { font-size: 0.88rem; color: rgba(255,255,255,0.75); margin-bottom: 1.25rem; }
+
+    /* BYLINE */
+    .byline { display: flex; align-items: center; gap: 1rem; padding: 1rem 0; margin-bottom: 2rem; border-bottom: 1px solid var(--border); }
+    .byline-avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--green); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 0.9rem; flex-shrink: 0; }
+    .byline-text { font-size: 0.85rem; color: var(--muted); }
+    .byline-text strong { color: var(--text); display: block; }
+
+    /* HIGHLIGHT */
+    .highlight-box { background: rgba(255,77,0,0.06); border-left: 4px solid var(--orange); border-radius: 0 var(--radius) var(--radius) 0; padding: 1.25rem 1.5rem; margin-bottom: 1.5rem; }
+    .highlight-box p { margin: 0; font-size: 0.98rem; }
+
+    /* STAT GRID */
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; margin-bottom: 2rem; }
+    .stat-card { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 1.5rem; text-align: center; }
+    .stat-number { font-family: var(--font-heading); font-size: 2.4rem; color: var(--orange); line-height: 1; margin-bottom: 0.4rem; }
+    .stat-label { font-size: 0.82rem; color: var(--muted); line-height: 1.4; }
+
+    @media (max-width: 768px) {
+      .article-layout { grid-template-columns: 1fr !important; }
+      .article-sidebar { display: none; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://bambinoagency.com/blog/what-is-revops-uk#article",
+        "headline": "What Is RevOps? The Complete UK B2B Guide for 2026",
+        "description": "RevOps explained for UK B2B teams. What revenue operations is, why it matters, and how to implement it. Expert guide from Bambino Agency, Manchester.",
+        "url": "https://bambinoagency.com/blog/what-is-revops-uk",
+        "datePublished": "2026-04-23",
+        "dateModified": "2026-04-23",
+        "author": {
+          "@type": "Person",
+          "name": "Tom H.",
+          "jobTitle": "Head of RevOps",
+          "worksFor": { "@type": "Organization", "name": "Bambino" }
+        },
+        "publisher": { "@type": "Organization", "name": "Bambino", "url": "https://bambinoagency.com" },
+        "image": "https://bambinoagency.com/og-image.png"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bambinoagency.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://bambinoagency.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "What Is RevOps?", "item": "https://bambinoagency.com/blog/what-is-revops-uk" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is RevOps?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "RevOps (Revenue Operations) is the strategic alignment of sales, marketing, and customer success teams under a unified operational framework, sharing common data, processes, and technology. The goal is to remove silos, improve forecast accuracy, and accelerate revenue growth. It is increasingly adopted by UK B2B companies looking to scale more efficiently."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is RevOps different from Sales Ops?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sales Ops focuses exclusively on the sales team: pipeline management, quota setting, forecasting, and CRM hygiene. RevOps takes a broader view, aligning sales with marketing and customer success so that every revenue-generating function shares the same data, processes, and KPIs. RevOps includes Sales Ops within it but extends across the entire revenue cycle."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need a dedicated RevOps hire or can I use an agency?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Both are valid approaches. A dedicated RevOps hire makes sense when your team exceeds 20 people and you have complex CRM and pipeline workflows. For businesses under that threshold, or those looking to build a RevOps function quickly without the overhead of a full-time salary, a RevOps agency like Bambino can deliver the same capability at a fraction of the cost, typically £2,000&ndash;£5,000 per month."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the best CRM for RevOps in the UK?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HubSpot is the most popular choice for UK B2B businesses implementing RevOps for the first time, due to its unified data model, ease of use, and native alignment between marketing, sales, and service hubs. Salesforce is preferred by larger enterprises with complex customisation needs. Both can power a world-class RevOps function when configured correctly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take to see results from RevOps?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most UK B2B businesses see meaningful improvements in pipeline visibility and forecast accuracy within 60&ndash;90 days of implementing RevOps. Revenue impact (higher win rates, shorter sales cycles) typically becomes measurable at the 3&ndash;6 month mark. Full cultural and operational transformation generally takes 9&ndash;12 months."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does RevOps cost in the UK?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A full-time RevOps Manager in the UK earns £55,000&ndash;£85,000 per year. A RevOps Director commands £90,000&ndash;£130,000. Outsourcing to a RevOps agency like Bambino typically costs £2,000&ndash;£6,000 per month depending on scope, which includes strategy, HubSpot or Salesforce configuration, reporting, and ongoing optimisation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What RevOps metrics should I track?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The seven core RevOps KPIs are: (1) Revenue attainment vs. target, (2) Pipeline coverage ratio, (3) Win rate by stage and source, (4) Average deal size and velocity, (5) Sales cycle length, (6) Customer acquisition cost (CAC), and (7) Net Revenue Retention (NRR). Tracking all seven across a shared dashboard gives leadership a complete view of revenue health."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<nav id="navbar" aria-label="Main navigation">
+  <div class="nav-inner container">
+    <a href="https://bambinoagency.com" class="nav-logo" aria-label="Bambino home">Bambino</a>
+    <ul class="nav-links" role="list">
+      <li class="nav-has-mega">
+        <a href="https://bambinoagency.com/services" class="nav-mega-toggle" aria-haspopup="true" aria-expanded="false">Services <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+        <div class="mega-menu" role="region" aria-label="Services menu">
+          <div class="container">
+            <div class="mega-grid">
+                  <div class="mega-col">
+                    <p class="mega-cat">Search &amp; AI Visibility</p>
+                    <a href="https://bambinoagency.com/services/seo">SEO</a>
+                    <a href="https://bambinoagency.com/services/geo">GEO / AI Search</a>
+                    <a href="https://bambinoagency.com/services/technical-seo">Technical SEO</a>
+                    <a href="https://bambinoagency.com/services/local-seo">Local SEO</a>
+                    <a href="https://bambinoagency.com/services/enterprise-seo">Enterprise SEO</a>
+                    <a href="https://bambinoagency.com/services/international-seo">International SEO</a>
+                    <a href="https://bambinoagency.com/services/link-building">Link Building</a>
+                  </div>
+                  <div class="mega-col">
+                    <p class="mega-cat">Paid Media</p>
+                    <a href="https://bambinoagency.com/services/google-ads">Google Ads</a>
+                    <a href="https://bambinoagency.com/services/ppc">PPC Management</a>
+                    <a href="https://bambinoagency.com/services/meta-ads">Meta Ads</a>
+                    <a href="https://bambinoagency.com/services/linkedin-ads">LinkedIn Ads</a>
+                    <a href="https://bambinoagency.com/services/youtube-ads">YouTube Ads</a>
+                    <a href="https://bambinoagency.com/services/tiktok-ads">TikTok Ads</a>
+                    <a href="https://bambinoagency.com/services/pinterest-ads">Pinterest Ads</a>
+                    <a href="https://bambinoagency.com/services/google-shopping">Google Shopping</a>
+                    <a href="https://bambinoagency.com/services/retail-media">Retail Media</a>
+                    <a href="https://bambinoagency.com/services/podcast-advertising">Podcast Advertising</a>
+                  </div>
+                  <div class="mega-col">
+                    <p class="mega-cat">Social &amp; Creator</p>
+                    <a href="https://bambinoagency.com/services/social-media">Social Media</a>
+                    <a href="https://bambinoagency.com/services/influencer-marketing">Influencer Marketing</a>
+                    <a href="https://bambinoagency.com/services/ugc-content">UGC Content</a>
+                    <a href="https://bambinoagency.com/services/community-building">Community Building</a>
+                    <a href="https://bambinoagency.com/services/experiential-marketing">Experiential Marketing</a>
+                    <p class="mega-cat" style="margin-top:1.2rem">Content &amp; Video</p>
+                    <a href="https://bambinoagency.com/services/content-marketing">Content Marketing</a>
+                    <a href="https://bambinoagency.com/services/video-marketing">Video Marketing</a>
+                    <a href="https://bambinoagency.com/services/digital-pr">Digital PR</a>
+                    <a href="https://bambinoagency.com/services/performance-creative">Performance Creative</a>
+                  </div>
+                  <div class="mega-col">
+                    <p class="mega-cat">Web &amp; Brand</p>
+                    <a href="https://bambinoagency.com/services/web-design">Web Design</a>
+                    <a href="https://bambinoagency.com/services/webflow">Webflow Development</a>
+                    <a href="https://bambinoagency.com/services/framer">Framer Development</a>
+                    <a href="https://bambinoagency.com/services/branding">Branding</a>
+                    <a href="https://bambinoagency.com/services/cro">CRO</a>
+                    <a href="https://bambinoagency.com/services/aso">App Store Optimisation</a>
+                    <a href="https://bambinoagency.com/services/analytics-ga4">Analytics &amp; GA4</a>
+                    <a href="https://bambinoagency.com/services/attribution-mmm">Attribution &amp; MMM</a>
+                    <a href="https://bambinoagency.com/services/cdp">CDP Implementation</a>
+                    <p class="mega-cat" style="margin-top:1.2rem">AI &amp; Automation</p>
+                    <a href="https://bambinoagency.com/services/ai-automations">AI Automations</a>
+                    <a href="https://bambinoagency.com/services/voice-ai">Voice AI</a>
+                    <a href="https://bambinoagency.com/services/ai-outbound">AI Outbound Sales</a>
+                    <a href="https://bambinoagency.com/services/conversational-marketing">Conversational Marketing</a>
+                    <a href="https://bambinoagency.com/services/marketing-automation">Marketing Automation</a>
+                    <a href="https://bambinoagency.com/services/sms-marketing">SMS Marketing</a>
+                  </div>
+                  <div class="mega-col">
+                    <p class="mega-cat">Operations &amp; Growth</p>
+                    <a href="https://bambinoagency.com/services/revops">RevOps</a>
+                    <a href="https://bambinoagency.com/services/hubspot">HubSpot</a>
+                    <a href="https://bambinoagency.com/services/klaviyo">Klaviyo</a>
+                    <a href="https://bambinoagency.com/services/salesforce-marketing-cloud">Salesforce Marketing Cloud</a>
+                    <a href="https://bambinoagency.com/services/fractional-cmo">Fractional CMO</a>
+                    <a href="https://bambinoagency.com/services/growth-marketing">Growth Marketing</a>
+                    <a href="https://bambinoagency.com/services/plg">Product-Led Growth</a>
+                    <p class="mega-cat" style="margin-top:1.2rem">B2B &amp; Enterprise</p>
+                    <a href="https://bambinoagency.com/services/lead-generation">Lead Generation</a>
+                    <a href="https://bambinoagency.com/services/abm">Account-Based Marketing</a>
+                    <a href="https://bambinoagency.com/services/amazon-marketing">Amazon Marketing</a>
+                    <a href="https://bambinoagency.com/services/demand-generation">Demand Generation</a>
+                    <a href="https://bambinoagency.com/services/b2b-saas-growth">B2B SaaS Growth</a>
+                    <a href="https://bambinoagency.com/services/sdr-bdr-as-a-service">SDR / BDR as a Service</a>
+                    <a href="https://bambinoagency.com/services/ctv-advertising">CTV Advertising</a>
+                    <a href="https://bambinoagency.com/services/dooh">DOOH Advertising</a>
+                  </div>
+                  <div class="mega-col">
+                    <p class="mega-cat">eCommerce &amp; Retention</p>
+                    <a href="https://bambinoagency.com/services/shopify-marketing">Shopify Marketing</a>
+                    <a href="https://bambinoagency.com/services/amazon-dsp">Amazon DSP</a>
+                    <a href="https://bambinoagency.com/services/lifecycle-marketing">Lifecycle Marketing</a>
+                    <a href="https://bambinoagency.com/services/subscription-commerce">Subscription Commerce</a>
+                    <a href="https://bambinoagency.com/services/email-marketing">Email Marketing</a>
+                    <a href="https://bambinoagency.com/services/reputation-management">Reputation Management</a>
+                  </div>
+                </div>
+                <div class="mega-footer">
+              <a href="https://bambinoagency.com/services" class="mega-all">View all services &rarr;</a>
+              <a href="https://bambinoagency.com/contact" class="mega-cta">Get a Free Audit &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li><a href="https://bambinoagency.com/industries">Industries</a></li>
+      <li><a href="https://bambinoagency.com/about">About</a></li>
+      <li><a href="https://bambinoagency.com/blog">Blog</a></li>
+      <li><a href="https://bambinoagency.com/pricing">Pricing</a></li>
+      <li><a href="https://bambinoagency.com/contact" class="nav-cta">Get a Free Audit &rarr;</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Open menu" id="hamburgerBtn">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+  <button class="mobile-close" id="mobileClose" aria-label="Close menu">&times;</button>
+  <a href="https://bambinoagency.com/services" onclick="closeMobileMenu()">Services</a>
+  <a href="https://bambinoagency.com/industries" onclick="closeMobileMenu()">Industries</a>
+  <a href="https://bambinoagency.com/about" onclick="closeMobileMenu()">About</a>
+  <a href="https://bambinoagency.com/blog" onclick="closeMobileMenu()">Blog</a>
+  <a href="https://bambinoagency.com/pricing" onclick="closeMobileMenu()">Pricing</a>
+  <a href="https://bambinoagency.com/contact" onclick="closeMobileMenu()" style="color: var(--orange);">Get a Free Audit &rarr;</a>
+</div>
+
+<main>
+  <div class="article-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="https://bambinoagency.com">Home</a>
+        <span>&rsaquo;</span>
+        <a href="https://bambinoagency.com/blog">Blog</a>
+        <span>&rsaquo;</span>
+        <span>What Is RevOps?</span>
+      </nav>
+      <span class="section-label">RevOps &amp; CRM</span>
+      <h1 style="font-family: var(--font-heading); font-size: clamp(2rem,4.5vw,3.2rem); line-height: 1.15; margin-bottom: 1.5rem; max-width: 24ch;">What Is RevOps? The Complete UK B2B Guide for 2026</h1>
+      <div class="byline">
+        <div class="byline-avatar">TH</div>
+        <div class="byline-text">
+          <strong>Tom H., Head of RevOps &mdash; HubSpot Diamond Certified</strong>
+          Updated: April 2026 &bull; 10 min read
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding-bottom: 5rem;">
+    <div class="article-layout">
+      <article class="article-body">
+
+        <p>If your sales, marketing, and customer success teams are working from different data, chasing different goals, and blaming each other when revenue targets are missed &mdash; you have a RevOps problem. Revenue Operations, or RevOps, is the discipline that fixes this. It aligns your people, your processes, and your technology around a single source of truth, so every revenue-generating function pulls in the same direction.</p>
+
+        <p>In 2026, RevOps is no longer a buzzword reserved for US tech unicorns. It is becoming standard practice for ambitious UK B2B businesses &mdash; from Manchester SaaS companies to London professional services firms. According to Forrester (2024), businesses with aligned revenue operations see <strong>19% faster revenue growth</strong> than their peers. Companies with mature RevOps functions report <strong>36% higher win rates</strong> (SiriusDecisions). And Bambino&rsquo;s own client data shows that aligned teams achieve <strong>38% higher close rates</strong> within 12 months of implementing RevOps principles.</p>
+
+        <p>This guide covers everything UK B2B leaders need to know: what RevOps actually is, why it matters, how to build it, which tools to use, and when to bring in outside help.</p>
+
+        <div class="highlight-box">
+          <p><strong>Key stat:</strong> RevOps adoption in the UK grew <strong>67% year-on-year</strong> in 2025 (Bambino internal data, 2025). The average UK B2B sales cycle is <strong>102 days</strong> (HubSpot UK State of Sales, 2025) &mdash; a well-implemented RevOps function can reduce that significantly by removing friction between handoff stages.</p>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="stat-number">19%</div>
+            <div class="stat-label">Faster revenue growth with aligned RevOps (Forrester, 2024)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">36%</div>
+            <div class="stat-label">Higher win rates for RevOps-mature companies (SiriusDecisions)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">102</div>
+            <div class="stat-label">Average UK B2B sales cycle length in days (HubSpot, 2025)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">38%</div>
+            <div class="stat-label">Higher close rates for Bambino clients with RevOps (2025)</div>
+          </div>
+        </div>
+
+        <h2 id="what-is">What Is RevOps? (Simple Definition)</h2>
+        <p>Revenue Operations (RevOps) is the strategic function that unifies sales, marketing, and customer success operations under a single framework. Instead of each team managing its own data, tools, and processes in isolation, RevOps creates a shared operating system for revenue &mdash; one set of metrics, one source of CRM truth, one aligned reporting structure.</p>
+
+        <p>The simplest way to think about it: RevOps is what happens when you stop treating your revenue teams as separate departments and start treating revenue generation as one end-to-end process that every team contributes to.</p>
+
+        <p>In practical terms, a RevOps function typically owns:</p>
+        <ul>
+          <li>CRM strategy, configuration, and hygiene (usually HubSpot or Salesforce)</li>
+          <li>Revenue forecasting and pipeline management</li>
+          <li>Lead-to-close process design and handoff protocols</li>
+          <li>Marketing and sales attribution modelling</li>
+          <li>Tech stack ownership and integration</li>
+          <li>Cross-functional reporting and KPI alignment</li>
+          <li>Incentive and compensation design</li>
+        </ul>
+
+        <p>At Bambino, our <a href="https://bambinoagency.com/services/revops">RevOps service</a> covers all of the above for UK B2B businesses, typically starting with a full revenue audit and CRM health check before building out the operational infrastructure.</p>
+
+        <h2 id="why-uk">Why UK B2B Teams Are Adopting RevOps in 2026</h2>
+        <p>RevOps adoption in the UK is accelerating for three reasons: the rise of complex buying committees, the explosion of martech data, and increasing pressure on cost per acquisition.</p>
+
+        <p><strong>Complex buying committees.</strong> The average UK B2B deal now involves 6&ndash;10 stakeholders (Gartner, 2025). A prospect might be researched by a junior analyst, evaluated by a head of finance, and signed off by a CEO. Marketing, sales development, and account executives all touch this journey. Without RevOps, each touchpoint is fragmented; with RevOps, every interaction is tracked, attributed, and coordinated.</p>
+
+        <p><strong>Data explosion.</strong> UK B2B companies now use an average of 15+ martech tools. HubSpot for CRM. LinkedIn for prospecting. Salesloft or Outreach for sequences. Google Analytics for traffic. Hotjar for behaviour. Without a RevOps function to govern this stack, data becomes siloed and contradictory. Marketing claims 200 MQLs; sales says only 20 were any good. RevOps resolves these arguments by defining shared definitions and data flows.</p>
+
+        <p><strong>CAC pressure.</strong> As UK digital advertising costs have risen sharply &mdash; Google Ads CPCs up 23% year-on-year in 2025 &mdash; every pound of pipeline needs to be worked harder. RevOps introduces the rigour to identify exactly where revenue leaks out of the funnel, and to fix it systematically rather than anecdotally.</p>
+
+        <p>Our <a href="https://bambinoagency.com/services/growth-marketing">growth marketing service</a> works hand-in-glove with RevOps: demand generation brings the pipeline in; RevOps ensures it converts efficiently.</p>
+
+        <h2 id="pillars">The 3 Pillars of Revenue Operations (People, Process, Technology)</h2>
+
+        <h3>Pillar 1: People</h3>
+        <p>RevOps is fundamentally an organisational change. It requires either a dedicated RevOps function (a RevOps Manager, Director, or VP) or a cross-functional team with a clearly accountable RevOps lead. The key is that someone owns the revenue system end-to-end, rather than individual team leads each owning a fragment of it.</p>
+
+        <p>For businesses with fewer than 20 revenue-generating employees, this is often a single RevOps Manager who sits across sales and marketing. For businesses with 50+ employees, a small RevOps team becomes necessary: typically one person owning CRM and data, one owning process and enablement, and a senior leader owning strategy and cross-functional alignment.</p>
+
+        <h3>Pillar 2: Process</h3>
+        <p>The process layer of RevOps defines how revenue moves through your organisation. This includes:</p>
+        <ul>
+          <li><strong>Lead scoring and qualification frameworks</strong> &mdash; what makes an MQL, an SQL, and a closed-won deal</li>
+          <li><strong>Handoff protocols</strong> &mdash; the exact moment and method by which marketing hands a lead to sales, and sales hands a customer to success</li>
+          <li><strong>Pipeline stage definitions</strong> &mdash; agreed entry and exit criteria for every CRM stage</li>
+          <li><strong>Forecasting methodology</strong> &mdash; how the business predicts revenue with appropriate confidence intervals</li>
+          <li><strong>Win/loss analysis</strong> &mdash; systematic review of why deals are won and lost, feeding back into product, pricing, and positioning</li>
+        </ul>
+
+        <h3>Pillar 3: Technology</h3>
+        <p>The technology pillar is where most UK B2B businesses start, because it is the most visible. A well-configured CRM is the foundation of RevOps. But the stack also includes:</p>
+        <ul>
+          <li><strong>Marketing automation</strong> &mdash; HubSpot Marketing Hub, Pardot, or Marketo</li>
+          <li><strong>Sales engagement</strong> &mdash; Salesloft, Outreach, or HubSpot Sales Hub sequences</li>
+          <li><strong>Revenue intelligence</strong> &mdash; Gong, Clari, or Chorus for call and deal analytics</li>
+          <li><strong>Data enrichment</strong> &mdash; Cognism, Clearbit, or Apollo for contact and account data</li>
+          <li><strong>Reporting and BI</strong> &mdash; HubSpot custom dashboards, Looker Studio, or Tableau</li>
+        </ul>
+
+        <p>Our <a href="https://bambinoagency.com/services/hubspot">HubSpot service</a> and <a href="https://bambinoagency.com/services/salesforce-marketing-cloud">Salesforce Marketing Cloud service</a> sit within this pillar &mdash; configuring the technology layer so it actually serves the RevOps strategy rather than creating more noise.</p>
+
+        <h2 id="vs">RevOps vs Sales Ops vs Marketing Ops: What&rsquo;s the Difference?</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Function</th>
+              <th>Scope</th>
+              <th>Primary Owner</th>
+              <th>Main Focus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sales Ops</td>
+              <td>Sales team only</td>
+              <td>VP of Sales</td>
+              <td>Pipeline, quota, CRM hygiene, forecasting</td>
+            </tr>
+            <tr>
+              <td>Marketing Ops</td>
+              <td>Marketing team only</td>
+              <td>CMO / Head of Marketing</td>
+              <td>Campaign execution, lead management, attribution</td>
+            </tr>
+            <tr>
+              <td>Customer Success Ops</td>
+              <td>CS team only</td>
+              <td>VP of Customer Success</td>
+              <td>Onboarding, NPS, retention, upsell tracking</td>
+            </tr>
+            <tr>
+              <td>RevOps</td>
+              <td>All revenue teams</td>
+              <td>CRO / RevOps Director</td>
+              <td>End-to-end revenue alignment, shared data, unified KPIs</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>The critical distinction is accountability. In a traditional structure, when a revenue target is missed, sales blames marketing for poor leads, marketing blames sales for poor conversion, and customer success is barely in the conversation. In a RevOps structure, everyone is accountable to the same revenue number, and the operational data makes it objectively clear where the problem lies.</p>
+
+        <h2 id="90-days">How to Build a RevOps Function: The First 90 Days</h2>
+
+        <h3>Days 1&ndash;30: Audit and Align</h3>
+        <p>The first month is about diagnosis, not action. Audit your current CRM data quality. Map the actual lead-to-close journey (not the idealised version). Interview your sales, marketing, and CS leads to understand where friction occurs. Identify your three biggest revenue leaks. Document your current tech stack and which tools are actually being used versus paying for but ignoring.</p>
+
+        <p>By the end of day 30, you should have a clear picture of where revenue is being lost and a prioritised list of what to fix first.</p>
+
+        <h3>Days 31&ndash;60: Foundation Building</h3>
+        <p>Month two is about establishing the foundational infrastructure. This typically means:</p>
+        <ul>
+          <li>Cleaning and restructuring your CRM (for most UK businesses, this means HubSpot or Salesforce)</li>
+          <li>Defining and documenting lead lifecycle stages with agreed entry criteria</li>
+          <li>Setting up a unified revenue dashboard that all teams can see</li>
+          <li>Establishing a regular cross-functional revenue meeting (weekly pipeline review, monthly revenue retrospective)</li>
+          <li>Implementing basic attribution modelling so marketing spend is tied to pipeline and closed revenue</li>
+        </ul>
+
+        <h3>Days 61&ndash;90: Optimise and Scale</h3>
+        <p>With foundations in place, month three focuses on optimisation. Introduce lead scoring based on real behavioural data, not guesswork. Build automated handoff workflows so hot leads reach sales within minutes, not days. Set up win/loss analysis. Create a formal RevOps cadence: weekly operational metrics, monthly performance reviews, quarterly strategic planning sessions.</p>
+
+        <p>By day 90, your team should have a live revenue dashboard, clean CRM data, documented processes, and the first set of meaningful comparative metrics. This is when RevOps starts delivering visible ROI.</p>
+
+        <p>Bambino&rsquo;s <a href="https://bambinoagency.com/services/revops">RevOps agency service</a> follows exactly this 90-day framework. If you&rsquo;d prefer to get started with a professional audit first, <a href="https://bambinoagency.com/contact">request a free RevOps audit here</a>.</p>
+
+        <h2 id="metrics">RevOps Metrics: 7 KPIs Every UK B2B Team Should Track</h2>
+        <p>One of the most valuable outputs of a RevOps function is a single, agreed set of metrics that all revenue teams report against. Here are the seven we recommend for UK B2B businesses:</p>
+
+        <ol>
+          <li>
+            <strong>Revenue Attainment vs. Target</strong> &mdash; The most fundamental metric: are you hitting your number? RevOps makes this real-time, not just a quarterly reckoning. Track monthly and quarterly attainment by segment, channel, and team.
+          </li>
+          <li>
+            <strong>Pipeline Coverage Ratio</strong> &mdash; How much qualified pipeline do you have relative to your target? A healthy coverage ratio for UK B2B is typically 3&ndash;4x your quarterly target. Below 2.5x is a warning sign.
+          </li>
+          <li>
+            <strong>Win Rate by Stage and Source</strong> &mdash; Not just overall win rate, but win rate broken down by where the lead came from (inbound, outbound, partner, referral) and by pipeline stage. This reveals which channels produce the best opportunities and where deals most commonly stall.
+          </li>
+          <li>
+            <strong>Average Deal Size and Velocity</strong> &mdash; Deal velocity (the speed at which opportunities move through your pipeline) is often more telling than raw win rate. A 20% win rate with fast velocity can outperform a 30% win rate with slow, bloated pipeline.
+          </li>
+          <li>
+            <strong>Sales Cycle Length</strong> &mdash; The UK average is 102 days (HubSpot, 2025). Benchmark yours against your industry and set targets to reduce it. Every week shaved off the average cycle directly improves revenue predictability.
+          </li>
+          <li>
+            <strong>Customer Acquisition Cost (CAC)</strong> &mdash; Total sales and marketing spend divided by the number of new customers acquired. Track by channel and segment. Declining CAC with stable or growing deal size is the goal.
+          </li>
+          <li>
+            <strong>Net Revenue Retention (NRR)</strong> &mdash; For SaaS and subscription businesses, NRR is often more important than new logo ARR. NRR above 110% means your existing customer base is growing, even before you acquire a single new customer. RevOps ensures customer success is driving this metric proactively.
+          </li>
+        </ol>
+
+        <h2 id="tools">RevOps Tools: HubSpot vs Salesforce for UK Businesses</h2>
+        <p>The two dominant CRM platforms for UK B2B RevOps are HubSpot and Salesforce. Choosing between them is one of the most consequential technology decisions a growing business can make. For a comprehensive breakdown, read our full <a href="https://bambinoagency.com/blog/hubspot-vs-salesforce-uk">HubSpot vs Salesforce UK guide</a>. Here is the summary:</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Factor</th>
+              <th>HubSpot</th>
+              <th>Salesforce</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Best for</td>
+              <td>SMEs and scaling businesses (10&ndash;500 employees)</td>
+              <td>Enterprise with complex customisation needs (200+ employees)</td>
+            </tr>
+            <tr>
+              <td>UK pricing</td>
+              <td>From &pound;800/month (Professional) to &pound;3,000+/month (Enterprise)</td>
+              <td>From &pound;2,000/month typically with admin overhead</td>
+            </tr>
+            <tr>
+              <td>Implementation</td>
+              <td>4&ndash;12 weeks for full RevOps setup</td>
+              <td>3&ndash;9 months for enterprise implementation</td>
+            </tr>
+            <tr>
+              <td>Reporting</td>
+              <td>Excellent native dashboards; limited advanced BI</td>
+              <td>Highly customisable; requires admin expertise</td>
+            </tr>
+            <tr>
+              <td>Marketing + Sales unity</td>
+              <td>Native &mdash; same database, no integration required</td>
+              <td>Requires Pardot/Marketing Cloud integration</td>
+            </tr>
+            <tr>
+              <td>UK support</td>
+              <td>HubSpot Diamond Partners like Bambino for local expertise</td>
+              <td>Salesforce ISV partner network</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>For most UK B2B businesses with fewer than 300 employees, HubSpot is the right choice. Its unified data model &mdash; where marketing, sales, and service all live in the same platform &mdash; is the single greatest enabler of RevOps. You do not need expensive integrations or a Salesforce admin on staff. Our <a href="https://bambinoagency.com/services/hubspot">HubSpot implementation service</a> gets businesses fully operational in 4&ndash;8 weeks.</p>
+
+        <p>For enterprise businesses with complex territory management, advanced CPQ (Configure, Price, Quote), or deep ERP integrations, Salesforce remains the gold standard. Bambino&rsquo;s <a href="https://bambinoagency.com/services/salesforce-marketing-cloud">Salesforce Marketing Cloud service</a> helps enterprise clients align their marketing automation with Salesforce CRM for full-funnel RevOps.</p>
+
+        <h2 id="mistakes">Common RevOps Mistakes (And How to Avoid Them)</h2>
+
+        <h3>Mistake 1: Starting with Technology, Not Strategy</h3>
+        <p>The most common RevOps mistake UK businesses make is buying a new CRM or martech tool before defining their revenue processes. Technology should serve a defined process. If your lead handoff is broken, a new CRM will not fix it &mdash; it will just automate the broken process at scale. Start with process definition, then select and configure technology to support it.</p>
+
+        <h3>Mistake 2: Misaligned Definitions</h3>
+        <p>Ask your marketing team and your sales team to define a &ldquo;qualified lead&rdquo; separately. You will almost certainly get different answers. This definitional misalignment &mdash; what counts as an MQL, an SQL, a pipeline stage &mdash; is the root cause of most cross-functional revenue conflict. RevOps resolves this by creating documented, agreed definitions that live in the CRM as enforceable stage criteria.</p>
+
+        <h3>Mistake 3: Treating RevOps as a One-Time Project</h3>
+        <p>RevOps is an ongoing operational discipline, not a six-month project. Many UK businesses implement RevOps with a consultant, then allow the processes and data standards to decay over the following year. The answer is either a dedicated internal RevOps hire or an ongoing retainer with a RevOps agency &mdash; someone whose job it is to continuously optimise the revenue system, not just set it up once.</p>
+
+        <h3>Mistake 4: Ignoring Customer Success</h3>
+        <p>RevOps is not just about acquiring new customers. Net Revenue Retention &mdash; the growth of your existing customer base through expansion, upsell, and reduced churn &mdash; is often where the most efficient revenue comes from. Businesses that implement RevOps for sales and marketing but leave customer success in isolation are leaving significant revenue on the table. True RevOps encompasses the full customer lifecycle.</p>
+
+        <h3>Mistake 5: Neglecting <a href="https://bambinoagency.com/services/lead-generation">Lead Generation</a> Quality</h3>
+        <p>RevOps can optimise conversion at every stage, but it cannot fix a fundamentally broken top-of-funnel. If your <a href="https://bambinoagency.com/services/lead-generation">lead generation</a> is producing large volumes of poorly qualified contacts, RevOps will reveal this clearly &mdash; but the fix is upstream, in your targeting and demand generation strategy. RevOps and demand generation must be co-designed.</p>
+
+        <h2 id="agency">When Should a UK Business Hire a RevOps Agency?</h2>
+        <p>Not every business needs a full-time RevOps team from day one. Here is a practical guide to when a RevOps agency makes more sense than an internal hire:</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Situation</th>
+              <th>Internal Hire</th>
+              <th>RevOps Agency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Team size</td>
+              <td>30+ revenue staff</td>
+              <td>Under 30 revenue staff</td>
+            </tr>
+            <tr>
+              <td>CRM maturity</td>
+              <td>Already using Salesforce at enterprise scale</td>
+              <td>On HubSpot or just starting out</td>
+            </tr>
+            <tr>
+              <td>Budget</td>
+              <td>&pound;70,000+ for a RevOps Manager</td>
+              <td>&pound;2,000&ndash;&pound;6,000/month for full-service</td>
+            </tr>
+            <tr>
+              <td>Speed to value</td>
+              <td>3&ndash;6 months to hire and onboard</td>
+              <td>Operational in weeks</td>
+            </tr>
+            <tr>
+              <td>Specialist depth</td>
+              <td>One person&rsquo;s expertise</td>
+              <td>Team of HubSpot, Salesforce, data, and strategy specialists</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>A RevOps agency like Bambino also brings cross-sector experience that an internal hire cannot replicate. Our team has implemented RevOps for UK SaaS companies, professional services firms, B2B manufacturers, and financial services businesses &mdash; and the patterns and pitfalls transfer across industries in ways that compress your learning curve dramatically.</p>
+
+        <p>If any of the following apply, it is time to talk to a RevOps specialist:</p>
+        <ul>
+          <li>Your sales and marketing teams regularly disagree on pipeline quality or lead quantity</li>
+          <li>You cannot reliably forecast next quarter&rsquo;s revenue within a &plusmn;15% range</li>
+          <li>Your CRM data is inconsistent or not trusted by the leadership team</li>
+          <li>You are spending on demand generation but cannot attribute it to closed revenue</li>
+          <li>Your sales cycle is longer than 90 days with no clear plan to reduce it</li>
+          <li>You are planning a fundraise and need clean, credible revenue metrics</li>
+        </ul>
+
+        <p><a href="https://bambinoagency.com/contact">Request a free RevOps audit from Bambino</a> &mdash; we will review your current CRM, pipeline health, and revenue processes and give you a clear picture of where you stand and what to prioritise.</p>
+
+        <h2 id="faq">Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What is RevOps? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>RevOps (Revenue Operations) is the strategic alignment of sales, marketing, and customer success teams under a unified operational framework, sharing common data, processes, and technology. The goal is to remove silos, improve forecast accuracy, and accelerate revenue growth. It is increasingly adopted by UK B2B companies looking to scale more efficiently.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">How is RevOps different from Sales Ops? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Sales Ops focuses exclusively on the sales team: pipeline management, quota setting, forecasting, and CRM hygiene. RevOps takes a broader view, aligning sales with marketing and customer success so that every revenue-generating function shares the same data, processes, and KPIs. RevOps includes Sales Ops within it but extends across the entire revenue cycle.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Do I need a dedicated RevOps hire or can I use an agency? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Both are valid approaches. A dedicated RevOps hire makes sense when your team exceeds 20 people and you have complex CRM and pipeline workflows. For businesses under that threshold, or those looking to build a RevOps function quickly without the overhead of a full-time salary, a RevOps agency like Bambino can deliver the same capability at a fraction of the cost, typically &pound;2,000&ndash;&pound;5,000 per month.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What is the best CRM for RevOps in the UK? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>HubSpot is the most popular choice for UK B2B businesses implementing RevOps for the first time, due to its unified data model, ease of use, and native alignment between marketing, sales, and service hubs. Salesforce is preferred by larger enterprises with complex customisation needs. Both can power a world-class RevOps function when configured correctly.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">How long does it take to see results from RevOps? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Most UK B2B businesses see meaningful improvements in pipeline visibility and forecast accuracy within 60&ndash;90 days of implementing RevOps. Revenue impact (higher win rates, shorter sales cycles) typically becomes measurable at the 3&ndash;6 month mark. Full cultural and operational transformation generally takes 9&ndash;12 months.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">How much does RevOps cost in the UK? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>A full-time RevOps Manager in the UK earns &pound;55,000&ndash;&pound;85,000 per year. A RevOps Director commands &pound;90,000&ndash;&pound;130,000. Outsourcing to a RevOps agency like Bambino typically costs &pound;2,000&ndash;&pound;6,000 per month depending on scope, which includes strategy, HubSpot or Salesforce configuration, reporting, and ongoing optimisation.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What RevOps metrics should I track? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>The seven core RevOps KPIs are: (1) Revenue attainment vs. target, (2) Pipeline coverage ratio, (3) Win rate by stage and source, (4) Average deal size and velocity, (5) Sales cycle length, (6) Customer acquisition cost (CAC), and (7) Net Revenue Retention (NRR). Tracking all seven across a shared dashboard gives leadership a complete view of revenue health.</p></div>
+        </div>
+
+        <div style="background: var(--soft); border-radius: var(--radius); padding: 2.5rem; text-align: center; margin-top: 3rem;">
+          <h2 style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 1rem; margin-top: 0;">Ready to Align Your Revenue Teams?</h2>
+          <p style="color: var(--muted); margin-bottom: 1.5rem; font-size: 1rem;">Bambino&rsquo;s RevOps service helps UK B2B businesses align sales, marketing, and customer success around a single revenue system. Start with a free audit.</p>
+          <a href="https://bambinoagency.com/services/revops" class="btn-orange">Explore RevOps Services &rarr;</a>
+        </div>
+
+      </article>
+
+      <aside class="article-sidebar">
+        <div class="sidebar-card">
+          <h3>Table of Contents</h3>
+          <nav class="toc-list" aria-label="Table of contents">
+            <a href="#what-is">What Is RevOps?</a>
+            <a href="#why-uk">Why UK Teams Are Adopting RevOps</a>
+            <a href="#pillars">The 3 Pillars of RevOps</a>
+            <a href="#vs">RevOps vs Sales Ops vs Marketing Ops</a>
+            <a href="#90-days">The First 90 Days</a>
+            <a href="#metrics">7 RevOps KPIs to Track</a>
+            <a href="#tools">HubSpot vs Salesforce</a>
+            <a href="#mistakes">Common RevOps Mistakes</a>
+            <a href="#agency">When to Hire a RevOps Agency</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+        </div>
+        <div class="cta-box">
+          <h3>Free RevOps Audit</h3>
+          <p>We&rsquo;ll review your CRM, pipeline health, and revenue processes &mdash; and tell you exactly where to focus first.</p>
+          <a href="https://bambinoagency.com/contact" class="btn-orange" style="width: 100%; justify-content: center; font-size: 0.88rem;">Get Free Audit</a>
+        </div>
+        <div class="sidebar-card" style="margin-top: 1.5rem;">
+          <h3>Related Articles &amp; Services</h3>
+          <div class="toc-list">
+            <a href="https://bambinoagency.com/blog/hubspot-vs-salesforce-uk">HubSpot vs Salesforce UK</a>
+            <a href="https://bambinoagency.com/services/hubspot">HubSpot Agency UK</a>
+            <a href="https://bambinoagency.com/services/revops">RevOps Agency UK</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer style="background: var(--green); color: rgba(255,255,255,0.7); padding: 4rem 0 2rem;">
+  <div class="container">
+    <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem;">
+      <div>
+        <div style="font-family: var(--font-heading); font-size: 1.8rem; color: #fff; margin-bottom: 1rem;">Bambino</div>
+        <p style="font-size: 0.88rem; line-height: 1.7; max-width: 28ch;">Manchester&rsquo;s AI-native digital marketing agency. SEO, paid ads, RevOps, and AI automations for UK businesses.</p>
+        <p style="font-size: 0.85rem; margin-top: 1rem;"><a href="tel:+441610000000" style="color: rgba(255,255,255,0.7);">+44 161 000 0000</a></p>
+        <p style="font-size: 0.85rem;"><a href="mailto:hello@bambinoagency.com" style="color: rgba(255,255,255,0.7);">hello@bambinoagency.com</a></p>
+      </div>
+      <div>
+        <h3 style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 1.2rem;">Services</h3>
+        <ul style="display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.88rem;">
+          <li><a href="https://bambinoagency.com/services/seo" style="color: rgba(255,255,255,0.7);">SEO</a></li>
+          <li><a href="https://bambinoagency.com/services/google-ads" style="color: rgba(255,255,255,0.7);">Google Ads</a></li>
+          <li><a href="https://bambinoagency.com/services/revops" style="color: rgba(255,255,255,0.7);">RevOps</a></li>
+          <li><a href="https://bambinoagency.com/services/hubspot" style="color: rgba(255,255,255,0.7);">HubSpot</a></li>
+          <li><a href="https://bambinoagency.com/services/ai-automations" style="color: rgba(255,255,255,0.7);">AI Automations</a></li>
+          <li><a href="https://bambinoagency.com/services/growth-marketing" style="color: rgba(255,255,255,0.7);">Growth Marketing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 1.2rem;">Company</h3>
+        <ul style="display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.88rem;">
+          <li><a href="https://bambinoagency.com/about" style="color: rgba(255,255,255,0.7);">About Us</a></li>
+          <li><a href="https://bambinoagency.com/blog" style="color: rgba(255,255,255,0.7);">Blog</a></li>
+          <li><a href="https://bambinoagency.com/industries" style="color: rgba(255,255,255,0.7);">Industries</a></li>
+          <li><a href="https://bambinoagency.com/pricing" style="color: rgba(255,255,255,0.7);">Pricing</a></li>
+          <li><a href="https://bambinoagency.com/contact" style="color: rgba(255,255,255,0.7);">Contact</a></li>
+          <li style="margin-top:0.8rem;padding-top:0.8rem;border-top:1px solid rgba(255,255,255,0.1)"><a href="https://bambinoagency.com/us" style="color: rgba(255,255,255,0.7);">United States &rarr;</a></li>
+          <li><a href="https://bambinoagency.com/ca" style="color: rgba(255,255,255,0.7);">Canada &rarr;</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 1.2rem;">Industries</h3>
+        <ul style="display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.88rem;">
+          <li><a href="https://bambinoagency.com/industries/ecommerce" style="color: rgba(255,255,255,0.7);">Ecommerce</a></li>
+          <li><a href="https://bambinoagency.com/industries/legal" style="color: rgba(255,255,255,0.7);">Legal</a></li>
+          <li><a href="https://bambinoagency.com/industries/dental" style="color: rgba(255,255,255,0.7);">Dental</a></li>
+          <li><a href="https://bambinoagency.com/industries/property" style="color: rgba(255,255,255,0.7);">Property</a></li>
+          <li><a href="https://bambinoagency.com/industries/finance" style="color: rgba(255,255,255,0.7);">Finance</a></li>
+          <li><a href="https://bambinoagency.com/industries/saas" style="color: rgba(255,255,255,0.7);">SaaS</a></li>
+          <li><a href="https://bambinoagency.com/industries/hospitality" style="color: rgba(255,255,255,0.7);">Hospitality</a></li>
+        </ul>
+      </div>
+    </div>
+    <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; font-size: 0.82rem; color: rgba(255,255,255,0.35);">
+      &copy; 2026 Bambino Digital Marketing Agency Ltd. Registered in England &amp; Wales. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileClose = document.getElementById('mobileClose');
+  hamburgerBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
+  mobileClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+  function closeMobileMenu() { mobileMenu.classList.remove('open'); }
+
+  // Mega menu
+  (function() {
+    var megaParent = document.querySelector('.nav-has-mega');
+    var megaTrigger = document.querySelector('.nav-mega-toggle');
+    if (!megaParent || !megaTrigger) return;
+    megaTrigger.addEventListener('click', function(e) {
+      e.preventDefault();
+      var open = megaParent.classList.toggle('active');
+      megaTrigger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.addEventListener('click', function(e) {
+      if (!megaParent.contains(e.target)) {
+        megaParent.classList.remove('active');
+        megaTrigger.setAttribute('aria-expanded', 'false');
+      }
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        megaParent.classList.remove('active');
+        megaTrigger.setAttribute('aria-expanded', 'false');
+      }
+    });
+  })();
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      document.querySelectorAll('.faq-question').forEach(b => b.setAttribute('aria-expanded', 'false'));
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
+</body>
+</html>
