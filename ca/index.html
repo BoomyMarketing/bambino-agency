@@ -558,6 +558,7 @@
     })();
     hamburger.addEventListener('click', () => { mobileMenu.classList.add('open'); document.body.style.overflow = 'hidden'; });
     mobileClose.addEventListener('click', closeMobileMenu);
+    window.addEventListener('resize', () => { if (window.innerWidth > 960) closeMobileMenu(); });
   </script>
 </body>
 </html>

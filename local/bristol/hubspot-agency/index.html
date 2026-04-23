@@ -682,6 +682,7 @@
     const mobileClose = document.getElementById('mobileClose');
     hamburger.addEventListener('click', () => { mobileMenu.classList.add('open'); hamburger.setAttribute('aria-expanded','true'); });
     mobileClose.addEventListener('click', closeMobileMenu);
+    window.addEventListener('resize', () => { if (window.innerWidth > 960) closeMobileMenu(); });
     function closeMobileMenu() { mobileMenu.classList.remove('open'); hamburger.setAttribute('aria-expanded','false'); }
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMobileMenu(); });
 

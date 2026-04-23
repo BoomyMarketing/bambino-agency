@@ -851,6 +851,7 @@
 
   hamburgerBtn.addEventListener('click', openMobileMenu);
   mobileClose.addEventListener('click', closeMobileMenu);
+    window.addEventListener('resize', () => { if (window.innerWidth > 960) closeMobileMenu(); });
 
   // ── MEGA MENU ──
   const megaParent = document.querySelector('.nav-has-mega');

@@ -2035,6 +2035,7 @@
 
         if (hamburger) hamburger.addEventListener('click', openMobileMenu);
         if (mobileClose) mobileClose.addEventListener('click', closeMobileMenu);
+    window.addEventListener('resize', () => { if (window.innerWidth > 960) closeMobileMenu(); });
         // Close on Escape
         document.addEventListener('keydown', function (e) {
             if (e.key === 'Escape') closeMobileMenu();

@@ -888,6 +888,7 @@
     hamburgerBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
     mobileClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
     function closeMobileMenu() { mobileMenu.classList.remove('open'); }
+    window.addEventListener('resize', () => { if (window.innerWidth > 960) closeMobileMenu(); });
     // Mega menu
     (function() {
       var megaParent = document.querySelector('.nav-has-mega');
