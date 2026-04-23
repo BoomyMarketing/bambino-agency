@@ -171,8 +171,8 @@
     .btn-white:hover { border-color: rgba(255,255,255,0.8); color: #fff; background: rgba(255,255,255,0.05); }
 
     /* FOOTER */
-    #footer { background: var(--green); border-top: 1px solid rgba(255,255,255,0.07); padding: 4rem 0 2rem; }
-    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+    #footer { background: var(--green); border-top: 1px solid rgba(255,255,255,0.07); padding: 4.5rem 0 2rem; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; padding-top: 0.5rem; }
     .footer-brand-logo { font-family: var(--font-heading); font-size: 2rem; color: #fff; margin-bottom: 0.8rem; }
     .footer-brand-desc { font-size: 0.88rem; color: rgba(255,255,255,0.55); line-height: 1.7; margin-bottom: 1.5rem; max-width: 36ch; }
     .footer-socials { display: flex; gap: 0.8rem; }
@@ -216,6 +216,7 @@
         <a href="https://bambinoagency.com/" class="nav-logo" aria-label="Bambino Agency &mdash; Home">Bambino</a>
         <ul class="nav-links" role="list">
           <li><a href="https://bambinoagency.com/services">Services</a></li>
+          <li><a href="https://bambinoagency.com/industries">Industries</a></li>
           <li><a href="https://bambinoagency.com/about">About</a></li>
           <li><a href="https://bambinoagency.com/blog">Blog</a></li>
           <li><a href="https://bambinoagency.com/pricing">Pricing</a></li>
@@ -231,8 +232,8 @@
   <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
     <button class="mobile-close" id="mobileClose" aria-label="Close menu">&times;</button>
     <a href="https://bambinoagency.com/services" onclick="closeMobileMenu()">Services</a>
+    <a href="https://bambinoagency.com/industries" onclick="closeMobileMenu()">Industries</a>
     <a href="https://bambinoagency.com/about" onclick="closeMobileMenu()">About</a>
-    <a href="https://bambinoagency.com/blog" onclick="closeMobileMenu()">Blog</a>
     <a href="https://bambinoagency.com/blog" onclick="closeMobileMenu()">Blog</a>
     <a href="https://bambinoagency.com/pricing" onclick="closeMobileMenu()">Pricing</a>
     <a href="https://bambinoagency.com/contact" onclick="closeMobileMenu()" style="color: var(--orange);">Get a Free Audit &rarr;</a>
