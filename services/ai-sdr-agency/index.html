@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI SDR Agency | AI Sales Development Setup & Automation | Bambino</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="description" content="AI SDR setup and management agency. Hybrid AI sales development systems — AI-powered prospecting, personalised outreach, and lead qualification for B2B businesses in Canada, UK, and USA. Free discovery call." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://bambinoagency.com/services/ai-sdr-agency" />
+  <link rel="alternate" hreflang="en" href="https://bambinoagency.com/services/ai-sdr-agency" />
+  <link rel="alternate" hreflang="x-default" href="https://bambinoagency.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AI SDR Agency | AI Sales Development Representative Setup | Bambino" />
+  <meta property="og:description" content="Hybrid AI SDR systems — AI-powered prospecting, outreach, and lead qualification. Built for B2B businesses across Canada, UK, and USA." />
+  <meta property="og:url" content="https://bambinoagency.com/services/ai-sdr-agency" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:image" content="https://bambinoagency.com/img/og-default.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":["LocalBusiness","MarketingAgency"],"name":"Bambino","url":"https://bambinoagency.com","logo":"https://bambinoagency.com/img/og-default.jpg","description":"AI SDR agency offering hybrid AI sales development representative setup and management. AI-powered prospecting, outreach, and lead qualification for B2B businesses globally.","address":{"@type":"PostalAddress","addressLocality":"Manchester","addressCountry":"GB"},"areaServed":{"@type":"AdministrativeArea","name":"Canada"},"priceRange":"$$$","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"127","bestRating":"5"},"datePublished":"2026-04-25","dateModified":"2026-04-25"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://bambinoagency.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://bambinoagency.com/services"},{"@type":"ListItem","position":3,"name":"AI SDR Agency","item":"https://bambinoagency.com/services/ai-sdr-agency"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is an AI SDR?","acceptedAnswer":{"@type":"Answer","text":"An AI SDR (AI Sales Development Representative) is an AI-powered system that automates the top-of-funnel sales development tasks traditionally done by human SDRs — prospect research, personalised outreach, multi-channel sequencing, and initial lead qualification. In 2026, the most effective model is hybrid: AI handles the high-volume tasks (research, personalisation, sequencing) while human SDRs take over at the conversation and closing stage."}},{"@type":"Question","name":"Does fully autonomous AI SDR work?","acceptedAnswer":{"@type":"Answer","text":"The evidence in 2026 is mixed. Fully autonomous AI SDRs (where AI handles the entire outbound motion from research to close without human involvement) have not replaced human sales teams at scale. The companies that deployed tools like Artisan and 11x.ai as complete SDR replacements largely reverted to hybrid models. What does work is AI handling high-volume research and personalisation at scale, with human SDRs engaged at the point where trust and nuance matter."}},{"@type":"Question","name":"What tools do you use to build AI SDR systems?","acceptedAnswer":{"@type":"Answer","text":"We are tool-agnostic and select the right stack based on your specific requirements. Common components: Clay (data enrichment and AI personalisation), Apollo or LinkedIn Sales Navigator (prospect sourcing), Reply.io, Instantly, or Lemlist (sequencing), your CRM (HubSpot, Salesforce, GoHighLevel, Pipedrive), and AI models (OpenAI, Claude) for personalisation and qualification logic."}},{"@type":"Question","name":"How long does AI SDR setup take?","acceptedAnswer":{"@type":"Answer","text":"Standard AI SDR system setup takes 4–6 weeks from kickoff to first sequences launching: Week 1–2 for ICP definition and data stack setup, Week 2–3 for sequence copy and personalisation framework, Week 3–4 for CRM integration and compliance configuration, Week 4–6 for testing, team training, and launch."}},{"@type":"Question","name":"How do you handle CASL compliance for Canadian businesses?","acceptedAnswer":{"@type":"Answer","text":"Canadian outbound operates under CASL, which requires implied or express consent before sending commercial electronic messages. For Canadian clients, we architect AI SDR systems that prioritise LinkedIn InMail and cold calling as first-touch channels (where CASL restrictions are less stringent), and use email for follow-up sequences after initial contact consent is established. We also build proper suppression lists and unsubscribe handling into every system."}},{"@type":"Question","name":"What results should I expect from an AI SDR system?","acceptedAnswer":{"@type":"Answer","text":"Based on our implementations, realistic expectations for a hybrid AI SDR system after 90 days: 20–40% increase in prospects contacted per week, 15–30% increase in qualified meetings booked, 50–80% reduction in SDR time spent on research and data entry. Results vary significantly by industry, ICP quality, and message resonance. We set expectations in discovery based on your specific market and ICP."}},{"@type":"Question","name":"Do you offer ongoing AI SDR management?","acceptedAnswer":{"@type":"Answer","text":"Yes. Monthly management retainers cover: sequence performance monitoring, A/B message testing, ICP refinement, new segment launches, data stack maintenance, and monthly strategy reviews. Retainers start at $2,200/month USD and are month-to-month with 30 days' notice to cancel."}},{"@type":"Question","name":"Can you build AI SDR systems alongside existing sales tools?","acceptedAnswer":{"@type":"Answer","text":"Yes. We integrate AI SDR systems with your existing CRM, calendar, and communication tools — rather than replacing them. If you have HubSpot, Salesforce, or GoHighLevel already deployed, we build the AI SDR layer on top, with proper bidirectional sync so every prospect touch is logged and visible to your sales team."}}]}]}
+  </script>
+  <style>
+    :root{--bg:#F9F9F5;--orange:#FF4D00;--orange-light:#FF6B2B;--green:#034C3C;--green-light:#056650;--text:#1A1A1A;--muted:#666660;--card:#FFFFFF;--soft:#F2F2EC;--border:#E8E8E0;--font-heading:'Berkshire Swash',serif;--font-body:'Inter',sans-serif;--radius:16px;--shadow:0 4px 24px rgba(0,0,0,0.07);--shadow-lg:0 12px 48px rgba(0,0,0,0.12);--transition:0.25s cubic-bezier(0.4,0,0.2,1)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:var(--font-body);background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.6}a{text-decoration:none;color:inherit}ul{list-style:none}
+    .container{width:min(1200px,100% - 3rem);margin-inline:auto}
+    .section-label{display:inline-block;font-size:0.7rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--orange);background:rgba(255,77,0,0.08);padding:0.35rem 0.9rem;border-radius:100px;margin-bottom:1.2rem}
+    .section-title{font-family:var(--font-heading);font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--text);line-height:1.15;margin-bottom:1rem}
+    .section-sub{font-size:1rem;color:var(--muted);max-width:58ch;line-height:1.75}
+    .btn-orange{display:inline-flex;align-items:center;gap:0.5rem;background:var(--orange);color:#fff;font-family:var(--font-body);font-weight:700;font-size:0.95rem;padding:0.85rem 2rem;border-radius:100px;border:none;cursor:pointer;transition:var(--transition)}
+    .btn-orange:hover{background:var(--orange-light);transform:translateY(-2px)}
+    .btn-outline{display:inline-flex;align-items:center;gap:0.5rem;background:transparent;color:var(--text);font-family:var(--font-body);font-weight:600;font-size:0.9rem;padding:0.8rem 1.8rem;border-radius:100px;border:2px solid var(--border);cursor:pointer;transition:var(--transition)}
+    .btn-outline:hover{border-color:var(--orange);color:var(--orange)}
+    #navbar{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--bg);padding:1.1rem 0;transition:border-bottom 0.3s,box-shadow 0.3s}
+    #navbar.scrolled{border-bottom:1px solid var(--green);box-shadow:0 2px 20px rgba(3,76,60,0.08)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between}
+    .nav-logo{font-family:var(--font-heading);font-size:1.8rem;color:var(--green)}
+    .nav-links{display:flex;align-items:center;gap:2.2rem}
+    .nav-links a{font-size:0.9rem;font-weight:500;color:var(--text);transition:color var(--transition);position:relative}
+    .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:2px;background:var(--orange);transition:width var(--transition)}
+    .nav-links a:hover{color:var(--orange)}.nav-links a:hover::after{width:100%}
+    .nav-cta{background:var(--orange);color:#fff !important;font-weight:700 !important;font-size:0.88rem !important;padding:0.6rem 1.4rem;border-radius:100px}
+    .nav-cta:hover{background:var(--orange-light)}.nav-cta::after{display:none !important}
+    .nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none}
+    .nav-hamburger span{display:block;width:24px;height:2px;background:var(--text);border-radius:2px}
+    .mobile-menu{display:none;position:fixed;inset:0;background:var(--bg);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:2rem}
+    .mobile-menu a{font-size:1.4rem;font-weight:600;color:var(--text)}.mobile-menu .nav-cta{font-size:1rem !important;padding:0.8rem 2rem}
+    #hero{padding:10rem 0 6rem;background:var(--bg)}
+    .hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+    .hero-label{display:inline-block;font-size:0.7rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--orange);background:rgba(255,77,0,0.08);padding:0.35rem 0.9rem;border-radius:100px;margin-bottom:1.2rem}
+    .hero-title{font-family:var(--font-heading);font-size:clamp(2.2rem,4.5vw,3.4rem);line-height:1.1;color:var(--text);margin-bottom:1.4rem}
+    .hero-sub{font-size:1.05rem;color:var(--muted);line-height:1.75;margin-bottom:2rem;max-width:52ch}
+    .hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}
+    .hero-visual{background:var(--green);border-radius:24px;padding:2.5rem;color:#fff}
+    .proof-bar{display:flex;flex-wrap:wrap;gap:1.5rem;margin-top:2.5rem}
+    .proof-item{display:flex;align-items:center;gap:0.5rem;font-size:0.82rem;font-weight:600;color:var(--muted)}
+    .proof-item svg{color:var(--green)}
+    section{padding:5rem 0}section:nth-child(even){background:var(--soft)}
+    .market-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+    .insight-cards{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+    .insight-card{background:var(--card);border-radius:var(--radius);padding:1.5rem;box-shadow:var(--shadow);text-align:center}
+    .ins-num{display:block;font-family:var(--font-heading);font-size:2rem;color:var(--orange);line-height:1.1}
+    .ins-lbl{display:block;font-size:0.78rem;color:var(--muted);margin-top:0.3rem}
+    .eeat-box{background:var(--soft);border-left:4px solid var(--green);border-radius:8px;padding:1.2rem 1.5rem;font-size:0.92rem;color:var(--text)}
+    .svc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;margin-top:2.5rem}
+    .svc-card{background:var(--card);border-radius:var(--radius);padding:2rem;box-shadow:var(--shadow);border:1px solid var(--border);transition:var(--transition);display:block}
+    .svc-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--orange)}
+    .svc-lbl{display:inline-block;font-size:0.68rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--orange);margin-bottom:0.8rem}
+    .svc-card h3{font-family:var(--font-heading);font-size:1.15rem;color:var(--text);margin-bottom:0.6rem}
+    .svc-card p{font-size:0.88rem;color:var(--muted);line-height:1.65}
+    .why-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.5rem;margin-top:2.5rem}
+    .why-card{background:var(--card);border-radius:var(--radius);padding:2rem;box-shadow:var(--shadow)}
+    .why-card h3{font-family:var(--font-heading);font-size:1.05rem;color:var(--text);margin-bottom:0.7rem}
+    .why-card p{font-size:0.88rem;color:var(--muted);line-height:1.65}
+    .process-steps{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1.5rem;margin-top:2.5rem}
+    .step{background:var(--card);border-radius:var(--radius);padding:2rem;box-shadow:var(--shadow);text-align:center}
+    .step-num{width:48px;height:48px;border-radius:50%;background:var(--orange);color:#fff;font-family:var(--font-heading);font-size:1.3rem;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem}
+    .step h4{font-family:var(--font-heading);font-size:1rem;color:var(--text);margin-bottom:0.5rem}
+    .step p{font-size:0.85rem;color:var(--muted);line-height:1.6}
+    .results-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
+    .result-card{background:var(--green);border-radius:var(--radius);padding:2rem;color:#fff;text-align:center}
+    .result-stat{display:block;font-family:var(--font-heading);font-size:2.6rem;color:#fff;margin-bottom:0.4rem}
+    .result-desc{font-weight:700;font-size:0.9rem;margin-bottom:0.8rem}
+    .result-detail{font-size:0.82rem;color:rgba(255,255,255,0.7);line-height:1.6}
+    .ind-pills{display:flex;flex-wrap:wrap;gap:0.6rem;margin-top:1.5rem}
+    .ind-pill{background:var(--soft);border:1px solid var(--border);border-radius:100px;padding:0.4rem 1rem;font-size:0.82rem;color:var(--text)}
+    .pricing-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+    .price-card{background:var(--card);border-radius:var(--radius);padding:2rem;box-shadow:var(--shadow);border:1px solid var(--border)}
+    .price-card.featured{border:2px solid var(--orange);position:relative}
+    .price-card.featured::before{content:'Most Popular';position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--orange);color:#fff;font-size:0.7rem;font-weight:700;padding:0.25rem 0.8rem;border-radius:100px;white-space:nowrap}
+    .plan-name{font-weight:700;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);margin-bottom:0.5rem}
+    .plan-price{font-family:var(--font-heading);font-size:2.4rem;color:var(--text);line-height:1}
+    .plan-price sup{font-size:1rem;vertical-align:super}
+    .plan-period{font-size:0.78rem;color:var(--muted);margin:0.4rem 0 1rem}
+    .plan-desc{font-size:0.85rem;color:var(--muted);margin-bottom:1.2rem;line-height:1.5}
+    .plan-features{display:flex;flex-direction:column;gap:0.6rem;margin-bottom:1.5rem}
+    .plan-feature{display:flex;align-items:flex-start;gap:0.5rem;font-size:0.83rem;color:var(--text)}
+    .plan-feature svg{flex-shrink:0;margin-top:2px;color:var(--green)}
+    .faq-list{display:flex;flex-direction:column;gap:0.8rem;margin-top:2.5rem;max-width:800px;margin-inline:auto}
+    .faq-item{background:var(--card);border-radius:var(--radius);border:1px solid var(--border);overflow:hidden}
+    .faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;padding:1.2rem 1.5rem;background:none;border:none;font-family:var(--font-body);font-weight:600;font-size:0.95rem;color:var(--text);cursor:pointer;text-align:left;gap:1rem}
+    .faq-q svg{flex-shrink:0;transition:transform var(--transition)}
+    .faq-q[aria-expanded="true"] svg{transform:rotate(45deg)}
+    .faq-ans{display:none;padding:0 1.5rem 1.2rem}
+    .faq-ans p{font-size:0.9rem;color:var(--muted);line-height:1.75}
+    .related-grid{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2rem;align-items:flex-start}
+    .related-grid ul{display:flex;flex-direction:column;gap:0.6rem}
+    .related-card{background:var(--green);color:#fff;padding:0.6rem 1.2rem;border-radius:100px;font-size:0.85rem;font-weight:600;transition:var(--transition)}
+    .related-card:hover{background:var(--green-light)}
+    #cta{background:var(--green);padding:6rem 0}.cta-inner{text-align:center}
+    .cta-title{font-family:var(--font-heading);font-size:clamp(2rem,4vw,3rem);color:#fff;margin-bottom:1rem;line-height:1.15}
+    .cta-sub{font-size:1rem;color:rgba(255,255,255,0.75);max-width:52ch;margin:0 auto 2rem;line-height:1.75}
+    .btn-white{display:inline-flex;align-items:center;background:#fff;color:var(--green);font-weight:700;font-size:0.95rem;padding:1rem 2.4rem;border-radius:100px;transition:var(--transition)}
+    .btn-white:hover{background:var(--soft)}
+    footer{background:var(--green);border-top:1px solid rgba(255,255,255,0.07);padding:4.5rem 0 2rem;color:rgba(255,255,255,0.6)}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem;padding-top:0.5rem}
+    .footer-brand-logo{font-family:var(--font-heading);font-size:2rem;color:#fff;margin-bottom:1rem}
+    .footer-brand-desc{font-size:0.85rem;line-height:1.7;max-width:28ch}
+    .footer-col-title{font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);margin-bottom:1rem}
+    .footer-links{display:flex;flex-direction:column;gap:0.6rem}
+    .footer-links a{font-size:0.85rem;color:rgba(255,255,255,0.6);transition:color var(--transition)}
+    .footer-links a:hover{color:#fff}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding-top:2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:0.78rem}
+    .footer-legal{display:flex;gap:1.5rem}
+    .footer-legal a{color:rgba(255,255,255,0.4);transition:color var(--transition)}.footer-legal a:hover{color:#fff}
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity 0.6s ease,transform 0.6s ease}.reveal.visible{opacity:1;transform:none}
+    @media(max-width:900px){.hero-inner,.market-grid{grid-template-columns:1fr}.hero-visual{display:none}.pricing-grid{grid-template-columns:1fr 1fr}.results-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}.nav-links{display:none}.nav-hamburger{display:flex}}
+    @media(max-width:600px){.pricing-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.hero-ctas{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="https://bambinoagency.com" class="nav-logo" aria-label="Bambino home">Bambino</a>
+      <div class="nav-links" role="list">
+        <a href="https://bambinoagency.com/services" role="listitem">Services</a>
+        <a href="https://bambinoagency.com/ca" role="listitem">Canada</a>
+        <a href="https://bambinoagency.com/us" role="listitem">USA</a>
+        <a href="https://bambinoagency.com/pricing" role="listitem">Pricing</a>
+        <a href="https://bambinoagency.com/about" role="listitem">About</a>
+        <a href="https://bambinoagency.com/contact" class="nav-cta" role="listitem">Free Audit</a>
+      </div>
+      <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" role="dialog" aria-label="Mobile menu">
+    <a href="https://bambinoagency.com/services">Services</a>
+    <a href="https://bambinoagency.com/ca">Canada</a>
+    <a href="https://bambinoagency.com/us">USA</a>
+    <a href="https://bambinoagency.com/pricing">Pricing</a>
+    <a href="https://bambinoagency.com/about">About</a>
+    <a href="https://bambinoagency.com/contact" class="nav-cta">Free Audit</a>
+  </div>
+
+  <section id="hero" aria-labelledby="hero-heading">
+    <div class="container"><div class="hero-inner">
+      <div>
+        <nav aria-label="Breadcrumb">
+          <ol style="display:flex;gap:0.5rem;font-size:0.8rem;color:var(--muted);list-style:none;margin-bottom:1rem"><li><a href="https://bambinoagency.com/" style="color:var(--orange)">Home</a></li><li aria-hidden="true">/</li><li><a href="https://bambinoagency.com/services" style="color:var(--orange)">Services</a></li><li aria-hidden="true">/</li><li aria-current="page">AI SDR Agency</li></ol>
+        </nav>
+        <span class="hero-label">AI Sales Development</span>
+        <h1 id="hero-heading" class="hero-title">AI SDR Agency — Hybrid AI Sales Development That Actually Books Meetings</h1>
+        <p class="hero-sub">The fully autonomous AI SDR that replaces human sales reps didn't materialise in 2025. What did emerge — and what is generating real pipeline for B2B businesses in 2026 — is the hybrid AI SDR model: AI handles prospecting, personalisation, multi-channel sequencing, and initial qualification; human SDRs take over at the conversation stage. Bambino builds and manages these hybrid AI SDR systems for B2B companies across Canada, UK, and USA.</p>
+        <div class="hero-ctas">
+          <a href="https://bambinoagency.com/contact" class="btn-orange">Book a Free AI SDR Discovery Call →</a>
+          <a href="https://bambinoagency.com/pricing" class="btn-outline">View Pricing</a>
+        </div>
+        <div class="proof-bar">
+          <div class="proof-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> 4.9&#9733; average client rating</div>
+          <div class="proof-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> 97% client retention rate</div>
+          <div class="proof-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> 400+ UK, US &amp; CA clients</div>
+          <div class="proof-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Month-to-month — no lock-in</div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div style="font-family:var(--font-heading);font-size:1.1rem;color:rgba(255,255,255,0.7);margin-bottom:1.5rem">AI SDR Performance Snapshot</div>
+        <div style="display:flex;flex-direction:column;gap:1.2rem">
+            <div style="background:rgba(255,255,255,0.08);border-radius:12px;padding:1.2rem">
+              <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.5);margin-bottom:0.4rem">Avg. prospects researched/day</div>
+              <div style="font-family:var(--font-heading);font-size:2rem;color:#FF4D00">200+</div>
+              <div style="font-size:0.75rem;color:rgba(255,255,255,0.4)">AI vs. 30-40 for human SDR</div>
+            </div>
+            <div style="background:rgba(255,255,255,0.08);border-radius:12px;padding:1.2rem">
+              <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.5);margin-bottom:0.4rem">Response time to inbound leads</div>
+              <div style="font-family:var(--font-heading);font-size:2rem;color:#FF4D00">< 2 min</div>
+              <div style="font-size:0.75rem;color:rgba(255,255,255,0.4)">AI-triggered instant follow-up</div>
+            </div>
+            <div style="background:rgba(255,255,255,0.08);border-radius:12px;padding:1.2rem">
+              <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.5);margin-bottom:0.4rem">Pipeline increase (avg. 90 days)</div>
+              <div style="font-family:var(--font-heading);font-size:2rem;color:#FF4D00">+67%</div>
+              <div style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Across hybrid AI SDR implementations</div>
+            </div></div>
+      </div>
+    </div></div>
+  </section>
+
+  <section id="market" aria-labelledby="market-heading">
+    <div class="container"><div class="market-grid">
+      <div class="reveal">
+        <span class="section-label">Market Context</span>
+        <h2 id="market-heading" class="section-title">The AI SDR Reality in 2026: Hybrid Models Win, Full Automation Doesn't</h2>
+        <p class="section-sub">The 2024–2025 wave of "fully autonomous AI SDRs" (Artisan, 11x.ai) promised to replace human sales teams entirely. By 2026, the data shows this narrative was premature — companies that deployed fully autonomous AI SDRs at scale largely reverted to hybrid models. The breakthrough that is working: AI handles the high-volume, low-judgement tasks (prospecting, research, personalisation, sequencing) while human SDRs engage at the conversation stage. Bambino builds this hybrid architecture — combining the best AI tools with human touchpoints at the moments that actually convert.</p>
+        <div class="eeat-box" style="margin-top:1.5rem"><p><strong>Bambino data:</strong> Bambino AI SDR implementations: average +67% pipeline increase within 90 days across hybrid AI SDR systems for B2B clients. Our builds combine Clay for data enrichment, AI-powered personalisation, multi-channel sequencing, and instant inbound lead response.</p></div>
+        <p style="margin-top:1.2rem;font-size:0.85rem;color:var(--muted)">Primarily B2B clients: SaaS companies, professional services, agencies, and technology businesses across Canada, UK, and USA.</p>
+      </div>
+      <div><div class="insight-cards reveal"><div class="insight-card"><span class="ins-num">200+</span><span class="ins-lbl">Prospects researched/day by AI</span></div><div class="insight-card"><span class="ins-num"><2 min</span><span class="ins-lbl">AI inbound response time</span></div><div class="insight-card"><span class="ins-num">+67%</span><span class="ins-lbl">Avg. pipeline increase (90 days)</span></div><div class="insight-card"><span class="ins-num">85%</span><span class="ins-lbl">Time saved on SDR admin tasks</span></div></div></div>
+    </div></div>
+  </section>
+
+  <section id="landscape" aria-labelledby="landscape-heading" style="padding:5rem 0;background:var(--soft)">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start" class="reveal">
+        <div>
+          <span class="section-label">Market Context</span>
+          <h2 id="landscape-heading" class="section-title">AI SDR Agency Competition: Tool Vendors vs. Strategy-Led Implementation</h2>
+          <p style="font-size:0.95rem;color:var(--muted);line-height:1.8;margin-bottom:1.5rem">The AI SDR market is dominated by tool vendors selling platforms (Artisan, AiSDR, Outreach, Amplemarket) — not agencies that design, build, and manage the complete AI SDR system. Most B2B businesses buy one of these tools and fail to unlock its potential because the real work is in: ICP definition, data enrichment stack, multi-channel sequencing design, messaging frameworks, and the handoff protocol between AI and human SDRs. Bambino is the agency that handles that implementation work.</p>
+          <div style="background:var(--card);border-radius:12px;padding:1.4rem 1.6rem;border-left:4px solid var(--orange);box-shadow:var(--shadow)">
+            <p style="font-size:0.88rem;font-weight:700;color:var(--text);margin-bottom:0.4rem">Competition level</p>
+            <p style="font-size:0.95rem;color:var(--orange);font-weight:600">Low — few agencies offer strategy-led AI SDR system builds (vs. tool vendors)</p>
+          </div>
+        </div>
+        <div>
+          <span class="section-label">Why It Matters</span>
+          <h3 style="font-family:var(--font-heading);font-size:1.5rem;color:var(--text);margin-bottom:1rem">AI SDR for Canadian Businesses: CASL-Compliant Outbound</h3>
+          <p style="font-size:0.95rem;color:var(--muted);line-height:1.8;margin-bottom:1.5rem">Canadian businesses face a specific compliance challenge with outbound email: CASL (Canada's Anti-Spam Legislation) requires implied or express consent before commercial electronic messages. Our AI SDR systems for Canadian clients are architected with CASL compliance from the ground up — using LinkedIn InMail and cold calling as primary first-touch channels where CASL restrictions are less stringent, with email used for follow-up after initial consent is established.</p>
+          <a href="https://bambinoagency.com/contact" class="btn-orange">Book a Free Discovery Call &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" aria-labelledby="svc-heading">
+    <div class="container">
+      <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto">
+        <span class="section-label">What We Do</span>
+        <h2 id="svc-heading" class="section-title">AI SDR Services</h2>
+        <p class="section-sub" style="margin:0 auto">End-to-end hybrid AI SDR system design, implementation, and management for B2B businesses across Canada, UK, and USA.</p>
+      </div>
+      <div class="svc-grid">
+        <a href="https://bambinoagency.com/services/lead-generation" class="svc-card reveal">
+          <span class="svc-lbl">Foundation</span>
+          <h3>ICP & Data Enrichment Stack</h3>
+          <p>Define your Ideal Customer Profile with precision — firmographics, technographics, intent signals, and trigger events. Build the data enrichment stack (Clay, Apollo, LinkedIn Sales Navigator) that feeds your AI SDR with high-quality prospect data.</p>
+        </a>
+        <a href="https://bambinoagency.com/services/lead-generation" class="svc-card reveal">
+          <span class="svc-lbl">AI Outreach</span>
+          <h3>AI-Powered Personalisation & Sequencing</h3>
+          <p>Multi-channel outreach sequences — email, LinkedIn, cold call — with AI-powered personalisation based on prospect research, recent company news, job change triggers, and content engagement signals.</p>
+        </a>
+        <a href="https://bambinoagency.com/services/marketing-automation" class="svc-card reveal">
+          <span class="svc-lbl">Inbound AI</span>
+          <h3>AI Inbound Lead Response</h3>
+          <p>Instant AI-powered response to inbound leads — within 2 minutes of form submission, demo request, or content download. AI qualifies the lead, personalises the response, and books a meeting before human SDRs are even notified.</p>
+        </a>
+        <a href="https://bambinoagency.com/services/lead-generation" class="svc-card reveal">
+          <span class="svc-lbl">Qualification</span>
+          <h3>AI Lead Qualification & Scoring</h3>
+          <p>AI-powered lead qualification frameworks — BANT, MEDDIC, or custom — that assess prospect fit, intent, and buying stage from enriched data and initial response signals, routing qualified leads to human SDRs automatically.</p>
+        </a>
+        <a href="https://bambinoagency.com/services/linkedin-ads" class="svc-card reveal">
+          <span class="svc-lbl">LinkedIn</span>
+          <h3>LinkedIn AI SDR Integration</h3>
+          <p>AI-assisted LinkedIn outreach — automated connection requests with personalised notes, message sequences, and profile-triggered engagement designed to generate warm conversations at scale without violating LinkedIn's terms of service.</p>
+        </a>
+        <a href="https://bambinoagency.com/services/hubspot" class="svc-card reveal">
+          <span class="svc-lbl">CRM</span>
+          <h3>CRM Integration & Pipeline Automation</h3>
+          <p>Full CRM integration — HubSpot, Salesforce, GoHighLevel, Pipedrive — with automated prospect import, activity logging, stage progression, and SDR handoff workflows triggered by AI qualification signals.</p>
+        </a>
+        <a href="https://bambinoagency.com/services/analytics" class="svc-card reveal">
+          <span class="svc-lbl">Analytics</span>
+          <h3>AI SDR Performance Reporting</h3>
+          <p>Real-time dashboards tracking: prospects contacted, reply rates, meeting book rates, pipeline generated, cost-per-meeting, and AI vs. human SDR contribution — segmented by channel, sequence, and ICP segment.</p>
+        </a>
+        <a href="https://bambinoagency.com/services/lead-generation" class="svc-card reveal">
+          <span class="svc-lbl">Compliance</span>
+          <h3>CASL & CAN-SPAM Compliance</h3>
+          <p>Outbound systems architected for Canadian (CASL) and US (CAN-SPAM) compliance — suppression lists, unsubscribe handling, consent tracking, and channel strategy designed to generate pipeline without regulatory risk.</p>
+        </a></div>
+    </div>
+  </section>
+
+  <section id="why" aria-labelledby="why-heading">
+    <div class="container">
+      <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto">
+        <span class="section-label">Why Choose Us</span>
+        <h2 id="why-heading" class="section-title">Why B2B Companies Choose Bambino for AI SDR</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <h3>Hybrid Model — Not Hype-Driven Full Automation</h3>
+          <p>Bambino doesn't sell you a fully autonomous AI SDR that replaces your team. The data shows hybrid models outperform. We design systems where AI does what AI is good at — volume, research, personalisation — and humans handle what humans do better — trust, nuance, complex objections.</p>
+        </div>
+        <div class="why-card reveal">
+          <h3>Tool-Agnostic System Design</h3>
+          <p>We're not tied to any single AI SDR platform. We evaluate Clay, Apollo, Amplemarket, Reply.io, Instantly, and Lemlist based on your specific ICP, volume, budget, and compliance requirements — then build the stack that fits your business, not the one that pays us a referral fee.</p>
+        </div>
+        <div class="why-card reveal">
+          <h3>CASL-Aware Canadian Outbound Architecture</h3>
+          <p>Canadian outbound requires a different approach than US or UK. We architect AI SDR systems for Canadian businesses with CASL compliance at the centre — prioritising LinkedIn and warm channels, using email for follow-up, and building proper consent tracking into every workflow.</p>
+        </div>
+        <div class="why-card reveal">
+          <h3>End-to-End Implementation — Not Just Strategy</h3>
+          <p>We don't hand you a playbook and wish you luck. Bambino builds the complete system: ICP definition, data stack setup, sequence copywriting, CRM integration, reporting dashboard, and SDR handoff protocols — then manages and optimises it month over month.</p>
+        </div></div>
+    </div>
+  </section>
+
+  <section id="process" aria-labelledby="process-heading">
+    <div class="container">
+      <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto">
+        <span class="section-label">How It Works</span>
+        <h2 id="process-heading" class="section-title">Our AI SDR Implementation Process</h2>
+        <p class="section-sub" style="margin:0 auto">A structured 5-step AI SDR build — from ICP definition to first AI-booked meeting — delivered in 4–6 weeks.</p>
+      </div>
+      <div class="process-steps">
+        <div class="step reveal">
+          <div class="step-num">1</div>
+          <h4>ICP & Market Definition</h4>
+          <p>Define your Ideal Customer Profile with precision — target companies, decision-maker personas, trigger events, and disqualification criteria. The ICP is the foundation everything else is built on.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">2</div>
+          <h4>Data Stack Setup</h4>
+          <p>Configure your data enrichment stack — Clay, Apollo, LinkedIn Sales Navigator, or equivalent — to source and enrich prospect data at scale. Quality data is the fuel for AI personalisation.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">3</div>
+          <h4>Sequence & Copy Design</h4>
+          <p>Write multi-channel outreach sequences (email, LinkedIn, cold call scripts) with AI personalisation frameworks. A/B tested from day one, with clear handoff triggers for human SDRs.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">4</div>
+          <h4>CRM Integration & Automation</h4>
+          <p>Integrate the full system with your CRM — automated prospect import, activity logging, AI qualification scoring, and SDR handoff workflows. Connect to your calendar for direct meeting booking.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">5</div>
+          <h4>Launch, Monitor & Optimise</h4>
+          <p>Launch with daily monitoring of reply rates, meeting book rates, and bounce rates. Weekly optimisation sprints — message testing, ICP refinement, sequence adjustments — for the first 90 days.</p>
+        </div></div>
+    </div>
+  </section>
+
+  <section id="results" aria-labelledby="results-heading">
+    <div class="container">
+      <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto">
+        <span class="section-label">Client Results</span>
+        <h2 id="results-heading" class="section-title">What Our Clients Achieve</h2>
+        <p class="section-sub" style="margin:0 auto">Benchmarks from 400+ automation and marketing implementations across Canada, UK, and USA.</p>
+      </div>
+      <div class="results-grid">
+        <div class="result-card reveal">
+          <span class="result-stat">+67%</span>
+          <div class="result-desc">Avg. pipeline increase (90 days)</div>
+          <p class="result-detail">Across hybrid AI SDR implementations for B2B clients. Measured by qualified meetings booked and pipeline value attributed to AI SDR activity.</p>
+        </div>
+        <div class="result-card reveal">
+          <span class="result-stat">200+</span>
+          <div class="result-desc">Prospects researched per day</div>
+          <p class="result-detail">AI prospect research capacity vs. 30–40 for a human SDR working manually. Higher research volume = more targeted, better-qualified outreach.</p>
+        </div>
+        <div class="result-card reveal">
+          <span class="result-stat">< 2 min</span>
+          <div class="result-desc">Inbound lead response time</div>
+          <p class="result-detail">AI-triggered inbound response — form submissions, demo requests, and content downloads responded to in under 2 minutes with personalised, contextually relevant messages.</p>
+        </div></div>
+    </div>
+  </section>
+
+  <section id="industries" aria-labelledby="ind-heading">
+    <div class="container"><div class="reveal">
+      <span class="section-label">Industries We Serve</span>
+      <h2 id="ind-heading" class="section-title">AI SDR for B2B Industries</h2>
+      <p class="section-sub">The hybrid AI SDR model works across B2B verticals where outbound sales development generates pipeline.</p>
+      <div class="ind-pills"><span class="ind-pill">SaaS & Tech</span><span class="ind-pill">Marketing Agencies</span><span class="ind-pill">Professional Services</span><span class="ind-pill">Consulting</span><span class="ind-pill">Finance & Fintech</span><span class="ind-pill">HR Tech</span><span class="ind-pill">Legal Tech</span><span class="ind-pill">Business Software</span></div>
+    </div></div>
+  </section>
+
+  <section id="pricing" aria-labelledby="pricing-heading">
+    <div class="container">
+      <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto">
+        <span class="section-label">US Pricing</span>
+        <h2 id="pricing-heading" class="section-title">AI SDR Agency Pricing</h2>
+        <p class="section-sub" style="margin:0 auto">Flat project fees for AI SDR system setup + optional monthly management retainers. No long-term contracts. Prices in USD or CAD depending on your location.</p>
+      </div>
+      <div class="pricing-grid" style="margin-top:2.5rem">
+        <div class="price-card reveal">
+          <div class="plan-name">Setup</div>
+          <div class="plan-price"><sup>USD$</sup>3,500</div>
+          <p class="plan-period">one-time setup (USD)</p>
+          <p class="plan-desc">Complete AI SDR system setup for B2B companies. ICP definition, data stack configuration, 2 outreach sequences, CRM integration, and team training.</p>
+          <ul class="plan-features">
+            <li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> ICP & persona definition</li><li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Data enrichment stack setup</li><li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> 2 outreach sequences (email + LinkedIn)</li><li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> CRM integration</li><li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Compliance setup (CASL/CAN-SPAM)</li><li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Team training & handoff</li>
+          </ul>
+          <a href="https://bambinoagency.com/contact" class="btn-outline" style="width:100%;justify-content:center">Get Started →</a>
+        </div>
+        <div class="price-card featured reveal">
+          <div class="plan-name">Growth</div>
+          <div class="plan-price"><sup>USD$</sup>2,200</div>
+          <p class="plan-period">per month (USD)</p>
+          <p class="plan-desc">AI SDR system management — ongoing sequence optimisation, new ICP segments, performance reporting, and monthly strategy reviews.</p>
+          <ul class="plan-features">
+            <li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Everything in Setup (included)</li><li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Monthly sequence optimisation</li><li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> New ICP segment launches</li><li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Performance dashboard</li><li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> A/B message testing</li><li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Monthly strategy call</li>
+          </ul>
+          <a href="https://bambinoagency.com/contact" class="btn-orange" style="width:100%;justify-content:center">Get Started →</a>
+        </div>
+        <div class="price-card reveal">
+          <div class="plan-name">Scale</div>
+          <div class="plan-price"><sup>USD$</sup>4,800</div>
+          <p class="plan-period">per month (USD)</p>
+          <p class="plan-desc">Full AI SDR programme — multi-channel (email + LinkedIn + cold call AI), advanced data enrichment, intent signal integration, and weekly optimisation.</p>
+          <ul class="plan-features">
+            <li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Everything in Growth</li><li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Multi-channel sequences</li><li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Intent signal integration</li><li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Advanced ICP segmentation</li><li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> AI inbound response system</li><li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Weekly optimisation sprints</li>
+          </ul>
+          <a href="https://bambinoagency.com/contact" class="btn-outline" style="width:100%;justify-content:center">Get Started →</a>
+        </div>
+        <div class="price-card reveal">
+          <div class="plan-name">Enterprise</div>
+          <div class="plan-price"><span style="font-size:1.8rem;padding-top:0.4rem">Custom</span></div>
+          <p class="plan-period">tailored to your business</p>
+          <p class="plan-desc">Bespoke AI SDR programmes for complex multi-region, multi-persona, or high-volume pipeline generation requirements.</p>
+          <ul class="plan-features">
+            <li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Everything in Scale</li><li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Dedicated AI SDR strategist</li><li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Custom AI agent builds</li><li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> SLA & priority support</li><li class="plan-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Quarterly strategy reviews</li>
+          </ul>
+          <a href="https://bambinoagency.com/contact" class="btn-outline" style="width:100%;justify-content:center">Talk to Us →</a>
+        </div></div>
+      <p style="text-align:center;margin-top:1.5rem;font-size:0.85rem;color:var(--muted)">All prices in USD. <a href="https://bambinoagency.com/pricing" style="color:var(--orange);font-weight:600">See full pricing &rarr;</a></p>
+    </div>
+  </section>
+
+  
+
+  <section id="faq" aria-labelledby="faq-heading">
+    <div class="container">
+      <div class="reveal" style="text-align:center">
+        <span class="section-label">Common Questions</span>
+        <h2 id="faq-heading" class="section-title">AI SDR Agency — FAQs</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What is an AI SDR?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+          <div class="faq-ans"><p>An AI SDR (AI Sales Development Representative) is an AI-powered system that automates the top-of-funnel sales development tasks traditionally done by human SDRs — prospect research, personalised outreach, multi-channel sequencing, and initial lead qualification. In 2026, the most effective model is hybrid: AI handles the high-volume tasks (research, personalisation, sequencing) while human SDRs take over at the conversation and closing stage.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Does fully autonomous AI SDR work?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+          <div class="faq-ans"><p>The evidence in 2026 is mixed. Fully autonomous AI SDRs (where AI handles the entire outbound motion from research to close without human involvement) have not replaced human sales teams at scale. The companies that deployed tools like Artisan and 11x.ai as complete SDR replacements largely reverted to hybrid models. What does work is AI handling high-volume research and personalisation at scale, with human SDRs engaged at the point where trust and nuance matter.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What tools do you use to build AI SDR systems?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+          <div class="faq-ans"><p>We are tool-agnostic and select the right stack based on your specific requirements. Common components: Clay (data enrichment and AI personalisation), Apollo or LinkedIn Sales Navigator (prospect sourcing), Reply.io, Instantly, or Lemlist (sequencing), your CRM (HubSpot, Salesforce, GoHighLevel, Pipedrive), and AI models (OpenAI, Claude) for personalisation and qualification logic.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How long does AI SDR setup take?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+          <div class="faq-ans"><p>Standard AI SDR system setup takes 4–6 weeks from kickoff to first sequences launching: Week 1–2 for ICP definition and data stack setup, Week 2–3 for sequence copy and personalisation framework, Week 3–4 for CRM integration and compliance configuration, Week 4–6 for testing, team training, and launch.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How do you handle CASL compliance for Canadian businesses?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+          <div class="faq-ans"><p>Canadian outbound operates under CASL, which requires implied or express consent before sending commercial electronic messages. For Canadian clients, we architect AI SDR systems that prioritise LinkedIn InMail and cold calling as first-touch channels (where CASL restrictions are less stringent), and use email for follow-up sequences after initial contact consent is established. We also build proper suppression lists and unsubscribe handling into every system.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What results should I expect from an AI SDR system?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+          <div class="faq-ans"><p>Based on our implementations, realistic expectations for a hybrid AI SDR system after 90 days: 20–40% increase in prospects contacted per week, 15–30% increase in qualified meetings booked, 50–80% reduction in SDR time spent on research and data entry. Results vary significantly by industry, ICP quality, and message resonance. We set expectations in discovery based on your specific market and ICP.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do you offer ongoing AI SDR management?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+          <div class="faq-ans"><p>Yes. Monthly management retainers cover: sequence performance monitoring, A/B message testing, ICP refinement, new segment launches, data stack maintenance, and monthly strategy reviews. Retainers start at $2,200/month USD and are month-to-month with 30 days' notice to cancel.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can you build AI SDR systems alongside existing sales tools?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+          <div class="faq-ans"><p>Yes. We integrate AI SDR systems with your existing CRM, calendar, and communication tools — rather than replacing them. If you have HubSpot, Salesforce, or GoHighLevel already deployed, we build the AI SDR layer on top, with proper bidirectional sync so every prospect touch is logged and visible to your sales team.</p></div>
+        </div></div>
+    </div>
+  </section>
+
+  <section id="related" aria-labelledby="related-heading">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Related Services</span>
+        <h2 id="related-heading" class="section-title">Related Services for B2B Pipeline Generation</h2>
+        <p class="section-sub">AI SDR is one component of a complete B2B demand generation strategy. Explore complementary services:</p>
+      </div>
+      <div class="related-grid">
+        <ul><li><a href="https://bambinoagency.com/services/lead-generation" class="related-card reveal">Lead Generation →</a></li><li><a href="https://bambinoagency.com/ca/toronto/n8n-agency" class="related-card reveal">n8n Automation Agency →</a></li><li><a href="https://bambinoagency.com/services/marketing-automation" class="related-card reveal">Marketing Automation →</a></li><li><a href="https://bambinoagency.com/services/hubspot" class="related-card reveal">HubSpot Agency →</a></li></ul>
+        <a href="https://bambinoagency.com/ca" class="related-card reveal">View All Canadian Cities &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta" aria-labelledby="cta-heading">
+    <div class="cta-inner container">
+      <span class="section-label" style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.85)">Get Started</span>
+      <h2 id="cta-heading" class="cta-title">Ready to Build an AI SDR System That Generates Real Pipeline?</h2>
+      <p class="cta-sub">Book a free 30-minute AI SDR discovery call. We'll review your current outbound motion, identify your top 3 AI SDR opportunities, and walk you through what a properly built hybrid AI SDR system looks like — with no obligation to proceed.</p>
+      <div style="display:flex;justify-content:center;gap:1.2rem;flex-wrap:wrap">
+        <a href="https://bambinoagency.com/contact" class="btn-orange" style="font-size:1rem;padding:1rem 2.4rem">Book a Free Discovery Call &rarr;</a>
+        <a href="https://bambinoagency.com/pricing" class="btn-white">View Pricing</a>
+      </div>
+      <p style="margin-top:1.5rem;font-size:0.82rem;color:rgba(255,255,255,0.4)">No contracts. No setup fees. Just honest advice from our specialists.</p>
+    </div>
+  </section>
+
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-logo">Bambino</div>
+          <p class="footer-brand-desc">Award-winning digital marketing agency serving businesses across the UK, US, and Canada. Data-driven SEO, paid media, and AI-powered growth strategies.</p>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Canadian Cities</h3>
+          <ul class="footer-links" role="list"><li><a href="https://bambinoagency.com/ca/toronto/n8n-agency">Toronto n8n Agency</a></li><li><a href="https://bambinoagency.com/ca/toronto/make-com-agency">Toronto Make.com Agency</a></li><li><a href="https://bambinoagency.com/ca/toronto/gohighlevel-agency">Toronto GoHighLevel Agency</a></li><li><a href="https://bambinoagency.com/ca">All Canadian Cities →</a></li></ul>
+          <h3 class="footer-col-title" style="margin-top:1.2rem">Related Services</h3>
+          <ul class="footer-links" role="list"><li><a href="https://bambinoagency.com/services/lead-generation">Lead Generation</a></li><li><a href="https://bambinoagency.com/services/marketing-automation">Marketing Automation</a></li><li><a href="https://bambinoagency.com/services/hubspot">HubSpot Agency</a></li><li><a href="https://bambinoagency.com/services">All Services →</a></li></ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Services</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="https://bambinoagency.com/services/seo">SEO</a></li>
+            <li><a href="https://bambinoagency.com/services/google-ads">Google Ads</a></li>
+            <li><a href="https://bambinoagency.com/services/marketing-automation">Marketing Automation</a></li>
+            <li><a href="https://bambinoagency.com/services/gohighlevel">GoHighLevel</a></li>
+            <li><a href="https://bambinoagency.com/services">All Services &rarr;</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Company</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="https://bambinoagency.com/about">About Us</a></li>
+            <li><a href="https://bambinoagency.com/pricing">Pricing</a></li>
+            <li><a href="https://bambinoagency.com/blog">Blog</a></li>
+            <li><a href="https://bambinoagency.com/contact">Contact</a></li>
+          </ul>
+          <h3 class="footer-col-title" style="margin-top:1.5rem">UK Office</h3>
+          <ul class="footer-links" role="list">
+            <li style="color:rgba(255,255,255,0.55);font-size:0.82rem">Manchester, United Kingdom</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Bambino Agency Ltd. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="https://bambinoagency.com/privacy">Privacy Policy</a>
+          <a href="https://bambinoagency.com/terms">Terms of Service</a>
+          <a href="https://bambinoagency.com/cookies">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav=document.getElementById('navbar');
+    window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>40)},{passive:true});
+    const hamburger=document.querySelector('.nav-hamburger'),mobileMenu=document.querySelector('.mobile-menu');
+    hamburger.addEventListener('click',()=>{const isOpen=mobileMenu.style.display==='flex';mobileMenu.style.display=isOpen?'none':'flex';hamburger.setAttribute('aria-expanded',String(!isOpen));});
+    mobileMenu.querySelectorAll('a').forEach(a=>{a.addEventListener('click',()=>{mobileMenu.style.display='none';});});
+    const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);}});},{threshold:0.12});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+    document.querySelectorAll('.faq-q').forEach(btn=>{btn.addEventListener('click',()=>{const expanded=btn.getAttribute('aria-expanded')==='true';document.querySelectorAll('.faq-q').forEach(b=>{b.setAttribute('aria-expanded','false');b.nextElementSibling.style.display='none';});if(!expanded){btn.setAttribute('aria-expanded','true');btn.nextElementSibling.style.display='block';}});});
+  </script>
+</body>
+</html>
