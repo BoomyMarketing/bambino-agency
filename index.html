@@ -226,7 +226,7 @@
     /* MOBILE MENU */
     .mobile-menu { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--bg); z-index: 999; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; }
     .mobile-menu.open { display: flex; }
-    .mobile-menu a { font-family: var(--font-heading); font-size: 2rem; color: var(--text); transition: color var(--transition); }
+    .mobile-menu a { font-family: var(--font-heading); font-size: clamp(1.3rem, 5.5vw, 2rem); color: var(--text); transition: color var(--transition); }
     .mobile-menu a:hover { color: var(--orange); }
     .mobile-close { position: absolute; top: 1.5rem; right: 1.5rem; font-size: 1.8rem; color: var(--text); cursor: pointer; background: none; border: none; line-height: 1; }
 
@@ -368,11 +368,15 @@
       .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
       .footer-bottom { flex-direction: column; text-align: center; }
       .hero-actions { flex-direction: column; align-items: flex-start; }
-    }
+      .hero-blob-1, .hero-blob-2 { display: none; }
+    
+      .hero-blob { display: none; }}
     @media (max-width: 480px) {
       .services-grid { grid-template-columns: 1fr; }
       .stats-grid { grid-template-columns: repeat(2, 1fr); }
       .stat-item::after { display: none !important; }
+      .cta-actions { flex-direction: column; align-items: stretch; }
+      .cta-actions a, .cta-actions button { text-align: center; justify-content: center; }
     }
   
     /* Fallback: show content even if GSAP fails */
