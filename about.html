@@ -306,6 +306,10 @@
     .reveal.from-right { transform: translateX(50px); }
     .reveal.visible { opacity: 1; transform: translate(0, 0); }
 
+    /* INLINE GRIDS */
+    .methodology-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+    .industries-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+
     /* RESPONSIVE */
     @media (max-width: 1024px) {
       .values-grid { grid-template-columns: repeat(2, 1fr); }
@@ -322,10 +326,13 @@
       .footer-bottom { flex-direction: column; text-align: center; }
       .hero-stats { gap: 2rem; }
       .hero-blob { display: none; }
+      .methodology-grid { grid-template-columns: repeat(2, 1fr); }
+      .industries-grid { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 480px) {
       .values-grid { grid-template-columns: 1fr; }
       .team-grid { grid-template-columns: 1fr; }
+      .methodology-grid { grid-template-columns: 1fr; }
       .cta-actions { flex-direction: column; align-items: stretch; }
       .cta-actions a, .cta-actions button { text-align: center; justify-content: center; }
     }
@@ -616,7 +623,7 @@
         <h2 id="methodology-heading" class="section-title">Our 4-Step Growth Methodology</h2>
         <p class="section-sub" style="margin: 0 auto;">Every Bambino engagement follows the same proven framework &mdash; built on 7 years of refining what works for UK businesses.</p>
       </div>
-      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+      <div class="methodology-grid">
         <div class="reveal" style="background: var(--card); border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow); text-align: center;">
           <div style="width: 56px; height: 56px; background: var(--orange); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.2rem; color: #fff; font-family: var(--font-heading); font-size: 1.5rem;">1</div>
           <h3 style="font-family: var(--font-heading); font-size: 1.1rem; margin-bottom: 0.6rem;">Audit</h3>
@@ -680,7 +687,7 @@
         <h2 id="industries-heading" class="section-title">Industries We Serve</h2>
         <p class="section-sub" style="margin: 0 auto;">We work with UK businesses across a wide range of sectors, from early-stage startups to established enterprises.</p>
       </div>
-      <div class="reveal" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;">
+      <div class="reveal industries-grid">
         <div style="background: var(--soft); border-radius: var(--radius-sm); padding: 1.2rem 1.5rem; font-size: 0.9rem; font-weight: 600; color: var(--text); border-left: 3px solid var(--orange);">eCommerce &amp; Retail</div>
         <div style="background: var(--soft); border-radius: var(--radius-sm); padding: 1.2rem 1.5rem; font-size: 0.9rem; font-weight: 600; color: var(--text); border-left: 3px solid var(--orange);">Professional Services</div>
         <div style="background: var(--soft); border-radius: var(--radius-sm); padding: 1.2rem 1.5rem; font-size: 0.9rem; font-weight: 600; color: var(--text); border-left: 3px solid var(--orange);">SaaS &amp; Technology</div>

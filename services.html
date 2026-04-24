@@ -191,6 +191,9 @@
     .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.7s ease, transform 0.7s ease; }
     .reveal.visible { opacity: 1; transform: translate(0,0); }
 
+    /* HOW WE WORK GRID */
+    .how-we-work-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+
     @media (max-width: 1024px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
     @media (max-width: 768px) {
       .nav-links { display: none; }
@@ -198,9 +201,13 @@
       .svc-grid { grid-template-columns: 1fr 1fr; }
       .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
       .footer-bottom { flex-direction: column; text-align: center; }
-    
-      .hero-blob { display: none; }}
-    @media (max-width: 480px) { .svc-grid { grid-template-columns: 1fr; } }
+      .hero-blob { display: none; }
+      .how-we-work-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+    }
+    @media (max-width: 480px) {
+      .svc-grid { grid-template-columns: 1fr; }
+      .how-we-work-grid { grid-template-columns: 1fr; }
+    }
   
     /* Fallback: show content even if GSAP fails */
     @keyframes revealFallback { to { opacity: 1; transform: none; } }
@@ -558,7 +565,7 @@
         <h2 id="how-heading" class="section-title">How We Work</h2>
         <p class="section-sub" style="margin: 0 auto;">Every client engagement begins with deep discovery and ends with measurable results. Here's exactly what to expect when you work with Bambino.</p>
       </div>
-      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;">
+      <div class="how-we-work-grid">
         <div class="reveal" style="text-align: center;">
           <div style="width: 64px; height: 64px; background: var(--orange); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-family: var(--font-heading); font-size: 1.5rem; color: #fff;">1</div>
           <h3 style="font-family: var(--font-heading); font-size: 1.2rem; margin-bottom: 0.75rem;">Audit &amp; Discovery</h3>

@@ -345,6 +345,12 @@
     .footer-bottom-links a { font-size: 0.82rem; color: rgba(255,255,255,0.35); transition: color var(--transition); }
     .footer-bottom-links a:hover { color: var(--orange); }
 
+    /* AI STACK GRID */
+    .ai-stack-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.5rem; }
+
+    /* CASE STUDIES GRID */
+    .case-studies-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+
     /* REVEAL */
     .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.7s ease, transform 0.7s ease; }
     .reveal.from-left { transform: translateX(-50px); }
@@ -369,12 +375,15 @@
       .footer-bottom { flex-direction: column; text-align: center; }
       .hero-actions { flex-direction: column; align-items: flex-start; }
       .hero-blob-1, .hero-blob-2 { display: none; }
-    
-      .hero-blob { display: none; }}
+      .hero-blob { display: none; }
+      .ai-stack-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+      .case-studies-grid { grid-template-columns: 1fr; }
+    }
     @media (max-width: 480px) {
       .services-grid { grid-template-columns: 1fr; }
       .stats-grid { grid-template-columns: repeat(2, 1fr); }
       .stat-item::after { display: none !important; }
+      .ai-stack-grid { grid-template-columns: 1fr; }
       .cta-actions { flex-direction: column; align-items: stretch; }
       .cta-actions a, .cta-actions button { text-align: center; justify-content: center; }
     }
@@ -786,7 +795,7 @@
         <h2 id="ai-stack-heading" class="section-title" style="color: #fff;">Our Complete AI Growth Stack</h2>
         <p class="section-sub" style="color: rgba(255,255,255,0.7); margin: 0 auto;">Five AI capabilities that work together &mdash; capturing leads, nurturing prospects, and closing sales while your team focuses on delivery.</p>
       </div>
-      <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.5rem;">
+      <div class="ai-stack-grid">
         <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: var(--radius); padding: 1.5rem; text-align: center;">
           <div style="font-size: 2rem; margin-bottom: 0.75rem;">&#128269;</div>
           <h3 style="font-family: var(--font-heading); font-size: 1rem; color: #fff; margin-bottom: 0.5rem;">GEO</h3>
@@ -952,7 +961,7 @@
         <h2 id="results-heading" class="section-title">Real Results for Real UK Businesses</h2>
         <p class="section-sub" style="margin: 0 auto;">We let our results do the talking. Here&rsquo;s what happens when data-driven strategy meets dedicated UK expertise.</p>
       </div>
-      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+      <div class="case-studies-grid">
 
         <article class="reveal" style="background: var(--card); border-radius: var(--radius); padding: 2.2rem; box-shadow: var(--shadow); border-top: 4px solid var(--orange);">
           <p style="font-size: 0.72rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--orange); margin-bottom: 1rem;">SEO &amp; Content</p>
