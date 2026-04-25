@@ -15,7 +15,7 @@
   "business": {
     "niche": "auto",
     "schema_type": "MarketingAgency",
-    "is_local": true,
+    "is_local": false,
     "founded_year": 2023,
     "target_city": "Manchester",
     "target_country": "GB"
