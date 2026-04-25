@@ -231,8 +231,14 @@
       .services-grid { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr; }
     }
-  </style>
+  
+        /* Accessibility: focus-visible */
+        :focus-visible { outline: 2px solid var(--primary, #FF6B35); outline-offset: 3px; border-radius: 3px; }
+        :focus:not(:focus-visible) { outline: none; }
+        </style>
+  <meta name="author" content="Bambino Agency Team">
 </head>
+<a href="#main-content" class="skip-to-content" style="position:absolute;left:-9999px;top:0;z-index:9999;padding:8px 16px;background:#fff;color:#000;text-decoration:none;font-weight:700;" onfocus="this.style.left='0'" onblur="this.style.left='-9999px'">Skip to main content</a>
 <body>
 
   <!-- NAV -->
@@ -373,7 +379,7 @@
   </nav>
 
   <!-- HERO -->
-  <section class="hero" aria-label="UGC Content Agency in Bristol">
+  <section id="main-content" class="hero" aria-label="UGC Content Agency in Bristol">
     <div class="container">
       <p class="hero-agency-label">UGC Content Agency · Bristol</p>
       <h1>UGC Content Agency in <span class="accent-word">Bristol</span></h1>

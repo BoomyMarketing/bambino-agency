@@ -1375,8 +1375,14 @@
     .mega-cta:hover { background: #e64500 !important; }
     .mega-cta::after { display: none !important; }
     @media (max-width: 960px) { .mega-menu { display: none !important; } }
-  </style>
+  
+        /* Accessibility: focus-visible */
+        :focus-visible { outline: 2px solid var(--primary, #FF6B35); outline-offset: 3px; border-radius: 3px; }
+        :focus:not(:focus-visible) { outline: none; }
+        </style>
+  <meta name="author" content="Bambino Agency Team">
 </head>
+<a href="#main-content" class="skip-to-content" style="position:absolute;left:-9999px;top:0;z-index:9999;padding:8px 16px;background:#fff;color:#000;text-decoration:none;font-weight:700;" onfocus="this.style.left='0'" onblur="this.style.left='-9999px'">Skip to main content</a>
 <body>
 
     <!-- ── NAVBAR — cream bg, dark green logo ─────────────────────── -->
@@ -1509,7 +1515,7 @@
     </nav>
 
     <!-- ── HERO — deep green background ───────────────────────────── -->
-    <section class="hero" aria-label="Professional Digital Marketing Agency Serving Aberdeen">
+    <section id="main-content" class="hero" aria-label="Professional Digital Marketing Agency Serving Aberdeen">
         <!-- Floating geometric shapes -->
         <div class="hero-geo hero-geo-tri"   aria-hidden="true"></div>
         <div class="hero-geo hero-geo-circle" aria-hidden="true"></div>
@@ -1519,6 +1525,7 @@
         <div class="container">
             <p class="hero-agency-label">Digital Marketing Agency · Aberdeen</p>
             <h1>Professional Digital Marketing Agency Serving <span class="accent-word">Aberdeen</span></h1>
+        <time class="publish-date" datetime="2026-03-14" style="display:none">Published: 2026-03-14</time>
             <p class="hero-subtitle">Grow your Aberdeen business with proven digital marketing agency strategies</p>
             <div class="hero-actions">
                 <a href="https://bambinoagency.com/contact" class="btn-primary pulse">Get a Free Consultation →</a>
