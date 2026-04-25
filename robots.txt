@@ -289,7 +289,12 @@ Allow: /local/edinburgh/seo-agency
 Allow: /local/edinburgh/seo-company
 Allow: /local/edinburgh/social-media-agency
 Allow: /local/edinburgh/web-design-company
+Allow: /local/elgin
 Allow: /local/elgin/ai-automation-agency
+Allow: /local/elgin/content-marketing-agency
+Allow: /local/elgin/digital-marketing-agency
+Allow: /local/elgin/email-marketing-agency
+Allow: /local/elgin/google-ads-agency
 
 # Block unpublished local pages
 Disallow: /local/
