@@ -1,0 +1,30 @@
+{
+  "site": {
+    "name": "Bambino Agency",
+    "domain": "bambinoagency.com",
+    "language": "en-GB"
+  },
+  "contact": {
+    "email": "hello@bambinoagency.com",
+    "phone": ""
+  },
+  "brand": {
+    "primary_color": "#FF4D00",
+    "secondary_color": "#034C3C"
+  },
+  "business": {
+    "niche": "auto",
+    "schema_type": "MarketingAgency",
+    "is_local": true,
+    "founded_year": 2023,
+    "target_city": "Manchester",
+    "target_country": "GB"
+  },
+  "autodetect_niche": true,
+  "thresholds": {
+    "word_count": [800, 2500],
+    "faq_count": 5,
+    "h2_count": [3, 12],
+    "image_count": [2, 15]
+  }
+}
