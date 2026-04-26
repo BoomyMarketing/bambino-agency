@@ -295,6 +295,11 @@ Allow: /local/elgin/content-marketing-agency
 Allow: /local/elgin/digital-marketing-agency
 Allow: /local/elgin/email-marketing-agency
 Allow: /local/elgin/google-ads-agency
+Allow: /local/elgin/ppc-agency
+Allow: /local/elgin/seo-agency
+Allow: /local/elgin/seo-company
+Allow: /local/elgin/social-media-agency
+Allow: /local/elgin/web-design-company
 
 # Block unpublished local pages
 Disallow: /local/
