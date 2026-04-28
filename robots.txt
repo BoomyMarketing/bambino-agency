@@ -300,11 +300,16 @@ Allow: /local/elgin/seo-agency
 Allow: /local/elgin/seo-company
 Allow: /local/elgin/social-media-agency
 Allow: /local/elgin/web-design-company
+Allow: /local/ely
 Allow: /local/ely/ai-automation-agency
 Allow: /local/ely/content-marketing-agency
 Allow: /local/ely/digital-marketing-agency
 Allow: /local/ely/email-marketing-agency
 Allow: /local/ely/google-ads-agency
+Allow: /local/ely/ppc-agency
+Allow: /local/ely/seo-agency
+Allow: /local/ely/seo-company
+Allow: /local/ely/social-media-agency
 
 # Block unpublished local pages
 Disallow: /local/
