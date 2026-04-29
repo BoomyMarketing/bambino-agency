@@ -310,6 +310,11 @@ Allow: /local/ely/ppc-agency
 Allow: /local/ely/seo-agency
 Allow: /local/ely/seo-company
 Allow: /local/ely/social-media-agency
+Allow: /local/ely/web-design-company
+Allow: /local/gateshead/ai-automation-agency
+Allow: /local/gateshead/content-marketing-agency
+Allow: /local/gateshead/digital-marketing-agency
+Allow: /local/gateshead/email-marketing-agency
 
 # Block unpublished local pages
 Disallow: /local/
