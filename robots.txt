@@ -320,6 +320,11 @@ Allow: /local/gateshead/google-ads-agency
 Allow: /local/gateshead/ppc-agency
 Allow: /local/gateshead/seo-agency
 Allow: /local/gateshead/seo-company
+Allow: /local/gateshead/social-media-agency
+Allow: /local/gateshead/web-design-company
+Allow: /local/glasgow/ai-automation-agency
+Allow: /local/glasgow/content-marketing-agency
+Allow: /local/glasgow/digital-marketing-agency
 
 # Block unpublished local pages
 Disallow: /local/
