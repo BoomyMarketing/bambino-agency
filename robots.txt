@@ -330,6 +330,11 @@ Allow: /local/glasgow/email-marketing-agency
 Allow: /local/glasgow/google-ads-agency
 Allow: /local/glasgow/ppc-agency
 Allow: /local/glasgow/seo-agency
+Allow: /local/glasgow/seo-company
+Allow: /local/glasgow/social-media-agency
+Allow: /local/glasgow/web-design-company
+Allow: /local/gloucester/ai-automation-agency
+Allow: /local/gloucester/content-marketing-agency
 
 # Block unpublished local pages
 Disallow: /local/
