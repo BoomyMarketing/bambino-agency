@@ -344,7 +344,12 @@ Allow: /local/gloucester/seo-agency
 Allow: /local/gloucester/seo-company
 Allow: /local/gloucester/social-media-agency
 Allow: /local/gloucester/web-design-company
+Allow: /local/hove
 Allow: /local/hove/ai-automation-agency
+Allow: /local/hove/content-marketing-agency
+Allow: /local/hove/digital-marketing-agency
+Allow: /local/hove/email-marketing-agency
+Allow: /local/hove/google-ads-agency
 
 # Block unpublished local pages
 Disallow: /local/
