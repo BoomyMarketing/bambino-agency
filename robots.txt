@@ -350,6 +350,11 @@ Allow: /local/hove/content-marketing-agency
 Allow: /local/hove/digital-marketing-agency
 Allow: /local/hove/email-marketing-agency
 Allow: /local/hove/google-ads-agency
+Allow: /local/hove/ppc-agency
+Allow: /local/hove/seo-agency
+Allow: /local/hove/seo-company
+Allow: /local/hove/social-media-agency
+Allow: /local/hove/web-design-company
 
 # Block unpublished local pages
 Disallow: /local/
