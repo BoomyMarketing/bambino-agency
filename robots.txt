@@ -355,6 +355,11 @@ Allow: /local/hove/seo-agency
 Allow: /local/hove/seo-company
 Allow: /local/hove/social-media-agency
 Allow: /local/hove/web-design-company
+Allow: /local/huddersfield/ai-automation-agency
+Allow: /local/huddersfield/content-marketing-agency
+Allow: /local/huddersfield/digital-marketing-agency
+Allow: /local/huddersfield/email-marketing-agency
+Allow: /local/huddersfield/google-ads-agency
 
 # Block unpublished local pages
 Disallow: /local/
