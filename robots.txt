@@ -365,6 +365,11 @@ Allow: /local/huddersfield/ppc-agency
 Allow: /local/huddersfield/seo-agency
 Allow: /local/huddersfield/seo-company
 Allow: /local/huddersfield/social-media-agency
+Allow: /local/huddersfield/web-design-company
+Allow: /local/huntingdon/ai-automation-agency
+Allow: /local/huntingdon/content-marketing-agency
+Allow: /local/huntingdon/digital-marketing-agency
+Allow: /local/huntingdon/email-marketing-agency
 
 # Block unpublished local pages
 Disallow: /local/
