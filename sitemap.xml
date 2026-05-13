@@ -625,6 +625,12 @@
 <url><loc>https://bambinoagency.com/services/framer</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-04-24</lastmod></url>
 <url><loc>https://bambinoagency.com/services/plg</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-04-24</lastmod></url>
 <url><loc>https://bambinoagency.com/services/podcast-marketing</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-04-24</lastmod></url>
+<url>
+    <loc>https://bambinoagency.com/local</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-12</lastmod>
+  </url>
 
   <!-- Published Local Pages -->
   <url>
@@ -2906,5 +2912,35 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-05-12</lastmod>
+  </url>
+  <url>
+    <loc>https://bambinoagency.com/local/inverness/digital-marketing-agency</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://bambinoagency.com/local/inverness/email-marketing-agency</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://bambinoagency.com/local/inverness/google-ads-agency</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://bambinoagency.com/local/inverness</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://bambinoagency.com/local/inverness/ppc-agency</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-13</lastmod>
   </url>
 </urlset>

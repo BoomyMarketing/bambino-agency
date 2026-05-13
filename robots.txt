@@ -377,8 +377,13 @@ Allow: /local/huntingdon/seo-agency
 Allow: /local/huntingdon/seo-company
 Allow: /local/huntingdon/social-media-agency
 Allow: /local/huntingdon/web-design-company
+Allow: /local/inverness
 Allow: /local/inverness/ai-automation-agency
 Allow: /local/inverness/content-marketing-agency
+Allow: /local/inverness/digital-marketing-agency
+Allow: /local/inverness/email-marketing-agency
+Allow: /local/inverness/google-ads-agency
+Allow: /local/inverness/ppc-agency
 
 # Block unpublished local pages
 Disallow: /local/
