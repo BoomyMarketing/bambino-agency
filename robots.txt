@@ -388,7 +388,12 @@ Allow: /local/inverness/seo-agency
 Allow: /local/inverness/seo-company
 Allow: /local/inverness/social-media-agency
 Allow: /local/inverness/web-design-company
+Allow: /local/keighley
 Allow: /local/keighley/ai-automation-agency
+Allow: /local/keighley/content-marketing-agency
+Allow: /local/keighley/digital-marketing-agency
+Allow: /local/keighley/email-marketing-agency
+Allow: /local/keighley/google-ads-agency
 
 # Block unpublished local pages
 Disallow: /local/
