@@ -394,6 +394,11 @@ Allow: /local/keighley/content-marketing-agency
 Allow: /local/keighley/digital-marketing-agency
 Allow: /local/keighley/email-marketing-agency
 Allow: /local/keighley/google-ads-agency
+Allow: /local/keighley/ppc-agency
+Allow: /local/keighley/seo-agency
+Allow: /local/keighley/seo-company
+Allow: /local/keighley/social-media-agency
+Allow: /local/keighley/web-design-company
 
 # Block unpublished local pages
 Disallow: /local/
