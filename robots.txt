@@ -399,6 +399,11 @@ Allow: /local/keighley/seo-agency
 Allow: /local/keighley/seo-company
 Allow: /local/keighley/social-media-agency
 Allow: /local/keighley/web-design-company
+Allow: /local/lancaster/ai-automation-agency
+Allow: /local/lancaster/content-marketing-agency
+Allow: /local/lancaster/digital-marketing-agency
+Allow: /local/lancaster/email-marketing-agency
+Allow: /local/lancaster/google-ads-agency
 
 # Block unpublished local pages
 Disallow: /local/
