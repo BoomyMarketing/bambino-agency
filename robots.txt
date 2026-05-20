@@ -409,11 +409,16 @@ Allow: /local/lancaster/ppc-agency
 Allow: /local/lancaster/seo-agency
 Allow: /local/lancaster/social-media-agency
 Allow: /local/lancaster/web-design-company
+Allow: /local/leeds
 Allow: /local/leeds/ai-automation-agency
 Allow: /local/leeds/amazon-marketing-agency
 Allow: /local/leeds/content-marketing-agency
 Allow: /local/leeds/cro-agency
 Allow: /local/leeds/digital-marketing-agency
+Allow: /local/leeds/email-marketing-agency
+Allow: /local/leeds/google-ads-agency
+Allow: /local/leeds/hubspot-agency
+Allow: /local/leeds/paid-search-agency
 
 # Block unpublished local pages
 Disallow: /local/

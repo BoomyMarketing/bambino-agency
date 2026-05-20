@@ -667,6 +667,12 @@
     <priority>0.7</priority>
     <lastmod>2026-05-12</lastmod>
   </url>
+<url>
+    <loc>https://bambinoagency.com/local</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-12</lastmod>
+  </url>
 
   <!-- Published Local Pages -->
   <url>
@@ -3158,5 +3164,35 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-05-19</lastmod>
+  </url>
+  <url>
+    <loc>https://bambinoagency.com/local/leeds/email-marketing-agency</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-20</lastmod>
+  </url>
+  <url>
+    <loc>https://bambinoagency.com/local/leeds/google-ads-agency</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-20</lastmod>
+  </url>
+  <url>
+    <loc>https://bambinoagency.com/local/leeds/hubspot-agency</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-20</lastmod>
+  </url>
+  <url>
+    <loc>https://bambinoagency.com/local/leeds</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-20</lastmod>
+  </url>
+  <url>
+    <loc>https://bambinoagency.com/local/leeds/paid-search-agency</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-20</lastmod>
   </url>
 </urlset>
