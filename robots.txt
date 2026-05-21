@@ -419,6 +419,11 @@ Allow: /local/leeds/email-marketing-agency
 Allow: /local/leeds/google-ads-agency
 Allow: /local/leeds/hubspot-agency
 Allow: /local/leeds/paid-search-agency
+Allow: /local/leeds/ppc-agency
+Allow: /local/leeds/revops-agency
+Allow: /local/leeds/seo-agency
+Allow: /local/leeds/seo-company
+Allow: /local/leeds/social-media-agency
 
 # Block unpublished local pages
 Disallow: /local/
