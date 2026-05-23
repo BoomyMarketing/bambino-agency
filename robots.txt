@@ -311,6 +311,16 @@ Allow: /local/ely/seo-agency
 Allow: /local/ely/seo-company
 Allow: /local/ely/social-media-agency
 Allow: /local/ely/web-design-company
+Allow: /local/exeter/ai-automation-agency
+Allow: /local/exeter/content-marketing-agency
+Allow: /local/exeter/digital-marketing-agency
+Allow: /local/exeter/email-marketing-agency
+Allow: /local/exeter/google-ads-agency
+Allow: /local/exeter/ppc-agency
+Allow: /local/exeter/seo-agency
+Allow: /local/exeter/seo-company
+Allow: /local/exeter/social-media-agency
+Allow: /local/exeter/web-design-company
 Allow: /local/gateshead
 Allow: /local/gateshead/ai-automation-agency
 Allow: /local/gateshead/content-marketing-agency
@@ -424,11 +434,6 @@ Allow: /local/leeds/revops-agency
 Allow: /local/leeds/seo-agency
 Allow: /local/leeds/seo-company
 Allow: /local/leeds/social-media-agency
-Allow: /local/leeds/ugc-content-agency
-Allow: /local/leeds/web-design-company
-Allow: /local/leeds/web-development-company
-Allow: /local/leicester/ai-automation-agency
-Allow: /local/leicester/content-marketing-agency
 
 # Block unpublished local pages
 Disallow: /local/
