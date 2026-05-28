@@ -1,4 +1,3526 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/local/aberdeen/ai-automation-agency",
+      "destination": "/ai-automation-agency/aberdeen",
+      "permanent": true
+    },
+    {
+      "source": "/local/aberdeen/content-marketing-agency",
+      "destination": "/content-marketing-agency/aberdeen",
+      "permanent": true
+    },
+    {
+      "source": "/local/aberdeen/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/aberdeen",
+      "permanent": true
+    },
+    {
+      "source": "/local/aberdeen/email-marketing-agency",
+      "destination": "/email-marketing-agency/aberdeen",
+      "permanent": true
+    },
+    {
+      "source": "/local/aberdeen/google-ads-agency",
+      "destination": "/google-ads-agency/aberdeen",
+      "permanent": true
+    },
+    {
+      "source": "/local/aberdeen/ppc-agency",
+      "destination": "/ppc-agency/aberdeen",
+      "permanent": true
+    },
+    {
+      "source": "/local/aberdeen/seo-agency",
+      "destination": "/seo-agency/aberdeen",
+      "permanent": true
+    },
+    {
+      "source": "/local/aberdeen/seo-company",
+      "destination": "/seo-company/aberdeen",
+      "permanent": true
+    },
+    {
+      "source": "/local/aberdeen/social-media-agency",
+      "destination": "/social-media-agency/aberdeen",
+      "permanent": true
+    },
+    {
+      "source": "/local/aberdeen/web-design-company",
+      "destination": "/web-design-company/aberdeen",
+      "permanent": true
+    },
+    {
+      "source": "/local/armagh/ai-automation-agency",
+      "destination": "/ai-automation-agency/armagh",
+      "permanent": true
+    },
+    {
+      "source": "/local/armagh/content-marketing-agency",
+      "destination": "/content-marketing-agency/armagh",
+      "permanent": true
+    },
+    {
+      "source": "/local/armagh/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/armagh",
+      "permanent": true
+    },
+    {
+      "source": "/local/armagh/email-marketing-agency",
+      "destination": "/email-marketing-agency/armagh",
+      "permanent": true
+    },
+    {
+      "source": "/local/armagh/google-ads-agency",
+      "destination": "/google-ads-agency/armagh",
+      "permanent": true
+    },
+    {
+      "source": "/local/armagh/ppc-agency",
+      "destination": "/ppc-agency/armagh",
+      "permanent": true
+    },
+    {
+      "source": "/local/armagh/seo-agency",
+      "destination": "/seo-agency/armagh",
+      "permanent": true
+    },
+    {
+      "source": "/local/armagh/seo-company",
+      "destination": "/seo-company/armagh",
+      "permanent": true
+    },
+    {
+      "source": "/local/armagh/social-media-agency",
+      "destination": "/social-media-agency/armagh",
+      "permanent": true
+    },
+    {
+      "source": "/local/armagh/web-design-company",
+      "destination": "/web-design-company/armagh",
+      "permanent": true
+    },
+    {
+      "source": "/local/barnsley/ai-automation-agency",
+      "destination": "/ai-automation-agency/barnsley",
+      "permanent": true
+    },
+    {
+      "source": "/local/barnsley/content-marketing-agency",
+      "destination": "/content-marketing-agency/barnsley",
+      "permanent": true
+    },
+    {
+      "source": "/local/barnsley/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/barnsley",
+      "permanent": true
+    },
+    {
+      "source": "/local/barnsley/email-marketing-agency",
+      "destination": "/email-marketing-agency/barnsley",
+      "permanent": true
+    },
+    {
+      "source": "/local/barnsley/google-ads-agency",
+      "destination": "/google-ads-agency/barnsley",
+      "permanent": true
+    },
+    {
+      "source": "/local/barnsley/ppc-agency",
+      "destination": "/ppc-agency/barnsley",
+      "permanent": true
+    },
+    {
+      "source": "/local/barnsley/seo-agency",
+      "destination": "/seo-agency/barnsley",
+      "permanent": true
+    },
+    {
+      "source": "/local/barnsley/seo-company",
+      "destination": "/seo-company/barnsley",
+      "permanent": true
+    },
+    {
+      "source": "/local/barnsley/social-media-agency",
+      "destination": "/social-media-agency/barnsley",
+      "permanent": true
+    },
+    {
+      "source": "/local/barnsley/web-design-company",
+      "destination": "/web-design-company/barnsley",
+      "permanent": true
+    },
+    {
+      "source": "/local/barry/ai-automation-agency",
+      "destination": "/ai-automation-agency/barry",
+      "permanent": true
+    },
+    {
+      "source": "/local/barry/content-marketing-agency",
+      "destination": "/content-marketing-agency/barry",
+      "permanent": true
+    },
+    {
+      "source": "/local/barry/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/barry",
+      "permanent": true
+    },
+    {
+      "source": "/local/barry/email-marketing-agency",
+      "destination": "/email-marketing-agency/barry",
+      "permanent": true
+    },
+    {
+      "source": "/local/barry/google-ads-agency",
+      "destination": "/google-ads-agency/barry",
+      "permanent": true
+    },
+    {
+      "source": "/local/barry/ppc-agency",
+      "destination": "/ppc-agency/barry",
+      "permanent": true
+    },
+    {
+      "source": "/local/barry/seo-agency",
+      "destination": "/seo-agency/barry",
+      "permanent": true
+    },
+    {
+      "source": "/local/barry/seo-company",
+      "destination": "/seo-company/barry",
+      "permanent": true
+    },
+    {
+      "source": "/local/barry/social-media-agency",
+      "destination": "/social-media-agency/barry",
+      "permanent": true
+    },
+    {
+      "source": "/local/barry/web-design-company",
+      "destination": "/web-design-company/barry",
+      "permanent": true
+    },
+    {
+      "source": "/local/bath/ai-automation-agency",
+      "destination": "/ai-automation-agency/bath",
+      "permanent": true
+    },
+    {
+      "source": "/local/bath/content-marketing-agency",
+      "destination": "/content-marketing-agency/bath",
+      "permanent": true
+    },
+    {
+      "source": "/local/bath/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/bath",
+      "permanent": true
+    },
+    {
+      "source": "/local/bath/email-marketing-agency",
+      "destination": "/email-marketing-agency/bath",
+      "permanent": true
+    },
+    {
+      "source": "/local/bath/google-ads-agency",
+      "destination": "/google-ads-agency/bath",
+      "permanent": true
+    },
+    {
+      "source": "/local/bath/ppc-agency",
+      "destination": "/ppc-agency/bath",
+      "permanent": true
+    },
+    {
+      "source": "/local/bath/seo-agency",
+      "destination": "/seo-agency/bath",
+      "permanent": true
+    },
+    {
+      "source": "/local/bath/seo-company",
+      "destination": "/seo-company/bath",
+      "permanent": true
+    },
+    {
+      "source": "/local/bath/social-media-agency",
+      "destination": "/social-media-agency/bath",
+      "permanent": true
+    },
+    {
+      "source": "/local/bath/web-design-company",
+      "destination": "/web-design-company/bath",
+      "permanent": true
+    },
+    {
+      "source": "/local/belfast/ai-automation-agency",
+      "destination": "/ai-automation-agency/belfast",
+      "permanent": true
+    },
+    {
+      "source": "/local/belfast/content-marketing-agency",
+      "destination": "/content-marketing-agency/belfast",
+      "permanent": true
+    },
+    {
+      "source": "/local/belfast/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/belfast",
+      "permanent": true
+    },
+    {
+      "source": "/local/belfast/email-marketing-agency",
+      "destination": "/email-marketing-agency/belfast",
+      "permanent": true
+    },
+    {
+      "source": "/local/belfast/google-ads-agency",
+      "destination": "/google-ads-agency/belfast",
+      "permanent": true
+    },
+    {
+      "source": "/local/belfast/ppc-agency",
+      "destination": "/ppc-agency/belfast",
+      "permanent": true
+    },
+    {
+      "source": "/local/belfast/seo-agency",
+      "destination": "/seo-agency/belfast",
+      "permanent": true
+    },
+    {
+      "source": "/local/belfast/seo-company",
+      "destination": "/seo-company/belfast",
+      "permanent": true
+    },
+    {
+      "source": "/local/belfast/social-media-agency",
+      "destination": "/social-media-agency/belfast",
+      "permanent": true
+    },
+    {
+      "source": "/local/belfast/web-design-company",
+      "destination": "/web-design-company/belfast",
+      "permanent": true
+    },
+    {
+      "source": "/local/birkenhead/ai-automation-agency",
+      "destination": "/ai-automation-agency/birkenhead",
+      "permanent": true
+    },
+    {
+      "source": "/local/birkenhead/content-marketing-agency",
+      "destination": "/content-marketing-agency/birkenhead",
+      "permanent": true
+    },
+    {
+      "source": "/local/birkenhead/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/birkenhead",
+      "permanent": true
+    },
+    {
+      "source": "/local/birkenhead/email-marketing-agency",
+      "destination": "/email-marketing-agency/birkenhead",
+      "permanent": true
+    },
+    {
+      "source": "/local/birkenhead/google-ads-agency",
+      "destination": "/google-ads-agency/birkenhead",
+      "permanent": true
+    },
+    {
+      "source": "/local/birkenhead/ppc-agency",
+      "destination": "/ppc-agency/birkenhead",
+      "permanent": true
+    },
+    {
+      "source": "/local/birkenhead/seo-agency",
+      "destination": "/seo-agency/birkenhead",
+      "permanent": true
+    },
+    {
+      "source": "/local/birkenhead/seo-company",
+      "destination": "/seo-company/birkenhead",
+      "permanent": true
+    },
+    {
+      "source": "/local/birkenhead/social-media-agency",
+      "destination": "/social-media-agency/birkenhead",
+      "permanent": true
+    },
+    {
+      "source": "/local/birkenhead/web-design-company",
+      "destination": "/web-design-company/birkenhead",
+      "permanent": true
+    },
+    {
+      "source": "/local/birmingham/ai-automation-agency",
+      "destination": "/ai-automation-agency/birmingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/birmingham/amazon-marketing-agency",
+      "destination": "/amazon-marketing-agency/birmingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/birmingham/content-marketing-agency",
+      "destination": "/content-marketing-agency/birmingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/birmingham/cro-agency",
+      "destination": "/cro-agency/birmingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/birmingham/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/birmingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/birmingham/email-marketing-agency",
+      "destination": "/email-marketing-agency/birmingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/birmingham/google-ads-agency",
+      "destination": "/google-ads-agency/birmingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/birmingham/hubspot-agency",
+      "destination": "/hubspot-agency/birmingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/birmingham/ppc-agency",
+      "destination": "/ppc-agency/birmingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/birmingham/revops-agency",
+      "destination": "/revops-agency/birmingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/birmingham/seo-agency",
+      "destination": "/seo-agency/birmingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/birmingham/seo-company",
+      "destination": "/seo-company/birmingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/birmingham/social-media-agency",
+      "destination": "/social-media-agency/birmingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/birmingham/ugc-content-agency",
+      "destination": "/ugc-content-agency/birmingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/birmingham/web-design-company",
+      "destination": "/web-design-company/birmingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/birmingham/web-development-company",
+      "destination": "/web-development-company/birmingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/blackpool/ai-automation-agency",
+      "destination": "/ai-automation-agency/blackpool",
+      "permanent": true
+    },
+    {
+      "source": "/local/blackpool/content-marketing-agency",
+      "destination": "/content-marketing-agency/blackpool",
+      "permanent": true
+    },
+    {
+      "source": "/local/blackpool/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/blackpool",
+      "permanent": true
+    },
+    {
+      "source": "/local/blackpool/email-marketing-agency",
+      "destination": "/email-marketing-agency/blackpool",
+      "permanent": true
+    },
+    {
+      "source": "/local/blackpool/google-ads-agency",
+      "destination": "/google-ads-agency/blackpool",
+      "permanent": true
+    },
+    {
+      "source": "/local/blackpool/ppc-agency",
+      "destination": "/ppc-agency/blackpool",
+      "permanent": true
+    },
+    {
+      "source": "/local/blackpool/seo-agency",
+      "destination": "/seo-agency/blackpool",
+      "permanent": true
+    },
+    {
+      "source": "/local/blackpool/social-media-agency",
+      "destination": "/social-media-agency/blackpool",
+      "permanent": true
+    },
+    {
+      "source": "/local/blackpool/web-design-company",
+      "destination": "/web-design-company/blackpool",
+      "permanent": true
+    },
+    {
+      "source": "/local/bournemouth/ai-automation-agency",
+      "destination": "/ai-automation-agency/bournemouth",
+      "permanent": true
+    },
+    {
+      "source": "/local/bournemouth/content-marketing-agency",
+      "destination": "/content-marketing-agency/bournemouth",
+      "permanent": true
+    },
+    {
+      "source": "/local/bournemouth/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/bournemouth",
+      "permanent": true
+    },
+    {
+      "source": "/local/bournemouth/email-marketing-agency",
+      "destination": "/email-marketing-agency/bournemouth",
+      "permanent": true
+    },
+    {
+      "source": "/local/bournemouth/google-ads-agency",
+      "destination": "/google-ads-agency/bournemouth",
+      "permanent": true
+    },
+    {
+      "source": "/local/bournemouth/ppc-agency",
+      "destination": "/ppc-agency/bournemouth",
+      "permanent": true
+    },
+    {
+      "source": "/local/bournemouth/seo-agency",
+      "destination": "/seo-agency/bournemouth",
+      "permanent": true
+    },
+    {
+      "source": "/local/bournemouth/social-media-agency",
+      "destination": "/social-media-agency/bournemouth",
+      "permanent": true
+    },
+    {
+      "source": "/local/bournemouth/web-design-company",
+      "destination": "/web-design-company/bournemouth",
+      "permanent": true
+    },
+    {
+      "source": "/local/bradford/ai-automation-agency",
+      "destination": "/ai-automation-agency/bradford",
+      "permanent": true
+    },
+    {
+      "source": "/local/bradford/content-marketing-agency",
+      "destination": "/content-marketing-agency/bradford",
+      "permanent": true
+    },
+    {
+      "source": "/local/bradford/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/bradford",
+      "permanent": true
+    },
+    {
+      "source": "/local/bradford/email-marketing-agency",
+      "destination": "/email-marketing-agency/bradford",
+      "permanent": true
+    },
+    {
+      "source": "/local/bradford/google-ads-agency",
+      "destination": "/google-ads-agency/bradford",
+      "permanent": true
+    },
+    {
+      "source": "/local/bradford/ppc-agency",
+      "destination": "/ppc-agency/bradford",
+      "permanent": true
+    },
+    {
+      "source": "/local/bradford/seo-agency",
+      "destination": "/seo-agency/bradford",
+      "permanent": true
+    },
+    {
+      "source": "/local/bradford/seo-company",
+      "destination": "/seo-company/bradford",
+      "permanent": true
+    },
+    {
+      "source": "/local/bradford/social-media-agency",
+      "destination": "/social-media-agency/bradford",
+      "permanent": true
+    },
+    {
+      "source": "/local/bradford/web-design-company",
+      "destination": "/web-design-company/bradford",
+      "permanent": true
+    },
+    {
+      "source": "/local/bradford/web-development-company",
+      "destination": "/web-development-company/bradford",
+      "permanent": true
+    },
+    {
+      "source": "/local/brighton/ai-automation-agency",
+      "destination": "/ai-automation-agency/brighton",
+      "permanent": true
+    },
+    {
+      "source": "/local/brighton/content-marketing-agency",
+      "destination": "/content-marketing-agency/brighton",
+      "permanent": true
+    },
+    {
+      "source": "/local/brighton/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/brighton",
+      "permanent": true
+    },
+    {
+      "source": "/local/brighton/email-marketing-agency",
+      "destination": "/email-marketing-agency/brighton",
+      "permanent": true
+    },
+    {
+      "source": "/local/brighton/google-ads-agency",
+      "destination": "/google-ads-agency/brighton",
+      "permanent": true
+    },
+    {
+      "source": "/local/brighton/paid-search-agency",
+      "destination": "/paid-search-agency/brighton",
+      "permanent": true
+    },
+    {
+      "source": "/local/brighton/ppc-agency",
+      "destination": "/ppc-agency/brighton",
+      "permanent": true
+    },
+    {
+      "source": "/local/brighton/seo-agency",
+      "destination": "/seo-agency/brighton",
+      "permanent": true
+    },
+    {
+      "source": "/local/brighton/seo-company",
+      "destination": "/seo-company/brighton",
+      "permanent": true
+    },
+    {
+      "source": "/local/brighton/social-media-agency",
+      "destination": "/social-media-agency/brighton",
+      "permanent": true
+    },
+    {
+      "source": "/local/brighton/web-design-company",
+      "destination": "/web-design-company/brighton",
+      "permanent": true
+    },
+    {
+      "source": "/local/brighton/web-development-company",
+      "destination": "/web-development-company/brighton",
+      "permanent": true
+    },
+    {
+      "source": "/local/bristol/ai-automation-agency",
+      "destination": "/ai-automation-agency/bristol",
+      "permanent": true
+    },
+    {
+      "source": "/local/bristol/amazon-marketing-agency",
+      "destination": "/amazon-marketing-agency/bristol",
+      "permanent": true
+    },
+    {
+      "source": "/local/bristol/content-marketing-agency",
+      "destination": "/content-marketing-agency/bristol",
+      "permanent": true
+    },
+    {
+      "source": "/local/bristol/cro-agency",
+      "destination": "/cro-agency/bristol",
+      "permanent": true
+    },
+    {
+      "source": "/local/bristol/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/bristol",
+      "permanent": true
+    },
+    {
+      "source": "/local/bristol/email-marketing-agency",
+      "destination": "/email-marketing-agency/bristol",
+      "permanent": true
+    },
+    {
+      "source": "/local/bristol/google-ads-agency",
+      "destination": "/google-ads-agency/bristol",
+      "permanent": true
+    },
+    {
+      "source": "/local/bristol/hubspot-agency",
+      "destination": "/hubspot-agency/bristol",
+      "permanent": true
+    },
+    {
+      "source": "/local/bristol/ppc-agency",
+      "destination": "/ppc-agency/bristol",
+      "permanent": true
+    },
+    {
+      "source": "/local/bristol/revops-agency",
+      "destination": "/revops-agency/bristol",
+      "permanent": true
+    },
+    {
+      "source": "/local/bristol/seo-agency",
+      "destination": "/seo-agency/bristol",
+      "permanent": true
+    },
+    {
+      "source": "/local/bristol/seo-company",
+      "destination": "/seo-company/bristol",
+      "permanent": true
+    },
+    {
+      "source": "/local/bristol/social-media-agency",
+      "destination": "/social-media-agency/bristol",
+      "permanent": true
+    },
+    {
+      "source": "/local/bristol/ugc-content-agency",
+      "destination": "/ugc-content-agency/bristol",
+      "permanent": true
+    },
+    {
+      "source": "/local/bristol/web-design-company",
+      "destination": "/web-design-company/bristol",
+      "permanent": true
+    },
+    {
+      "source": "/local/burnley/ai-automation-agency",
+      "destination": "/ai-automation-agency/burnley",
+      "permanent": true
+    },
+    {
+      "source": "/local/burnley/content-marketing-agency",
+      "destination": "/content-marketing-agency/burnley",
+      "permanent": true
+    },
+    {
+      "source": "/local/burnley/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/burnley",
+      "permanent": true
+    },
+    {
+      "source": "/local/burnley/email-marketing-agency",
+      "destination": "/email-marketing-agency/burnley",
+      "permanent": true
+    },
+    {
+      "source": "/local/burnley/google-ads-agency",
+      "destination": "/google-ads-agency/burnley",
+      "permanent": true
+    },
+    {
+      "source": "/local/burnley/ppc-agency",
+      "destination": "/ppc-agency/burnley",
+      "permanent": true
+    },
+    {
+      "source": "/local/burnley/seo-agency",
+      "destination": "/seo-agency/burnley",
+      "permanent": true
+    },
+    {
+      "source": "/local/burnley/social-media-agency",
+      "destination": "/social-media-agency/burnley",
+      "permanent": true
+    },
+    {
+      "source": "/local/burnley/web-design-company",
+      "destination": "/web-design-company/burnley",
+      "permanent": true
+    },
+    {
+      "source": "/local/cambridge/ai-automation-agency",
+      "destination": "/ai-automation-agency/cambridge",
+      "permanent": true
+    },
+    {
+      "source": "/local/cambridge/content-marketing-agency",
+      "destination": "/content-marketing-agency/cambridge",
+      "permanent": true
+    },
+    {
+      "source": "/local/cambridge/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/cambridge",
+      "permanent": true
+    },
+    {
+      "source": "/local/cambridge/email-marketing-agency",
+      "destination": "/email-marketing-agency/cambridge",
+      "permanent": true
+    },
+    {
+      "source": "/local/cambridge/google-ads-agency",
+      "destination": "/google-ads-agency/cambridge",
+      "permanent": true
+    },
+    {
+      "source": "/local/cambridge/ppc-agency",
+      "destination": "/ppc-agency/cambridge",
+      "permanent": true
+    },
+    {
+      "source": "/local/cambridge/seo-agency",
+      "destination": "/seo-agency/cambridge",
+      "permanent": true
+    },
+    {
+      "source": "/local/cambridge/seo-company",
+      "destination": "/seo-company/cambridge",
+      "permanent": true
+    },
+    {
+      "source": "/local/cambridge/social-media-agency",
+      "destination": "/social-media-agency/cambridge",
+      "permanent": true
+    },
+    {
+      "source": "/local/cambridge/web-design-company",
+      "destination": "/web-design-company/cambridge",
+      "permanent": true
+    },
+    {
+      "source": "/local/cardiff/ai-automation-agency",
+      "destination": "/ai-automation-agency/cardiff",
+      "permanent": true
+    },
+    {
+      "source": "/local/cardiff/content-marketing-agency",
+      "destination": "/content-marketing-agency/cardiff",
+      "permanent": true
+    },
+    {
+      "source": "/local/cardiff/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/cardiff",
+      "permanent": true
+    },
+    {
+      "source": "/local/cardiff/email-marketing-agency",
+      "destination": "/email-marketing-agency/cardiff",
+      "permanent": true
+    },
+    {
+      "source": "/local/cardiff/google-ads-agency",
+      "destination": "/google-ads-agency/cardiff",
+      "permanent": true
+    },
+    {
+      "source": "/local/cardiff/ppc-agency",
+      "destination": "/ppc-agency/cardiff",
+      "permanent": true
+    },
+    {
+      "source": "/local/cardiff/seo-agency",
+      "destination": "/seo-agency/cardiff",
+      "permanent": true
+    },
+    {
+      "source": "/local/cardiff/seo-company",
+      "destination": "/seo-company/cardiff",
+      "permanent": true
+    },
+    {
+      "source": "/local/cardiff/social-media-agency",
+      "destination": "/social-media-agency/cardiff",
+      "permanent": true
+    },
+    {
+      "source": "/local/cardiff/web-design-company",
+      "destination": "/web-design-company/cardiff",
+      "permanent": true
+    },
+    {
+      "source": "/local/cheltenham/ai-automation-agency",
+      "destination": "/ai-automation-agency/cheltenham",
+      "permanent": true
+    },
+    {
+      "source": "/local/cheltenham/content-marketing-agency",
+      "destination": "/content-marketing-agency/cheltenham",
+      "permanent": true
+    },
+    {
+      "source": "/local/cheltenham/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/cheltenham",
+      "permanent": true
+    },
+    {
+      "source": "/local/cheltenham/email-marketing-agency",
+      "destination": "/email-marketing-agency/cheltenham",
+      "permanent": true
+    },
+    {
+      "source": "/local/cheltenham/google-ads-agency",
+      "destination": "/google-ads-agency/cheltenham",
+      "permanent": true
+    },
+    {
+      "source": "/local/cheltenham/ppc-agency",
+      "destination": "/ppc-agency/cheltenham",
+      "permanent": true
+    },
+    {
+      "source": "/local/cheltenham/seo-agency",
+      "destination": "/seo-agency/cheltenham",
+      "permanent": true
+    },
+    {
+      "source": "/local/cheltenham/seo-company",
+      "destination": "/seo-company/cheltenham",
+      "permanent": true
+    },
+    {
+      "source": "/local/cheltenham/social-media-agency",
+      "destination": "/social-media-agency/cheltenham",
+      "permanent": true
+    },
+    {
+      "source": "/local/cheltenham/web-design-company",
+      "destination": "/web-design-company/cheltenham",
+      "permanent": true
+    },
+    {
+      "source": "/local/coventry/ai-automation-agency",
+      "destination": "/ai-automation-agency/coventry",
+      "permanent": true
+    },
+    {
+      "source": "/local/coventry/content-marketing-agency",
+      "destination": "/content-marketing-agency/coventry",
+      "permanent": true
+    },
+    {
+      "source": "/local/coventry/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/coventry",
+      "permanent": true
+    },
+    {
+      "source": "/local/coventry/email-marketing-agency",
+      "destination": "/email-marketing-agency/coventry",
+      "permanent": true
+    },
+    {
+      "source": "/local/coventry/google-ads-agency",
+      "destination": "/google-ads-agency/coventry",
+      "permanent": true
+    },
+    {
+      "source": "/local/coventry/ppc-agency",
+      "destination": "/ppc-agency/coventry",
+      "permanent": true
+    },
+    {
+      "source": "/local/coventry/seo-agency",
+      "destination": "/seo-agency/coventry",
+      "permanent": true
+    },
+    {
+      "source": "/local/coventry/seo-company",
+      "destination": "/seo-company/coventry",
+      "permanent": true
+    },
+    {
+      "source": "/local/coventry/social-media-agency",
+      "destination": "/social-media-agency/coventry",
+      "permanent": true
+    },
+    {
+      "source": "/local/coventry/web-design-company",
+      "destination": "/web-design-company/coventry",
+      "permanent": true
+    },
+    {
+      "source": "/local/coventry/web-development-company",
+      "destination": "/web-development-company/coventry",
+      "permanent": true
+    },
+    {
+      "source": "/local/derby/ai-automation-agency",
+      "destination": "/ai-automation-agency/derby",
+      "permanent": true
+    },
+    {
+      "source": "/local/derby/content-marketing-agency",
+      "destination": "/content-marketing-agency/derby",
+      "permanent": true
+    },
+    {
+      "source": "/local/derby/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/derby",
+      "permanent": true
+    },
+    {
+      "source": "/local/derby/email-marketing-agency",
+      "destination": "/email-marketing-agency/derby",
+      "permanent": true
+    },
+    {
+      "source": "/local/derby/google-ads-agency",
+      "destination": "/google-ads-agency/derby",
+      "permanent": true
+    },
+    {
+      "source": "/local/derby/online-marketing-agency",
+      "destination": "/online-marketing-agency/derby",
+      "permanent": true
+    },
+    {
+      "source": "/local/derby/ppc-agency",
+      "destination": "/ppc-agency/derby",
+      "permanent": true
+    },
+    {
+      "source": "/local/derby/seo-agency",
+      "destination": "/seo-agency/derby",
+      "permanent": true
+    },
+    {
+      "source": "/local/derby/seo-company",
+      "destination": "/seo-company/derby",
+      "permanent": true
+    },
+    {
+      "source": "/local/derby/social-media-agency",
+      "destination": "/social-media-agency/derby",
+      "permanent": true
+    },
+    {
+      "source": "/local/derby/web-design-company",
+      "destination": "/web-design-company/derby",
+      "permanent": true
+    },
+    {
+      "source": "/local/derby/web-development-company",
+      "destination": "/web-development-company/derby",
+      "permanent": true
+    },
+    {
+      "source": "/local/derry/ai-automation-agency",
+      "destination": "/ai-automation-agency/derry",
+      "permanent": true
+    },
+    {
+      "source": "/local/derry/content-marketing-agency",
+      "destination": "/content-marketing-agency/derry",
+      "permanent": true
+    },
+    {
+      "source": "/local/derry/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/derry",
+      "permanent": true
+    },
+    {
+      "source": "/local/derry/email-marketing-agency",
+      "destination": "/email-marketing-agency/derry",
+      "permanent": true
+    },
+    {
+      "source": "/local/derry/google-ads-agency",
+      "destination": "/google-ads-agency/derry",
+      "permanent": true
+    },
+    {
+      "source": "/local/derry/ppc-agency",
+      "destination": "/ppc-agency/derry",
+      "permanent": true
+    },
+    {
+      "source": "/local/derry/seo-agency",
+      "destination": "/seo-agency/derry",
+      "permanent": true
+    },
+    {
+      "source": "/local/derry/seo-company",
+      "destination": "/seo-company/derry",
+      "permanent": true
+    },
+    {
+      "source": "/local/derry/social-media-agency",
+      "destination": "/social-media-agency/derry",
+      "permanent": true
+    },
+    {
+      "source": "/local/derry/web-design-company",
+      "destination": "/web-design-company/derry",
+      "permanent": true
+    },
+    {
+      "source": "/local/doncaster/ai-automation-agency",
+      "destination": "/ai-automation-agency/doncaster",
+      "permanent": true
+    },
+    {
+      "source": "/local/doncaster/content-marketing-agency",
+      "destination": "/content-marketing-agency/doncaster",
+      "permanent": true
+    },
+    {
+      "source": "/local/doncaster/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/doncaster",
+      "permanent": true
+    },
+    {
+      "source": "/local/doncaster/email-marketing-agency",
+      "destination": "/email-marketing-agency/doncaster",
+      "permanent": true
+    },
+    {
+      "source": "/local/doncaster/google-ads-agency",
+      "destination": "/google-ads-agency/doncaster",
+      "permanent": true
+    },
+    {
+      "source": "/local/doncaster/ppc-agency",
+      "destination": "/ppc-agency/doncaster",
+      "permanent": true
+    },
+    {
+      "source": "/local/doncaster/seo-agency",
+      "destination": "/seo-agency/doncaster",
+      "permanent": true
+    },
+    {
+      "source": "/local/doncaster/seo-company",
+      "destination": "/seo-company/doncaster",
+      "permanent": true
+    },
+    {
+      "source": "/local/doncaster/social-media-agency",
+      "destination": "/social-media-agency/doncaster",
+      "permanent": true
+    },
+    {
+      "source": "/local/doncaster/web-design-company",
+      "destination": "/web-design-company/doncaster",
+      "permanent": true
+    },
+    {
+      "source": "/local/dundee/ai-automation-agency",
+      "destination": "/ai-automation-agency/dundee",
+      "permanent": true
+    },
+    {
+      "source": "/local/dundee/content-marketing-agency",
+      "destination": "/content-marketing-agency/dundee",
+      "permanent": true
+    },
+    {
+      "source": "/local/dundee/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/dundee",
+      "permanent": true
+    },
+    {
+      "source": "/local/dundee/email-marketing-agency",
+      "destination": "/email-marketing-agency/dundee",
+      "permanent": true
+    },
+    {
+      "source": "/local/dundee/google-ads-agency",
+      "destination": "/google-ads-agency/dundee",
+      "permanent": true
+    },
+    {
+      "source": "/local/dundee/ppc-agency",
+      "destination": "/ppc-agency/dundee",
+      "permanent": true
+    },
+    {
+      "source": "/local/dundee/seo-agency",
+      "destination": "/seo-agency/dundee",
+      "permanent": true
+    },
+    {
+      "source": "/local/dundee/seo-company",
+      "destination": "/seo-company/dundee",
+      "permanent": true
+    },
+    {
+      "source": "/local/dundee/social-media-agency",
+      "destination": "/social-media-agency/dundee",
+      "permanent": true
+    },
+    {
+      "source": "/local/dundee/web-design-company",
+      "destination": "/web-design-company/dundee",
+      "permanent": true
+    },
+    {
+      "source": "/local/durham/ai-automation-agency",
+      "destination": "/ai-automation-agency/durham",
+      "permanent": true
+    },
+    {
+      "source": "/local/durham/content-marketing-agency",
+      "destination": "/content-marketing-agency/durham",
+      "permanent": true
+    },
+    {
+      "source": "/local/durham/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/durham",
+      "permanent": true
+    },
+    {
+      "source": "/local/durham/email-marketing-agency",
+      "destination": "/email-marketing-agency/durham",
+      "permanent": true
+    },
+    {
+      "source": "/local/durham/google-ads-agency",
+      "destination": "/google-ads-agency/durham",
+      "permanent": true
+    },
+    {
+      "source": "/local/durham/ppc-agency",
+      "destination": "/ppc-agency/durham",
+      "permanent": true
+    },
+    {
+      "source": "/local/durham/seo-agency",
+      "destination": "/seo-agency/durham",
+      "permanent": true
+    },
+    {
+      "source": "/local/durham/seo-company",
+      "destination": "/seo-company/durham",
+      "permanent": true
+    },
+    {
+      "source": "/local/durham/social-media-agency",
+      "destination": "/social-media-agency/durham",
+      "permanent": true
+    },
+    {
+      "source": "/local/durham/web-design-company",
+      "destination": "/web-design-company/durham",
+      "permanent": true
+    },
+    {
+      "source": "/local/eastbourne/ai-automation-agency",
+      "destination": "/ai-automation-agency/eastbourne",
+      "permanent": true
+    },
+    {
+      "source": "/local/eastbourne/content-marketing-agency",
+      "destination": "/content-marketing-agency/eastbourne",
+      "permanent": true
+    },
+    {
+      "source": "/local/eastbourne/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/eastbourne",
+      "permanent": true
+    },
+    {
+      "source": "/local/eastbourne/email-marketing-agency",
+      "destination": "/email-marketing-agency/eastbourne",
+      "permanent": true
+    },
+    {
+      "source": "/local/eastbourne/google-ads-agency",
+      "destination": "/google-ads-agency/eastbourne",
+      "permanent": true
+    },
+    {
+      "source": "/local/eastbourne/ppc-agency",
+      "destination": "/ppc-agency/eastbourne",
+      "permanent": true
+    },
+    {
+      "source": "/local/eastbourne/seo-agency",
+      "destination": "/seo-agency/eastbourne",
+      "permanent": true
+    },
+    {
+      "source": "/local/eastbourne/seo-company",
+      "destination": "/seo-company/eastbourne",
+      "permanent": true
+    },
+    {
+      "source": "/local/eastbourne/social-media-agency",
+      "destination": "/social-media-agency/eastbourne",
+      "permanent": true
+    },
+    {
+      "source": "/local/eastbourne/web-design-company",
+      "destination": "/web-design-company/eastbourne",
+      "permanent": true
+    },
+    {
+      "source": "/local/edinburgh/ai-automation-agency",
+      "destination": "/ai-automation-agency/edinburgh",
+      "permanent": true
+    },
+    {
+      "source": "/local/edinburgh/content-marketing-agency",
+      "destination": "/content-marketing-agency/edinburgh",
+      "permanent": true
+    },
+    {
+      "source": "/local/edinburgh/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/edinburgh",
+      "permanent": true
+    },
+    {
+      "source": "/local/edinburgh/email-marketing-agency",
+      "destination": "/email-marketing-agency/edinburgh",
+      "permanent": true
+    },
+    {
+      "source": "/local/edinburgh/google-ads-agency",
+      "destination": "/google-ads-agency/edinburgh",
+      "permanent": true
+    },
+    {
+      "source": "/local/edinburgh/ppc-agency",
+      "destination": "/ppc-agency/edinburgh",
+      "permanent": true
+    },
+    {
+      "source": "/local/edinburgh/seo-agency",
+      "destination": "/seo-agency/edinburgh",
+      "permanent": true
+    },
+    {
+      "source": "/local/edinburgh/seo-company",
+      "destination": "/seo-company/edinburgh",
+      "permanent": true
+    },
+    {
+      "source": "/local/edinburgh/social-media-agency",
+      "destination": "/social-media-agency/edinburgh",
+      "permanent": true
+    },
+    {
+      "source": "/local/edinburgh/web-design-company",
+      "destination": "/web-design-company/edinburgh",
+      "permanent": true
+    },
+    {
+      "source": "/local/elgin/ai-automation-agency",
+      "destination": "/ai-automation-agency/elgin",
+      "permanent": true
+    },
+    {
+      "source": "/local/elgin/content-marketing-agency",
+      "destination": "/content-marketing-agency/elgin",
+      "permanent": true
+    },
+    {
+      "source": "/local/elgin/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/elgin",
+      "permanent": true
+    },
+    {
+      "source": "/local/elgin/email-marketing-agency",
+      "destination": "/email-marketing-agency/elgin",
+      "permanent": true
+    },
+    {
+      "source": "/local/elgin/google-ads-agency",
+      "destination": "/google-ads-agency/elgin",
+      "permanent": true
+    },
+    {
+      "source": "/local/elgin/ppc-agency",
+      "destination": "/ppc-agency/elgin",
+      "permanent": true
+    },
+    {
+      "source": "/local/elgin/seo-agency",
+      "destination": "/seo-agency/elgin",
+      "permanent": true
+    },
+    {
+      "source": "/local/elgin/seo-company",
+      "destination": "/seo-company/elgin",
+      "permanent": true
+    },
+    {
+      "source": "/local/elgin/social-media-agency",
+      "destination": "/social-media-agency/elgin",
+      "permanent": true
+    },
+    {
+      "source": "/local/elgin/web-design-company",
+      "destination": "/web-design-company/elgin",
+      "permanent": true
+    },
+    {
+      "source": "/local/ely/ai-automation-agency",
+      "destination": "/ai-automation-agency/ely",
+      "permanent": true
+    },
+    {
+      "source": "/local/ely/content-marketing-agency",
+      "destination": "/content-marketing-agency/ely",
+      "permanent": true
+    },
+    {
+      "source": "/local/ely/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/ely",
+      "permanent": true
+    },
+    {
+      "source": "/local/ely/email-marketing-agency",
+      "destination": "/email-marketing-agency/ely",
+      "permanent": true
+    },
+    {
+      "source": "/local/ely/google-ads-agency",
+      "destination": "/google-ads-agency/ely",
+      "permanent": true
+    },
+    {
+      "source": "/local/ely/ppc-agency",
+      "destination": "/ppc-agency/ely",
+      "permanent": true
+    },
+    {
+      "source": "/local/ely/seo-agency",
+      "destination": "/seo-agency/ely",
+      "permanent": true
+    },
+    {
+      "source": "/local/ely/seo-company",
+      "destination": "/seo-company/ely",
+      "permanent": true
+    },
+    {
+      "source": "/local/ely/social-media-agency",
+      "destination": "/social-media-agency/ely",
+      "permanent": true
+    },
+    {
+      "source": "/local/ely/web-design-company",
+      "destination": "/web-design-company/ely",
+      "permanent": true
+    },
+    {
+      "source": "/local/exeter/ai-automation-agency",
+      "destination": "/ai-automation-agency/exeter",
+      "permanent": true
+    },
+    {
+      "source": "/local/exeter/content-marketing-agency",
+      "destination": "/content-marketing-agency/exeter",
+      "permanent": true
+    },
+    {
+      "source": "/local/exeter/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/exeter",
+      "permanent": true
+    },
+    {
+      "source": "/local/exeter/email-marketing-agency",
+      "destination": "/email-marketing-agency/exeter",
+      "permanent": true
+    },
+    {
+      "source": "/local/exeter/google-ads-agency",
+      "destination": "/google-ads-agency/exeter",
+      "permanent": true
+    },
+    {
+      "source": "/local/exeter/ppc-agency",
+      "destination": "/ppc-agency/exeter",
+      "permanent": true
+    },
+    {
+      "source": "/local/exeter/seo-agency",
+      "destination": "/seo-agency/exeter",
+      "permanent": true
+    },
+    {
+      "source": "/local/exeter/seo-company",
+      "destination": "/seo-company/exeter",
+      "permanent": true
+    },
+    {
+      "source": "/local/exeter/social-media-agency",
+      "destination": "/social-media-agency/exeter",
+      "permanent": true
+    },
+    {
+      "source": "/local/exeter/web-design-company",
+      "destination": "/web-design-company/exeter",
+      "permanent": true
+    },
+    {
+      "source": "/local/gateshead/ai-automation-agency",
+      "destination": "/ai-automation-agency/gateshead",
+      "permanent": true
+    },
+    {
+      "source": "/local/gateshead/content-marketing-agency",
+      "destination": "/content-marketing-agency/gateshead",
+      "permanent": true
+    },
+    {
+      "source": "/local/gateshead/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/gateshead",
+      "permanent": true
+    },
+    {
+      "source": "/local/gateshead/email-marketing-agency",
+      "destination": "/email-marketing-agency/gateshead",
+      "permanent": true
+    },
+    {
+      "source": "/local/gateshead/google-ads-agency",
+      "destination": "/google-ads-agency/gateshead",
+      "permanent": true
+    },
+    {
+      "source": "/local/gateshead/ppc-agency",
+      "destination": "/ppc-agency/gateshead",
+      "permanent": true
+    },
+    {
+      "source": "/local/gateshead/seo-agency",
+      "destination": "/seo-agency/gateshead",
+      "permanent": true
+    },
+    {
+      "source": "/local/gateshead/seo-company",
+      "destination": "/seo-company/gateshead",
+      "permanent": true
+    },
+    {
+      "source": "/local/gateshead/social-media-agency",
+      "destination": "/social-media-agency/gateshead",
+      "permanent": true
+    },
+    {
+      "source": "/local/gateshead/web-design-company",
+      "destination": "/web-design-company/gateshead",
+      "permanent": true
+    },
+    {
+      "source": "/local/glasgow/ai-automation-agency",
+      "destination": "/ai-automation-agency/glasgow",
+      "permanent": true
+    },
+    {
+      "source": "/local/glasgow/content-marketing-agency",
+      "destination": "/content-marketing-agency/glasgow",
+      "permanent": true
+    },
+    {
+      "source": "/local/glasgow/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/glasgow",
+      "permanent": true
+    },
+    {
+      "source": "/local/glasgow/email-marketing-agency",
+      "destination": "/email-marketing-agency/glasgow",
+      "permanent": true
+    },
+    {
+      "source": "/local/glasgow/google-ads-agency",
+      "destination": "/google-ads-agency/glasgow",
+      "permanent": true
+    },
+    {
+      "source": "/local/glasgow/ppc-agency",
+      "destination": "/ppc-agency/glasgow",
+      "permanent": true
+    },
+    {
+      "source": "/local/glasgow/seo-agency",
+      "destination": "/seo-agency/glasgow",
+      "permanent": true
+    },
+    {
+      "source": "/local/glasgow/seo-company",
+      "destination": "/seo-company/glasgow",
+      "permanent": true
+    },
+    {
+      "source": "/local/glasgow/social-media-agency",
+      "destination": "/social-media-agency/glasgow",
+      "permanent": true
+    },
+    {
+      "source": "/local/glasgow/web-design-company",
+      "destination": "/web-design-company/glasgow",
+      "permanent": true
+    },
+    {
+      "source": "/local/gloucester/ai-automation-agency",
+      "destination": "/ai-automation-agency/gloucester",
+      "permanent": true
+    },
+    {
+      "source": "/local/gloucester/content-marketing-agency",
+      "destination": "/content-marketing-agency/gloucester",
+      "permanent": true
+    },
+    {
+      "source": "/local/gloucester/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/gloucester",
+      "permanent": true
+    },
+    {
+      "source": "/local/gloucester/email-marketing-agency",
+      "destination": "/email-marketing-agency/gloucester",
+      "permanent": true
+    },
+    {
+      "source": "/local/gloucester/google-ads-agency",
+      "destination": "/google-ads-agency/gloucester",
+      "permanent": true
+    },
+    {
+      "source": "/local/gloucester/ppc-agency",
+      "destination": "/ppc-agency/gloucester",
+      "permanent": true
+    },
+    {
+      "source": "/local/gloucester/seo-agency",
+      "destination": "/seo-agency/gloucester",
+      "permanent": true
+    },
+    {
+      "source": "/local/gloucester/seo-company",
+      "destination": "/seo-company/gloucester",
+      "permanent": true
+    },
+    {
+      "source": "/local/gloucester/social-media-agency",
+      "destination": "/social-media-agency/gloucester",
+      "permanent": true
+    },
+    {
+      "source": "/local/gloucester/web-design-company",
+      "destination": "/web-design-company/gloucester",
+      "permanent": true
+    },
+    {
+      "source": "/local/hove/ai-automation-agency",
+      "destination": "/ai-automation-agency/hove",
+      "permanent": true
+    },
+    {
+      "source": "/local/hove/content-marketing-agency",
+      "destination": "/content-marketing-agency/hove",
+      "permanent": true
+    },
+    {
+      "source": "/local/hove/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/hove",
+      "permanent": true
+    },
+    {
+      "source": "/local/hove/email-marketing-agency",
+      "destination": "/email-marketing-agency/hove",
+      "permanent": true
+    },
+    {
+      "source": "/local/hove/google-ads-agency",
+      "destination": "/google-ads-agency/hove",
+      "permanent": true
+    },
+    {
+      "source": "/local/hove/ppc-agency",
+      "destination": "/ppc-agency/hove",
+      "permanent": true
+    },
+    {
+      "source": "/local/hove/seo-agency",
+      "destination": "/seo-agency/hove",
+      "permanent": true
+    },
+    {
+      "source": "/local/hove/seo-company",
+      "destination": "/seo-company/hove",
+      "permanent": true
+    },
+    {
+      "source": "/local/hove/social-media-agency",
+      "destination": "/social-media-agency/hove",
+      "permanent": true
+    },
+    {
+      "source": "/local/hove/web-design-company",
+      "destination": "/web-design-company/hove",
+      "permanent": true
+    },
+    {
+      "source": "/local/huddersfield/ai-automation-agency",
+      "destination": "/ai-automation-agency/huddersfield",
+      "permanent": true
+    },
+    {
+      "source": "/local/huddersfield/content-marketing-agency",
+      "destination": "/content-marketing-agency/huddersfield",
+      "permanent": true
+    },
+    {
+      "source": "/local/huddersfield/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/huddersfield",
+      "permanent": true
+    },
+    {
+      "source": "/local/huddersfield/email-marketing-agency",
+      "destination": "/email-marketing-agency/huddersfield",
+      "permanent": true
+    },
+    {
+      "source": "/local/huddersfield/google-ads-agency",
+      "destination": "/google-ads-agency/huddersfield",
+      "permanent": true
+    },
+    {
+      "source": "/local/huddersfield/ppc-agency",
+      "destination": "/ppc-agency/huddersfield",
+      "permanent": true
+    },
+    {
+      "source": "/local/huddersfield/seo-agency",
+      "destination": "/seo-agency/huddersfield",
+      "permanent": true
+    },
+    {
+      "source": "/local/huddersfield/seo-company",
+      "destination": "/seo-company/huddersfield",
+      "permanent": true
+    },
+    {
+      "source": "/local/huddersfield/social-media-agency",
+      "destination": "/social-media-agency/huddersfield",
+      "permanent": true
+    },
+    {
+      "source": "/local/huddersfield/web-design-company",
+      "destination": "/web-design-company/huddersfield",
+      "permanent": true
+    },
+    {
+      "source": "/local/huntingdon/ai-automation-agency",
+      "destination": "/ai-automation-agency/huntingdon",
+      "permanent": true
+    },
+    {
+      "source": "/local/huntingdon/content-marketing-agency",
+      "destination": "/content-marketing-agency/huntingdon",
+      "permanent": true
+    },
+    {
+      "source": "/local/huntingdon/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/huntingdon",
+      "permanent": true
+    },
+    {
+      "source": "/local/huntingdon/email-marketing-agency",
+      "destination": "/email-marketing-agency/huntingdon",
+      "permanent": true
+    },
+    {
+      "source": "/local/huntingdon/google-ads-agency",
+      "destination": "/google-ads-agency/huntingdon",
+      "permanent": true
+    },
+    {
+      "source": "/local/huntingdon/ppc-agency",
+      "destination": "/ppc-agency/huntingdon",
+      "permanent": true
+    },
+    {
+      "source": "/local/huntingdon/seo-agency",
+      "destination": "/seo-agency/huntingdon",
+      "permanent": true
+    },
+    {
+      "source": "/local/huntingdon/seo-company",
+      "destination": "/seo-company/huntingdon",
+      "permanent": true
+    },
+    {
+      "source": "/local/huntingdon/social-media-agency",
+      "destination": "/social-media-agency/huntingdon",
+      "permanent": true
+    },
+    {
+      "source": "/local/huntingdon/web-design-company",
+      "destination": "/web-design-company/huntingdon",
+      "permanent": true
+    },
+    {
+      "source": "/local/inverness/ai-automation-agency",
+      "destination": "/ai-automation-agency/inverness",
+      "permanent": true
+    },
+    {
+      "source": "/local/inverness/content-marketing-agency",
+      "destination": "/content-marketing-agency/inverness",
+      "permanent": true
+    },
+    {
+      "source": "/local/inverness/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/inverness",
+      "permanent": true
+    },
+    {
+      "source": "/local/inverness/email-marketing-agency",
+      "destination": "/email-marketing-agency/inverness",
+      "permanent": true
+    },
+    {
+      "source": "/local/inverness/google-ads-agency",
+      "destination": "/google-ads-agency/inverness",
+      "permanent": true
+    },
+    {
+      "source": "/local/inverness/ppc-agency",
+      "destination": "/ppc-agency/inverness",
+      "permanent": true
+    },
+    {
+      "source": "/local/inverness/seo-agency",
+      "destination": "/seo-agency/inverness",
+      "permanent": true
+    },
+    {
+      "source": "/local/inverness/seo-company",
+      "destination": "/seo-company/inverness",
+      "permanent": true
+    },
+    {
+      "source": "/local/inverness/social-media-agency",
+      "destination": "/social-media-agency/inverness",
+      "permanent": true
+    },
+    {
+      "source": "/local/inverness/web-design-company",
+      "destination": "/web-design-company/inverness",
+      "permanent": true
+    },
+    {
+      "source": "/local/keighley/ai-automation-agency",
+      "destination": "/ai-automation-agency/keighley",
+      "permanent": true
+    },
+    {
+      "source": "/local/keighley/content-marketing-agency",
+      "destination": "/content-marketing-agency/keighley",
+      "permanent": true
+    },
+    {
+      "source": "/local/keighley/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/keighley",
+      "permanent": true
+    },
+    {
+      "source": "/local/keighley/email-marketing-agency",
+      "destination": "/email-marketing-agency/keighley",
+      "permanent": true
+    },
+    {
+      "source": "/local/keighley/google-ads-agency",
+      "destination": "/google-ads-agency/keighley",
+      "permanent": true
+    },
+    {
+      "source": "/local/keighley/ppc-agency",
+      "destination": "/ppc-agency/keighley",
+      "permanent": true
+    },
+    {
+      "source": "/local/keighley/seo-agency",
+      "destination": "/seo-agency/keighley",
+      "permanent": true
+    },
+    {
+      "source": "/local/keighley/seo-company",
+      "destination": "/seo-company/keighley",
+      "permanent": true
+    },
+    {
+      "source": "/local/keighley/social-media-agency",
+      "destination": "/social-media-agency/keighley",
+      "permanent": true
+    },
+    {
+      "source": "/local/keighley/web-design-company",
+      "destination": "/web-design-company/keighley",
+      "permanent": true
+    },
+    {
+      "source": "/local/lancaster/ai-automation-agency",
+      "destination": "/ai-automation-agency/lancaster",
+      "permanent": true
+    },
+    {
+      "source": "/local/lancaster/content-marketing-agency",
+      "destination": "/content-marketing-agency/lancaster",
+      "permanent": true
+    },
+    {
+      "source": "/local/lancaster/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/lancaster",
+      "permanent": true
+    },
+    {
+      "source": "/local/lancaster/email-marketing-agency",
+      "destination": "/email-marketing-agency/lancaster",
+      "permanent": true
+    },
+    {
+      "source": "/local/lancaster/google-ads-agency",
+      "destination": "/google-ads-agency/lancaster",
+      "permanent": true
+    },
+    {
+      "source": "/local/lancaster/ppc-agency",
+      "destination": "/ppc-agency/lancaster",
+      "permanent": true
+    },
+    {
+      "source": "/local/lancaster/seo-agency",
+      "destination": "/seo-agency/lancaster",
+      "permanent": true
+    },
+    {
+      "source": "/local/lancaster/social-media-agency",
+      "destination": "/social-media-agency/lancaster",
+      "permanent": true
+    },
+    {
+      "source": "/local/lancaster/web-design-company",
+      "destination": "/web-design-company/lancaster",
+      "permanent": true
+    },
+    {
+      "source": "/local/leeds/ai-automation-agency",
+      "destination": "/ai-automation-agency/leeds",
+      "permanent": true
+    },
+    {
+      "source": "/local/leeds/amazon-marketing-agency",
+      "destination": "/amazon-marketing-agency/leeds",
+      "permanent": true
+    },
+    {
+      "source": "/local/leeds/content-marketing-agency",
+      "destination": "/content-marketing-agency/leeds",
+      "permanent": true
+    },
+    {
+      "source": "/local/leeds/cro-agency",
+      "destination": "/cro-agency/leeds",
+      "permanent": true
+    },
+    {
+      "source": "/local/leeds/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/leeds",
+      "permanent": true
+    },
+    {
+      "source": "/local/leeds/email-marketing-agency",
+      "destination": "/email-marketing-agency/leeds",
+      "permanent": true
+    },
+    {
+      "source": "/local/leeds/google-ads-agency",
+      "destination": "/google-ads-agency/leeds",
+      "permanent": true
+    },
+    {
+      "source": "/local/leeds/hubspot-agency",
+      "destination": "/hubspot-agency/leeds",
+      "permanent": true
+    },
+    {
+      "source": "/local/leeds/paid-search-agency",
+      "destination": "/paid-search-agency/leeds",
+      "permanent": true
+    },
+    {
+      "source": "/local/leeds/ppc-agency",
+      "destination": "/ppc-agency/leeds",
+      "permanent": true
+    },
+    {
+      "source": "/local/leeds/revops-agency",
+      "destination": "/revops-agency/leeds",
+      "permanent": true
+    },
+    {
+      "source": "/local/leeds/seo-agency",
+      "destination": "/seo-agency/leeds",
+      "permanent": true
+    },
+    {
+      "source": "/local/leeds/seo-company",
+      "destination": "/seo-company/leeds",
+      "permanent": true
+    },
+    {
+      "source": "/local/leeds/social-media-agency",
+      "destination": "/social-media-agency/leeds",
+      "permanent": true
+    },
+    {
+      "source": "/local/leeds/ugc-content-agency",
+      "destination": "/ugc-content-agency/leeds",
+      "permanent": true
+    },
+    {
+      "source": "/local/leeds/web-design-company",
+      "destination": "/web-design-company/leeds",
+      "permanent": true
+    },
+    {
+      "source": "/local/leeds/web-development-company",
+      "destination": "/web-development-company/leeds",
+      "permanent": true
+    },
+    {
+      "source": "/local/leicester/ai-automation-agency",
+      "destination": "/ai-automation-agency/leicester",
+      "permanent": true
+    },
+    {
+      "source": "/local/leicester/content-marketing-agency",
+      "destination": "/content-marketing-agency/leicester",
+      "permanent": true
+    },
+    {
+      "source": "/local/leicester/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/leicester",
+      "permanent": true
+    },
+    {
+      "source": "/local/leicester/email-marketing-agency",
+      "destination": "/email-marketing-agency/leicester",
+      "permanent": true
+    },
+    {
+      "source": "/local/leicester/google-ads-agency",
+      "destination": "/google-ads-agency/leicester",
+      "permanent": true
+    },
+    {
+      "source": "/local/leicester/online-marketing-agency",
+      "destination": "/online-marketing-agency/leicester",
+      "permanent": true
+    },
+    {
+      "source": "/local/leicester/ppc-agency",
+      "destination": "/ppc-agency/leicester",
+      "permanent": true
+    },
+    {
+      "source": "/local/leicester/seo-agency",
+      "destination": "/seo-agency/leicester",
+      "permanent": true
+    },
+    {
+      "source": "/local/leicester/seo-company",
+      "destination": "/seo-company/leicester",
+      "permanent": true
+    },
+    {
+      "source": "/local/leicester/social-media-agency",
+      "destination": "/social-media-agency/leicester",
+      "permanent": true
+    },
+    {
+      "source": "/local/leicester/web-design-company",
+      "destination": "/web-design-company/leicester",
+      "permanent": true
+    },
+    {
+      "source": "/local/lisburn/ai-automation-agency",
+      "destination": "/ai-automation-agency/lisburn",
+      "permanent": true
+    },
+    {
+      "source": "/local/lisburn/content-marketing-agency",
+      "destination": "/content-marketing-agency/lisburn",
+      "permanent": true
+    },
+    {
+      "source": "/local/lisburn/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/lisburn",
+      "permanent": true
+    },
+    {
+      "source": "/local/lisburn/email-marketing-agency",
+      "destination": "/email-marketing-agency/lisburn",
+      "permanent": true
+    },
+    {
+      "source": "/local/lisburn/google-ads-agency",
+      "destination": "/google-ads-agency/lisburn",
+      "permanent": true
+    },
+    {
+      "source": "/local/lisburn/ppc-agency",
+      "destination": "/ppc-agency/lisburn",
+      "permanent": true
+    },
+    {
+      "source": "/local/lisburn/seo-agency",
+      "destination": "/seo-agency/lisburn",
+      "permanent": true
+    },
+    {
+      "source": "/local/lisburn/seo-company",
+      "destination": "/seo-company/lisburn",
+      "permanent": true
+    },
+    {
+      "source": "/local/lisburn/social-media-agency",
+      "destination": "/social-media-agency/lisburn",
+      "permanent": true
+    },
+    {
+      "source": "/local/lisburn/web-design-company",
+      "destination": "/web-design-company/lisburn",
+      "permanent": true
+    },
+    {
+      "source": "/local/liverpool/ai-automation-agency",
+      "destination": "/ai-automation-agency/liverpool",
+      "permanent": true
+    },
+    {
+      "source": "/local/liverpool/content-marketing-agency",
+      "destination": "/content-marketing-agency/liverpool",
+      "permanent": true
+    },
+    {
+      "source": "/local/liverpool/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/liverpool",
+      "permanent": true
+    },
+    {
+      "source": "/local/liverpool/email-marketing-agency",
+      "destination": "/email-marketing-agency/liverpool",
+      "permanent": true
+    },
+    {
+      "source": "/local/liverpool/google-ads-agency",
+      "destination": "/google-ads-agency/liverpool",
+      "permanent": true
+    },
+    {
+      "source": "/local/liverpool/paid-search-agency",
+      "destination": "/paid-search-agency/liverpool",
+      "permanent": true
+    },
+    {
+      "source": "/local/liverpool/ppc-agency",
+      "destination": "/ppc-agency/liverpool",
+      "permanent": true
+    },
+    {
+      "source": "/local/liverpool/seo-agency",
+      "destination": "/seo-agency/liverpool",
+      "permanent": true
+    },
+    {
+      "source": "/local/liverpool/seo-company",
+      "destination": "/seo-company/liverpool",
+      "permanent": true
+    },
+    {
+      "source": "/local/liverpool/social-media-agency",
+      "destination": "/social-media-agency/liverpool",
+      "permanent": true
+    },
+    {
+      "source": "/local/liverpool/web-design-company",
+      "destination": "/web-design-company/liverpool",
+      "permanent": true
+    },
+    {
+      "source": "/local/liverpool/web-development-company",
+      "destination": "/web-development-company/liverpool",
+      "permanent": true
+    },
+    {
+      "source": "/local/london/ai-automation-agency",
+      "destination": "/ai-automation-agency/london",
+      "permanent": true
+    },
+    {
+      "source": "/local/london/amazon-marketing-agency",
+      "destination": "/amazon-marketing-agency/london",
+      "permanent": true
+    },
+    {
+      "source": "/local/london/content-marketing-agency",
+      "destination": "/content-marketing-agency/london",
+      "permanent": true
+    },
+    {
+      "source": "/local/london/cro-agency",
+      "destination": "/cro-agency/london",
+      "permanent": true
+    },
+    {
+      "source": "/local/london/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/london",
+      "permanent": true
+    },
+    {
+      "source": "/local/london/email-marketing-agency",
+      "destination": "/email-marketing-agency/london",
+      "permanent": true
+    },
+    {
+      "source": "/local/london/google-ads-agency",
+      "destination": "/google-ads-agency/london",
+      "permanent": true
+    },
+    {
+      "source": "/local/london/hubspot-agency",
+      "destination": "/hubspot-agency/london",
+      "permanent": true
+    },
+    {
+      "source": "/local/london/paid-search-agency",
+      "destination": "/paid-search-agency/london",
+      "permanent": true
+    },
+    {
+      "source": "/local/london/ppc-agency",
+      "destination": "/ppc-agency/london",
+      "permanent": true
+    },
+    {
+      "source": "/local/london/revops-agency",
+      "destination": "/revops-agency/london",
+      "permanent": true
+    },
+    {
+      "source": "/local/london/seo-agency",
+      "destination": "/seo-agency/london",
+      "permanent": true
+    },
+    {
+      "source": "/local/london/seo-company",
+      "destination": "/seo-company/london",
+      "permanent": true
+    },
+    {
+      "source": "/local/london/social-media-agency",
+      "destination": "/social-media-agency/london",
+      "permanent": true
+    },
+    {
+      "source": "/local/london/ugc-content-agency",
+      "destination": "/ugc-content-agency/london",
+      "permanent": true
+    },
+    {
+      "source": "/local/london/web-design-company",
+      "destination": "/web-design-company/london",
+      "permanent": true
+    },
+    {
+      "source": "/local/london/web-development-company",
+      "destination": "/web-development-company/london",
+      "permanent": true
+    },
+    {
+      "source": "/local/manchester/ai-automation-agency",
+      "destination": "/ai-automation-agency/manchester",
+      "permanent": true
+    },
+    {
+      "source": "/local/manchester/amazon-marketing-agency",
+      "destination": "/amazon-marketing-agency/manchester",
+      "permanent": true
+    },
+    {
+      "source": "/local/manchester/content-marketing-agency",
+      "destination": "/content-marketing-agency/manchester",
+      "permanent": true
+    },
+    {
+      "source": "/local/manchester/cro-agency",
+      "destination": "/cro-agency/manchester",
+      "permanent": true
+    },
+    {
+      "source": "/local/manchester/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/manchester",
+      "permanent": true
+    },
+    {
+      "source": "/local/manchester/email-marketing-agency",
+      "destination": "/email-marketing-agency/manchester",
+      "permanent": true
+    },
+    {
+      "source": "/local/manchester/google-ads-agency",
+      "destination": "/google-ads-agency/manchester",
+      "permanent": true
+    },
+    {
+      "source": "/local/manchester/hubspot-agency",
+      "destination": "/hubspot-agency/manchester",
+      "permanent": true
+    },
+    {
+      "source": "/local/manchester/paid-search-agency",
+      "destination": "/paid-search-agency/manchester",
+      "permanent": true
+    },
+    {
+      "source": "/local/manchester/ppc-agency",
+      "destination": "/ppc-agency/manchester",
+      "permanent": true
+    },
+    {
+      "source": "/local/manchester/revops-agency",
+      "destination": "/revops-agency/manchester",
+      "permanent": true
+    },
+    {
+      "source": "/local/manchester/seo-agency",
+      "destination": "/seo-agency/manchester",
+      "permanent": true
+    },
+    {
+      "source": "/local/manchester/seo-company",
+      "destination": "/seo-company/manchester",
+      "permanent": true
+    },
+    {
+      "source": "/local/manchester/social-media-agency",
+      "destination": "/social-media-agency/manchester",
+      "permanent": true
+    },
+    {
+      "source": "/local/manchester/ugc-content-agency",
+      "destination": "/ugc-content-agency/manchester",
+      "permanent": true
+    },
+    {
+      "source": "/local/manchester/web-design-company",
+      "destination": "/web-design-company/manchester",
+      "permanent": true
+    },
+    {
+      "source": "/local/manchester/web-development-company",
+      "destination": "/web-development-company/manchester",
+      "permanent": true
+    },
+    {
+      "source": "/local/mansfield/ai-automation-agency",
+      "destination": "/ai-automation-agency/mansfield",
+      "permanent": true
+    },
+    {
+      "source": "/local/mansfield/content-marketing-agency",
+      "destination": "/content-marketing-agency/mansfield",
+      "permanent": true
+    },
+    {
+      "source": "/local/mansfield/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/mansfield",
+      "permanent": true
+    },
+    {
+      "source": "/local/mansfield/email-marketing-agency",
+      "destination": "/email-marketing-agency/mansfield",
+      "permanent": true
+    },
+    {
+      "source": "/local/mansfield/google-ads-agency",
+      "destination": "/google-ads-agency/mansfield",
+      "permanent": true
+    },
+    {
+      "source": "/local/mansfield/online-marketing-agency",
+      "destination": "/online-marketing-agency/mansfield",
+      "permanent": true
+    },
+    {
+      "source": "/local/mansfield/ppc-agency",
+      "destination": "/ppc-agency/mansfield",
+      "permanent": true
+    },
+    {
+      "source": "/local/mansfield/seo-agency",
+      "destination": "/seo-agency/mansfield",
+      "permanent": true
+    },
+    {
+      "source": "/local/mansfield/seo-company",
+      "destination": "/seo-company/mansfield",
+      "permanent": true
+    },
+    {
+      "source": "/local/mansfield/social-media-agency",
+      "destination": "/social-media-agency/mansfield",
+      "permanent": true
+    },
+    {
+      "source": "/local/mansfield/web-design-company",
+      "destination": "/web-design-company/mansfield",
+      "permanent": true
+    },
+    {
+      "source": "/local/motherwell/ai-automation-agency",
+      "destination": "/ai-automation-agency/motherwell",
+      "permanent": true
+    },
+    {
+      "source": "/local/motherwell/content-marketing-agency",
+      "destination": "/content-marketing-agency/motherwell",
+      "permanent": true
+    },
+    {
+      "source": "/local/motherwell/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/motherwell",
+      "permanent": true
+    },
+    {
+      "source": "/local/motherwell/email-marketing-agency",
+      "destination": "/email-marketing-agency/motherwell",
+      "permanent": true
+    },
+    {
+      "source": "/local/motherwell/google-ads-agency",
+      "destination": "/google-ads-agency/motherwell",
+      "permanent": true
+    },
+    {
+      "source": "/local/motherwell/ppc-agency",
+      "destination": "/ppc-agency/motherwell",
+      "permanent": true
+    },
+    {
+      "source": "/local/motherwell/seo-agency",
+      "destination": "/seo-agency/motherwell",
+      "permanent": true
+    },
+    {
+      "source": "/local/motherwell/seo-company",
+      "destination": "/seo-company/motherwell",
+      "permanent": true
+    },
+    {
+      "source": "/local/motherwell/social-media-agency",
+      "destination": "/social-media-agency/motherwell",
+      "permanent": true
+    },
+    {
+      "source": "/local/motherwell/web-design-company",
+      "destination": "/web-design-company/motherwell",
+      "permanent": true
+    },
+    {
+      "source": "/local/newcastle/ai-automation-agency",
+      "destination": "/ai-automation-agency/newcastle",
+      "permanent": true
+    },
+    {
+      "source": "/local/newcastle/content-marketing-agency",
+      "destination": "/content-marketing-agency/newcastle",
+      "permanent": true
+    },
+    {
+      "source": "/local/newcastle/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/newcastle",
+      "permanent": true
+    },
+    {
+      "source": "/local/newcastle/email-marketing-agency",
+      "destination": "/email-marketing-agency/newcastle",
+      "permanent": true
+    },
+    {
+      "source": "/local/newcastle/google-ads-agency",
+      "destination": "/google-ads-agency/newcastle",
+      "permanent": true
+    },
+    {
+      "source": "/local/newcastle/ppc-agency",
+      "destination": "/ppc-agency/newcastle",
+      "permanent": true
+    },
+    {
+      "source": "/local/newcastle/seo-agency",
+      "destination": "/seo-agency/newcastle",
+      "permanent": true
+    },
+    {
+      "source": "/local/newcastle/seo-company",
+      "destination": "/seo-company/newcastle",
+      "permanent": true
+    },
+    {
+      "source": "/local/newcastle/social-media-agency",
+      "destination": "/social-media-agency/newcastle",
+      "permanent": true
+    },
+    {
+      "source": "/local/newcastle/web-design-company",
+      "destination": "/web-design-company/newcastle",
+      "permanent": true
+    },
+    {
+      "source": "/local/newport/ai-automation-agency",
+      "destination": "/ai-automation-agency/newport",
+      "permanent": true
+    },
+    {
+      "source": "/local/newport/content-marketing-agency",
+      "destination": "/content-marketing-agency/newport",
+      "permanent": true
+    },
+    {
+      "source": "/local/newport/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/newport",
+      "permanent": true
+    },
+    {
+      "source": "/local/newport/email-marketing-agency",
+      "destination": "/email-marketing-agency/newport",
+      "permanent": true
+    },
+    {
+      "source": "/local/newport/google-ads-agency",
+      "destination": "/google-ads-agency/newport",
+      "permanent": true
+    },
+    {
+      "source": "/local/newport/ppc-agency",
+      "destination": "/ppc-agency/newport",
+      "permanent": true
+    },
+    {
+      "source": "/local/newport/seo-agency",
+      "destination": "/seo-agency/newport",
+      "permanent": true
+    },
+    {
+      "source": "/local/newport/seo-company",
+      "destination": "/seo-company/newport",
+      "permanent": true
+    },
+    {
+      "source": "/local/newport/social-media-agency",
+      "destination": "/social-media-agency/newport",
+      "permanent": true
+    },
+    {
+      "source": "/local/newport/web-design-company",
+      "destination": "/web-design-company/newport",
+      "permanent": true
+    },
+    {
+      "source": "/local/nottingham/ai-automation-agency",
+      "destination": "/ai-automation-agency/nottingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/nottingham/content-marketing-agency",
+      "destination": "/content-marketing-agency/nottingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/nottingham/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/nottingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/nottingham/email-marketing-agency",
+      "destination": "/email-marketing-agency/nottingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/nottingham/google-ads-agency",
+      "destination": "/google-ads-agency/nottingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/nottingham/online-marketing-agency",
+      "destination": "/online-marketing-agency/nottingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/nottingham/ppc-agency",
+      "destination": "/ppc-agency/nottingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/nottingham/seo-agency",
+      "destination": "/seo-agency/nottingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/nottingham/seo-company",
+      "destination": "/seo-company/nottingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/nottingham/social-media-agency",
+      "destination": "/social-media-agency/nottingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/nottingham/web-design-company",
+      "destination": "/web-design-company/nottingham",
+      "permanent": true
+    },
+    {
+      "source": "/local/oxford/ai-automation-agency",
+      "destination": "/ai-automation-agency/oxford",
+      "permanent": true
+    },
+    {
+      "source": "/local/oxford/content-marketing-agency",
+      "destination": "/content-marketing-agency/oxford",
+      "permanent": true
+    },
+    {
+      "source": "/local/oxford/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/oxford",
+      "permanent": true
+    },
+    {
+      "source": "/local/oxford/email-marketing-agency",
+      "destination": "/email-marketing-agency/oxford",
+      "permanent": true
+    },
+    {
+      "source": "/local/oxford/google-ads-agency",
+      "destination": "/google-ads-agency/oxford",
+      "permanent": true
+    },
+    {
+      "source": "/local/oxford/paid-search-agency",
+      "destination": "/paid-search-agency/oxford",
+      "permanent": true
+    },
+    {
+      "source": "/local/oxford/ppc-agency",
+      "destination": "/ppc-agency/oxford",
+      "permanent": true
+    },
+    {
+      "source": "/local/oxford/seo-agency",
+      "destination": "/seo-agency/oxford",
+      "permanent": true
+    },
+    {
+      "source": "/local/oxford/seo-company",
+      "destination": "/seo-company/oxford",
+      "permanent": true
+    },
+    {
+      "source": "/local/oxford/social-media-agency",
+      "destination": "/social-media-agency/oxford",
+      "permanent": true
+    },
+    {
+      "source": "/local/oxford/web-design-company",
+      "destination": "/web-design-company/oxford",
+      "permanent": true
+    },
+    {
+      "source": "/local/oxford/web-development-company",
+      "destination": "/web-development-company/oxford",
+      "permanent": true
+    },
+    {
+      "source": "/local/paisley/ai-automation-agency",
+      "destination": "/ai-automation-agency/paisley",
+      "permanent": true
+    },
+    {
+      "source": "/local/paisley/content-marketing-agency",
+      "destination": "/content-marketing-agency/paisley",
+      "permanent": true
+    },
+    {
+      "source": "/local/paisley/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/paisley",
+      "permanent": true
+    },
+    {
+      "source": "/local/paisley/email-marketing-agency",
+      "destination": "/email-marketing-agency/paisley",
+      "permanent": true
+    },
+    {
+      "source": "/local/paisley/google-ads-agency",
+      "destination": "/google-ads-agency/paisley",
+      "permanent": true
+    },
+    {
+      "source": "/local/paisley/ppc-agency",
+      "destination": "/ppc-agency/paisley",
+      "permanent": true
+    },
+    {
+      "source": "/local/paisley/seo-agency",
+      "destination": "/seo-agency/paisley",
+      "permanent": true
+    },
+    {
+      "source": "/local/paisley/seo-company",
+      "destination": "/seo-company/paisley",
+      "permanent": true
+    },
+    {
+      "source": "/local/paisley/social-media-agency",
+      "destination": "/social-media-agency/paisley",
+      "permanent": true
+    },
+    {
+      "source": "/local/paisley/web-design-company",
+      "destination": "/web-design-company/paisley",
+      "permanent": true
+    },
+    {
+      "source": "/local/perth/ai-automation-agency",
+      "destination": "/ai-automation-agency/perth",
+      "permanent": true
+    },
+    {
+      "source": "/local/perth/content-marketing-agency",
+      "destination": "/content-marketing-agency/perth",
+      "permanent": true
+    },
+    {
+      "source": "/local/perth/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/perth",
+      "permanent": true
+    },
+    {
+      "source": "/local/perth/email-marketing-agency",
+      "destination": "/email-marketing-agency/perth",
+      "permanent": true
+    },
+    {
+      "source": "/local/perth/google-ads-agency",
+      "destination": "/google-ads-agency/perth",
+      "permanent": true
+    },
+    {
+      "source": "/local/perth/ppc-agency",
+      "destination": "/ppc-agency/perth",
+      "permanent": true
+    },
+    {
+      "source": "/local/perth/seo-agency",
+      "destination": "/seo-agency/perth",
+      "permanent": true
+    },
+    {
+      "source": "/local/perth/seo-company",
+      "destination": "/seo-company/perth",
+      "permanent": true
+    },
+    {
+      "source": "/local/perth/social-media-agency",
+      "destination": "/social-media-agency/perth",
+      "permanent": true
+    },
+    {
+      "source": "/local/perth/web-design-company",
+      "destination": "/web-design-company/perth",
+      "permanent": true
+    },
+    {
+      "source": "/local/peterborough/ai-automation-agency",
+      "destination": "/ai-automation-agency/peterborough",
+      "permanent": true
+    },
+    {
+      "source": "/local/peterborough/content-marketing-agency",
+      "destination": "/content-marketing-agency/peterborough",
+      "permanent": true
+    },
+    {
+      "source": "/local/peterborough/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/peterborough",
+      "permanent": true
+    },
+    {
+      "source": "/local/peterborough/email-marketing-agency",
+      "destination": "/email-marketing-agency/peterborough",
+      "permanent": true
+    },
+    {
+      "source": "/local/peterborough/google-ads-agency",
+      "destination": "/google-ads-agency/peterborough",
+      "permanent": true
+    },
+    {
+      "source": "/local/peterborough/ppc-agency",
+      "destination": "/ppc-agency/peterborough",
+      "permanent": true
+    },
+    {
+      "source": "/local/peterborough/seo-agency",
+      "destination": "/seo-agency/peterborough",
+      "permanent": true
+    },
+    {
+      "source": "/local/peterborough/seo-company",
+      "destination": "/seo-company/peterborough",
+      "permanent": true
+    },
+    {
+      "source": "/local/peterborough/social-media-agency",
+      "destination": "/social-media-agency/peterborough",
+      "permanent": true
+    },
+    {
+      "source": "/local/peterborough/web-design-company",
+      "destination": "/web-design-company/peterborough",
+      "permanent": true
+    },
+    {
+      "source": "/local/poole/ai-automation-agency",
+      "destination": "/ai-automation-agency/poole",
+      "permanent": true
+    },
+    {
+      "source": "/local/poole/content-marketing-agency",
+      "destination": "/content-marketing-agency/poole",
+      "permanent": true
+    },
+    {
+      "source": "/local/poole/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/poole",
+      "permanent": true
+    },
+    {
+      "source": "/local/poole/email-marketing-agency",
+      "destination": "/email-marketing-agency/poole",
+      "permanent": true
+    },
+    {
+      "source": "/local/poole/google-ads-agency",
+      "destination": "/google-ads-agency/poole",
+      "permanent": true
+    },
+    {
+      "source": "/local/poole/ppc-agency",
+      "destination": "/ppc-agency/poole",
+      "permanent": true
+    },
+    {
+      "source": "/local/poole/seo-agency",
+      "destination": "/seo-agency/poole",
+      "permanent": true
+    },
+    {
+      "source": "/local/poole/social-media-agency",
+      "destination": "/social-media-agency/poole",
+      "permanent": true
+    },
+    {
+      "source": "/local/poole/web-design-company",
+      "destination": "/web-design-company/poole",
+      "permanent": true
+    },
+    {
+      "source": "/local/preston/ai-automation-agency",
+      "destination": "/ai-automation-agency/preston",
+      "permanent": true
+    },
+    {
+      "source": "/local/preston/content-marketing-agency",
+      "destination": "/content-marketing-agency/preston",
+      "permanent": true
+    },
+    {
+      "source": "/local/preston/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/preston",
+      "permanent": true
+    },
+    {
+      "source": "/local/preston/email-marketing-agency",
+      "destination": "/email-marketing-agency/preston",
+      "permanent": true
+    },
+    {
+      "source": "/local/preston/google-ads-agency",
+      "destination": "/google-ads-agency/preston",
+      "permanent": true
+    },
+    {
+      "source": "/local/preston/ppc-agency",
+      "destination": "/ppc-agency/preston",
+      "permanent": true
+    },
+    {
+      "source": "/local/preston/seo-agency",
+      "destination": "/seo-agency/preston",
+      "permanent": true
+    },
+    {
+      "source": "/local/preston/social-media-agency",
+      "destination": "/social-media-agency/preston",
+      "permanent": true
+    },
+    {
+      "source": "/local/preston/web-design-company",
+      "destination": "/web-design-company/preston",
+      "permanent": true
+    },
+    {
+      "source": "/local/reading/ai-automation-agency",
+      "destination": "/ai-automation-agency/reading",
+      "permanent": true
+    },
+    {
+      "source": "/local/reading/content-marketing-agency",
+      "destination": "/content-marketing-agency/reading",
+      "permanent": true
+    },
+    {
+      "source": "/local/reading/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/reading",
+      "permanent": true
+    },
+    {
+      "source": "/local/reading/email-marketing-agency",
+      "destination": "/email-marketing-agency/reading",
+      "permanent": true
+    },
+    {
+      "source": "/local/reading/google-ads-agency",
+      "destination": "/google-ads-agency/reading",
+      "permanent": true
+    },
+    {
+      "source": "/local/reading/paid-search-agency",
+      "destination": "/paid-search-agency/reading",
+      "permanent": true
+    },
+    {
+      "source": "/local/reading/ppc-agency",
+      "destination": "/ppc-agency/reading",
+      "permanent": true
+    },
+    {
+      "source": "/local/reading/seo-agency",
+      "destination": "/seo-agency/reading",
+      "permanent": true
+    },
+    {
+      "source": "/local/reading/seo-company",
+      "destination": "/seo-company/reading",
+      "permanent": true
+    },
+    {
+      "source": "/local/reading/social-media-agency",
+      "destination": "/social-media-agency/reading",
+      "permanent": true
+    },
+    {
+      "source": "/local/reading/web-design-company",
+      "destination": "/web-design-company/reading",
+      "permanent": true
+    },
+    {
+      "source": "/local/reading/web-development-company",
+      "destination": "/web-development-company/reading",
+      "permanent": true
+    },
+    {
+      "source": "/local/salford/ai-automation-agency",
+      "destination": "/ai-automation-agency/salford",
+      "permanent": true
+    },
+    {
+      "source": "/local/salford/content-marketing-agency",
+      "destination": "/content-marketing-agency/salford",
+      "permanent": true
+    },
+    {
+      "source": "/local/salford/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/salford",
+      "permanent": true
+    },
+    {
+      "source": "/local/salford/email-marketing-agency",
+      "destination": "/email-marketing-agency/salford",
+      "permanent": true
+    },
+    {
+      "source": "/local/salford/google-ads-agency",
+      "destination": "/google-ads-agency/salford",
+      "permanent": true
+    },
+    {
+      "source": "/local/salford/paid-search-agency",
+      "destination": "/paid-search-agency/salford",
+      "permanent": true
+    },
+    {
+      "source": "/local/salford/ppc-agency",
+      "destination": "/ppc-agency/salford",
+      "permanent": true
+    },
+    {
+      "source": "/local/salford/seo-agency",
+      "destination": "/seo-agency/salford",
+      "permanent": true
+    },
+    {
+      "source": "/local/salford/seo-company",
+      "destination": "/seo-company/salford",
+      "permanent": true
+    },
+    {
+      "source": "/local/salford/social-media-agency",
+      "destination": "/social-media-agency/salford",
+      "permanent": true
+    },
+    {
+      "source": "/local/salford/web-design-company",
+      "destination": "/web-design-company/salford",
+      "permanent": true
+    },
+    {
+      "source": "/local/salford/web-development-company",
+      "destination": "/web-development-company/salford",
+      "permanent": true
+    },
+    {
+      "source": "/local/salisbury/ai-automation-agency",
+      "destination": "/ai-automation-agency/salisbury",
+      "permanent": true
+    },
+    {
+      "source": "/local/salisbury/content-marketing-agency",
+      "destination": "/content-marketing-agency/salisbury",
+      "permanent": true
+    },
+    {
+      "source": "/local/salisbury/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/salisbury",
+      "permanent": true
+    },
+    {
+      "source": "/local/salisbury/email-marketing-agency",
+      "destination": "/email-marketing-agency/salisbury",
+      "permanent": true
+    },
+    {
+      "source": "/local/salisbury/google-ads-agency",
+      "destination": "/google-ads-agency/salisbury",
+      "permanent": true
+    },
+    {
+      "source": "/local/salisbury/ppc-agency",
+      "destination": "/ppc-agency/salisbury",
+      "permanent": true
+    },
+    {
+      "source": "/local/salisbury/seo-agency",
+      "destination": "/seo-agency/salisbury",
+      "permanent": true
+    },
+    {
+      "source": "/local/salisbury/social-media-agency",
+      "destination": "/social-media-agency/salisbury",
+      "permanent": true
+    },
+    {
+      "source": "/local/salisbury/web-design-company",
+      "destination": "/web-design-company/salisbury",
+      "permanent": true
+    },
+    {
+      "source": "/local/sheffield/ai-automation-agency",
+      "destination": "/ai-automation-agency/sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/local/sheffield/content-marketing-agency",
+      "destination": "/content-marketing-agency/sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/local/sheffield/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/local/sheffield/email-marketing-agency",
+      "destination": "/email-marketing-agency/sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/local/sheffield/google-ads-agency",
+      "destination": "/google-ads-agency/sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/local/sheffield/ppc-agency",
+      "destination": "/ppc-agency/sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/local/sheffield/seo-agency",
+      "destination": "/seo-agency/sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/local/sheffield/seo-company",
+      "destination": "/seo-company/sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/local/sheffield/social-media-agency",
+      "destination": "/social-media-agency/sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/local/sheffield/web-design-company",
+      "destination": "/web-design-company/sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/local/sheffield/web-development-company",
+      "destination": "/web-development-company/sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/local/southampton/ai-automation-agency",
+      "destination": "/ai-automation-agency/southampton",
+      "permanent": true
+    },
+    {
+      "source": "/local/southampton/content-marketing-agency",
+      "destination": "/content-marketing-agency/southampton",
+      "permanent": true
+    },
+    {
+      "source": "/local/southampton/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/southampton",
+      "permanent": true
+    },
+    {
+      "source": "/local/southampton/email-marketing-agency",
+      "destination": "/email-marketing-agency/southampton",
+      "permanent": true
+    },
+    {
+      "source": "/local/southampton/google-ads-agency",
+      "destination": "/google-ads-agency/southampton",
+      "permanent": true
+    },
+    {
+      "source": "/local/southampton/ppc-agency",
+      "destination": "/ppc-agency/southampton",
+      "permanent": true
+    },
+    {
+      "source": "/local/southampton/seo-agency",
+      "destination": "/seo-agency/southampton",
+      "permanent": true
+    },
+    {
+      "source": "/local/southampton/social-media-agency",
+      "destination": "/social-media-agency/southampton",
+      "permanent": true
+    },
+    {
+      "source": "/local/southampton/web-design-company",
+      "destination": "/web-design-company/southampton",
+      "permanent": true
+    },
+    {
+      "source": "/local/st-helens/ai-automation-agency",
+      "destination": "/ai-automation-agency/st-helens",
+      "permanent": true
+    },
+    {
+      "source": "/local/st-helens/content-marketing-agency",
+      "destination": "/content-marketing-agency/st-helens",
+      "permanent": true
+    },
+    {
+      "source": "/local/st-helens/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/st-helens",
+      "permanent": true
+    },
+    {
+      "source": "/local/st-helens/email-marketing-agency",
+      "destination": "/email-marketing-agency/st-helens",
+      "permanent": true
+    },
+    {
+      "source": "/local/st-helens/google-ads-agency",
+      "destination": "/google-ads-agency/st-helens",
+      "permanent": true
+    },
+    {
+      "source": "/local/st-helens/ppc-agency",
+      "destination": "/ppc-agency/st-helens",
+      "permanent": true
+    },
+    {
+      "source": "/local/st-helens/seo-agency",
+      "destination": "/seo-agency/st-helens",
+      "permanent": true
+    },
+    {
+      "source": "/local/st-helens/seo-company",
+      "destination": "/seo-company/st-helens",
+      "permanent": true
+    },
+    {
+      "source": "/local/st-helens/social-media-agency",
+      "destination": "/social-media-agency/st-helens",
+      "permanent": true
+    },
+    {
+      "source": "/local/st-helens/web-design-company",
+      "destination": "/web-design-company/st-helens",
+      "permanent": true
+    },
+    {
+      "source": "/local/sunderland/ai-automation-agency",
+      "destination": "/ai-automation-agency/sunderland",
+      "permanent": true
+    },
+    {
+      "source": "/local/sunderland/content-marketing-agency",
+      "destination": "/content-marketing-agency/sunderland",
+      "permanent": true
+    },
+    {
+      "source": "/local/sunderland/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/sunderland",
+      "permanent": true
+    },
+    {
+      "source": "/local/sunderland/email-marketing-agency",
+      "destination": "/email-marketing-agency/sunderland",
+      "permanent": true
+    },
+    {
+      "source": "/local/sunderland/google-ads-agency",
+      "destination": "/google-ads-agency/sunderland",
+      "permanent": true
+    },
+    {
+      "source": "/local/sunderland/ppc-agency",
+      "destination": "/ppc-agency/sunderland",
+      "permanent": true
+    },
+    {
+      "source": "/local/sunderland/seo-agency",
+      "destination": "/seo-agency/sunderland",
+      "permanent": true
+    },
+    {
+      "source": "/local/sunderland/seo-company",
+      "destination": "/seo-company/sunderland",
+      "permanent": true
+    },
+    {
+      "source": "/local/sunderland/social-media-agency",
+      "destination": "/social-media-agency/sunderland",
+      "permanent": true
+    },
+    {
+      "source": "/local/sunderland/web-design-company",
+      "destination": "/web-design-company/sunderland",
+      "permanent": true
+    },
+    {
+      "source": "/local/swansea/ai-automation-agency",
+      "destination": "/ai-automation-agency/swansea",
+      "permanent": true
+    },
+    {
+      "source": "/local/swansea/content-marketing-agency",
+      "destination": "/content-marketing-agency/swansea",
+      "permanent": true
+    },
+    {
+      "source": "/local/swansea/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/swansea",
+      "permanent": true
+    },
+    {
+      "source": "/local/swansea/email-marketing-agency",
+      "destination": "/email-marketing-agency/swansea",
+      "permanent": true
+    },
+    {
+      "source": "/local/swansea/google-ads-agency",
+      "destination": "/google-ads-agency/swansea",
+      "permanent": true
+    },
+    {
+      "source": "/local/swansea/ppc-agency",
+      "destination": "/ppc-agency/swansea",
+      "permanent": true
+    },
+    {
+      "source": "/local/swansea/seo-agency",
+      "destination": "/seo-agency/swansea",
+      "permanent": true
+    },
+    {
+      "source": "/local/swansea/seo-company",
+      "destination": "/seo-company/swansea",
+      "permanent": true
+    },
+    {
+      "source": "/local/swansea/social-media-agency",
+      "destination": "/social-media-agency/swansea",
+      "permanent": true
+    },
+    {
+      "source": "/local/swansea/web-design-company",
+      "destination": "/web-design-company/swansea",
+      "permanent": true
+    },
+    {
+      "source": "/local/swindon/ai-automation-agency",
+      "destination": "/ai-automation-agency/swindon",
+      "permanent": true
+    },
+    {
+      "source": "/local/swindon/content-marketing-agency",
+      "destination": "/content-marketing-agency/swindon",
+      "permanent": true
+    },
+    {
+      "source": "/local/swindon/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/swindon",
+      "permanent": true
+    },
+    {
+      "source": "/local/swindon/email-marketing-agency",
+      "destination": "/email-marketing-agency/swindon",
+      "permanent": true
+    },
+    {
+      "source": "/local/swindon/google-ads-agency",
+      "destination": "/google-ads-agency/swindon",
+      "permanent": true
+    },
+    {
+      "source": "/local/swindon/ppc-agency",
+      "destination": "/ppc-agency/swindon",
+      "permanent": true
+    },
+    {
+      "source": "/local/swindon/seo-agency",
+      "destination": "/seo-agency/swindon",
+      "permanent": true
+    },
+    {
+      "source": "/local/swindon/seo-company",
+      "destination": "/seo-company/swindon",
+      "permanent": true
+    },
+    {
+      "source": "/local/swindon/social-media-agency",
+      "destination": "/social-media-agency/swindon",
+      "permanent": true
+    },
+    {
+      "source": "/local/swindon/web-design-company",
+      "destination": "/web-design-company/swindon",
+      "permanent": true
+    },
+    {
+      "source": "/local/wolverhampton/ai-automation-agency",
+      "destination": "/ai-automation-agency/wolverhampton",
+      "permanent": true
+    },
+    {
+      "source": "/local/wolverhampton/content-marketing-agency",
+      "destination": "/content-marketing-agency/wolverhampton",
+      "permanent": true
+    },
+    {
+      "source": "/local/wolverhampton/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/wolverhampton",
+      "permanent": true
+    },
+    {
+      "source": "/local/wolverhampton/email-marketing-agency",
+      "destination": "/email-marketing-agency/wolverhampton",
+      "permanent": true
+    },
+    {
+      "source": "/local/wolverhampton/google-ads-agency",
+      "destination": "/google-ads-agency/wolverhampton",
+      "permanent": true
+    },
+    {
+      "source": "/local/wolverhampton/ppc-agency",
+      "destination": "/ppc-agency/wolverhampton",
+      "permanent": true
+    },
+    {
+      "source": "/local/wolverhampton/seo-agency",
+      "destination": "/seo-agency/wolverhampton",
+      "permanent": true
+    },
+    {
+      "source": "/local/wolverhampton/seo-company",
+      "destination": "/seo-company/wolverhampton",
+      "permanent": true
+    },
+    {
+      "source": "/local/wolverhampton/social-media-agency",
+      "destination": "/social-media-agency/wolverhampton",
+      "permanent": true
+    },
+    {
+      "source": "/local/wolverhampton/web-design-company",
+      "destination": "/web-design-company/wolverhampton",
+      "permanent": true
+    },
+    {
+      "source": "/local/wolverhampton/web-development-company",
+      "destination": "/web-development-company/wolverhampton",
+      "permanent": true
+    },
+    {
+      "source": "/local/worthing/ai-automation-agency",
+      "destination": "/ai-automation-agency/worthing",
+      "permanent": true
+    },
+    {
+      "source": "/local/worthing/content-marketing-agency",
+      "destination": "/content-marketing-agency/worthing",
+      "permanent": true
+    },
+    {
+      "source": "/local/worthing/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/worthing",
+      "permanent": true
+    },
+    {
+      "source": "/local/worthing/email-marketing-agency",
+      "destination": "/email-marketing-agency/worthing",
+      "permanent": true
+    },
+    {
+      "source": "/local/worthing/google-ads-agency",
+      "destination": "/google-ads-agency/worthing",
+      "permanent": true
+    },
+    {
+      "source": "/local/worthing/ppc-agency",
+      "destination": "/ppc-agency/worthing",
+      "permanent": true
+    },
+    {
+      "source": "/local/worthing/seo-agency",
+      "destination": "/seo-agency/worthing",
+      "permanent": true
+    },
+    {
+      "source": "/local/worthing/seo-company",
+      "destination": "/seo-company/worthing",
+      "permanent": true
+    },
+    {
+      "source": "/local/worthing/social-media-agency",
+      "destination": "/social-media-agency/worthing",
+      "permanent": true
+    },
+    {
+      "source": "/local/worthing/web-design-company",
+      "destination": "/web-design-company/worthing",
+      "permanent": true
+    },
+    {
+      "source": "/local/york/ai-automation-agency",
+      "destination": "/ai-automation-agency/york",
+      "permanent": true
+    },
+    {
+      "source": "/local/york/content-marketing-agency",
+      "destination": "/content-marketing-agency/york",
+      "permanent": true
+    },
+    {
+      "source": "/local/york/digital-marketing-agency",
+      "destination": "/digital-marketing-agency/york",
+      "permanent": true
+    },
+    {
+      "source": "/local/york/email-marketing-agency",
+      "destination": "/email-marketing-agency/york",
+      "permanent": true
+    },
+    {
+      "source": "/local/york/google-ads-agency",
+      "destination": "/google-ads-agency/york",
+      "permanent": true
+    },
+    {
+      "source": "/local/york/ppc-agency",
+      "destination": "/ppc-agency/york",
+      "permanent": true
+    },
+    {
+      "source": "/local/york/seo-agency",
+      "destination": "/seo-agency/york",
+      "permanent": true
+    },
+    {
+      "source": "/local/york/seo-company",
+      "destination": "/seo-company/york",
+      "permanent": true
+    },
+    {
+      "source": "/local/york/social-media-agency",
+      "destination": "/social-media-agency/york",
+      "permanent": true
+    },
+    {
+      "source": "/local/york/web-design-company",
+      "destination": "/web-design-company/york",
+      "permanent": true
+    },
+    {
+      "source": "/local/york/web-development-company",
+      "destination": "/web-development-company/york",
+      "permanent": true
+    }
+  ]
 }
