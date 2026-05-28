@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Core Pages -->
 <url>
     <loc>https://bambinoagency.com/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <lastmod>2026-05-28</lastmod>
   </url>
 <url>
@@ -17,13 +16,13 @@
 <url>
     <loc>https://bambinoagency.com/services</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
     <lastmod>2026-05-28</lastmod>
   </url>
 <url>
     <loc>https://bambinoagency.com/pricing</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
     <lastmod>2026-05-28</lastmod>
   </url>
 <url>
@@ -32,8 +31,18 @@
     <priority>0.6</priority>
     <lastmod>2026-05-28</lastmod>
   </url>
-
-  <!-- Local Pages -->
+<url>
+    <loc>https://bambinoagency.com/privacy-policy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2026-05-28</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/terms</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2026-05-28</lastmod>
+  </url>
 <url>
     <loc>https://bambinoagency.com/ai-automation-agency/aberdeen</loc>
     <changefreq>monthly</changefreq>
@@ -459,6 +468,138 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-05-28</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/blog/ai-marketing-trends-uk-2026</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-04-09</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/blog/best-seo-agencies-uk</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-04-05</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/blog/cro-guide-uk</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-04-23</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/blog/google-ads-cost-uk</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-04-03</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/blog/how-much-does-link-building-cost-uk</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-04-17</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/blog/how-much-does-local-seo-cost-uk</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-04-17</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/blog/how-much-does-seo-cost-uk</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-04-02</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/blog/how-much-does-technical-seo-cost-uk</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-04-17</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/blog/how-to-get-more-leads-uk</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-04-08</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/blog/hubspot-vs-salesforce-uk</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-04-23</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/blog/klaviyo-vs-mailchimp-uk</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-04-23</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/blog/saas-marketing-agency-uk</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-04-17</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/blog/seo-for-dentists-uk</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-04-17</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/blog/seo-for-estate-agents-uk</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2025-12-11</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/blog/seo-for-law-firms-uk</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2025-12-11</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/blog/seo-vs-google-ads</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-04-06</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/blog/ugc-vs-influencer-marketing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-04-23</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/blog/what-is-ai-outbound-sales</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-04-04</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/blog/what-is-digital-marketing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-04-07</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/blog/what-is-geo-optimisation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-04-01</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/blog/what-is-link-building</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2025-12-11</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/blog/what-is-revops-uk</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-04-23</lastmod>
   </url>
 <url>
     <loc>https://bambinoagency.com/content-marketing-agency/aberdeen</loc>
@@ -2105,6 +2246,72 @@
     <lastmod>2026-05-28</lastmod>
   </url>
 <url>
+    <loc>https://bambinoagency.com/industries/beauty</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-28</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/industries/dental</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-28</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/industries/ecommerce</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/industries/fashion</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-28</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/industries/finance</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-28</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/industries/food-drink</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-28</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/industries/hospitality</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-28</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/industries/legal</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-28</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/industries/professional-services</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-28</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/industries/property</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-28</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/industries/saas</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-28</lastmod>
+  </url>
+<url>
     <loc>https://bambinoagency.com/online-marketing-agency/derby</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -2342,7 +2549,7 @@
     <loc>https://bambinoagency.com/ppc-agency/exeter</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-04-03</lastmod>
+    <lastmod>2026-02-01</lastmod>
   </url>
 <url>
     <loc>https://bambinoagency.com/ppc-agency/gateshead</loc>
@@ -3347,6 +3554,18 @@
     <lastmod>2026-05-28</lastmod>
   </url>
 <url>
+    <loc>https://bambinoagency.com/services/ai-sdr-agency</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-04-25</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/services/online-marketing-agency</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-28</lastmod>
+  </url>
+<url>
     <loc>https://bambinoagency.com/social-media-agency/aberdeen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -3773,6 +3992,42 @@
     <lastmod>2026-05-28</lastmod>
   </url>
 <url>
+    <loc>https://bambinoagency.com/us/baltimore</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-28</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/us/el-paso</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-28</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/us/milwaukee</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-28</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/us/raleigh</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-28</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/us/san-francisco</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-28</lastmod>
+  </url>
+<url>
+    <loc>https://bambinoagency.com/us/washington-dc</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-28</lastmod>
+  </url>
+<url>
     <loc>https://bambinoagency.com/web-design-company/aberdeen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -3920,7 +4175,7 @@
     <loc>https://bambinoagency.com/web-design-company/edinburgh</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-31</lastmod>
   </url>
 <url>
     <loc>https://bambinoagency.com/web-design-company/elgin</loc>
@@ -3938,7 +4193,7 @@
     <loc>https://bambinoagency.com/web-design-company/exeter</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-04-04</lastmod>
+    <lastmod>2026-03-31</lastmod>
   </url>
 <url>
     <loc>https://bambinoagency.com/web-design-company/gateshead</loc>
