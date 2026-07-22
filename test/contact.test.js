@@ -1,7 +1,7 @@
 const assert = require('node:assert/strict');
 const test = require('node:test');
-const handler = require('./contact');
-const recaptchaConfigHandler = require('./recaptcha-config');
+const handler = require('../api/contact');
+const recaptchaConfigHandler = require('../api/recaptcha-config');
 
 const SITE_ORIGIN = 'https://bambinoagency.com';
 const SITE_HOSTNAME = 'bambinoagency.com';
@@ -259,4 +259,3 @@ test('does not lose a normal lead during a reCAPTCHA outage', async () => {
     console.error = originalConsoleError;
   }
 });
-
