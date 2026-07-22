@@ -1,6 +1,9 @@
 {
   "name": "bambino-site",
   "version": "1.0.0",
+  "scripts": {
+    "test": "node --test api/contact.test.js"
+  },
   "dependencies": {
     "nodemailer": "^6.9.0"
   }
