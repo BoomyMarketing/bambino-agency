@@ -16,10 +16,8 @@ import os
 import re
 import subprocess
 import urllib.request
-from datetime import date, timedelta
 from pathlib import Path
 
-TODAY = date.today()
 DOMAIN = "https://bambinoagency.com"
 SITE_ROOT = Path(__file__).parent.resolve()
 INDEXNOW_KEY = "0af09ac783bf4a66a867cf66d3f7f01a"
@@ -61,43 +59,26 @@ def url_to_html(url):
     return None
 
 
-def read_date(html_path):
-    try:
-        html = html_path.read_text(encoding="utf-8")
-        m = re.search(r'"datePublished":\s*"(\d{4}-\d{2}-\d{2})"', html)
-        if m:
-            return m.group(1)
-    except Exception:
-        pass
-    return None
-
-
 def refresh_sitemap():
-    """Preserve existing URL set, drop /local/, refresh lastmod from HTML."""
+    """Keep only existing, canonical, non-redirect URLs in the sitemap."""
     sm_path = SITE_ROOT / "sitemap.xml"
     content = sm_path.read_text(encoding="utf-8")
     blocks = re.findall(r"<url>.*?</url>", content, re.DOTALL)
 
     kept = []
-    today_urls = []
+    seen = set()
     for b in blocks:
         loc_m = re.search(r"<loc>([^<]+)</loc>", b)
         if not loc_m:
             continue
         url = loc_m.group(1).strip()
-        if "/local/" in url:          # never keep legacy URLs
+        canonical = url.rstrip("/") or DOMAIN
+        if "/local/" in canonical:    # never keep legacy URLs
             continue
-        html_path = url_to_html(url)
-        if html_path:
-            d = read_date(html_path)
-            if d:
-                if "<lastmod>" in b:
-                    b = re.sub(r"<lastmod>[^<]*</lastmod>", f"<lastmod>{d}</lastmod>", b)
-                else:
-                    b = b.replace("</url>", f"  <lastmod>{d}</lastmod>\n  </url>")
-                if d == TODAY.isoformat():
-                    today_urls.append(url)
-        kept.append(b)
+        if canonical in seen or not url_to_html(canonical):
+            continue
+        seen.add(canonical)
+        kept.append(f"  <url><loc>{canonical}</loc></url>")
 
     sitemap = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -106,7 +87,7 @@ def refresh_sitemap():
         + "\n</urlset>\n"
     )
     sm_path.write_text(sitemap, encoding="utf-8")
-    return len(kept), today_urls
+    return len(kept), []
 
 
 if __name__ == "__main__":
