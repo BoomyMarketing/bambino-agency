@@ -2,7 +2,8 @@
   "site": {
     "name": "Bambino Agency",
     "domain": "bambinoagency.com",
-    "language": "en-GB"
+    "language": "en-GB",
+    "country": "GB"
   },
   "contact": {
     "email": "hello@bambinoagency.com",
