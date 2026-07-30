@@ -567,7 +567,5 @@
     const observer = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.1 });
     reveals.forEach(el => observer.observe(el));
   </script>
-<canvas id="starfield" aria-hidden="true" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;pointer-events:none"></canvas>
-<script src="/assets/js/starfield.js?v=1" defer></script>
 </body>
 </html>
